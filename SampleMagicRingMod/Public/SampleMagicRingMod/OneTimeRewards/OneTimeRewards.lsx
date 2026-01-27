@@ -6,8 +6,8 @@
             <children>
                 <node id="OneTimeReward">
                     <attribute id="Amount" type="uint32" value="1"/>
-                    <attribute id="ItemTemplateId" type="FixedString" value="7652a688-82fb-4ee7-9e9b-c54c996ff6aa"/>
-                    <attribute id="UUID" type="guid" value="c7d8e9f0-1a2b-4c3d-8e9f-0a1b2c3d4e5f"/>
+                    <attribute id="ItemTemplateId" type="FixedString" value="d4e5f6a7-b8c9-4d0e-a1b2-c3d4e5f6a7b8"/>
+                    <attribute id="UUID" type="guid" value="e5f6a7b8-c9d0-4e1f-b2a3-d4e5f6a7b8c9"/>
                 </node>
             </children>
         </node>

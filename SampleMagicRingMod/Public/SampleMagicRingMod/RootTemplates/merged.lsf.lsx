@@ -5,6 +5,21 @@
 		<node id="Templates">
 			<children>
 				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h1a2b3c4dg5e6fg7a8bg9c0dge1f2a3b4c5d6" version="2" />
+					<attribute id="DisplayName" type="TranslatedString" handle="ha1b2c3d4ge5f6g7a8bg9c0dg1e2f3a4b5c6d" version="3" />
+					<attribute id="Icon" type="FixedString" value="Item_LOOT_GEN_Ring_D_Silver_A" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="d4e5f6a7-b8c9-4d0e-a1b2-c3d4e5f6a7b8" />
+					<attribute id="Name" type="LSString" value="SMR_Ring_Spectral_Power" />
+					<attribute id="ParentTemplateId" type="FixedString" value="a9f741f6-a758-47ea-bb21-9a37d3ddfe42" />
+					<attribute id="Stats" type="FixedString" value="SMR_Ring_Spectral_Power" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855912" />
+					<children>
+						<node id="GameMaster" />
+					</children>
+				</node>
+				<node id="GameObjects">
 					<attribute id="Description" type="TranslatedString" handle="h43576a52g162cg4eaeg9f13gf3bd5693f594" version="2" />
 					<attribute id="DisplayName" type="TranslatedString" handle="hd22ef20eg2d8cg4ea0ga40fg7765b5b40d46" version="3" />
 					<attribute id="Icon" type="FixedString" value="Item_LOOT_GEN_Ring_F_Silver_A" />
