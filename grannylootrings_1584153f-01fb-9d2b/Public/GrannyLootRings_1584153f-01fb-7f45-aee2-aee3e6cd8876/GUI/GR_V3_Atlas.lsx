@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="500"/>
+    <region id="IconUVList">
+        <node id="root">
+            <children>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Defiant_Twin_Ring_Icon"/>
+                    <attribute id="U1" type="float" value="0.0009765625"/>
+                    <attribute id="U2" type="float" value="0.12402344"/>
+                    <attribute id="V1" type="float" value="0.0009765625"/>
+                    <attribute id="V2" type="float" value="0.12402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="DestructiveWave_Haunting_Icon"/>
+                    <attribute id="U1" type="float" value="0.75097656"/>
+                    <attribute id="U2" type="float" value="0.87402344"/>
+                    <attribute id="V1" type="float" value="0.50097656"/>
+                    <attribute id="V2" type="float" value="0.62402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Devoted_Glamour_Ring_Icon"/>
+                    <attribute id="U1" type="float" value="0.12597656"/>
+                    <attribute id="U2" type="float" value="0.24902344"/>
+                    <attribute id="V1" type="float" value="0.0009765625"/>
+                    <attribute id="V2" type="float" value="0.12402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Exotic_Riddle_Ring_Icon"/>
+                    <attribute id="U1" type="float" value="0.25097656"/>
+                    <attribute id="U2" type="float" value="0.37402344"/>
+                    <attribute id="V1" type="float" value="0.0009765625"/>
+                    <attribute id="V2" type="float" value="0.12402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Faint_Beauty_Ring_Icon"/>
+                    <attribute id="U1" type="float" value="0.37597656"/>
+                    <attribute id="U2" type="float" value="0.49902344"/>
+                    <attribute id="V1" type="float" value="0.0009765625"/>
+                    <attribute id="V2" type="float" value="0.12402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Flawless_Blossom_Ring_Icon"/>
+                    <attribute id="U1" type="float" value="0.50097656"/>
+                    <attribute id="U2" type="float" value="0.62402344"/>
+                    <attribute id="V1" type="float" value="0.0009765625"/>
+                    <attribute id="V2" type="float" value="0.12402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="GR_Popdrakes_icon"/>
+                    <attribute id="U1" type="float" value="0.25097656"/>
+                    <attribute id="U2" type="float" value="0.37402344"/>
+                    <attribute id="V1" type="float" value="0.50097656"/>
+                    <attribute id="V2" type="float" value="0.62402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="GR_Squidjins_icon"/>
+                    <attribute id="U1" type="float" value="0.37597656"/>
+                    <attribute id="U2" type="float" value="0.49902344"/>
+                    <attribute id="V1" type="float" value="0.50097656"/>
+                    <attribute id="V2" type="float" value="0.62402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="GR_Wogglims_icon"/>
+                    <attribute id="U1" type="float" value="0.50097656"/>
+                    <attribute id="U2" type="float" value="0.62402344"/>
+                    <attribute id="V1" type="float" value="0.50097656"/>
+                    <attribute id="V2" type="float" value="0.62402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="GR_fireworks_box_icon"/>
+                    <attribute id="U1" type="float" value="0.12597656"/>
+                    <attribute id="U2" type="float" value="0.24902344"/>
+                    <attribute id="V1" type="float" value="0.50097656"/>
+                    <attribute id="V2" type="float" value="0.62402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="GR_gith_strange_gas_icon"/>
+                    <attribute id="U1" type="float" value="0.62597656"/>
+                    <attribute id="U2" type="float" value="0.74902344"/>
+                    <attribute id="V1" type="float" value="0.50097656"/>
+                    <attribute id="V2" type="float" value="0.62402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Grand_Prospect_Ring_Icon"/>
+                    <attribute id="U1" type="float" value="0.62597656"/>
+                    <attribute id="U2" type="float" value="0.74902344"/>
+                    <attribute id="V1" type="float" value="0.0009765625"/>
+                    <attribute id="V2" type="float" value="0.12402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Happy_Lily_Ring_Icon"/>
+                    <attribute id="U1" type="float" value="0.75097656"/>
+                    <attribute id="U2" type="float" value="0.87402344"/>
+                    <attribute id="V1" type="float" value="0.0009765625"/>
+                    <attribute id="V2" type="float" value="0.12402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Idle_Mark_Ring_Icon"/>
+                    <attribute id="U1" type="float" value="0.87597656"/>
+                    <attribute id="U2" type="float" value="0.99902344"/>
+                    <attribute id="V1" type="float" value="0.0009765625"/>
+                    <attribute id="V2" type="float" value="0.12402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Lustrous_Wish_Ring_Icon"/>
+                    <attribute id="U1" type="float" value="0.0009765625"/>
+                    <attribute id="U2" type="float" value="0.12402344"/>
+                    <attribute id="V1" type="float" value="0.12597656"/>
+                    <attribute id="V2" type="float" value="0.24902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Perfect_Flower_Ring_Icon"/>
+                    <attribute id="U1" type="float" value="0.12597656"/>
+                    <attribute id="U2" type="float" value="0.24902344"/>
+                    <attribute id="V1" type="float" value="0.12597656"/>
+                    <attribute id="V2" type="float" value="0.24902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Pristine_Whisper_Ring_Icon"/>
+                    <attribute id="U1" type="float" value="0.25097656"/>
+                    <attribute id="U2" type="float" value="0.37402344"/>
+                    <attribute id="V1" type="float" value="0.12597656"/>
+                    <attribute id="V2" type="float" value="0.24902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Pure_Stone_Ring_Icon"/>
+                    <attribute id="U1" type="float" value="0.37597656"/>
+                    <attribute id="U2" type="float" value="0.49902344"/>
+                    <attribute id="V1" type="float" value="0.12597656"/>
+                    <attribute id="V2" type="float" value="0.24902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Quiet_Glamour_Ring_Icon"/>
+                    <attribute id="U1" type="float" value="0.50097656"/>
+                    <attribute id="U2" type="float" value="0.62402344"/>
+                    <attribute id="V1" type="float" value="0.12597656"/>
+                    <attribute id="V2" type="float" value="0.24902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Royal_Crux_Ring_Icon"/>
+                    <attribute id="U1" type="float" value="0.62597656"/>
+                    <attribute id="U2" type="float" value="0.74902344"/>
+                    <attribute id="V1" type="float" value="0.12597656"/>
+                    <attribute id="V2" type="float" value="0.24902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Serpent_Root_Ring_Icon"/>
+                    <attribute id="U1" type="float" value="0.75097656"/>
+                    <attribute id="U2" type="float" value="0.87402344"/>
+                    <attribute id="V1" type="float" value="0.12597656"/>
+                    <attribute id="V2" type="float" value="0.24902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Serpentine_Hum_Ring_Icon"/>
+                    <attribute id="U1" type="float" value="0.87597656"/>
+                    <attribute id="U2" type="float" value="0.99902344"/>
+                    <attribute id="V1" type="float" value="0.12597656"/>
+                    <attribute id="V2" type="float" value="0.24902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Shadow_Panther_Ring_Icon"/>
+                    <attribute id="U1" type="float" value="0.0009765625"/>
+                    <attribute id="U2" type="float" value="0.12402344"/>
+                    <attribute id="V1" type="float" value="0.25097656"/>
+                    <attribute id="V2" type="float" value="0.37402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Stunning_Shield_Ring_Icon"/>
+                    <attribute id="U1" type="float" value="0.12597656"/>
+                    <attribute id="U2" type="float" value="0.24902344"/>
+                    <attribute id="V1" type="float" value="0.25097656"/>
+                    <attribute id="V2" type="float" value="0.37402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Velvet_Ambition_Ring_Icon"/>
+                    <attribute id="U1" type="float" value="0.25097656"/>
+                    <attribute id="U2" type="float" value="0.37402344"/>
+                    <attribute id="V1" type="float" value="0.25097656"/>
+                    <attribute id="V2" type="float" value="0.37402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Worthy_Lure_Ring_Icon"/>
+                    <attribute id="U1" type="float" value="0.37597656"/>
+                    <attribute id="U2" type="float" value="0.49902344"/>
+                    <attribute id="V1" type="float" value="0.25097656"/>
+                    <attribute id="V2" type="float" value="0.37402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="dart_summon_icon"/>
+                    <attribute id="U1" type="float" value="0.87597656"/>
+                    <attribute id="U2" type="float" value="0.99902344"/>
+                    <attribute id="V1" type="float" value="0.50097656"/>
+                    <attribute id="V2" type="float" value="0.62402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="dart_summon_icon_v2"/>
+                    <attribute id="U1" type="float" value="0.12597656"/>
+                    <attribute id="U2" type="float" value="0.24902344"/>
+                    <attribute id="V1" type="float" value="0.62597656"/>
+                    <attribute id="V2" type="float" value="0.74902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="ghost_dog_summon_icon"/>
+                    <attribute id="U1" type="float" value="0.50097656"/>
+                    <attribute id="U2" type="float" value="0.62402344"/>
+                    <attribute id="V1" type="float" value="0.25097656"/>
+                    <attribute id="V2" type="float" value="0.37402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="gr_hb_rat_ring_icon"/>
+                    <attribute id="U1" type="float" value="0.62597656"/>
+                    <attribute id="U2" type="float" value="0.74902344"/>
+                    <attribute id="V1" type="float" value="0.87597656"/>
+                    <attribute id="V2" type="float" value="0.99902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="gr_hb_snake_ring_icon"/>
+                    <attribute id="U1" type="float" value="0.75097656"/>
+                    <attribute id="U2" type="float" value="0.87402344"/>
+                    <attribute id="V1" type="float" value="0.87597656"/>
+                    <attribute id="V2" type="float" value="0.99902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="gr_homebrew_fire_ring_icon"/>
+                    <attribute id="U1" type="float" value="0.62597656"/>
+                    <attribute id="U2" type="float" value="0.74902344"/>
+                    <attribute id="V1" type="float" value="0.62597656"/>
+                    <attribute id="V2" type="float" value="0.74902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="gr_homebrew_fireandice_ring_icon"/>
+                    <attribute id="U1" type="float" value="0.75097656"/>
+                    <attribute id="U2" type="float" value="0.87402344"/>
+                    <attribute id="V1" type="float" value="0.62597656"/>
+                    <attribute id="V2" type="float" value="0.74902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="gr_homebrew_galaxy_ring_icon"/>
+                    <attribute id="U1" type="float" value="0.87597656"/>
+                    <attribute id="U2" type="float" value="0.99902344"/>
+                    <attribute id="V1" type="float" value="0.62597656"/>
+                    <attribute id="V2" type="float" value="0.74902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="gr_homebrew_ice_ring_icon"/>
+                    <attribute id="U1" type="float" value="0.0009765625"/>
+                    <attribute id="U2" type="float" value="0.12402344"/>
+                    <attribute id="V1" type="float" value="0.75097656"/>
+                    <attribute id="V2" type="float" value="0.87402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="gr_homebrew_lightning_ring_icon"/>
+                    <attribute id="U1" type="float" value="0.12597656"/>
+                    <attribute id="U2" type="float" value="0.24902344"/>
+                    <attribute id="V1" type="float" value="0.75097656"/>
+                    <attribute id="V2" type="float" value="0.87402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="gr_homebrew_money_hotpink_ring_icon"/>
+                    <attribute id="U1" type="float" value="0.25097656"/>
+                    <attribute id="U2" type="float" value="0.37402344"/>
+                    <attribute id="V1" type="float" value="0.75097656"/>
+                    <attribute id="V2" type="float" value="0.87402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="gr_homebrew_mud_ring_icon"/>
+                    <attribute id="U1" type="float" value="0.37597656"/>
+                    <attribute id="U2" type="float" value="0.49902344"/>
+                    <attribute id="V1" type="float" value="0.75097656"/>
+                    <attribute id="V2" type="float" value="0.87402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="gr_homebrew_pink_ring_icon"/>
+                    <attribute id="U1" type="float" value="0.50097656"/>
+                    <attribute id="U2" type="float" value="0.62402344"/>
+                    <attribute id="V1" type="float" value="0.75097656"/>
+                    <attribute id="V2" type="float" value="0.87402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="gr_homebrew_poison_ring_icon"/>
+                    <attribute id="U1" type="float" value="0.62597656"/>
+                    <attribute id="U2" type="float" value="0.74902344"/>
+                    <attribute id="V1" type="float" value="0.75097656"/>
+                    <attribute id="V2" type="float" value="0.87402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="gr_homebrew_psychic_ring_icon"/>
+                    <attribute id="U1" type="float" value="0.75097656"/>
+                    <attribute id="U2" type="float" value="0.87402344"/>
+                    <attribute id="V1" type="float" value="0.75097656"/>
+                    <attribute id="V2" type="float" value="0.87402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="gr_homebrew_rainbow_ring_icon"/>
+                    <attribute id="U1" type="float" value="0.87597656"/>
+                    <attribute id="U2" type="float" value="0.99902344"/>
+                    <attribute id="V1" type="float" value="0.75097656"/>
+                    <attribute id="V2" type="float" value="0.87402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="gr_homebrew_static_ring_icon"/>
+                    <attribute id="U1" type="float" value="0.0009765625"/>
+                    <attribute id="U2" type="float" value="0.12402344"/>
+                    <attribute id="V1" type="float" value="0.87597656"/>
+                    <attribute id="V2" type="float" value="0.99902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="gr_homebrew_thunder_ring_icon"/>
+                    <attribute id="U1" type="float" value="0.12597656"/>
+                    <attribute id="U2" type="float" value="0.24902344"/>
+                    <attribute id="V1" type="float" value="0.87597656"/>
+                    <attribute id="V2" type="float" value="0.99902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="gr_homebrew_thunder_ring_icon_v3"/>
+                    <attribute id="U1" type="float" value="0.50097656"/>
+                    <attribute id="U2" type="float" value="0.62402344"/>
+                    <attribute id="V1" type="float" value="0.87597656"/>
+                    <attribute id="V2" type="float" value="0.99902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="gr_homebrew_water_ring_icon"/>
+                    <attribute id="U1" type="float" value="0.25097656"/>
+                    <attribute id="U2" type="float" value="0.37402344"/>
+                    <attribute id="V1" type="float" value="0.87597656"/>
+                    <attribute id="V2" type="float" value="0.99902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="gr_homebrew_wind_ring_icon"/>
+                    <attribute id="U1" type="float" value="0.37597656"/>
+                    <attribute id="U2" type="float" value="0.49902344"/>
+                    <attribute id="V1" type="float" value="0.87597656"/>
+                    <attribute id="V2" type="float" value="0.99902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="grease_summon_icon"/>
+                    <attribute id="U1" type="float" value="0.62597656"/>
+                    <attribute id="U2" type="float" value="0.74902344"/>
+                    <attribute id="V1" type="float" value="0.25097656"/>
+                    <attribute id="V2" type="float" value="0.37402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="gremishka_summon_icon"/>
+                    <attribute id="U1" type="float" value="0.75097656"/>
+                    <attribute id="U2" type="float" value="0.87402344"/>
+                    <attribute id="V1" type="float" value="0.25097656"/>
+                    <attribute id="V2" type="float" value="0.37402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="gutter_kink_icon_v2"/>
+                    <attribute id="U1" type="float" value="0.87597656"/>
+                    <attribute id="U2" type="float" value="0.99902344"/>
+                    <attribute id="V1" type="float" value="0.87597656"/>
+                    <attribute id="V2" type="float" value="0.99902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="magmamephit_summon_icon"/>
+                    <attribute id="U1" type="float" value="0.87597656"/>
+                    <attribute id="U2" type="float" value="0.99902344"/>
+                    <attribute id="V1" type="float" value="0.25097656"/>
+                    <attribute id="V2" type="float" value="0.37402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="nimbus_dog_icon"/>
+                    <attribute id="U1" type="float" value="0.0009765625"/>
+                    <attribute id="U2" type="float" value="0.12402344"/>
+                    <attribute id="V1" type="float" value="0.37597656"/>
+                    <attribute id="V2" type="float" value="0.49902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="ravenrubbishbinsummon_icon"/>
+                    <attribute id="U1" type="float" value="0.25097656"/>
+                    <attribute id="U2" type="float" value="0.37402344"/>
+                    <attribute id="V1" type="float" value="0.62597656"/>
+                    <attribute id="V2" type="float" value="0.74902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="rubbishravensembrace_ring_icon"/>
+                    <attribute id="U1" type="float" value="0.37597656"/>
+                    <attribute id="U2" type="float" value="0.49902344"/>
+                    <attribute id="V1" type="float" value="0.62597656"/>
+                    <attribute id="V2" type="float" value="0.74902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="rubbishreaperbin_icon_v2"/>
+                    <attribute id="U1" type="float" value="0.50097656"/>
+                    <attribute id="U2" type="float" value="0.62402344"/>
+                    <attribute id="V1" type="float" value="0.62597656"/>
+                    <attribute id="V2" type="float" value="0.74902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="sling_summon_icon"/>
+                    <attribute id="U1" type="float" value="0.0009765625"/>
+                    <attribute id="U2" type="float" value="0.12402344"/>
+                    <attribute id="V1" type="float" value="0.62597656"/>
+                    <attribute id="V2" type="float" value="0.74902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="stone_dog_summon_icon"/>
+                    <attribute id="U1" type="float" value="0.12597656"/>
+                    <attribute id="U2" type="float" value="0.24902344"/>
+                    <attribute id="V1" type="float" value="0.37597656"/>
+                    <attribute id="V2" type="float" value="0.49902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="thornseeker_summon_icon"/>
+                    <attribute id="U1" type="float" value="0.25097656"/>
+                    <attribute id="U2" type="float" value="0.37402344"/>
+                    <attribute id="V1" type="float" value="0.37597656"/>
+                    <attribute id="V2" type="float" value="0.49902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="vexsnake_bite_icon"/>
+                    <attribute id="U1" type="float" value="0.37597656"/>
+                    <attribute id="U2" type="float" value="0.49902344"/>
+                    <attribute id="V1" type="float" value="0.37597656"/>
+                    <attribute id="V2" type="float" value="0.49902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="vexsnake_bite_icon_v2"/>
+                    <attribute id="U1" type="float" value="0.87597656"/>
+                    <attribute id="U2" type="float" value="0.99902344"/>
+                    <attribute id="V1" type="float" value="0.37597656"/>
+                    <attribute id="V2" type="float" value="0.49902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="vexsnake_burrow_icon"/>
+                    <attribute id="U1" type="float" value="0.50097656"/>
+                    <attribute id="U2" type="float" value="0.62402344"/>
+                    <attribute id="V1" type="float" value="0.37597656"/>
+                    <attribute id="V2" type="float" value="0.49902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="vexsnake_lightning_icon"/>
+                    <attribute id="U1" type="float" value="0.62597656"/>
+                    <attribute id="U2" type="float" value="0.74902344"/>
+                    <attribute id="V1" type="float" value="0.37597656"/>
+                    <attribute id="V2" type="float" value="0.49902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="vexsnake_summon_icon"/>
+                    <attribute id="U1" type="float" value="0.75097656"/>
+                    <attribute id="U2" type="float" value="0.87402344"/>
+                    <attribute id="V1" type="float" value="0.37597656"/>
+                    <attribute id="V2" type="float" value="0.49902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="vexsnake_summon_icon_v2"/>
+                    <attribute id="U1" type="float" value="0.0009765625"/>
+                    <attribute id="U2" type="float" value="0.12402344"/>
+                    <attribute id="V1" type="float" value="0.50097656"/>
+                    <attribute id="V2" type="float" value="0.62402344"/>
+                </node>
+            </children>
+        </node>
+    </region>
+    <region id="TextureAtlasInfo">
+        <node id="root">
+            <children>
+                <node id="TextureAtlasIconSize">
+                    <attribute id="Height" type="int32" value="64"/>
+                    <attribute id="Width" type="int32" value="64"/>
+                </node>
+                <node id="TextureAtlasPath">
+                    <attribute id="Path" type="string" value="Assets/Textures/Icons/GR_V3_Atlas.dds"/>
+                    <attribute id="UUID" type="FixedString" value="a3648758-e1d8-9dd4-a160-8e70ddbacf2b"/>
+                </node>
+                <node id="TextureAtlasTextureSize">
+                    <attribute id="Height" type="int32" value="512"/>
+                    <attribute id="Width" type="int32" value="512"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

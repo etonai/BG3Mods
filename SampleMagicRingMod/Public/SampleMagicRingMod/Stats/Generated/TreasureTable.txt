@@ -1,0 +1,22 @@
+new treasuretable "DEN_Entrance_Trade"
+CanMerge 1
+new subtable "1,1"
+object category "I_SMR_Ring_Magic_1",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_SMR_Ring_Magic_2",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_SMR_Ring_Magic_3",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_SMR_Ring_Magic_4",1,0,0,0,0,0,0,0
+
+
+new treasuretable "TUT_Start_Chest"
+CanMerge 1
+new subtable "1,1"
+object category "I_SMR_Ring_Magic_1",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_SMR_Ring_Magic_2",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_SMR_Ring_Magic_3",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_SMR_Ring_Magic_4",1,0,0,0,0,0,0,0

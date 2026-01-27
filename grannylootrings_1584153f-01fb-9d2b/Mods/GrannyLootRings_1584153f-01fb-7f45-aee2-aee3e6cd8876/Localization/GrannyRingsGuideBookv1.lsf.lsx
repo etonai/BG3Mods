@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="3" revision="0" build="302" lslib_meta="v1,bswap_guids" />
+	<region id="TranslatedStringKeys">
+		<node id="TranslatedStringKeys">
+			<children>
+				<node id="TranslatedStringKey">
+					<attribute id="Content" type="TranslatedString" handle="h9b8aa2f9g7bf2gd407g4066g9a1cd1e08a09" version="3" />
+					<attribute id="UUID" type="FixedString" value="BOOK_GRANNYRINGS_V3" />
+					<attribute id="Speaker" type="FixedString" value="" />
+					<attribute id="ExtraData" type="LSString" value="" />
+					<attribute id="Stub" type="bool" value="True" />
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

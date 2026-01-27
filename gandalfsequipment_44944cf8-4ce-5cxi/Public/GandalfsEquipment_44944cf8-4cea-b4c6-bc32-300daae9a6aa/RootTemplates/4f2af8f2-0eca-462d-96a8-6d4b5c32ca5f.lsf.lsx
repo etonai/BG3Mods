@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="7" revision="1" build="3" lslib_meta="v1,bswap_guids,lsf_keys_adjacency" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="4f2af8f2-0eca-462d-96a8-6d4b5c32ca5f" />
+					<attribute id="Name" type="LSString" value="Ink850_Loot_MaterialStaff_Gandalf_Univ" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="ParentTemplateId" type="FixedString" value="497effc5-d8d9-4c6c-afea-7accc889b1b4" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hc5a5715dg4798g9849ge252g782d8e1c86ba" version="2" />
+					<attribute id="Stats" type="FixedString" value="Ink850_StatObj_MaterialStaff_Gandalf_Univ" />
+					<attribute id="OnUseDescription" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="0" />
+					<attribute id="Description" type="TranslatedString" handle="h285d3cdcg3e48gcf2dg78ecg55a5709a3b31" version="2" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h390e5101g3b33ge62dg17e4gfda2f6eff2af" version="1" />
+					<children>
+						<node id="OnUsePeaceActions" />
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

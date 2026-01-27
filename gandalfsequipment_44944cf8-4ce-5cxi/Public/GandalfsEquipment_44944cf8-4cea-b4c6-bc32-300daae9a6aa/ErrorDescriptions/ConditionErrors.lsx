@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="7" revision="1" build="3"/>
+    <region id="ConditionErrors">
+        <node id="root">
+            <children>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h36da19a6g1d50g6d81g03eag6a4940cc23ad" version="2"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CE_Tag_ISTAR_DUALWIELD_False"/>
+                    <attribute id="UUID" type="guid" value="1c26a7dc-91aa-4b70-a2f7-2a2466de8f48"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="8" revision="0" build="500" lslib_meta="v1,bswap_guids,lsf_keys_adjacency" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="5b6bc37a-8ac6-4e05-b360-a9257fa0b6eb" />
+					<attribute id="Name" type="LSString" value="GR_Gond_WPN_WATCHER_Greatsword_A" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="ParentTemplateId" type="FixedString" value="2798c9f8-b06b-44d4-9d6c-e6d982c502fa" />
+					<attribute id="VisualTemplate" type="FixedString" value="2f1d55d2-34cf-9f7a-5dea-c9a16af23e5a" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h879dc491g490egf67egdfbeg1853aa0f746a" version="1" />
+					<attribute id="Stats" type="FixedString" value="GR_Gond_WPN_WATCHER_Greatsword_A" />
+					<attribute id="CanBePickedUp" type="bool" value="True" />
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

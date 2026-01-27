@@ -1,0 +1,9 @@
+new entry "_CombatWeapons_override"
+type "Weapon"
+using "_CombatWeapons"
+
+new entry "GR_Gond_WPN_WATCHER_Greatsword_A"
+type "Weapon"
+using "WPN_Watcher_Greatsword"
+data "RootTemplate" "5b6bc37a-8ac6-4e05-b360-a9257fa0b6eb"
+

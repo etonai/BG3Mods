@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="7" revision="1" build="3" lslib_meta="v1,bswap_guids,lsf_keys_adjacency" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="f55f554d-3836-4db3-916b-979ffa56e4d1" />
+					<attribute id="Name" type="LSString" value="Ink850_Loot_SewingTool_Gandalf" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="ParentTemplateId" type="FixedString" value="68621363-4d85-4c74-a7c5-cefe7ae36d15" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h9d702a6ega87dg1d5eg1e9fgafdbb734ec81" version="7" />
+					<attribute id="Icon" type="FixedString" value="Ink850_Clothing_UpgradeTool" />
+					<attribute id="Stats" type="FixedString" value="Ink850_Gandalf_UpgradeTool_Clothing" />
+					<attribute id="StoryItem" type="bool" value="False" />
+					<attribute id="UseOnDistance" type="bool" value="False" />
+					<attribute id="UseRemotely" type="bool" value="False" />
+					<attribute id="OnUseDescription" type="TranslatedString" handle="hc6dfe21fgf032g6a8dg1b30g3877d648228a" version="7" />
+					<attribute id="maxStackAmount" type="int32" value="1" />
+					<attribute id="Description" type="TranslatedString" handle="hdd8880acg6613gfb00g7d87g6ac4514b9936" version="7" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h0d462c03gd531g0e75ge104g083ff508f49d" version="7" />
+					<children>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="23" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+											<attribute id="CombineSlots" type="int8" value="2" />
+											<attribute id="IsBase" type="bool" value="True" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="7" revision="1" build="3" lslib_meta="v1,bswap_guids,lsf_keys_adjacency" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="1b266ffb-0f8f-47da-9855-1c94fb191a91" />
+					<attribute id="Name" type="LSString" value="Ink850_Wpn_Staff_Gandalf_3" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="ParentTemplateId" type="FixedString" value="b5c85eb7-ed4f-4e90-a317-5547ddaf3650" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hcda3f4d3gdd01g8c3cg93aeg00f4de02f5b5" version="6" />
+					<attribute id="Icon" type="FixedString" value="Item_WPN_HUM_Magicstaff_E_0" />
+					<attribute id="Stats" type="FixedString" value="Ink850_StatWpn_Staff_Gandalf_3" />
+					<attribute id="Description" type="TranslatedString" handle="h57b97065g978eg1f65g0212g0d9451b98450" version="6" />
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

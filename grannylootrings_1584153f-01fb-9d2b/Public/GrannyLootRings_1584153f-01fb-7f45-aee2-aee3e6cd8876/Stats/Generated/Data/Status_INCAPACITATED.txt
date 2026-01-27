@@ -1,0 +1,13 @@
+new entry "GR_SLEEPING_DRAGONS"
+type "StatusData"
+data "StatusType" "INCAPACITATED"
+using "SLEEPING"
+data "DisplayName" "h035aa223g62b6gafbbg0516g539e111146a7;1"
+data "Description" "h2e5c7fbag9cebg6a27g51a7g09f45611e9df;1"
+data "FormatColor" "Pink"
+data "Boosts" "AbilityFailedSavingThrow(Strength);AbilityFailedSavingThrow(Dexterity);CriticalHit(AttackTarget,Success,Always,3);DetectDisturbancesBlock(true);Advantage(AttackTarget);SightRangeOverride(0);RollBonus(SkillCheck, -20, SleightOfHand);RollBonus(SavingThrow, -20, Dexterity);RollBonus(RawAbility, -20, Dexterity);"
+data "RemoveConditions" "TotalDamageDoneGreaterThan(10) or HasStatus('SG_Prone')"
+data "RemoveEvents" "OnStatusApplied"
+data "StatusGroups" "SG_Unconscious;SG_Condition"
+data "OnRemoveFunctors" "ApplyStatus(Dazed, 100, 1)"
+

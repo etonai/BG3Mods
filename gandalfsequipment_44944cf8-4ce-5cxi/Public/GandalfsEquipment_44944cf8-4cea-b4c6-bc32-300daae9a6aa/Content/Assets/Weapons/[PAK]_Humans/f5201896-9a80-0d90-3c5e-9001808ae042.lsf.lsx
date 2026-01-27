@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="7" revision="1" build="3" lslib_meta="v1,bswap_guids,lsf_keys_adjacency" />
+	<region id="EffectBank">
+		<node id="EffectBank">
+			<children>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="f5201896-9a80-0d90-3c5e-9001808ae042" />
+					<attribute id="Name" type="LSString" value="Ink850_VFX_Actions_Prepare_Range_Arrow_Lightning_Weapon_01_000" />
+					<attribute id="SourceFile" type="LSString" value="Public/GandalfsEquipment_44944cf8-4cea-b4c6-bc32-300daae9a6aa/Assets/Effects/Effects_Banks/Actions/Prepare/Ink850_VFX_Actions_Prepare_Range_Arrow_Lightning_Weapon_01_000.lsfx" />
+					<attribute id="EffectName" type="FixedString" value="Ink850_VFX_Actions_Prepare_Range_Arrow_Lightning_Weapon_01_000" />
+					<attribute id="BoundsMin" type="fvec3" value="-2.5 -2.5 -2.5" />
+					<attribute id="BoundsMax" type="fvec3" value="2.5 2.5 2.5" />
+					<attribute id="CullingDistance" type="float" value="30" />
+					<attribute id="Duration" type="float" value="1" />
+					<attribute id="Looping" type="bool" value="True" />
+					<attribute id="InterruptionMode" type="uint32" value="0" />
+					<children>
+						<node id="Dependencies" />
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

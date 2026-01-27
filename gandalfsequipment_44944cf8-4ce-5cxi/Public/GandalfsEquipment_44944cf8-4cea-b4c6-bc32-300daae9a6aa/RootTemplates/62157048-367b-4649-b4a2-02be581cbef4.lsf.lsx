@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="7" revision="1" build="3" lslib_meta="v1,bswap_guids,lsf_keys_adjacency" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="62157048-367b-4649-b4a2-02be581cbef4" />
+					<attribute id="Name" type="LSString" value="Ink850_Wpn_Staff_Gandalf_0" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="ParentTemplateId" type="FixedString" value="b5c85eb7-ed4f-4e90-a317-5547ddaf3650" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h0db0aaa1g0101g2814g64a4g1359ef817c22" version="12" />
+					<attribute id="Stats" type="FixedString" value="Ink850_StatWpn_Staff_Gandalf_0" />
+					<attribute id="Hostile" type="bool" value="False" />
+					<attribute id="OnUseDescription" type="TranslatedString" handle="hc38cf572g2912g654egf59ag26a0bef633f8" version="10" />
+					<attribute id="Description" type="TranslatedString" handle="h5c78d78dg925bgb7ffgb000g527d1f4007b3" version="12" />
+					<attribute id="PermanentWarnings" type="FixedString" value="" />
+					<children>
+						<node id="OnUsePeaceActions" />
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="8" revision="0" build="500" lslib_meta="v1,bswap_guids,lsf_keys_adjacency" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="f65d0cf1-ab71-4bfd-a014-5aac8dd12b57" />
+					<attribute id="Name" type="LSString" value="GR_BLIGHT_NeedleBlight_Summon" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<attribute id="ParentTemplateId" type="FixedString" value="cb9eb989-68f1-47a6-af63-b69967260a41" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="950614ec-c898-c384-3bbe-3cb58a07cfde" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h65de9a3ag7cc5g1fdcg8eeag095bcf9c2e34" version="6" />
+					<attribute id="Icon" type="FixedString" value="74dc4182-a382-2bef-d8d2-6abbb18a6242-_(Icon_NeedleBlight)" />
+					<attribute id="Stats" type="FixedString" value="GR_BLIGHT_NeedleBlight_Summon" />
+					<attribute id="LadderLoopSpeed" type="float" value="3.75" />
+					<attribute id="BloodType" type="FixedString" value="Water" />
+					<attribute id="BloodSurfaceType" type="FixedString" value="SurfaceWater" />
+					<attribute id="LevelOverride" type="int32" value="3" />
+					<attribute id="SoundInitEvent" type="FixedString" value="" />
+					<attribute id="SoundMovementStartEvent" type="FixedString" value="9e5c57c7-b115-802a-e9cd-33934b369790" />
+					<attribute id="SoundMovementStopEvent" type="FixedString" value="" />
+					<attribute id="VocalAttackResourceID" type="FixedString" value="d7119380-c31a-a022-975c-6a144559eda2" />
+					<attribute id="VocalDeathResourceID" type="FixedString" value="1cfb4336-04ed-b23f-1897-606cb861cc18" />
+					<attribute id="VocalDodgeResourceID" type="FixedString" value="18e4fc1d-d86f-d976-5ea0-aff68344fd4f" />
+					<attribute id="VocalPainResourceID" type="FixedString" value="bb6ab296-b863-cf43-5427-ebcd298c2bf9" />
+					<attribute id="VocalAnticipationResourceID" type="FixedString" value="18e4fc1d-d86f-d976-5ea0-aff68344fd4f" />
+					<attribute id="CharacterVisualResourceID" type="FixedString" value="74dc4182-a382-2bef-d8d2-6abbb18a6242" />
+					<attribute id="Archetype" type="FixedString" value="beast_ranged" />
+					<attribute id="AiHint" type="guid" value="f5614548-32cc-4e2e-b108-32e5d532471e" />
+					<children>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="b47643e0-583c-4808-b108-f6d3b605b0a9" />
+								</node>
+							</children>
+						</node>
+						<node id="OnDeathActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="10" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+											<attribute id="SurfaceType" type="FixedString" value="SurfaceShadowCursedVines" />
+											<attribute id="LifeTime" type="float" value="-1" />
+											<attribute id="Timeout" type="float" value="0" />
+											<attribute id="TotalCells" type="int32" value="10" />
+											<attribute id="CellAtGrow" type="int32" value="2" />
+											<attribute id="GrowTimer" type="float" value="0.4" />
+											<attribute id="ExternalCauseAsSurfaceOwner" type="bool" value="True" />
+											<attribute id="ApplyDeathTypeBloodCheck" type="bool" value="True" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="SkillList">
+							<children>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="Projectile_GR_Burst_BlightNeedle_Death" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="Skill" type="FixedString" value="Projectile_GR_Needles_Blight_Needle_variant" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="LocomotionParams">
+							<attribute id="MovementAcceleration" type="float" value="12" />
+							<attribute id="MovementSpeedWalk" type="float" value="2" />
+							<attribute id="MovementSpeedRun" type="float" value="3.75" />
+							<attribute id="MaxDashDistance" type="float" value="3" />
+							<attribute id="WorldClimbingBlendspace_DownA" type="FixedString" value="575b6b01-b21a-62ff-7883-433fe47bf23a" />
+							<attribute id="WorldClimbingBlendspace_DownB" type="FixedString" value="4a6f8da3-6276-967f-8f1a-13f41c17c949" />
+							<attribute id="WorldClimbingBlendspace_UpA" type="FixedString" value="b566ed99-b547-2b59-7c7e-7ab982e9675b" />
+							<attribute id="WorldClimbingBlendspace_UpB" type="FixedString" value="6944f681-0d92-8f01-8c1d-f76e5505d236" />
+							<attribute id="WorldClimbingRadius" type="float" value="0.4" />
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

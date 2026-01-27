@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="8" revision="0" build="500" lslib_meta="v1,bswap_guids,lsf_keys_adjacency" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="e7c0f096-10e5-4c93-b0da-6f34ff019d20" />
+					<attribute id="Name" type="LSString" value="GR_RubbishReapers_Bin" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="ParentTemplateId" type="FixedString" value="8188cbf2-4618-401e-b9e1-c2be419efdb8" />
+					<attribute id="VisualTemplate" type="FixedString" value="a7f5abf3-9c14-1bd6-06e1-f09a03e36ab5" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="a15f6e92-3955-c047-b0b9-170ec0b74329" />
+					<attribute id="RecieveDecal" type="bool" value="False" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h32b5850fg9464g6a4fgb115gf82ea995082a" version="6" />
+					<attribute id="Icon" type="FixedString" value="rubbishreaperbin_icon_v2" />
+					<attribute id="Stats" type="FixedString" value="GR_RubbishReapers_Bin" />
+					<attribute id="TreasureOnDestroy" type="bool" value="False" />
+					<attribute id="CanBePickedUp" type="bool" value="True" />
+					<attribute id="CanBeMoved" type="bool" value="True" />
+					<attribute id="CanBeImprovisedWeapon" type="bool" value="True" />
+					<attribute id="PickupSound" type="FixedString" value="bde30693-165c-4af7-b751-eda032329605" />
+					<attribute id="InventoryType" type="uint8" value="46" />
+					<attribute id="Description" type="TranslatedString" handle="hba4840eagc023ga87cgb21fg539c4f7f9544" version="6" />
+					<children>
+						<node id="Bounds">
+							<children>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="0" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.33190852 0.008066714 -0.21777108" />
+									<attribute id="Max" type="fvec3" value="0.33190852 0.50248957 0.20823029" />
+									<attribute id="Radius" type="float" value="0.2540385" />
+									<attribute id="Height" type="float" value="1.1683" />
+								</node>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="1" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.66381705 0.008066714 -0.43554217" />
+									<attribute id="Max" type="fvec3" value="0.66381705 0.50248957 0.41646057" />
+									<attribute id="Radius" type="float" value="0.508077" />
+									<attribute id="Height" type="float" value="1.1683" />
+								</node>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="2" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.66381705 0.008066714 -0.43554217" />
+									<attribute id="Max" type="fvec3" value="0.66381705 0.50248957 0.41646057" />
+									<attribute id="Radius" type="float" value="0.508077" />
+									<attribute id="Height" type="float" value="1.1683" />
+								</node>
+							</children>
+						</node>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="1" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="OnDestroyActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="26" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+											<attribute id="ActivateSoundEvent" type="FixedString" value="3075b978-d126-f377-3737-218b50a62fea" />
+											<attribute id="PlayOnHUD" type="bool" value="False" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="InventoryList" />
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="DEBRIS_THRESHOLD_LESSER" />
+								</node>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="GHOST_FX_RED" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

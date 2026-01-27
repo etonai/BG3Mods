@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="7" revision="1" build="3" lslib_meta="v1,bswap_guids,lsf_keys_adjacency" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="022b0b54-0405-4b77-9b8c-099930ebeb90" />
+					<attribute id="Name" type="LSString" value="Ink850_Wpn_Sword_Gandalf_1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="ParentTemplateId" type="FixedString" value="d116f35c-4399-408c-ba90-b455a5d29a1f" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h1af575a8gd374g7eb1g2697g8231063924b8" version="6" />
+					<attribute id="Stats" type="FixedString" value="Ink850_StatWpn_Sword_Gandalf_1" />
+					<attribute id="Description" type="TranslatedString" handle="h85515226gdfe2g4119g72fdg0eb0391059a4" version="2" />
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

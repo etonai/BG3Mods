@@ -1,0 +1,6 @@
+new entry "GR_SHAR_SHADOWCLOAK_ACTIVE"
+type "StatusData"
+data "StatusType" "INVISIBLE"
+using "ONE_WITH_SHADOWS"
+data "Boosts" "IgnoreLeaveAttackRange;Invisibility();Advantage(AttackRoll);DetectDisturbancesBlock(true);AC(1);RollBonus(SavingThrow,1);Resistance(All, Resistant);"
+

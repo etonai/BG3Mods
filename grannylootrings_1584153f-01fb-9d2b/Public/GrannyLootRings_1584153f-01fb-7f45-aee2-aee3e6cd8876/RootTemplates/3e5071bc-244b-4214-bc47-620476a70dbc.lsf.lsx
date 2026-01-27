@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="8" revision="0" build="500" lslib_meta="v1,bswap_guids,lsf_keys_adjacency" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="3e5071bc-244b-4214-bc47-620476a70dbc" />
+					<attribute id="Name" type="LSString" value="GRI_Poop_A_Throwable" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="ParentTemplateId" type="FixedString" value="c9e45e5a-f089-480b-ab3a-7f5f76dccc3b" />
+					<attribute id="VisualTemplate" type="FixedString" value="e6eb9c8b-3f0d-53a2-e898-4a47a0926438" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="cb1eab50-58b6-12ee-0ca0-fd54c5687e8b" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h16f163f5gac4eg4e0ega3d4ge7b8b6e57420" version="10" />
+					<attribute id="Icon" type="FixedString" value="gr_nauseouspoo_icon" />
+					<attribute id="Stats" type="FixedString" value="GRI_Poop_A_Throwable" />
+					<attribute id="maxStackAmount" type="int32" value="99" />
+					<attribute id="InventoryMoveSound" type="FixedString" value="fbd0b309-df4a-05c2-0b23-66e45f22a5e8" />
+					<attribute id="DropSound" type="FixedString" value="fbd0b309-df4a-05c2-0b23-66e45f22a5e8" />
+					<attribute id="PickupSound" type="FixedString" value="f4a8e400-c202-1d9c-1260-00314d8e9170" />
+					<attribute id="Description" type="TranslatedString" handle="h9b6e4460ga3d7g5a45ga290gbf288f41a776" version="10" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="hbc67886fg5368g140bg1685g0e1d7caa8989" version="2" />
+					<attribute id="ShortDescription" type="TranslatedString" handle="hccde7119ga8c3g7070g8b3ege4ec707e2963" version="4" />
+					<attribute id="UnknownDescription" type="TranslatedString" handle="h74ab03cag0392g7dbfgadf1g2d8cd812a5b2" version="3" />
+					<children>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="fe0d86c3-a562-430e-a633-d8bf9bb27284" />
+								</node>
+							</children>
+						</node>
+						<node id="Bounds">
+							<children>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="0" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.15977202 -0.0015693903 -0.046352707" />
+									<attribute id="Max" type="fvec3" value="0.15419902 0.09933996 0.027013116" />
+									<attribute id="Radius" type="float" value="0.08158816" />
+									<attribute id="Height" type="float" value="0.10090934" />
+								</node>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="1" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.31954405 -0.0015693903 -0.09270541" />
+									<attribute id="Max" type="fvec3" value="0.30839804 0.09933996 0.05402623" />
+									<attribute id="Radius" type="float" value="0.16317631" />
+									<attribute id="Height" type="float" value="0.10090934" />
+								</node>
+								<node id="Bound">
+									<attribute id="Type" type="uint8" value="2" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Min" type="fvec3" value="-0.31954405 -0.0015693903 -0.09270541" />
+									<attribute id="Max" type="fvec3" value="0.30839804 0.09933996 0.05402623" />
+									<attribute id="Radius" type="float" value="0.16317631" />
+									<attribute id="Height" type="float" value="0.10090934" />
+								</node>
+							</children>
+						</node>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="32" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+											<attribute id="FallbackPreviewRadius" type="float" value="0" />
+										</node>
+									</children>
+								</node>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="7" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="88e837ec-7a04-44d2-b1ce-35d083c5390a" />
+											<attribute id="Conditions" type="LSString" value="" />
+											<attribute id="StatsId" type="FixedString" value="GR_DOO_DOO_CONSUME" />
+											<attribute id="StatusDuration" type="int32" value="1" />
+											<attribute id="Consume" type="bool" value="True" />
+											<attribute id="IsHiddenStatus" type="bool" value="False" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="OnDestroyActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="26" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="" />
+											<attribute id="ActivateSoundEvent" type="FixedString" value="7a05bb33-9abf-d774-b460-aeb076564eaf" />
+											<attribute id="PlayOnHUD" type="bool" value="False" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Scripts">
+							<children>
+								<node id="Script">
+									<attribute id="UUID" type="FixedString" value="a557ab71-77f3-4b0c-8174-f605e51c90c7" />
+									<children>
+										<node id="Parameters" key="MapKey">
+											<children>
+												<node id="Parameter" key="MapKey">
+													<attribute id="MapKey" type="FixedString" value="HardcoreOnly" />
+													<attribute id="Type" type="int32" value="1" />
+													<attribute id="Value" type="LSString" value="0" />
+												</node>
+												<node id="Parameter" key="MapKey">
+													<attribute id="MapKey" type="FixedString" value="LifeTime" />
+													<attribute id="Type" type="int32" value="2" />
+													<attribute id="Value" type="LSString" value="0" />
+												</node>
+												<node id="Parameter" key="MapKey">
+													<attribute id="MapKey" type="FixedString" value="ProjectileSpell" />
+													<attribute id="Type" type="int32" value="9" />
+													<attribute id="Value" type="LSString" value="0xbaadf00d" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="ScriptOverrides">
+							<children>
+								<node id="ScriptOverrides">
+									<children>
+										<node id="Object" key="MapKey">
+											<attribute id="MapKey" type="FixedString" value="a557ab71-77f3-4b0c-8174-f605e51c90c7" />
+											<children>
+												<node id="ScriptOverrides">
+													<children>
+														<node id="ScriptVariables">
+															<children>
+																<node id="Object" key="MapKey">
+																	<attribute id="MapKey" type="FixedString" value="ProjectileSpell" />
+																	<children>
+																		<node id="ScriptVariables">
+																			<attribute id="Value" type="LSString" value="Projectile_GR_Sewer_PooThrow" />
+																		</node>
+																	</children>
+																</node>
+															</children>
+														</node>
+													</children>
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

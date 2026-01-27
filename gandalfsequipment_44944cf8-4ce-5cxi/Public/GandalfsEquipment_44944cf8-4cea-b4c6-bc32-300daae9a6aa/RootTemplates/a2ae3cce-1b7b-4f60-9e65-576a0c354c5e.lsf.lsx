@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="7" revision="1" build="3" lslib_meta="v1,bswap_guids,lsf_keys_adjacency" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="a2ae3cce-1b7b-4f60-9e65-576a0c354c5e" />
+					<attribute id="Name" type="LSString" value="Ink850_Wpn_Staff_Gandalf_2" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="ParentTemplateId" type="FixedString" value="b5c85eb7-ed4f-4e90-a317-5547ddaf3650" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h023a6906g0861g9835g662dgbca1195fac5d" version="9" />
+					<attribute id="Icon" type="FixedString" value="Item_S_DEN_TunnelStaff" />
+					<attribute id="Stats" type="FixedString" value="Ink850_StatWpn_Staff_Gandalf_2" />
+					<attribute id="Description" type="TranslatedString" handle="ha88550c5g366fgd345g80e1gbc881b3200e5" version="9" />
+					<children>
+						<node id="OnUsePeaceActions" />
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

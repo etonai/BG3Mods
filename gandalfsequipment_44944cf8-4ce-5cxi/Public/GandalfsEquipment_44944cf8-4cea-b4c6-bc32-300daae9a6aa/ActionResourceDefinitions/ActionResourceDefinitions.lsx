@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="7" revision="1" build="3"/>
+    <region id="ActionResourceDefinitions">
+        <node id="root">
+            <children>
+                <node id="ActionResourceDefinition">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hedb967dcg6806g8941g6da7gf25d9f772393" version="1"/>
+                    <attribute id="IsHidden" type="bool" value="true"/>
+                    <attribute id="Name" type="FixedString" value="Ink850_Interrupt_AnorShield"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Never"/>
+                    <attribute id="UUID" type="guid" value="98bb35d4-68c3-4e6c-9a87-9a14667a3c6f"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

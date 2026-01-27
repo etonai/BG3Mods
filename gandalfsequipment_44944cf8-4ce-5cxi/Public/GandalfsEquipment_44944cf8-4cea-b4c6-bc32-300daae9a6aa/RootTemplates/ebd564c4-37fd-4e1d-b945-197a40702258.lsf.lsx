@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="7" revision="1" build="3" lslib_meta="v1,bswap_guids,lsf_keys_adjacency" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="ebd564c4-37fd-4e1d-b945-197a40702258" />
+					<attribute id="Name" type="LSString" value="Ink850_Loot_MaterialSword_Gandalf_2" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="ParentTemplateId" type="FixedString" value="8233e8e7-55c9-4f72-8e7b-5f3dc36e250f" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h0d5a614fga6aeg0c39g9cd0g2c2a058e675b" version="1" />
+					<attribute id="Stats" type="FixedString" value="Ink850_StatObj_MaterialSword_Gandalf_2" />
+					<attribute id="Description" type="TranslatedString" handle="hed76e8dcg5caag352bg6c6fg3ba9efb763e4" version="1" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="h2d99aba9gd0efg4b7cgd642g24437ea54cb1" version="1" />
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

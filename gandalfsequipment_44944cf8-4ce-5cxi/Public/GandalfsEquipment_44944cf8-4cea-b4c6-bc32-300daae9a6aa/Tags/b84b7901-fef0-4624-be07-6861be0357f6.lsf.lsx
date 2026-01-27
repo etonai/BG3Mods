@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="7" revision="1" build="3" lslib_meta="v1,bswap_guids,lsf_keys_adjacency" />
+	<region id="Tags">
+		<node id="Tags">
+			<attribute id="UUID" type="guid" value="b84b7901-fef0-4624-be07-6861be0357f6" />
+			<attribute id="Name" type="FixedString" value="ISTAR_BROKENSTAFF" />
+			<attribute id="DisplayName" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="0" />
+			<attribute id="DisplayDescription" type="TranslatedString" handle="ls::TranslatedStringRepository::s_HandleUnknown" version="0" />
+			<attribute id="Icon" type="FixedString" value="" />
+			<attribute id="Description" type="LSString" value="decide if the staff is broken for flame of anor" />
+			<children>
+				<node id="Categories">
+					<children>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="Code" />
+						</node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="SpellCondition" />
+						</node>
+					</children>
+				</node>
+				<node id="Properties" />
+			</children>
+		</node>
+	</region>
+</save>

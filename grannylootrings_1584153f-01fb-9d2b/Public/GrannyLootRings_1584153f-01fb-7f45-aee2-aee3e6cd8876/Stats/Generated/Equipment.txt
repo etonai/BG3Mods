@@ -1,0 +1,5 @@
+new equipment "GR_Morph_Humans_Male_Cultist_Bhaal_Reaper"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "MAG_Murderous_Dagger"
+
