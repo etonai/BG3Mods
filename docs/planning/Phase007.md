@@ -281,8 +281,9 @@ Create a **Magus Circlet** with the appearance of the Warped Headband of Intelle
 
 | Status | Power | Description | Source |
 |--------|-------|-------------|--------|
-| [ ] | **Dauntless** | Advantage on Intimidation and Insight checks | Cloth of Authority |
-| [ ] | **(More to be added)** | Additional powers TBD | - |
+| [ ] | **Dauntless** | Immunity to Frightened condition | Cloth of Authority |
+| [ ] | **Speak with Dead** | Cast Speak with Dead (once per short rest) | Amulet of Lost Voices (WW mod) |
+| [ ] | **Speak with Animals** | Cast Speak with Animals (once per short rest) | Amulet of Lost Voices (WW mod) |
 
 ---
 
@@ -310,16 +311,42 @@ data "PassivesOnEquip" "MAG_LC_Cyric_FearImmunity_Amulet_Passive;MAG_ArmorOfAuth
 data "Unique" "1"
 ```
 
-**MAG_ArmorOfAuthority_Passive** (Dauntless):
+**MAG_LC_Cyric_FearImmunity_Amulet_Passive** (Dauntless):
+- Immunity to Frightened condition
+- This is the "Dauntless" passive from the Cloth of Authority
+
+#### Amulet of Lost Voices (WW_Wizard_Equipment mod)
 ```
-new entry "MAG_ArmorOfAuthority_Passive"
-type "PassiveData"
-data "DisplayName" "h78aa5befg4b75g4115gb534g25d949fe9089;1"
-data "Description" "h54078601g3f91g4beeg8c81g10ce13d5fba1;2"
-data "Boosts" "Advantage(Skill, Intimidation);Advantage(Skill, Insight)"
+new entry "WW_Wizard_Equipment_Amulet_of_Lost_Voices"
+type "Armor"
+using "_Amulet_Magic"
+data "RootTemplate" "4630871d-95ea-4d29-8421-fcb4fe2e024a"
+data "Rarity" "Uncommon"
+data "Boosts" "UnlockSpell(WW_Target_SpeakWithDead);UnlockSpell(WW_Shout_SpeakWithAnimals)"
+data "Unique" "1"
 ```
-- Advantage on Intimidation checks
-- Advantage on Insight checks
+
+**WW_Target_SpeakWithDead**:
+```
+new entry "WW_Target_SpeakWithDead"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_SpeakWithDead"
+data "Cooldown" "OncePerRestPerItem"
+data "UseCosts" "ActionPoint:1"
+```
+- Speak with Dead, once per short rest
+
+**WW_Shout_SpeakWithAnimals**:
+```
+new entry "WW_Shout_SpeakWithAnimals"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_SpeakWithAnimals"
+data "Cooldown" "OncePerRestPerItem"
+data "UseCosts" "ActionPoint:1"
+```
+- Speak with Animals, once per short rest
 
 ---
 
@@ -345,12 +372,17 @@ type "Armor"
 using "_Head_Magic_Circlet"
 data "RootTemplate" "a2b3c4d5-e6f7-4a8b-9c0d-1e2f3a4b5c6d"
 data "Rarity" "Legendary"
-data "PassivesOnEquip" "MAG_ArmorOfAuthority_Passive"
+data "Boosts" "UnlockSpell(WW_Target_SpeakWithDead);UnlockSpell(WW_Shout_SpeakWithAnimals)"
+data "PassivesOnEquip" "MAG_LC_Cyric_FearImmunity_Amulet_Passive"
 data "Unique" "1"
 ```
 
+**Boosts breakdown:**
+- `UnlockSpell(WW_Target_SpeakWithDead)` - Speak with Dead (once per short rest, from WW mod)
+- `UnlockSpell(WW_Shout_SpeakWithAnimals)` - Speak with Animals (once per short rest, from WW mod)
+
 **PassivesOnEquip breakdown:**
-- `MAG_ArmorOfAuthority_Passive` - Dauntless: Advantage on Intimidation and Insight (from Cloth of Authority)
+- `MAG_LC_Cyric_FearImmunity_Amulet_Passive` - Dauntless: Immunity to Frightened (from Cloth of Authority)
 
 #### 2. RootTemplates/merged.lsx AND merged.lsf.lsx
 
@@ -379,7 +411,7 @@ Add GameObjects node for Circlet (using Headband of Intellect appearance):
 Add localization entries:
 ```xml
 <content contentuid="h3c4d5e6fga7b8g9c0dgd1e2gf3a4b5c6d7e8" version="1">Magus Circlet</content>
-<content contentuid="h4d5e6f7agb8c9gd0e1ge2f3ga4b5c6d7e8f9" version="1">A circlet worn by archmages of old. Grants Dauntless: Advantage on Intimidation and Insight checks.</content>
+<content contentuid="h4d5e6f7agb8c9gd0e1ge2f3ga4b5c6d7e8f9" version="1">A circlet worn by archmages of old. Grants Dauntless (immunity to Frightened), Speak with Dead, and Speak with Animals.</content>
 ```
 
 #### 4. OneTimeRewards/OneTimeRewards.lsx
@@ -533,7 +565,9 @@ data "Boosts" "UnlockSpell(SMR_Target_HealingWord_Superior);UnlockSpell(SMR_Targ
 - [ ] Equip Magus Circlet
 - [ ] Verify circlet appears with correct appearance (Headband of Intellect visual)
 - [ ] Verify circlet description displays correctly
-- [ ] Verify "Dauntless" passive is active in character sheet (Advantage on Intimidation and Insight)
+- [ ] Verify "Dauntless" passive is active (Immunity to Frightened)
+- [ ] Verify Speak with Dead spell is available and works (once per short rest)
+- [ ] Verify Speak with Animals spell is available and works (once per short rest)
 
 ### Ring of the Guardian Enhancement
 - [ ] Equip Ring of the Guardian
@@ -551,7 +585,10 @@ data "Boosts" "UnlockSpell(SMR_Target_HealingWord_Superior);UnlockSpell(SMR_Targ
 - Boots use vanilla spell from Night Walkers:
   - `Target_UNI_MistyStep_NightWalkers` (Misty Step with unique visual)
 - Circlet uses vanilla passive from Cloth of Authority:
-  - `MAG_ArmorOfAuthority_Passive` (Dauntless)
+  - `MAG_LC_Cyric_FearImmunity_Amulet_Passive` (Dauntless - Fear Immunity)
+- Circlet uses WW mod spells from Amulet of Lost Voices:
+  - `WW_Target_SpeakWithDead` (Speak with Dead)
+  - `WW_Shout_SpeakWithAnimals` (Speak with Animals)
 - Ring of Spectral Power enhancement uses WW mod passive:
   - `WW_Forceweaver_Passive` (Force Amplification)
   - **Assumption:** WW_Wizard_Equipment mod is installed as a dependency
