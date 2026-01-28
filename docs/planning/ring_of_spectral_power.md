@@ -17,7 +17,8 @@ A Legendary ring granting powerful spectral/force magic abilities.
 1. **Unlimited Misty Step** - Teleport at will (no spell slot cost)
 2. **Globe of Invulnerability** - Once per short rest
 3. **Unlimited Level 3 Magic Missile** - 5 missiles at will (bonus action)
-4. **+1 Magic Missile** - Adds one extra missile to every Magic Missile cast (needs research)
+4. **Unlimited Shield** - Cast Shield as a bonus action (unlimited)
+5. **+1 Magic Missile** - Adds one extra missile to every Magic Missile cast (needs research)
 
 ---
 
@@ -34,6 +35,8 @@ Generate these before implementation:
 - [ ] MagicMissile ExtraDescription handle: `h________________________________`
 - [ ] Globe DisplayName handle: `h________________________________`
 - [ ] Globe ExtraDescription handle: `h________________________________`
+- [ ] Shield DisplayName handle: `h________________________________`
+- [ ] Shield ExtraDescription handle: `h________________________________`
 
 ---
 
