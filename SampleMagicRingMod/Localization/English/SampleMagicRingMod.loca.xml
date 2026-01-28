@@ -15,9 +15,11 @@
 	<content contentuid="h1b6de96fg6348g4cdaga8acg001bc20c414f" version="1">Superior Healing Word</content>
 	<content contentuid="hb5c21957gfd87g4bebgba58g80feb4ad1ba8" version="1">Superior spell. Spell strength massively increased. No spell slot cost. This spell has no effect on Undead or Constructs.</content>
 	<content contentuid="ha1b2c3d4ge5f6g7a8bg9c0dg1e2f3a4b5c6d" version="1">Ring of Spectral Power</content>
-	<content contentuid="h1a2b3c4dg5e6fg7a8bg9c0dge1f2a3b4c5d6" version="1">A ring crackling with arcane force. Grants unlimited Magic Missile as a bonus action.</content>
+	<content contentuid="h1a2b3c4dg5e6fg7a8bg9c0dge1f2a3b4c5d6" version="1">A ring crackling with arcane force. Grants unlimited Magic Missile as a bonus action and Globe of Invulnerability once per short rest.</content>
 	<content contentuid="hb2c3d4e5gf6a7g8b9cga0d1g2e3f4a5b6c7d" version="1">Spectral Barrage</content>
 	<content contentuid="h2b3c4d5eg6f7ag8b9cg0a1dg3e4f5a6b7c8d" version="1">Unlimited Level 3 Magic Missile as a bonus action.</content>
+	<content contentuid="hc3d4e5f6ga7b8g9c0dga1b2g4c5d6e7f8a9b0" version="1">Spectral Barrier</content>
+	<content contentuid="h3c4d5e6fg7a8bg0c9dg2a1bg5c6d7e8f9a0b1" version="1">Globe of Invulnerability. Recharges on short rest.</content>
 	<content contentuid="" version="1"></content>
 	<content contentuid="" version="1"></content>
 	<content contentuid="" version="1"></content>
