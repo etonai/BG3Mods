@@ -1,0 +1,9 @@
+new entry "SMR_Shout_HeroesFeast_LongRest"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_HeroesFeast"
+data "DisplayName" "h3a4b5c6dg2e3fg5a4bg7c6dg4a5b6c7d8e9f0a1;1"
+data "ExtraDescription" "ha4b5c6d7g3e4fg6a5bg8c7dg5a6b7c8d9e0f1a2;1"
+data "UseCosts" ""
+data "Cooldown" "OncePerLongRest"
+

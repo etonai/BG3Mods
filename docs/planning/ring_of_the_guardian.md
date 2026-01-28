@@ -15,8 +15,18 @@ A Legendary ring granting powerful protective and healing abilities.
 | Value | 750 gold |
 
 ### Powers
-1. **Superior Healing Word** - Enhanced healing (2d20+modifier), bonus action, no spell slot cost (from Ring of Superior Healing Word)
-2. **Unlimited Bless** - Cast Bless unlimited times
+
+| Status | Power | Description | Phase |
+|--------|-------|-------------|-------|
+| [x] | **Superior Healing Word** | Enhanced healing (2d20+modifier), bonus action, no spell slot cost | Phase 4 |
+| [x] | **Unlimited Bless** | Cast Bless unlimited times | Phase 5 |
+| [x] | **Unlimited Create Water** | Cast Create Water as a bonus action (unlimited) | Phase 5 |
+| [x] | **Lesser Restoration** | Cast Lesser Restoration (once per short rest) | Phase 5 |
+| [x] | **Greater Restoration** | Cast Greater Restoration (once per long rest) | Phase 5 |
+| [x] | **Freedom of Movement** | Cast Freedom of Movement (once per short rest) | Phase 5 |
+| [x] | **Counterspell** | Cast Counterspell (once per short rest) | Phase 5 |
+| [x] | **Heroes' Feast** | Cast Heroes' Feast (once per long rest) | Phase 5 |
+| [ ] | **Remove Curse** | Cast Remove Curse (once per long rest) | Phase 7 |
 
 ---
 
@@ -29,6 +39,18 @@ Generate these before implementation:
 - [ ] Description handle: `h________________________________`
 - [ ] Bless DisplayName handle: `h________________________________`
 - [ ] Bless ExtraDescription handle: `h________________________________`
+- [ ] CreateWater DisplayName handle: `h________________________________`
+- [ ] CreateWater ExtraDescription handle: `h________________________________`
+- [ ] LesserRestoration DisplayName handle: `h________________________________`
+- [ ] LesserRestoration ExtraDescription handle: `h________________________________`
+- [ ] GreaterRestoration DisplayName handle: `h________________________________`
+- [ ] GreaterRestoration ExtraDescription handle: `h________________________________`
+- [ ] FreedomOfMovement DisplayName handle: `h________________________________`
+- [ ] FreedomOfMovement ExtraDescription handle: `h________________________________`
+- [ ] Counterspell DisplayName handle: `h________________________________`
+- [ ] Counterspell ExtraDescription handle: `h________________________________`
+- [ ] HeroesFeast DisplayName handle: `h________________________________`
+- [ ] HeroesFeast ExtraDescription handle: `h________________________________`
 
 Note: Superior Healing Word spell already exists (SMR_Target_HealingWord_Superior) with existing localization.
 

@@ -14,7 +14,7 @@
   <content contentuid="h1b6de96fg6348g4cdaga8acg001bc20c414f" version="1">Superior Healing Word</content> 
   <content contentuid="hb5c21957gfd87g4bebgba58g80feb4ad1ba8" version="1">Superior spell. Spell strength massively increased. No spell slot cost. This spell has no effect on Undead or Constructs.</content>
   <content contentuid="ha1b2c3d4ge5f6g7a8bg9c0dg1e2f3a4b5c6d" version="1">Ring of Spectral Power</content>
-  <content contentuid="h1a2b3c4dg5e6fg7a8bg9c0dge1f2a3b4c5d6" version="1">A ring crackling with arcane force. Grants unlimited Misty Step, unlimited Magic Missile as a bonus action, and Globe of Invulnerability once per short rest.</content>
+  <content contentuid="h1a2b3c4dg5e6fg7a8bg9c0dge1f2a3b4c5d6" version="1">A ring crackling with arcane force. Grants powerful spectral magic including Misty Step, Magic Missile, Shield, Counterspell, Hold Person, Knock, Globe of Invulnerability, Artistry of War, Invisibility, and Arcane Gate.</content>
   <content contentuid="hb2c3d4e5gf6a7g8b9cga0d1g2e3f4a5b6c7d" version="1">Spectral Barrage</content>
   <content contentuid="h2b3c4d5eg6f7ag8b9cg0a1dg3e4f5a6b7c8d" version="1">Unlimited Level 3 Magic Missile as a bonus action.</content>
   <content contentuid="hc3d4e5f6ga7b8g9c0dga1b2g4c5d6e7f8a9b0" version="1">Spectral Barrier</content>
@@ -22,8 +22,35 @@
   <content contentuid="hd4e5f6a7gb8c9g0d1ega2b3g6c7d8e9f0a1b2" version="1">Spectral Step</content>
   <content contentuid="h4d5e6f7ag8b9cg1d0eg3a2bg7c8d9e0f1a2b3" version="1">Unlimited casting from Ring of Spectral Power.</content>
   <content contentuid="he5f6a7b8gc9d0g1e2fga3b4g8c9d0e1f2a3b4" version="1">Ring of the Guardian</content>
-  <content contentuid="h5e6f7a8bg9c0dg2e1fg4a3bg9c0d1e2f3a4b5" version="1">A ring infused with protective energy. Grants Superior Healing Word.</content> 
-  <content contentuid="" version="1"></content>
+  <content contentuid="h5e6f7a8bg9c0dg2e1fg4a3bg9c0d1e2f3a4b5" version="1">A ring infused with protective energy. Grants Superior Healing Word, Bless, Create Water, Lesser Restoration, Greater Restoration, Freedom of Movement, Counterspell, and Heroes' Feast.</content>
+  <content contentuid="hf6a7b8c9gd0e1g2f3ag4b5cga0b1c2d3e4f5a6" version="1">Spectral Shield</content>
+  <content contentuid="h6f7a8b9cg0d1eg3f2ag5b4cg1a0b2c3d4e5f6a7" version="1">Unlimited Shield as a bonus action.</content>
+  <content contentuid="h4b5c6d7eg8f9ag0b1cg2d3eg5f6a7b8c9d0e1f2" version="1">Spectral Counter</content>
+  <content contentuid="hb5c6d7e8g9f0ag1b2cg3d4eg6f7a8b9c0d1e2f3" version="1">Unlimited Counterspell as a bonus action.</content>
+  <content contentuid="h5c6d7e8fg0a1bg2c3dg4e5fg7a8b9c0d1e2f3a4" version="1">Spectral Hold</content>
+  <content contentuid="hc6d7e8f9g1a2bg3c4dg5e6fg8a9b0c1d2e3f4a5" version="1">Unlimited Hold Person as a bonus action.</content>
+  <content contentuid="h6d7e8f9ag2b3cg4d5eg6f7ag9b0c1d2e3f4a5b6" version="1">Spectral Artistry</content>
+  <content contentuid="hd7e8f9a0g3b4cg5d6eg7f8ag0b1c2d3e4f5a6b7" version="1">Artistry of War. Recharges on short rest.</content>
+  <content contentuid="h7e8f9a0bg4c5dg6e7fg8a9bg1c2d3e4f5a6b7c8" version="1">Spectral Veil</content>
+  <content contentuid="he8f9a0b1g5c6dg7e8fg9a0bg2c3d4e5f6a7b8c9" version="1">Invisibility. Recharges on short rest.</content>
+  <content contentuid="h8f9a0b1cg6d7eg8f9ag0b1cg3d4e5f6a7b8c9d0" version="1">Spectral Knock</content>
+  <content contentuid="hf9a0b1c2g7d8eg9f0ag1b2cg4d5e6f7a8b9c0d1" version="1">Unlimited Knock as a bonus action.</content>
+  <content contentuid="h9a0b1c2dg8e9fg0a1bg2c3dg5e6f7a8b9c0d1e2" version="1">Spectral Gate</content>
+  <content contentuid="ha0b1c2d3g9e0fg1a2bg3c4dg6e7f8a9b0c1d2e3" version="1">Arcane Gate. Recharges on short rest.</content>
+  <content contentuid="h7a8b9c0dge1f2g3a4bg5c6dg2a3b4c5d6e7f8a9" version="1">Guardian's Blessing</content>
+  <content contentuid="ha8b9c0d1gf2e3g4a5bg6c7dg3a4b5c6d7e8f9a0" version="1">Unlimited Bless.</content>
+  <content contentuid="h8b9c0d1eg2f3ag5b4cg7d6eg4b5c6d7e8f9a0b1" version="1">Guardian's Water</content>
+  <content contentuid="hb9c0d1e2g3f4ag6b5cg8d7eg5b6c7d8e9f0a1b2" version="1">Unlimited Create Water as a bonus action.</content>
+  <content contentuid="h9c0d1e2fg4a5bg7c6dg9e8fg6c7d8e9f0a1b2c3" version="1">Guardian's Restoration</content>
+  <content contentuid="hc0d1e2f3g5a6bg8c7dg0e9fg7c8d9e0f1a2b3c4" version="1">Lesser Restoration. Recharges on short rest.</content>
+  <content contentuid="h0d1e2f3ag6b7cg9d8eg1f0ag8d9e0f1a2b3c4d5" version="1">Guardian's Greater Restoration</content>
+  <content contentuid="hd1e2f3a4g7b8cg0d9eg2f1ag9d0e1f2a3b4c5d6" version="1">Greater Restoration. Recharges on long rest.</content>
+  <content contentuid="h1e2f3a4bg8c9dg1e0fg3a2bg0e1f2a3b4c5d6e7" version="1">Guardian's Freedom</content>
+  <content contentuid="he2f3a4b5g9c0dg2e1fg4a3bg1e2f3a4b5c6d7e8" version="1">Freedom of Movement. Recharges on short rest.</content>
+  <content contentuid="h2f3a4b5cg0d1eg3f2ag5b4cg2f3a4b5c6d7e8f9" version="1">Guardian's Counter</content>
+  <content contentuid="hf3a4b5c6g1d2eg4f3ag6b5cg3f4a5b6c7d8e9f0" version="1">Counterspell. Recharges on short rest.</content>
+  <content contentuid="h3a4b5c6dg2e3fg5a4bg7c6dg4a5b6c7d8e9f0a1" version="1">Guardian's Feast</content>
+  <content contentuid="ha4b5c6d7g3e4fg6a5bg8c7dg5a6b7c8d9e0f1a2" version="1">Heroes' Feast. Recharges on long rest.</content>
   <content contentuid="" version="1"></content> 
   <content contentuid="" version="1"></content>
   <content contentuid="" version="1"></content> 

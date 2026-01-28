@@ -14,11 +14,20 @@ A Legendary ring granting powerful spectral/force magic abilities.
 | Value | 750 gold |
 
 ### Powers
-1. **Unlimited Misty Step** - Teleport at will (no spell slot cost)
-2. **Globe of Invulnerability** - Once per short rest
-3. **Unlimited Level 3 Magic Missile** - 5 missiles at will (bonus action)
-4. **Unlimited Shield** - Cast Shield as a bonus action (unlimited)
-5. **+1 Magic Missile** - Adds one extra missile to every Magic Missile cast (needs research)
+
+| Status | Power | Description | Phase |
+|--------|-------|-------------|-------|
+| [x] | **Unlimited Level 3 Magic Missile** | 5 missiles at will (bonus action) | Phase 1 |
+| [x] | **Globe of Invulnerability** | Once per short rest | Phase 2 |
+| [x] | **Unlimited Misty Step** | Teleport at will (no spell slot cost) | Phase 3 |
+| [x] | **Unlimited Shield** | Cast Shield as a bonus action (unlimited) | Phase 5 |
+| [x] | **Unlimited Counterspell** | Cast Counterspell as a bonus action (unlimited) | Phase 5 |
+| [x] | **Unlimited Hold Person** | Cast Hold Person as a bonus action (unlimited) | Phase 5 |
+| [x] | **Artistry of War** | Cast Artistry of War as an action (once per short rest) | Phase 5 |
+| [x] | **Invisibility** | Cast Invisibility (once per short rest) | Phase 5 |
+| [x] | **Unlimited Knock** | Cast Knock as a bonus action (unlimited) | Phase 5 |
+| [x] | **Arcane Gate** | Cast Arcane Gate (once per short rest) | Phase 5 |
+| [ ] | **+1 Magic Missile** | Adds one extra missile to every Magic Missile cast (needs research) | - |
 
 ---
 
@@ -37,6 +46,18 @@ Generate these before implementation:
 - [ ] Globe ExtraDescription handle: `h________________________________`
 - [ ] Shield DisplayName handle: `h________________________________`
 - [ ] Shield ExtraDescription handle: `h________________________________`
+- [ ] Counterspell DisplayName handle: `h________________________________`
+- [ ] Counterspell ExtraDescription handle: `h________________________________`
+- [ ] HoldPerson DisplayName handle: `h________________________________`
+- [ ] HoldPerson ExtraDescription handle: `h________________________________`
+- [ ] ArtistryOfWar DisplayName handle: `h________________________________`
+- [ ] ArtistryOfWar ExtraDescription handle: `h________________________________`
+- [ ] Invisibility DisplayName handle: `h________________________________`
+- [ ] Invisibility ExtraDescription handle: `h________________________________`
+- [ ] Knock DisplayName handle: `h________________________________`
+- [ ] Knock ExtraDescription handle: `h________________________________`
+- [ ] ArcaneGate DisplayName handle: `h________________________________`
+- [ ] ArcaneGate ExtraDescription handle: `h________________________________`
 
 ---
 
