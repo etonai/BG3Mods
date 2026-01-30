@@ -51,7 +51,7 @@ data "RootTemplate" "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d"
 data "ObjectCategory" "Jewelry"
 data "ValueOverride" "750"
 data "Rarity" "Legendary"
-data "Boosts" "UnlockSpell(SMR_Target_HealingWord_Superior);UnlockSpell(SMR_Target_Bless_Unlimited);UnlockSpell(SMR_Target_CreateWater_Unlimited);UnlockSpell(SMR_Target_LesserRestoration_ShortRest);UnlockSpell(SMR_Target_GreaterRestoration_LongRest);UnlockSpell(SMR_Target_FreedomOfMovement_ShortRest);UnlockInterrupt(SMR_Interrupt_Counterspell_ShortRest);UnlockSpell(SMR_Shout_HeroesFeast_LongRest);UnlockSpell(SMR_Target_RemoveCurse_LongRest);UnlockSpell(SMR_Teleportation_Revivify_LongRest)"
+data "Boosts" "UnlockSpell(SMR_Target_HealingWord_Superior);UnlockSpell(SMR_Target_Bless_Unlimited);UnlockSpell(SMR_Target_CreateWater_Unlimited);UnlockSpell(SMR_Target_LesserRestoration_ShortRest);UnlockSpell(SMR_Target_GreaterRestoration_LongRest);UnlockSpell(SMR_Target_FreedomOfMovement_ShortRest);UnlockInterrupt(SMR_Interrupt_Counterspell_ShortRest);UnlockSpell(SMR_Shout_HeroesFeast_LongRest);UnlockSpell(SMR_Target_RemoveCurse_LongRest);UnlockSpell(SMR_Teleportation_Revivify_LongRest);UnlockSpell(SMR_Shout_MassHealingWord_Unlimited)"
 
 new entry "SMR_Boots_Stormwalker"
 type "Armor"

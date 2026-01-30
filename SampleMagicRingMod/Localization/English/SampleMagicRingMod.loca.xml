@@ -23,7 +23,7 @@
 	<content contentuid="hd4e5f6a7gb8c9g0d1ega2b3g6c7d8e9f0a1b2" version="1">Spectral Step</content>
 	<content contentuid="h4d5e6f7ag8b9cg1d0eg3a2bg7c8d9e0f1a2b3" version="1">Unlimited casting from Ring of Spectral Power.</content>
 	<content contentuid="he5f6a7b8gc9d0g1e2fga3b4g8c9d0e1f2a3b4" version="1">Ring of the Guardian</content>
-	<content contentuid="h5e6f7a8bg9c0dg2e1fg4a3bg9c0d1e2f3a4b5" version="1">A ring infused with protective energy. Grants Superior Healing Word, Bless, Create Water, Lesser Restoration, Greater Restoration, Freedom of Movement, Counterspell, and Heroes' Feast.</content>
+	<content contentuid="h5e6f7a8bg9c0dg2e1fg4a3bg9c0d1e2f3a4b5" version="1">A ring infused with protective energy. Grants Superior Healing Word, Bless, Create Water, Lesser Restoration, Greater Restoration, Freedom of Movement, Counterspell, Heroes' Feast, Remove Curse, Revivify, and Mass Healing Word.</content>
 	<content contentuid="hf6a7b8c9gd0e1g2f3ag4b5cga0b1c2d3e4f5a6" version="1">Spectral Shield</content>
 	<content contentuid="h6f7a8b9cg0d1eg3f2ag5b4cg1a0b2c3d4e5f6a7" version="1">Unlimited Shield as a bonus action.</content>
 	<content contentuid="h4b5c6d7eg8f9ag0b1cg2d3eg5f6a7b8c9d0e1f2" version="1">Spectral Counter</content>
@@ -59,11 +59,17 @@
 	<content contentuid="h3c4d5e6fga7b8g9c0dgd1e2gf3a4b5c6d7e8" version="1">Magus Circlet</content>
 	<content contentuid="h4d5e6f7agb8c9gd0e1ge2f3ga4b5c6d7e8f9" version="1">A circlet worn by archmages of old. Grants Dauntless (immunity to Frightened), Speak with Dead, and Speak with Animals.</content>
 	<content contentuid="h5a6b7c8dge9f0g1a2bg3c4dg5e6f7a8b9c0d" version="1">Staff of Akitaro</content>
-	<content contentuid="h6b7c8d9egf0a1g2b3cg4d5eg6f7a8b9c0d1e" version="1">A quarterstaff crackling with arcane energy. Grants Lightning Charges when casting spells at close range, Chromatic Attunement, Arcane Enchantment, Arcane Battery, Spell Slot Restoration, Pearlescent Restoration, Mystra's Grace, Weave's Reclamation, Echoes of Netheril, unlimited Light, unlimited Shield and Counterspell reactions, unlimited Celestial Haste, Akitaro's Blast, and Akitaro's Teleport.</content>
+	<content contentuid="h6b7c8d9egf0a1g2b3cg4d5eg6f7a8b9c0d1e" version="1">A quarterstaff crackling with arcane energy. Grants Lightning Charges when casting spells at close range, Chromatic Attunement, Arcane Enchantment, Arcane Battery, Spell Slot Restoration, Pearlescent Restoration, Mystra's Grace, Weave's Reclamation, Echoes of Netheril, unlimited Light, unlimited Shield and Counterspell reactions, unlimited Celestial Haste, Akitaro's Blast, Akitaro's Teleport, Akitaro's Barrage, and Akitaro's Shield.</content>
 	<content contentuid="h8d9e0f1agb2c3g4d5eg6f7ag8b9c0d1e2f3a" version="1">Sparklestaff</content>
 	<content contentuid="h7c8d9e0fga1b2g3c4dg5e6fg7a8b9c0d1e2f" version="1">An exact copy of the Spellsparkler for testing purposes.</content>
 	<content contentuid="ha1b2c3d4g5e6fg7a8bg9c0dg1e2f3a4b5c6d7e8" version="1">Akitaro's Blast</content>
 	<content contentuid="hb2c3d4e5g6f7ag8b9cg0d1eg2f3a4b5c6d7e8f9" version="1">Artistry of War. Once per short rest.</content>
 	<content contentuid="hc3d4e5f6g7a8bg9c0dg1e2fg3a4b5c6d7e8f9a0" version="1">Akitaro's Teleport</content>
 	<content contentuid="hd4e5f6a7g8b9cg0d1eg2f3ag4b5c6d7e8f9a0b1" version="1">Misty Step. Once per short rest.</content>
+	<content contentuid="he1f2a3b4g5c6dg7e8fg9a0bg1c2d3e4f5a6b7" version="1">Akitaro's Barrage</content>
+	<content contentuid="hf2a3b4c5g6d7eg8f9ag0b1cg2d3e4f5a6b7c8" version="1">Magic Missile level 3. Once per short rest.</content>
+	<content contentuid="ha3b4c5d6g7e8fg9a0bg1c2dg3e4f5a6b7c8d9" version="1">Akitaro's Shield</content>
+	<content contentuid="hb4c5d6e7g8f9ag0b1cg2d3eg4f5a6b7c8d9e0" version="1">Globe of Invulnerability. Once per short rest.</content>
+	<content contentuid="hc5d6e7f8g9a0bg1c2dg3e4fg5a6b7c8d9e0f1" version="1">Guardian's Mass Healing</content>
+	<content contentuid="hd6e7f8a9g0b1cg2d3eg4f5ag6b7c8d9e0f1a2" version="1">Mass Healing Word. Unlimited uses.</content>
 </contentList>

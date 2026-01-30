@@ -1,159 +1,76 @@
-# Ring of the Guardian - Implementation Plan
+# Ring of the Guardian
 
 ## Overview
 A Legendary ring granting powerful protective and healing abilities.
 
-## Design Decisions (Complete)
+## Item Details
 
-| Aspect | Decision |
-|--------|----------|
+| Aspect | Value |
+|--------|-------|
 | Name | Ring of the Guardian |
 | Internal ID | SMR_Ring_Guardian |
 | Appearance | LOOT_GEN_Ring_F_Silver_A (same as Star Athlete's Ring) |
 | ParentTemplateId | 49b84359-6a28-460e-af98-4526c5fca6fd |
+| MapKey | a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d |
 | Rarity | Legendary |
 | Value | 750 gold |
 
-### Powers
+---
 
-| Status | Power | Description | Phase |
-|--------|-------|-------------|-------|
-| [x] | **Superior Healing Word** | Enhanced healing (2d20+modifier), bonus action, no spell slot cost | Phase 4 |
-| [x] | **Unlimited Bless** | Cast Bless unlimited times | Phase 5 |
-| [x] | **Unlimited Create Water** | Cast Create Water as a bonus action (unlimited) | Phase 5 |
-| [x] | **Lesser Restoration** | Cast Lesser Restoration (once per short rest) | Phase 5 |
-| [x] | **Greater Restoration** | Cast Greater Restoration (once per long rest) | Phase 5 |
-| [x] | **Freedom of Movement** | Cast Freedom of Movement (once per short rest) | Phase 5 |
-| [x] | **Counterspell** | Cast Counterspell (once per short rest) | Phase 5 |
-| [x] | **Heroes' Feast** | Cast Heroes' Feast (once per long rest) | Phase 5 |
-| [ ] | **Remove Curse** | Cast Remove Curse (once per long rest) | Phase 7 |
+## Powers
+
+| Power | Description | Usage | Source |
+|-------|-------------|-------|--------|
+| **Superior Healing Word** | Enhanced healing (2d20+modifier) | Bonus action, unlimited | SMR_Target_HealingWord_Superior |
+| **Guardian's Blessing** | Cast Bless | Unlimited | SMR_Target_Bless_Unlimited |
+| **Guardian's Water** | Cast Create Water | Bonus action, unlimited | SMR_Target_CreateWater_Unlimited |
+| **Guardian's Restoration** | Cast Lesser Restoration | Once per short rest | SMR_Target_LesserRestoration_ShortRest |
+| **Guardian's Greater Restoration** | Cast Greater Restoration | Once per long rest | SMR_Target_GreaterRestoration_LongRest |
+| **Guardian's Freedom** | Cast Freedom of Movement | Once per short rest | SMR_Target_FreedomOfMovement_ShortRest |
+| **Guardian's Counter** | Cast Counterspell | Once per short rest | SMR_Interrupt_Counterspell_ShortRest |
+| **Guardian's Feast** | Cast Heroes' Feast | Once per long rest | SMR_Shout_HeroesFeast_LongRest |
+| **Remove Curse** | Cast Remove Curse | Once per long rest | SMR_Target_RemoveCurse_LongRest |
+| **Revivify** | Cast Revivify | Once per long rest | SMR_Teleportation_Revivify_LongRest |
+| **Guardian's Mass Healing** | Cast Mass Healing Word | Bonus action, unlimited | SMR_Shout_MassHealingWord_Unlimited |
 
 ---
 
-## UUIDs and Handles Needed
+## Implementation Files
 
-Generate these before implementation:
-- [ ] Ring MapKey UUID: `________-____-____-____-____________`
-- [ ] OneTimeReward UUID: `________-____-____-____-____________`
-- [ ] DisplayName handle: `h________________________________`
-- [ ] Description handle: `h________________________________`
-- [ ] Bless DisplayName handle: `h________________________________`
-- [ ] Bless ExtraDescription handle: `h________________________________`
-- [ ] CreateWater DisplayName handle: `h________________________________`
-- [ ] CreateWater ExtraDescription handle: `h________________________________`
-- [ ] LesserRestoration DisplayName handle: `h________________________________`
-- [ ] LesserRestoration ExtraDescription handle: `h________________________________`
-- [ ] GreaterRestoration DisplayName handle: `h________________________________`
-- [ ] GreaterRestoration ExtraDescription handle: `h________________________________`
-- [ ] FreedomOfMovement DisplayName handle: `h________________________________`
-- [ ] FreedomOfMovement ExtraDescription handle: `h________________________________`
-- [ ] Counterspell DisplayName handle: `h________________________________`
-- [ ] Counterspell ExtraDescription handle: `h________________________________`
-- [ ] HeroesFeast DisplayName handle: `h________________________________`
-- [ ] HeroesFeast ExtraDescription handle: `h________________________________`
-
-Note: Superior Healing Word spell already exists (SMR_Target_HealingWord_Superior) with existing localization.
-
----
-
-## Files to Modify
-
-### 1. Public/SampleMagicRingMod/RootTemplates/merged.lsx
-
-Add new GameObjects node:
-```xml
-<node id="GameObjects"> Ring of the Guardian
-    <attribute id="Description" type="TranslatedString" handle="[DESCRIPTION_HANDLE]" version="2" />
-    <attribute id="DisplayName" type="TranslatedString" handle="[DISPLAYNAME_HANDLE]" version="3" />
-    <attribute id="Icon" type="FixedString" value="Item_LOOT_GEN_Ring_F_Silver_A" />
-    <attribute id="LevelName" type="FixedString" value="" />
-    <attribute id="MapKey" type="FixedString" value="[RING_UUID]" />
-    <attribute id="Name" type="LSString" value="SMR_Ring_Guardian" />
-    <attribute id="ParentTemplateId" type="FixedString" value="49b84359-6a28-460e-af98-4526c5fca6fd" />
-    <attribute id="Stats" type="FixedString" value="SMR_Ring_Guardian" />
-    <attribute id="Type" type="FixedString" value="item" />
-    <attribute id="_OriginalFileVersion_" type="int64" value="144115188075855912" />
-    <children>
-        <node id="GameMaster" />
-    </children>
-</node>
-```
-
-### 2. Public/SampleMagicRingMod/RootTemplates/merged.lsf.lsx
-
-Add same GameObjects node (BOTH files must be updated!)
-
-### 3. Public/SampleMagicRingMod/Stats/Generated/Data/Armor.txt
-
-Add entry:
+### Armor.txt
 ```
 new entry "SMR_Ring_Guardian"
 type "Armor"
 using "_Ring"
-data "RootTemplate" "[RING_UUID]"
+data "RootTemplate" "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d"
 data "ObjectCategory" "Jewelry"
 data "ValueOverride" "750"
 data "Rarity" "Legendary"
-data "Boosts" "UnlockSpell(SMR_Target_HealingWord_Superior);UnlockSpell(SMR_Shout_Bless_Unlimited)"
+data "Boosts" "UnlockSpell(SMR_Target_HealingWord_Superior);UnlockSpell(SMR_Target_Bless_Unlimited);UnlockSpell(SMR_Target_CreateWater_Unlimited);UnlockSpell(SMR_Target_LesserRestoration_ShortRest);UnlockSpell(SMR_Target_GreaterRestoration_LongRest);UnlockSpell(SMR_Target_FreedomOfMovement_ShortRest);UnlockInterrupt(SMR_Interrupt_Counterspell_ShortRest);UnlockSpell(SMR_Shout_HeroesFeast_LongRest);UnlockSpell(SMR_Target_RemoveCurse_LongRest);UnlockSpell(SMR_Teleportation_Revivify_LongRest);UnlockSpell(SMR_Shout_MassHealingWord_Unlimited)"
 ```
 
-### 4. Public/SampleMagicRingMod/Stats/Generated/Data/Spell_Shout.txt (NEW FILE)
-
-Create file with Bless spell:
+### Spell_Shout.txt (Mass Healing Word)
 ```
-new entry "SMR_Shout_Bless_Unlimited"
+new entry "SMR_Shout_MassHealingWord_Unlimited"
 type "SpellData"
 data "SpellType" "Shout"
-using "Shout_Bless"
-data "DisplayName" "[BLESS_DISPLAYNAME_HANDLE];1"
-data "ExtraDescription" "[BLESS_EXTRADESC_HANDLE];1"
-data "UseCosts" ""
+using "Shout_HealingWord_Mass"
+data "DisplayName" "hc5d6e7f8g9a0bg1c2dg3e4fg5a6b7c8d9e0f1;1"
+data "ExtraDescription" "hd6e7f8a9g0b1cg2d3eg4f5ag6b7c8d9e0f1a2;1"
+data "UseCosts" "BonusActionPoint:1"
 ```
 
-### 5. Localization/English/SampleMagicRingMod.xml
+### Localization Handles
 
-Add entries:
-```xml
-<content contentuid="[DISPLAYNAME_HANDLE]" version="1">Ring of the Guardian</content>
-<content contentuid="[DESCRIPTION_HANDLE]" version="1">A ring infused with protective energy. Grants Superior Healing Word and unlimited Bless.</content>
-
-<content contentuid="[BLESS_DISPLAYNAME_HANDLE]" version="1">Guardian's Blessing</content>
-<content contentuid="[BLESS_EXTRADESC_HANDLE]" version="1">Unlimited casting from Ring of the Guardian.</content>
-```
-
-### 6. Localization/English/SampleMagicRingMod.loca.xml
-
-Add same entries (BOTH files must be updated!)
-
-### 7. Public/SampleMagicRingMod/OneTimeRewards/OneTimeRewards.lsx
-
-Add to children:
-```xml
-<node id="OneTimeReward">
-    <attribute id="Amount" type="uint32" value="1"/>
-    <attribute id="ItemTemplateId" type="FixedString" value="[RING_UUID]"/>
-    <attribute id="UUID" type="guid" value="[ONETIMEREWARD_UUID]"/>
-</node>
-```
+| Element | Handle |
+|---------|--------|
+| DisplayName | he5f6a7b8gc9d0g1e2fga3b4g8c9d0e1f2a3b4 |
+| Description | h5e6f7a8bg9c0dg2e1fg4a3bg9c0d1e2f3a4b5 |
+| Guardian's Mass Healing Name | hc5d6e7f8g9a0bg1c2dg3e4fg5a6b7c8d9e0f1 |
+| Guardian's Mass Healing Desc | hd6e7f8a9g0b1cg2d3eg4f5ag6b7c8d9e0f1a2 |
 
 ---
 
-## Implementation Checklist
+## Status: IMPLEMENTED
 
-- [ ] Generate all UUIDs and handles using BG3 Modder's Multitool
-- [ ] Add ring to merged.lsx
-- [ ] Add ring to merged.lsf.lsx
-- [ ] Add ring stats to Armor.txt
-- [ ] Create Spell_Shout.txt with Bless spell
-- [ ] Add localization entries to .xml
-- [ ] Add localization entries to .loca.xml
-- [ ] Add to OneTimeRewards.lsx
-- [ ] Test in-game
-
----
-
-## Notes
-
-- Superior Healing Word spell (SMR_Target_HealingWord_Superior) already exists and can be reused
-- Bless is a Shout type spell in BG3
-- Base spell: `Shout_Bless`
+The Ring of the Guardian has been implemented and is available in the traveler's chest.

@@ -2,7 +2,7 @@
 
 ## Overview
 
-A Legendary quarterstaff combining the arcane charge abilities of the Spellsparkler with all the powers of the Staff of the Archmage, plus unlimited Celestial Haste.
+A Legendary quarterstaff combining the arcane charge abilities of the Spellsparkler with all the powers of the Staff of the Archmage, plus unique Akitaro-themed powers.
 
 ## Item Details
 
@@ -11,7 +11,7 @@ A Legendary quarterstaff combining the arcane charge abilities of the Spellspark
 | Name | Staff of Akitaro |
 | Internal ID | SMR_Staff_Akitaro |
 | Base Type | WPN_Quarterstaff_1 |
-| Appearance | Quarterstaff +1 visual |
+| Appearance | Staff of Interruption visual |
 | Rarity | Legendary |
 | Unique | Yes |
 | MapKey | f1a2b3c4-d5e6-4f7a-8b9c-0d1e2f3a4b5c |
@@ -42,13 +42,15 @@ A Legendary quarterstaff combining the arcane charge abilities of the Spellspark
 | **Weave's Reclamation** | Once per turn, regain 1d4 hit points when dealing spell damage | WW_Mystra_Passive |
 | **Echoes of Netheril** | Cantrips deal additional damage | WW_Netherese_Staff_Passive |
 
-### Unique Powers
+### Unique Akitaro Powers
 
 | Power | Description | Source |
 |-------|-------------|--------|
 | **Celestial Haste** | Cast Haste on self (unlimited, bonus action) | SMR_Shout_CelestialHaste_Unlimited |
 | **Akitaro's Blast** | Artistry of War (once per short rest) | SMR_Projectile_AkitarosBlast_ShortRest |
 | **Akitaro's Teleport** | Misty Step (once per short rest) | SMR_Target_AkitarosTeleport_ShortRest |
+| **Akitaro's Barrage** | Magic Missile level 3 (bonus action, once per short rest) | SMR_Projectile_AkitarosBarrage_ShortRest |
+| **Akitaro's Shield** | Globe of Invulnerability (bonus action, once per short rest) | SMR_Target_AkitarosShield_ShortRest |
 
 ---
 
@@ -61,7 +63,7 @@ type "Weapon"
 using "WPN_Quarterstaff_1"
 data "RootTemplate" "f1a2b3c4-d5e6-4f7a-8b9c-0d1e2f3a4b5c"
 data "Rarity" "Legendary"
-data "Boosts" "UnlockSpell(SMR_Target_Light_Unlimited);UnlockInterrupt(SMR_Interrupt_Counterspell_Unlimited);UnlockSpell(SMR_Shout_CelestialHaste_Unlimited);UnlockSpell(Shout_MAG_TheChromatic_ChromaticAttunement);UnlockSpell(Shout_MAG_SpellSlotRestoration);UnlockSpell(Shout_MAG_SpellSlotRestoration_PearlOfPower);UnlockInterrupt(SMR_Interrupt_Shield_Unlimited);UnlockSpell(SMR_Projectile_AkitarosBlast_ShortRest);UnlockSpell(SMR_Target_AkitarosTeleport_ShortRest)"
+data "Boosts" "UnlockSpell(SMR_Target_Light_Unlimited);UnlockInterrupt(SMR_Interrupt_Counterspell_Unlimited);UnlockSpell(SMR_Shout_CelestialHaste_Unlimited);UnlockSpell(Shout_MAG_TheChromatic_ChromaticAttunement);UnlockSpell(Shout_MAG_SpellSlotRestoration);UnlockSpell(Shout_MAG_SpellSlotRestoration_PearlOfPower);UnlockInterrupt(SMR_Interrupt_Shield_Unlimited);UnlockSpell(SMR_Projectile_AkitarosBlast_ShortRest);UnlockSpell(SMR_Target_AkitarosTeleport_ShortRest);UnlockSpell(SMR_Projectile_AkitarosBarrage_ShortRest);UnlockSpell(SMR_Target_AkitarosShield_ShortRest)"
 data "PassivesOnEquip" "MAG_CQCaster_GainArcaneChargeOnDamage_Quarterstaff_Passive;MAG_ArcaneEnchantment_Lesser_Passive;MAG_Legendary_Chromatic_Spellslot_Passive;WW_Mystra_SpellAttkBonus_Passive;WW_Mystra_Passive;WW_Netherese_Staff_Passive"
 data "Unique" "1"
 ```
@@ -75,13 +77,41 @@ using "Shout_MAG_Victory_Longbow_Haste"
 data "UseCosts" "BonusActionPoint:1"
 ```
 
+### Spell_Projectile.txt (Akitaro's Barrage)
+```
+new entry "SMR_Projectile_AkitarosBarrage_ShortRest"
+type "SpellData"
+data "SpellType" "Projectile"
+using "Projectile_MagicMissile_3"
+data "DisplayName" "he1f2a3b4g5c6dg7e8fg9a0bg1c2d3e4f5a6b7;1"
+data "ExtraDescription" "hf2a3b4c5g6d7eg8f9ag0b1cg2d3e4f5a6b7c8;1"
+data "UseCosts" "BonusActionPoint:1"
+data "Cooldown" "OncePerShortRest"
+```
+
+### Spell_Target.txt (Akitaro's Shield)
+```
+new entry "SMR_Target_AkitarosShield_ShortRest"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_GlobeOfInvulnerability"
+data "DisplayName" "ha3b4c5d6g7e8fg9a0bg1c2dg3e4f5a6b7c8d9;1"
+data "ExtraDescription" "hb4c5d6e7g8f9ag0b1cg2d3eg4f5a6b7c8d9e0;1"
+data "UseCosts" "BonusActionPoint:1"
+data "Cooldown" "OncePerShortRest"
+```
+
 ### RootTemplates
-- ParentTemplateId: `96e2abaf-78ff-4dcb-a6a3-a5f0c348bd9f` (Quarterstaff +1)
-- VisualTemplate: `46537c0f-21bf-f64a-c873-50c3ac11e3a3`
+- ParentTemplateId: `e1e112b2-5465-4e37-acdc-372666ec1521` (Staff of Interruption)
+- VisualTemplate: `fb8204e8-e265-7af3-86b1-7341c6880ba1` (Staff of Interruption visual)
 
 ### Localization
 - DisplayName handle: `h5a6b7c8dge9f0g1a2bg3c4dg5e6f7a8b9c0d`
 - Description handle: `h6b7c8d9egf0a1g2b3cg4d5eg6f7a8b9c0d1e`
+- Akitaro's Barrage DisplayName: `he1f2a3b4g5c6dg7e8fg9a0bg1c2d3e4f5a6b7`
+- Akitaro's Barrage Description: `hf2a3b4c5g6d7eg8f9ag0b1cg2d3e4f5a6b7c8`
+- Akitaro's Shield DisplayName: `ha3b4c5d6g7e8fg9a0bg1c2dg3e4f5a6b7c8d9`
+- Akitaro's Shield Description: `hb4c5d6e7g8f9ag0b1cg2d3eg4f5a6b7c8d9e0`
 
 ---
 
