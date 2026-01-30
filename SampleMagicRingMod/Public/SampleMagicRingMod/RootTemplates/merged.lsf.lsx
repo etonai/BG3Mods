@@ -35,6 +35,90 @@
 				</children>
 			</node>
 			<node id="GameObjects">
+				<attribute id="Description" type="TranslatedString" handle="ha1b2c3d4gf5e6g7a8bg9c0dg1e2f3a4b5c6d7" version="1" />
+				<attribute id="DisplayName" type="TranslatedString" handle="h0a1b2c3dge4f5g6a7bg8c9dg0e1f2a3b4c5d6" version="1" />
+				<attribute id="ExamineRotation" type="fvec3" value="75 180 0" />
+				<attribute id="LevelName" type="FixedString" value="" />
+				<attribute id="MapKey" type="FixedString" value="c2d3e4f5-a6b7-4c8d-9e0f-1a2b3c4d5e6f" />
+				<attribute id="Name" type="LSString" value="SMR_Staff_Archmage" />
+				<attribute id="ParentTemplateId" type="FixedString" value="d25bc94a-5ee9-448f-9210-f2dad61ae7e5" />
+				<attribute id="Stats" type="FixedString" value="SMR_Staff_Archmage" />
+				<attribute id="Type" type="FixedString" value="item" />
+				<attribute id="VisualTemplate" type="FixedString" value="91b88b2e-09c7-8523-ee50-df363cef3d9f" />
+				<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855912" />
+				<children>
+					<node id="GameMaster" />
+				</children>
+			</node>
+			<node id="GameObjects">
+				<attribute id="Description" type="TranslatedString" handle="h2b3c4d5egf6a7g8b9cgd0e1gf2a3b4c5d6e7" version="1" />
+				<attribute id="DisplayName" type="TranslatedString" handle="h1a2b3c4dge5f6g7a8bg9c0dge1f2a3b4c5d6" version="1" />
+				<attribute id="LevelName" type="FixedString" value="" />
+				<attribute id="MapKey" type="FixedString" value="e1f2a3b4-c5d6-4e7f-8a9b-0c1d2e3f4a5b" />
+				<attribute id="Name" type="LSString" value="SMR_Boots_Stormwalker" />
+				<attribute id="ParentTemplateId" type="FixedString" value="ac9145d1-31d0-4aa3-8755-62cc85dad22b" />
+				<attribute id="Stats" type="FixedString" value="SMR_Boots_Stormwalker" />
+				<attribute id="Type" type="FixedString" value="item" />
+				<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855912" />
+				<children>
+					<node id="GameMaster" />
+				</children>
+			</node>
+			<node id="GameObjects">
+				<attribute id="Description" type="TranslatedString" handle="h4d5e6f7agb8c9gd0e1ge2f3ga4b5c6d7e8f9" version="1" />
+				<attribute id="DisplayName" type="TranslatedString" handle="h3c4d5e6fga7b8g9c0dgd1e2gf3a4b5c6d7e8" version="1" />
+				<attribute id="Icon" type="FixedString" value="Item_ARM_HeadbandOfIntellect" />
+				<attribute id="LevelName" type="FixedString" value="" />
+				<attribute id="MapKey" type="FixedString" value="a2b3c4d5-e6f7-4a8b-9c0d-1e2f3a4b5c6d" />
+				<attribute id="Name" type="LSString" value="SMR_Circlet_Magus" />
+				<attribute id="ParentTemplateId" type="FixedString" value="8779b30f-dc6f-4264-b7af-9dc0eff51bb0" />
+				<attribute id="Stats" type="FixedString" value="SMR_Circlet_Magus" />
+				<attribute id="Type" type="FixedString" value="item" />
+				<attribute id="VisualTemplate" type="FixedString" value="21f8ec11-2ecf-73e8-123b-a5da10ebd800" />
+				<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855912" />
+				<children>
+					<node id="GameMaster" />
+				</children>
+			</node>
+			<node id="GameObjects">
+				<attribute id="Description" type="TranslatedString" handle="h7c8d9e0fga1b2g3c4dg5e6fg7a8b9c0d1e2f" version="1" />
+				<attribute id="DisplayName" type="TranslatedString" handle="h8d9e0f1agb2c3g4d5eg6f7ag8b9c0d1e2f3a" version="1" />
+				<attribute id="ExamineRotation" type="fvec3" value="75 180 0" />
+				<attribute id="LevelName" type="FixedString" value="" />
+				<attribute id="MapKey" type="FixedString" value="a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d" />
+				<attribute id="Name" type="LSString" value="SMR_Sparklestaff" />
+				<attribute id="ParentTemplateId" type="FixedString" value="d25bc94a-5ee9-448f-9210-f2dad61ae7e5" />
+				<attribute id="Stats" type="FixedString" value="MAG_CQCaster_GainArcaneChargeOnDamage_Quarterstaff" />
+				<attribute id="Type" type="FixedString" value="item" />
+				<attribute id="VisualTemplate" type="FixedString" value="91b88b2e-09c7-8523-ee50-df363cef3d9f" />
+				<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209023" />
+				<children>
+					<node id="Tags">
+						<children>
+							<node id="Tag">
+								<attribute id="Object" type="guid" value="983087c8-c9d3-4a87-bc69-65f9329666c8" />
+							</node>
+						</children>
+					</node>
+				</children>
+			</node>
+			<node id="GameObjects">
+				<attribute id="Description" type="TranslatedString" handle="h6b7c8d9egf0a1g2b3cg4d5eg6f7a8b9c0d1e" version="1" />
+				<attribute id="DisplayName" type="TranslatedString" handle="h5a6b7c8dge9f0g1a2bg3c4dg5e6f7a8b9c0d" version="1" />
+				<attribute id="ExamineRotation" type="fvec3" value="75 180 0" />
+				<attribute id="LevelName" type="FixedString" value="" />
+				<attribute id="MapKey" type="FixedString" value="f1a2b3c4-d5e6-4f7a-8b9c-0d1e2f3a4b5c" />
+				<attribute id="Name" type="LSString" value="SMR_Staff_Akitaro" />
+				<attribute id="ParentTemplateId" type="FixedString" value="96e2abaf-78ff-4dcb-a6a3-a5f0c348bd9f" />
+				<attribute id="Stats" type="FixedString" value="SMR_Staff_Akitaro" />
+				<attribute id="Type" type="FixedString" value="item" />
+				<attribute id="VisualTemplate" type="FixedString" value="46537c0f-21bf-f64a-c873-50c3ac11e3a3" />
+				<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855912" />
+				<children>
+					<node id="GameMaster" />
+				</children>
+			</node>
+			<node id="GameObjects">
 				<attribute id="Description" type="TranslatedString" handle="h43576a52g162cg4eaeg9f13gf3bd5693f594" version="2" />
 					<attribute id="DisplayName" type="TranslatedString" handle="hd22ef20eg2d8cg4ea0ga40fg7765b5b40d46" version="3" />
 					<attribute id="Icon" type="FixedString" value="Item_LOOT_GEN_Ring_F_Silver_A" />

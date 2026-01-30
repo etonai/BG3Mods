@@ -31,7 +31,7 @@
 	<content contentuid="h5c6d7e8fg0a1bg2c3dg4e5fg7a8b9c0d1e2f3a4" version="1">Spectral Hold</content>
 	<content contentuid="hc6d7e8f9g1a2bg3c4dg5e6fg8a9b0c1d2e3f4a5" version="1">Unlimited Hold Person as a bonus action.</content>
 	<content contentuid="h6d7e8f9ag2b3cg4d5eg6f7ag9b0c1d2e3f4a5b6" version="1">Spectral Artistry</content>
-	<content contentuid="hd7e8f9a0g3b4cg5d6eg7f8ag0b1c2d3e4f5a6b7" version="1">Artistry of War. Recharges on short rest.</content>
+	<content contentuid="hd7e8f9a0g3b4cg5d6eg7f8ag0b1c2d3e4f5a6b7" version="1">Artistry of War. Once per short rest.</content>
 	<content contentuid="h7e8f9a0bg4c5dg6e7fg8a9bg1c2d3e4f5a6b7c8" version="1">Spectral Veil</content>
 	<content contentuid="he8f9a0b1g5c6dg7e8fg9a0bg2c3d4e5f6a7b8c9" version="1">Invisibility. Recharges on short rest.</content>
 	<content contentuid="h8f9a0b1cg6d7eg8f9ag0b1cg3d4e5f6a7b8c9d0" version="1">Spectral Knock</content>
@@ -52,10 +52,18 @@
 	<content contentuid="hf3a4b5c6g1d2eg4f3ag6b5cg3f4a5b6c7d8e9f0" version="1">Counterspell. Recharges on short rest.</content>
 	<content contentuid="h3a4b5c6dg2e3fg5a4bg7c6dg4a5b6c7d8e9f0a1" version="1">Guardian's Feast</content>
 	<content contentuid="ha4b5c6d7g3e4fg6a5bg8c7dg5a6b7c8d9e0f1a2" version="1">Heroes' Feast. Recharges on long rest.</content>
-	<content contentuid="" version="1"></content>
-	<content contentuid="" version="1"></content>
-	<content contentuid="" version="1"></content>
-	<content contentuid="" version="1"></content>
-	<content contentuid="" version="1"></content>
-	<content contentuid="" version="1"></content>
+	<content contentuid="h0a1b2c3dge4f5g6a7bg8c9dg0e1f2a3b4c5d6" version="1">Staff of the Archmage</content>
+	<content contentuid="ha1b2c3d4gf5e6g7a8bg9c0dg1e2f3a4b5c6d7" version="1">A legendary staff imbued with the essence of the Weave itself. Grants Chromatic Attunement, Arcane Enchantment, Arcane Battery, Spell Slot Restoration, Pearlescent Restoration, Mystra's Grace, Weave's Reclamation, Echoes of Netheril, and unlimited Shield and Counterspell reactions.</content>
+	<content contentuid="h1a2b3c4dge5f6g7a8bg9c0dge1f2a3b4c5d6" version="1">Boots of Stormwalker</content>
+	<content contentuid="h2b3c4d5egf6a7g8b9cgd0e1gf2a3b4c5d6e7" version="1">Legendary boots that combine the power of storms with shadowstep magic. Grants Misty Step, applies Reverberation when inflicting conditions, and provides immunity to web and terrain effects.</content>
+	<content contentuid="h3c4d5e6fga7b8g9c0dgd1e2gf3a4b5c6d7e8" version="1">Magus Circlet</content>
+	<content contentuid="h4d5e6f7agb8c9gd0e1ge2f3ga4b5c6d7e8f9" version="1">A circlet worn by archmages of old. Grants Dauntless (immunity to Frightened), Speak with Dead, and Speak with Animals.</content>
+	<content contentuid="h5a6b7c8dge9f0g1a2bg3c4dg5e6f7a8b9c0d" version="1">Staff of Akitaro</content>
+	<content contentuid="h6b7c8d9egf0a1g2b3cg4d5eg6f7a8b9c0d1e" version="1">A quarterstaff crackling with arcane energy. Grants Lightning Charges when casting spells at close range, Chromatic Attunement, Arcane Enchantment, Arcane Battery, Spell Slot Restoration, Pearlescent Restoration, Mystra's Grace, Weave's Reclamation, Echoes of Netheril, unlimited Light, unlimited Shield and Counterspell reactions, unlimited Celestial Haste, Akitaro's Blast, and Akitaro's Teleport.</content>
+	<content contentuid="h8d9e0f1agb2c3g4d5eg6f7ag8b9c0d1e2f3a" version="1">Sparklestaff</content>
+	<content contentuid="h7c8d9e0fga1b2g3c4dg5e6fg7a8b9c0d1e2f" version="1">An exact copy of the Spellsparkler for testing purposes.</content>
+	<content contentuid="ha1b2c3d4g5e6fg7a8bg9c0dg1e2f3a4b5c6d7e8" version="1">Akitaro's Blast</content>
+	<content contentuid="hb2c3d4e5g6f7ag8b9cg0d1eg2f3a4b5c6d7e8f9" version="1">Artistry of War. Once per short rest.</content>
+	<content contentuid="hc3d4e5f6g7a8bg9c0dg1e2fg3a4b5c6d7e8f9a0" version="1">Akitaro's Teleport</content>
+	<content contentuid="hd4e5f6a7g8b9cg0d1eg2f3ag4b5c6d7e8f9a0b1" version="1">Misty Step. Once per short rest.</content>
 </contentList>

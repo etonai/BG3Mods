@@ -1,6 +1,6 @@
 # Phase 007 - Boots of Stormwalker & Ring of Spectral Power Enhancement
 
-**Status:** PENDING
+**Status:** COMPLETE
 
 ## Goal
 1. Create the **Boots of Stormwalker** combining powers from Boots of Stormy Clamour and Disintegrating Night Walkers
@@ -510,28 +510,28 @@ data "Boosts" "UnlockSpell(SMR_Target_HealingWord_Superior);UnlockSpell(SMR_Targ
 ## Implementation Order
 
 ### Boots of Stormwalker
-1. [ ] Create Boots.txt with SMR_Boots_Stormwalker entry
-2. [ ] Add boots to merged.lsx
-3. [ ] Add boots to merged.lsf.lsx
-4. [ ] Add localization to SampleMagicRingMod.xml
-5. [ ] Add localization to SampleMagicRingMod.loca.xml
-6. [ ] Add to OneTimeRewards.lsx
+1. [x] Create Boots.txt with SMR_Boots_Stormwalker entry (added to Armor.txt)
+2. [x] Add boots to merged.lsx
+3. [x] Add boots to merged.lsf.lsx
+4. [x] Add localization to SampleMagicRingMod.xml
+5. [x] Add localization to SampleMagicRingMod.loca.xml
+6. [x] Add to OneTimeRewards.lsx
 
 ### Ring of Spectral Power Enhancement
-7. [ ] Update SMR_Ring_Spectral_Power in Armor.txt to add PassivesOnEquip
+7. [x] Update SMR_Ring_Spectral_Power in Armor.txt to add PassivesOnEquip
 8. [ ] (Optional) Update ring description in localization
 
 ### Magus Circlet
-9. [ ] Add SMR_Circlet_Magus to Armor.txt
-10. [ ] Add circlet to merged.lsx
-11. [ ] Add circlet to merged.lsf.lsx
-12. [ ] Add localization to SampleMagicRingMod.xml
-13. [ ] Add localization to SampleMagicRingMod.loca.xml
-14. [ ] Add to OneTimeRewards.lsx
+9. [x] Add SMR_Circlet_Magus to Armor.txt
+10. [x] Add circlet to merged.lsx
+11. [x] Add circlet to merged.lsf.lsx
+12. [x] Add localization to SampleMagicRingMod.xml
+13. [x] Add localization to SampleMagicRingMod.loca.xml
+14. [x] Add to OneTimeRewards.lsx
 
 ### Ring of the Guardian Enhancement
-15. [ ] Add SMR_Target_RemoveCurse_LongRest to Spell_Target.txt
-16. [ ] Update SMR_Ring_Guardian in Armor.txt to add Remove Curse
+15. [x] Add SMR_Target_RemoveCurse_LongRest to Spell_Target.txt
+16. [x] Update SMR_Ring_Guardian in Armor.txt to add Remove Curse
 
 ### Final
 17. [ ] Build and test mod

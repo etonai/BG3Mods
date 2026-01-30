@@ -7,3 +7,10 @@ data "ExtraDescription" "ha0b1c2d3g9e0fg1a2bg3c4dg6e7f8a9b0c1d2e3;1"
 data "UseCosts" ""
 data "Cooldown" "OncePerShortRest"
 
+new entry "SMR_Teleportation_Revivify_LongRest"
+type "SpellData"
+data "SpellType" "Teleportation"
+using "Teleportation_Revivify"
+data "UseCosts" "BonusActionPoint:1"
+data "Cooldown" "OncePerLongRest"
+

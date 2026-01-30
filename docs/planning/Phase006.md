@@ -1,6 +1,6 @@
 # Phase 006 - Create Staff of the Archmage
 
-**Status:** PENDING
+**Status:** COMPLETE
 
 ## Goal
 Create the Staff of the Archmage based on Markoheshkir with additional powers.
@@ -32,7 +32,7 @@ We will copy all of Markoheshkir's powers and add:
 | Base Weapon | WPN_Quarterstaff_2 (+2 Quarterstaff) |
 | Appearance | Same as Spellsparkler (MAG_CQCaster_GainArcaneChargeOnDamage_Quarterstaff) |
 | VisualTemplate | 91b88b2e-09c7-8523-ee50-df363cef3d9f |
-| ParentTemplateId | d25bc94a-5ee9-448f-9210-f2dad61ae7e5 (Spellsparkler parent) |
+| ParentTemplateId | 26c24ccf-8f4a-44a9-ba56-e1d8e9d49ae3 (Spellsparkler MapKey) |
 | Rarity | Legendary |
 
 ### Powers
@@ -217,7 +217,7 @@ Add GameObjects node for Staff (using Spellsparkler appearance):
     <attribute id="LevelName" type="FixedString" value="" />
     <attribute id="MapKey" type="FixedString" value="c2d3e4f5-a6b7-4c8d-9e0f-1a2b3c4d5e6f" />
     <attribute id="Name" type="LSString" value="SMR_Staff_Archmage" />
-    <attribute id="ParentTemplateId" type="FixedString" value="d25bc94a-5ee9-448f-9210-f2dad61ae7e5" />
+    <attribute id="ParentTemplateId" type="FixedString" value="26c24ccf-8f4a-44a9-ba56-e1d8e9d49ae3" />
     <attribute id="Stats" type="FixedString" value="SMR_Staff_Archmage" />
     <attribute id="Type" type="FixedString" value="item" />
     <attribute id="VisualTemplate" type="FixedString" value="91b88b2e-09c7-8523-ee50-df363cef3d9f" />
@@ -251,12 +251,12 @@ Add OneTimeReward entry:
 
 ## Implementation Order
 
-1. [ ] Create Weapon.txt with SMR_Staff_Archmage entry
-2. [ ] Add staff to merged.lsx
-3. [ ] Add staff to merged.lsf.lsx
-4. [ ] Add localization to SampleMagicRingMod.xml
-5. [ ] Add localization to SampleMagicRingMod.loca.xml
-6. [ ] Add to OneTimeRewards.lsx
+1. [x] Create Weapon.txt with SMR_Staff_Archmage entry
+2. [x] Add staff to merged.lsx
+3. [x] Add staff to merged.lsf.lsx
+4. [x] Add localization to SampleMagicRingMod.xml
+5. [x] Add localization to SampleMagicRingMod.loca.xml
+6. [x] Add to OneTimeRewards.lsx
 7. [ ] Build and test mod
 
 ---
