@@ -1,91 +1,213 @@
-# Phase 015 - Longsword of Tyr Enhancements
+# Phase 015 - Armor of Tyr Enhancements
 
 **Status:** PENDING
 
 ## Goal
-- Research and implement upgrading the Longsword of Tyr from +2 to +5 weapon
-- Add Tyr's Protection ability (from Sword of Justice)
+Enhance the Armor of Tyr with additional mobility and utility powers.
 
 ---
 
-## Item 1: Research - Upgrading Sword of Tyr to +5
+## Current Implementation
 
-### Overview
-The Sword of Tyr currently uses `WPN_Longsword_2` as its base, which is a +2 longsword. We want to upgrade it to be a +5 weapon for maximum power.
-
-### Research Questions
-
-1. **How are weapon bonuses defined in BG3?**
-   - Is it through the base weapon template (WPN_Longsword_2)?
-   - Is it through Boosts like `WeaponEnchantment(5)`?
-   - Is it through a combination of both?
-
-2. **What base weapon templates exist?**
-   - Does `WPN_Longsword_3`, `WPN_Longsword_4`, or `WPN_Longsword_5` exist?
-   - What are the differences between weapon tier templates?
-
-3. **Can we override the enchantment level?**
-   - Can we use `using "WPN_Longsword_2"` but add `WeaponEnchantment(5)` boost?
-   - Would this stack or override the base +2?
-
-4. **How do existing legendary weapons handle this?**
-   - Look at high-tier vanilla weapons for examples
-   - Check if any weapons use explicit WeaponEnchantment boosts
-
-### Current Sword of Tyr Implementation
+From Phase 013, the Armor of Tyr has:
 
 ```
-new entry "SMR_Sword_Tyr"
-type "Weapon"
-using "WPN_Longsword_2"
-data "RootTemplate" "d2e3f4a5-b6c7-4d8e-9f0a-1b2c3d4e5f6a"
+new entry "SMR_Armor_Tyr"
+type "Armor"
+using "ARM_HalfPlate_Body_2"
+data "RootTemplate" "c3d4e5f6-a7b8-4c9d-0e1f-2a3b4c5d6e7f"
 data "Rarity" "Legendary"
-data "Boosts" "UnlockSpell(Target_MAG_Smite_Wrathful);UnlockSpell(SMR_Target_BlindingSmite_Unlimited)"
-data "PassivesOnEquip" "MAG_PlaneShifterSlayer_Passive"
+data "Boosts" "RollBonus(SavingThrow, 2);UnlockSpell(SMR_Shout_CelestialHaste_Unlimited)"
+data "PassivesOnEquip" "MAG_ExoticMaterial_MediumArmor_Passive"
+data "StatusOnEquip" "MAG_EXOTIC_MATERIAL_ARMOR_TECHNICAL"
+data "Ability Modifier Cap" ""
 data "Unique" "1"
 ```
 
-### Research Tasks
+### Current Powers
 
-- [ ] Search for WeaponEnchantment boost usage in vanilla game files
-- [ ] Find examples of +3 or higher weapons
-- [ ] Determine if enchantment can be set via Boosts field
-- [ ] Test implementation approach
-
-### Research Results
-
-*(To be filled in after research)*
+| Power | Description | Source |
+|-------|-------------|--------|
+| **Saving Throw Bonus** | +2 to all saving throws | `RollBonus(SavingThrow, 2)` |
+| **No Dex Cap** | Full Dexterity bonus to AC | `MAG_ExoticMaterial_MediumArmor_Passive` |
+| **Celestial Haste** | Cast Celestial Haste (bonus action, unlimited) | `SMR_Shout_CelestialHaste_Unlimited` |
 
 ---
 
-## Item 2: Tyr's Protection Addition
+## New Powers to Add
 
-### Overview
-Add Tyr's Protection from the vanilla Sword of Justice to the Longsword of Tyr.
+### Power 1: Unlimited Misty Step
 
-**Reference:** Vanilla Sword of Justice (UNI_PLA_WPN_SwordOfJustice, MapKey: 455383a5-1211-4500-85f9-b71fad3fbf15)
+| Power | Description | Source |
+|-------|-------------|--------|
+| **Spectral Step** | Cast Misty Step (unlimited, no action cost) | `SMR_Target_MistyStep_Unlimited` (existing) |
 
-### Research Tasks
+This spell already exists in our mod from the Ring of Spectral Power and Boots of the Stormwalker.
 
-- [ ] Find Tyr's Protection spell/ability in gustav
-- [ ] Determine the internal name and implementation
+### Power 2: Spirit Guardians
 
-### Research Results
+| Power | Description | Source |
+|-------|-------------|--------|
+| **Tyr's Spirit Guardians** | Cast Spirit Guardians (unlimited) | New container spell (no item source exists) |
 
-*(To be filled in after research)*
+**Note:** No vanilla item grants Spirit Guardians. This requires the container spell technique documented in `adding_spells_without_item_source.md`.
+
+Spirit Guardians has two damage type variants:
+- **Radiant** - For good-aligned/neutral casters
+- **Necrotic** - For evil-aligned casters
+
+#### Implementation Approach
+
+Based on the BapeerySpiritShoes mod reference, we need to create:
+
+1. **Container Spell** - `SMR_Shout_SpiritGuardians_Tyr`
+   - Lists both variants in `ContainerSpells`
+   - Has `IsLinkedSpellContainer` flag
+
+2. **Radiant Variant** - `SMR_Shout_SpiritGuardians_Tyr_Radiant`
+   - Uses `Shout_SpiritGuardians` as base
+   - Links back via `SpellContainerID`
+   - Applies `SPIRIT_GUARDIANS_RADIANT_AURA` status
+
+3. **Necrotic Variant** - `SMR_Shout_SpiritGuardians_Tyr_Necrotic`
+   - Uses `Shout_SpiritGuardians` as base
+   - Links back via `SpellContainerID`
+   - Applies `SPIRIT_GUARDIANS_NECROTIC_AURA` status
+
+#### UUIDs and Handles Needed
+
+| Item | Type | Value |
+|------|------|-------|
+| Container DisplayName | Handle | `ha1b2c3d4eg5f6ag7b8cg9d0eg1f2a3b4c5d6` |
+| Container Description | Handle | `hb2c3d4e5fg6a7bg8c9dg0e1fg2a3b4c5d6e7` |
+| Radiant ExtraDescription | Handle | `hc3d4e5f6ag7b8cg9d0eg1f2ag3b4c5d6e7f8` |
+| Necrotic ExtraDescription | Handle | `hd4e5f6a7bg8c9dg0e1fg2a3bg4c5d6e7f8a9` |
+
+#### Spell Definitions
+
+##### Container Spell (Spell_Shout.txt)
+```
+new entry "SMR_Shout_SpiritGuardians_Tyr"
+type "SpellData"
+data "SpellType" "Shout"
+data "Level" "3"
+data "SpellSchool" "Conjuration"
+data "ContainerSpells" "SMR_Shout_SpiritGuardians_Tyr_Necrotic;SMR_Shout_SpiritGuardians_Tyr_Radiant"
+data "AreaRadius" "3"
+data "TargetConditions" "Self()"
+data "Icon" "Spell_Conjuration_SpiritGuardians"
+data "DisplayName" "ha1b2c3d4eg5f6ag7b8cg9d0eg1f2a3b4c5d6;1"
+data "Description" "hb2c3d4e5fg6a7bg8c9dg0e1fg2a3b4c5d6e7;1"
+data "DescriptionParams" "DealDamage(3d8,Radiant);DealDamage(3d8,Necrotic)"
+data "TooltipAttackSave" "Wisdom"
+data "PrepareSound" "Spell_Prepare_Damage_Radiant_Gen_L1to3"
+data "PrepareLoopSound" "Spell_Prepare_Damage_Radiant_Gen_L1to3_Loop"
+data "CastSound" "Spell_Cast_Damage_Radiant_SpiritGuardian_L1to3"
+data "TargetSound" "Spell_Impact_Damage_Radiant_SpiritGuardian_L1to3"
+data "CastTextEvent" "Cast"
+data "UseCosts" "ActionPoint:1"
+data "SpellAnimation" "03496c4a-49e0-4132-b585-3e5ecd1ad8e5,,;,,;cb171bda-f065-4520-b470-e447f678ba1f,,;18a9b8b8-6cec-4a6d-be46-a4cc499505e9,,;cc5b0caf-3ed1-4711-a50d-11dc3f1fdc6a,,;,,;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,,"
+data "VerbalIntent" "Damage"
+data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;IsConcentration;IsSpell;IsHarmful;IsLinkedSpellContainer"
+data "PrepareEffect" "2534712b-d31e-45a4-b8e3-6385caa9ddc1"
+data "CastEffect" "56ea5092-8ecd-4b86-8686-c1c35d016928"
+```
+
+##### Radiant Variant (Spell_Shout.txt)
+```
+new entry "SMR_Shout_SpiritGuardians_Tyr_Radiant"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_SpiritGuardians"
+data "SpellContainerID" "SMR_Shout_SpiritGuardians_Tyr"
+data "ContainerSpells" ""
+data "SpellProperties" "ApplyStatus(SPIRIT_GUARDIANS_RADIANT_AURA,100,10)"
+data "Description" "hb2c3d4e5fg6a7bg8c9dg0e1fg2a3b4c5d6e7;1"
+data "ExtraDescription" "hc3d4e5f6ag7b8cg9d0eg1f2ag3b4c5d6e7f8;1"
+data "ExtraDescriptionParams" "DealDamage(3d8,Radiant)"
+data "TooltipDamageList" "DealDamage(3d8,Radiant)"
+data "TooltipStatusApply" "ApplyStatus(SPIRIT_GUARDIANS_RADIANT_AURA,100,10)"
+data "UseCosts" "ActionPoint:1"
+data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;IsConcentration;IsSpell;IsHarmful"
+data "DamageType" "Radiant"
+```
+
+##### Necrotic Variant (Spell_Shout.txt)
+```
+new entry "SMR_Shout_SpiritGuardians_Tyr_Necrotic"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_SpiritGuardians"
+data "SpellContainerID" "SMR_Shout_SpiritGuardians_Tyr"
+data "ContainerSpells" ""
+data "SpellProperties" "ApplyStatus(SPIRIT_GUARDIANS_NECROTIC_AURA,100,10)"
+data "Description" "hb2c3d4e5fg6a7bg8c9dg0e1fg2a3b4c5d6e7;1"
+data "ExtraDescription" "hd4e5f6a7bg8c9dg0e1fg2a3bg4c5d6e7f8a9;1"
+data "ExtraDescriptionParams" "DealDamage(3d8,Necrotic)"
+data "TooltipDamageList" "DealDamage(3d8,Necrotic)"
+data "TooltipStatusApply" "ApplyStatus(SPIRIT_GUARDIANS_NECROTIC_AURA,100,10)"
+data "UseCosts" "ActionPoint:1"
+data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;IsConcentration;IsSpell;IsHarmful"
+data "DamageType" "Necrotic"
+```
+
+#### Localization Entries
+
+```xml
+<content contentuid="ha1b2c3d4eg5f6ag7b8cg9d0eg1f2a3b4c5d6" version="1">Tyr's Spirit Guardians</content>
+<content contentuid="hb2c3d4e5fg6a7bg8c9dg0e1fg2a3b4c5d6e7" version="1">Call forth spirits to protect you. Nearby enemies take 3d8 Radiant or Necrotic damage. Unlimited casting.</content>
+<content contentuid="hc3d4e5f6ag7b8cg9d0eg1f2ag3b4c5d6e7f8" version="1">Radiant spirits surround you. Unlimited casting.</content>
+<content contentuid="hd4e5f6a7bg8c9dg0e1fg2a3bg4c5d6e7f8a9" version="1">Necrotic spirits surround you. Unlimited casting.</content>
+```
+
+---
+
+## Implementation Steps
+
+### Step 1: Create Spirit Guardians Container Spell
+
+Add container spell to `Spell_Shout.txt` (see spell definitions above).
+
+### Step 2: Create Spirit Guardians Variant Spells
+
+Add Radiant and Necrotic variants to `Spell_Shout.txt` (see spell definitions above).
+
+### Step 3: Add Localization Entries
+
+Add to both `SampleMagicRingMod.xml` and `SampleMagicRingMod.loca.xml` (see localization entries above).
+
+### Step 4: Update Armor Stats in Armor.txt
+
+Update the Boosts field to add both Misty Step and Spirit Guardians:
+
+**Before:**
+```
+data "Boosts" "RollBonus(SavingThrow, 2);UnlockSpell(SMR_Shout_CelestialHaste_Unlimited)"
+```
+
+**After:**
+```
+data "Boosts" "RollBonus(SavingThrow, 2);UnlockSpell(SMR_Shout_CelestialHaste_Unlimited);UnlockSpell(SMR_Target_MistyStep_Unlimited);UnlockSpell(SMR_Shout_SpiritGuardians_Tyr,AddChildren,,,SpellCastingAbility)"
+```
+
+**Note:** The extended `UnlockSpell` syntax is required for container spells:
+- `AddChildren` - Includes the variant spells
+- `SpellCastingAbility` - Uses character's spellcasting ability for saves
 
 ---
 
 ## Implementation Checklist
 
-### Research
-- [ ] Complete weapon enchantment research
-- [ ] Document findings
-- [ ] Find Tyr's Protection implementation in gustav
+### Spirit Guardians Spell Creation
+- [ ] Add SMR_Shout_SpiritGuardians_Tyr (container) to Spell_Shout.txt
+- [ ] Add SMR_Shout_SpiritGuardians_Tyr_Radiant (variant) to Spell_Shout.txt
+- [ ] Add SMR_Shout_SpiritGuardians_Tyr_Necrotic (variant) to Spell_Shout.txt
+- [ ] Add localization entries to SampleMagicRingMod.xml
+- [ ] Add localization entries to SampleMagicRingMod.loca.xml
 
-### Longsword of Tyr Enhancement
-- [ ] Update SMR_Sword_Tyr in Weapon.txt with +5 enchantment
-- [ ] Add Tyr's Protection to Longsword of Tyr
+### Armor of Tyr Enhancement
+- [ ] Add SMR_Target_MistyStep_Unlimited to SMR_Armor_Tyr Boosts in Armor.txt
+- [ ] Add SMR_Shout_SpiritGuardians_Tyr (with AddChildren syntax, unlimited) to SMR_Armor_Tyr Boosts in Armor.txt
 
 ### Final
 - [ ] Build and test mod
@@ -94,15 +216,36 @@ Add Tyr's Protection from the vanilla Sword of Justice to the Longsword of Tyr.
 
 ## Test Plan
 
-### Sword of Tyr +5
+### Armor of Tyr - Misty Step
 - [ ] Load game with mod enabled
-- [ ] Equip Sword of Tyr
-- [ ] Check weapon tooltip shows +5 bonus to attack and damage
-- [ ] Verify attack rolls include +5 modifier
-- [ ] Verify damage rolls include +5 modifier
+- [ ] Equip Armor of Tyr
+- [ ] Verify Spectral Step (Misty Step) spell is available
+- [ ] Cast Misty Step and verify teleportation works
+- [ ] Verify no action point is consumed
+- [ ] Verify spell can be cast multiple times per turn (unlimited)
+
+### Armor of Tyr - Spirit Guardians
+- [ ] Equip Armor of Tyr
+- [ ] Verify Tyr's Spirit Guardians spell is available
+- [ ] Verify both Radiant and Necrotic variants appear when selecting the spell
+- [ ] Cast Radiant variant and verify:
+  - [ ] Spirits appear around character
+  - [ ] Enemies entering aura take Radiant damage
+  - [ ] Concentration is required
+- [ ] Cast Necrotic variant and verify:
+  - [ ] Spirits appear around character
+  - [ ] Enemies entering aura take Necrotic damage
+  - [ ] Concentration is required
+- [ ] End concentration and verify spell can be cast again immediately (unlimited)
 
 ---
 
 ## Notes
 
-*(To be added during implementation)*
+- Reuses existing `SMR_Target_MistyStep_Unlimited` spell - no new spell creation needed
+- Spirit Guardians requires the container spell technique since no vanilla item grants it
+- Reference: BapeerySpiritShoes mod in `BapeerySpiritShoes_428af67a-6681-3cd6-8203-18fff09c3282/`
+- The extended `UnlockSpell` syntax with `AddChildren` is required for container spells
+- Spirit Guardians is a concentration spell - cannot be active with Celestial Haste simultaneously
+- Although unlimited, concentration limits practical usage (only one instance active at a time)
+- This makes the Armor of Tyr excellent for mobile frontline casters (Clerics, Paladins)
