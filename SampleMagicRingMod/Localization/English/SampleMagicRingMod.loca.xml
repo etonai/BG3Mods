@@ -89,7 +89,11 @@
 	<content contentuid="hf5a6b7c8dg9e0fg1a2bg3c4dg5e6f7a8b9c0" version="1">Tyr's Thunder</content>
 	<content contentuid="ha6b7c8d9eg0f1ag2b3cg4d5eg6f7a8b9c0d1" version="1">Thunderwave. Once per short rest.</content>
 	<content contentuid="hc3d4e5f6ag7b8cg9d0eg1f2ag3b4c5d6e7f8" version="1">Armor of Tyr</content>
-	<content contentuid="hd4e5f6a7bg8c9dg0e1fg2a3bg4c5d6e7f8a9" version="1">Half plate armor blessed by Tyr, the God of Justice. Grants +2 to all saving throws, allows full Dexterity bonus to AC, and can cast unlimited Celestial Haste.</content>
+	<content contentuid="hd4e5f6a7bg8c9dg0e1fg2a3bg4c5d6e7f8a9" version="1">Half plate armor blessed by Tyr, the God of Justice. Grants +2 to all saving throws, allows full Dexterity bonus to AC, unlimited Celestial Haste, unlimited Misty Step, and unlimited Spirit Guardians.</content>
 	<content contentuid="he6f7a8b9cg0d1eg2f3ag4b5cg6d7e8f9a0b1" version="1">Circlet of Tyr</content>
 	<content contentuid="hf7a8b9c0dg1e2fg3a4bg5c6dg7e8f9a0b1c2" version="1">A circlet blessed by Tyr, the God of Justice. Grants Balduran's Vitality, Balduran's Protection, Stun/Fear/Blind Immunity, Critical Hit Immunity, HP Regeneration, Darkvision, and the spells Speak with Dead, Speak with Animals, See Invisibility, Protection From Evil And Good, and Faerie Fire.</content>
+	<content contentuid="ha1b2c3d4eg5f6ag7b8cg9d0eg1f2a3b4c5d6" version="1">Tyr's Spirit Guardians</content>
+	<content contentuid="hb2c3d4e5fg6a7bg8c9dg0e1fg2a3b4c5d6e7" version="1">Call forth spirits to protect you. Nearby enemies take 3d8 Radiant or Necrotic damage. Unlimited casting.</content>
+	<content contentuid="he5f6a7b8cg9d0eg1f2ag3b4cg8c9d0e1f2a3b4" version="1">Radiant spirits surround you. Unlimited casting.</content>
+	<content contentuid="hf6a7b8c9dg0e1fg2a3bg4c5dg9d0e1f2a3b4c5" version="1">Necrotic spirits surround you. Unlimited casting.</content>
 </contentList>

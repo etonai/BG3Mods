@@ -1,6 +1,6 @@
 # Phase 015 - Armor of Tyr Enhancements
 
-**Status:** PENDING
+**Status:** IMPLEMENTED
 
 ## Goal
 Enhance the Armor of Tyr with additional mobility and utility powers.
@@ -199,15 +199,15 @@ data "Boosts" "RollBonus(SavingThrow, 2);UnlockSpell(SMR_Shout_CelestialHaste_Un
 ## Implementation Checklist
 
 ### Spirit Guardians Spell Creation
-- [ ] Add SMR_Shout_SpiritGuardians_Tyr (container) to Spell_Shout.txt
-- [ ] Add SMR_Shout_SpiritGuardians_Tyr_Radiant (variant) to Spell_Shout.txt
-- [ ] Add SMR_Shout_SpiritGuardians_Tyr_Necrotic (variant) to Spell_Shout.txt
-- [ ] Add localization entries to SampleMagicRingMod.xml
-- [ ] Add localization entries to SampleMagicRingMod.loca.xml
+- [x] Add SMR_Shout_SpiritGuardians_Tyr (container) to Spell_Shout.txt
+- [x] Add SMR_Shout_SpiritGuardians_Tyr_Radiant (variant) to Spell_Shout.txt
+- [x] Add SMR_Shout_SpiritGuardians_Tyr_Necrotic (variant) to Spell_Shout.txt
+- [x] Add localization entries to SampleMagicRingMod.xml
+- [x] Add localization entries to SampleMagicRingMod.loca.xml
 
 ### Armor of Tyr Enhancement
-- [ ] Add SMR_Target_MistyStep_Unlimited to SMR_Armor_Tyr Boosts in Armor.txt
-- [ ] Add SMR_Shout_SpiritGuardians_Tyr (with AddChildren syntax, unlimited) to SMR_Armor_Tyr Boosts in Armor.txt
+- [x] Add SMR_Target_MistyStep_Unlimited to SMR_Armor_Tyr Boosts in Armor.txt
+- [x] Add SMR_Shout_SpiritGuardians_Tyr (with AddChildren syntax, unlimited) to SMR_Armor_Tyr Boosts in Armor.txt
 
 ### Final
 - [ ] Build and test mod
@@ -237,6 +237,31 @@ data "Boosts" "RollBonus(SavingThrow, 2);UnlockSpell(SMR_Shout_CelestialHaste_Un
   - [ ] Enemies entering aura take Necrotic damage
   - [ ] Concentration is required
 - [ ] End concentration and verify spell can be cast again immediately (unlimited)
+
+---
+
+## Bug Fixes
+
+### Armor of Tyr Name Collision (2026-02-01)
+
+**Issue:** The Armor of Tyr was displaying as "Radiant spirits surround you. Unlimited casting." instead of "Armor of Tyr".
+
+**Root Cause:** Handle collision between Armor of Tyr and Spirit Guardians spell variants:
+- Armor of Tyr DisplayName: `hc3d4e5f6ag7b8cg9d0eg1f2ag3b4c5d6e7f8`
+- Spirit Guardians Radiant ExtraDescription: `hc3d4e5f6ag7b8cg9d0eg1f2ag3b4c5d6e7f8` (SAME!)
+- Armor of Tyr Description: `hd4e5f6a7bg8c9dg0e1fg2a3bg4c5d6e7f8a9`
+- Spirit Guardians Necrotic ExtraDescription: `hd4e5f6a7bg8c9dg0e1fg2a3bg4c5d6e7f8a9` (SAME!)
+
+The XML parser uses the last definition for duplicate content UIDs, so the Spirit Guardians text was overwriting the Armor of Tyr name and description.
+
+**Solution:** Changed Spirit Guardians spell ExtraDescription handles to new unique values:
+- Radiant: `hc3d4e5f6ag7b8cg9d0eg1f2ag3b4c5d6e7f8` → `he5f6a7b8cg9d0eg1f2ag3b4cg8c9d0e1f2a3b4`
+- Necrotic: `hd4e5f6a7bg8c9dg0e1fg2a3bg4c5d6e7f8a9` → `hf6a7b8c9dg0e1fg2a3bg4c5dg9d0e1f2a3b4c5`
+
+**Files Modified:**
+- `Stats/Generated/Data/Spell_Shout.txt` - Updated ExtraDescription handles for both Spirit Guardians variants
+- `Localization/English/SampleMagicRingMod.xml` - Updated content UIDs for Spirit Guardians entries
+- `Localization/English/SampleMagicRingMod.loca.xml` - Updated content UIDs for Spirit Guardians entries
 
 ---
 
