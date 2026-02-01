@@ -99,3 +99,18 @@ I like Chromatic Orb spell from here, it is leveled?
 
 Combine these vanilla boots into Boots of Stormwalker
 
+
+
+**
+
+Phase 12:
+
+- Amulet of Tyr
+
+
+- Gloves of Tyr
+Has the powers of the Luminous Gloves:  	<MapKey>e8a72355-b81f-484e-bc7d-945ec81c04a3</MapKey>
+                                        	<Name>MAG_Radiant_RadiatingOrb_Gloves</Name>
+
+Also add the ability to cast Thunderwave as a bonus action once per short rest.
+

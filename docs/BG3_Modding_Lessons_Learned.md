@@ -229,6 +229,24 @@ Update both Version64 values:
 
 ---
 
+## Finding Vanilla Game Objects
+
+### Directory Structure for Vanilla Assets
+When researching vanilla BG3 items, spells, or other objects:
+
+1. **Primary location:** `claudeModding/gustav` directory - Contains most vanilla game objects
+2. **Secondary location:** `claudeModding/Shared` directory - If not found in gustav, check here
+
+### Common File Locations
+| Asset Type | Path |
+|------------|------|
+| Armor/Weapon Stats | `gustav/Public/GustavDev/Stats/Generated/Data/` |
+| Spell Stats | `gustav/Public/GustavDev/Stats/Generated/Data/` |
+| Root Templates | `gustav/Public/GustavDev/RootTemplates/` |
+| Shared Stats | `Shared/Public/Shared/Stats/Generated/Data/` |
+
+---
+
 ## Useful Resources
 
 - [bg3.wiki - Modding Documentation](https://bg3.wiki/wiki/Modding:Creating_meta.lsx)

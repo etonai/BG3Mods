@@ -1,0 +1,9 @@
+new entry "CHARY_CHEST_MISTYSTEP"
+type "Object"
+using "OBJ_Chest"
+data "RootTemplate" "ce86908e-976d-4577-b2e1-c1c34741de9b"
+data "ValueOverride" "500"
+data "Rarity" "VeryRare"
+data "Unique" "0"
+data "MinLevel" "1"
+

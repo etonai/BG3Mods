@@ -1,0 +1,11 @@
+new entry "CHARY_UNDERWEAR_MISTYSTEPPLUS"
+type "Armor"
+using "ARM_Underwear_Elves"
+data "RootTemplate" "4852cdd6-0f82-4d91-9c14-e974e9d39149"
+data "ArmorClass" "3"
+data "ValueOverride" "500"
+data "Rarity" "VeryRare"
+data "Boosts" "Ability(Strength, 4);Ability(Dexterity, 4);Ability(Constitution, 4);Ability(Intelligence, 4);Ability(Wisdom, 4);Ability(Charisma, 4);UnlockSpell(Target_CHARY_Conjuration_MistyStep);UnlockSpell(Target_CHARY_Transmutation_Fly);UnlockSpell(Shout_CHARY_Divination_SpeakWithAnimals);UnlockSpell(Target_CHARY_Evocation_Lite_PrayerOfHealing)"
+data "Unique" "0"
+data "MinLevel" "1"
+

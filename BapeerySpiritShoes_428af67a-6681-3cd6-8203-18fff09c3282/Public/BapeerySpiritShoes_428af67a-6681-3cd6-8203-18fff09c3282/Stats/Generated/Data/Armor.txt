@@ -1,0 +1,10 @@
+new entry "UNI_SpirtStep"
+type "Armor"
+using "_Vanity_Shoes_Generic_Rich"
+data "RootTemplate" "00b38ee6-7f2d-4eca-a27d-738e0657b8e7"
+data "Rarity" "VeryRare"
+data "Boosts" "UnlockSpell(Shout_SpiritGuardiansBoots,AddChildren,,OncePerCombat,SpellCastingAbility);"
+data "Priority" "1"
+data "Unique" "1"
+data "MinLevel" "1"
+
