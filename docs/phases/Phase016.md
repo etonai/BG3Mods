@@ -1,91 +1,100 @@
-# Phase 016 - Longsword of Tyr Enhancements
+# Phase 016 - Non-Unique Items Update
 
-**Status:** PENDING
+**Status:** COMPLETE
 
 ## Goal
-- Research and implement upgrading the Longsword of Tyr from +2 to +5 weapon
-- Add Tyr's Protection ability (from Sword of Justice)
+Update select items to be non-unique and provide multiple copies for party-wide use.
 
 ---
 
-## Item 1: Research - Upgrading Sword of Tyr to +5
+## Item 1: Make Boots of the Stormwalker Non-Unique
 
 ### Overview
-The Sword of Tyr currently uses `WPN_Longsword_2` as its base, which is a +2 longsword. We want to upgrade it to be a +5 weapon for maximum power.
+Remove the unique flag from Boots of the Stormwalker so multiple party members can equip them, and add 5 copies to the traveler's chest.
 
-### Research Questions
+### Current Implementation
 
-1. **How are weapon bonuses defined in BG3?**
-   - Is it through the base weapon template (WPN_Longsword_2)?
-   - Is it through Boosts like `WeaponEnchantment(5)`?
-   - Is it through a combination of both?
-
-2. **What base weapon templates exist?**
-   - Does `WPN_Longsword_3`, `WPN_Longsword_4`, or `WPN_Longsword_5` exist?
-   - What are the differences between weapon tier templates?
-
-3. **Can we override the enchantment level?**
-   - Can we use `using "WPN_Longsword_2"` but add `WeaponEnchantment(5)` boost?
-   - Would this stack or override the base +2?
-
-4. **How do existing legendary weapons handle this?**
-   - Look at high-tier vanilla weapons for examples
-   - Check if any weapons use explicit WeaponEnchantment boosts
-
-### Current Sword of Tyr Implementation
-
+From Armor.txt:
 ```
-new entry "SMR_Sword_Tyr"
-type "Weapon"
-using "WPN_Longsword_2"
-data "RootTemplate" "d2e3f4a5-b6c7-4d8e-9f0a-1b2c3d4e5f6a"
+new entry "SMR_Boots_Stormwalker"
+type "Armor"
+using "_Foot_Magic"
+data "RootTemplate" "e1f2a3b4-c5d6-4e7f-8a9b-0c1d2e3f4a5b"
 data "Rarity" "Legendary"
-data "Boosts" "UnlockSpell(Target_MAG_Smite_Wrathful);UnlockSpell(SMR_Target_BlindingSmite_Unlimited)"
-data "PassivesOnEquip" "MAG_PlaneShifterSlayer_Passive"
+data "Boosts" "UnlockSpell(SMR_Target_MistyStep_Unlimited)"
+data "PassivesOnEquip" "MAG_Thunder_ReverberationOnStatusApply_Boots_Passive;FOR_NightWalkers_WebImmunity"
 data "Unique" "1"
 ```
 
-### Research Tasks
+### Changes Required
 
-- [ ] Search for WeaponEnchantment boost usage in vanilla game files
-- [ ] Find examples of +3 or higher weapons
-- [ ] Determine if enchantment can be set via Boosts field
-- [ ] Test implementation approach
+#### 1. Stats/Generated/Data/Armor.txt
+Remove the `data "Unique" "1"` line from SMR_Boots_Stormwalker entry.
 
-### Research Results
-
-*(To be filled in after research)*
+#### 2. OneTimeRewards/OneTimeRewards.lsx
+Update the Amount from 1 to 5 for the Boots of the Stormwalker reward.
 
 ---
 
-## Item 2: Tyr's Protection Addition
+---
+
+## Item 2: Make Magus Circlet Non-Unique
 
 ### Overview
-Add Tyr's Protection from the vanilla Sword of Justice to the Longsword of Tyr.
+Remove the unique flag from Magus Circlet so multiple party members can equip them, and add 5 copies to the traveler's chest.
 
-**Reference:** Vanilla Sword of Justice (UNI_PLA_WPN_SwordOfJustice, MapKey: 455383a5-1211-4500-85f9-b71fad3fbf15)
+### Current Implementation
 
-### Research Tasks
+From Armor.txt:
+```
+new entry "SMR_Circlet_Magus"
+type "Armor"
+using "_Head_Magic_Circlet"
+data "RootTemplate" "a2b3c4d5-e6f7-4a8b-9c0d-1e2f3a4b5c6d"
+data "Rarity" "Legendary"
+data "Boosts" "UnlockSpell(WW_Target_SpeakWithDead);UnlockSpell(WW_Shout_SpeakWithAnimals);UnlockSpell(SMR_Shout_SeeInvisibility_Unlimited);UnlockSpell(SMR_Target_ProtectionFromEvilAndGood_Unlimited);UnlockSpell(SMR_Target_FaerieFire_ShortRest)"
+data "PassivesOnEquip" "MAG_LC_Cyric_FearImmunity_Amulet_Passive;MAG_Shadow_BlindImmunity_Ring_Passive;UND_SocietyOfBrilliance_DarkvisionRing_Passive"
+data "Unique" "1"
+```
 
-- [ ] Find Tyr's Protection spell/ability in gustav
-- [ ] Determine the internal name and implementation
+### Changes Required
 
-### Research Results
+#### 1. Stats/Generated/Data/Armor.txt
+Remove the `data "Unique" "1"` line from SMR_Circlet_Magus entry.
 
-*(To be filled in after research)*
+#### 2. OneTimeRewards/OneTimeRewards.lsx
+Update the Amount from 1 to 5 for the Magus Circlet reward.
+
+---
+
+## Item 3: Make Circlet of Tyr Non-Unique
+
+### Overview
+Remove the unique flag from Circlet of Tyr so multiple party members can equip them, and add 3 copies to the traveler's chest.
+
+### Changes Required
+
+#### 1. Stats/Generated/Data/Armor.txt
+Remove the `data "Unique" "1"` line from SMR_Circlet_Tyr entry.
+
+#### 2. OneTimeRewards/OneTimeRewards.lsx
+Update the Amount from 1 to 3 for the Circlet of Tyr reward.
 
 ---
 
 ## Implementation Checklist
 
-### Research
-- [ ] Complete weapon enchantment research
-- [ ] Document findings
-- [ ] Find Tyr's Protection implementation in gustav
+### Boots of the Stormwalker
+- [x] Remove `data "Unique" "1"` from SMR_Boots_Stormwalker in Armor.txt
+- [x] Update OneTimeRewards.lsx to set Amount="10" for boots
 
-### Longsword of Tyr Enhancement
-- [ ] Update SMR_Sword_Tyr in Weapon.txt with +5 enchantment
-- [ ] Add Tyr's Protection to Longsword of Tyr
+### Magus Circlet
+- [x] Remove `data "Unique" "1"` from SMR_Circlet_Magus in Armor.txt
+- [x] Update OneTimeRewards.lsx to set Amount="5" for circlet
+
+### Circlet of Tyr
+- [x] Remove `data "Unique" "1"` from SMR_Circlet_Tyr in Armor.txt
+- [x] Update OneTimeRewards.lsx to set Amount="3" for Circlet of Tyr
 
 ### Final
 - [ ] Build and test mod
@@ -94,12 +103,21 @@ Add Tyr's Protection from the vanilla Sword of Justice to the Longsword of Tyr.
 
 ## Test Plan
 
-### Sword of Tyr +5
+### Boots of the Stormwalker
 - [ ] Load game with mod enabled
-- [ ] Equip Sword of Tyr
-- [ ] Check weapon tooltip shows +5 bonus to attack and damage
-- [ ] Verify attack rolls include +5 modifier
-- [ ] Verify damage rolls include +5 modifier
+- [ ] Check traveler's chest for 10 copies of Boots of the Stormwalker
+- [ ] Equip boots on multiple party members simultaneously
+- [ ] Verify all copies function correctly (Misty Step, Reverberation, Web Immunity)
+
+### Magus Circlet
+- [ ] Check traveler's chest for 5 copies of Magus Circlet
+- [ ] Equip circlet on multiple party members simultaneously
+- [ ] Verify all copies function correctly (Speak with Dead/Animals, See Invisibility, Protection From Evil And Good, Faerie Fire, Fear/Blind Immunity, Darkvision)
+
+### Circlet of Tyr
+- [ ] Check traveler's chest for 3 copies of Circlet of Tyr
+- [ ] Equip circlet on multiple party members simultaneously
+- [ ] Verify all copies function correctly (all Helmet of Tyr powers)
 
 ---
 

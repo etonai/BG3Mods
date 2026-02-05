@@ -255,6 +255,73 @@ When researching vanilla BG3 items, spells, or other objects:
 
 ---
 
+## Adding Extra Damage to Weapons
+
+### Problem
+We wanted to add +1d8 radiant damage to the Longsword of Tyr, similar to how the vanilla Devotee's Mace has +1d8 radiant damage.
+
+### Failed Approach: StatusList in RootTemplate
+
+The vanilla Devotee's Mace applies extra radiant damage via a **StatusList** in the RootTemplate:
+
+```xml
+<node id="StatusList">
+    <children>
+        <node id="Status">
+            <attribute id="Object" type="FixedString" value="MAG_RADIANT_STRONG_RADIANCE_WEAPON" />
+        </node>
+    </children>
+</node>
+```
+
+This status (`MAG_RADIANT_STRONG_RADIANCE_WEAPON`) is defined in GustavDev and adds `WeaponDamage(1d8, Radiant)`.
+
+**Why it failed:** This approach did not work for our mod. The status is defined in the base game files (GustavDev) and may not be accessible or may require additional setup that isn't documented. Even after adding the Tags node that vanilla items use, the radiant damage still did not appear.
+
+### Successful Approach: Custom Passive with CharacterWeaponDamage
+
+The solution is to create a **custom passive** that adds extra damage via the `CharacterWeaponDamage` boost.
+
+**Reference:** The vanilla `MAG_Legendary_PsionicWeapon_Passive` (used by Orpheus's Greatsword) demonstrates this pattern:
+
+```
+new entry "MAG_Legendary_PsionicWeapon_Passive"
+type "PassiveData"
+using "MAG_Githborn_Mindcrusher_Greatsword_Passive"
+data "DescriptionParams" "DealDamage(1d6,Psychic)"
+data "TooltipConditionalDamage" "DealDamage(1d6,Psychic)"
+data "Boosts" "IF(IsMeleeAttack()):CharacterWeaponDamage(1d6, Psychic)"
+```
+
+**Our Implementation:**
+
+1. **Create a custom passive in Passive.txt:**
+```
+new entry "SMR_RadiantWeapon_Passive"
+type "PassiveData"
+data "DisplayName" "h9e0f1a2bg3c4dg5e6fg7a8bg9c0d1e2f3a4b;1"
+data "Description" "ha0f1b2c3gd4e5gf6a7g8b9cg0d1e2f3a4b5c;1"
+data "DescriptionParams" "DealDamage(1d8,Radiant)"
+data "TooltipConditionalDamage" "DealDamage(1d8,Radiant)"
+data "Boosts" "IF(IsMeleeAttack()):CharacterWeaponDamage(1d8, Radiant)"
+```
+
+2. **Add the passive to the weapon's PassivesOnEquip:**
+```
+data "PassivesOnEquip" "MAG_PlaneShifterSlayer_Passive;SMR_RadiantWeapon_Passive"
+```
+
+3. **Add localization entries** for the passive's DisplayName and Description.
+
+### Key Takeaways
+
+- **Don't rely on vanilla statuses** applied via StatusList for custom mod items - they may not work
+- **Use custom passives with `CharacterWeaponDamage`** to add extra damage to weapons
+- The `IF(IsMeleeAttack())` condition ensures the damage only applies to melee attacks
+- `DescriptionParams` and `TooltipConditionalDamage` ensure the damage displays correctly in tooltips
+
+---
+
 ## Session Summary
 
 ### What We Built

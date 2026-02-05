@@ -1,6 +1,6 @@
 # Phase 015 - Armor of Tyr Enhancements
 
-**Status:** IMPLEMENTED
+**Status:** COMPLETE
 
 ## Goal
 Enhance the Armor of Tyr with additional mobility and utility powers.

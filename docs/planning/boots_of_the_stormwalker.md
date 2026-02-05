@@ -12,13 +12,13 @@ Legendary boots granting mobility, thunder-based abilities, and immunity to move
 | Base Type | _Foot_Magic |
 | RootTemplate | e1f2a3b4-c5d6-4e7f-8a9b-0c1d2e3f4a5b |
 | Rarity | Legendary |
-| Unique | Yes |
+| Unique | No |
 
 ### Powers (Spells)
 
 | Status | Power | Description | Source |
 |--------|-------|-------------|--------|
-| [x] | **Misty Step** | Cast Misty Step (Nightwalkers version) | Target_UNI_MistyStep_NightWalkers (vanilla Nightwalker boots) |
+| [x] | **Spectral Step** | Cast Misty Step (unlimited, no action cost) | SMR_Target_MistyStep_Unlimited |
 
 ### Passive Abilities
 
@@ -38,9 +38,8 @@ type "Armor"
 using "_Foot_Magic"
 data "RootTemplate" "e1f2a3b4-c5d6-4e7f-8a9b-0c1d2e3f4a5b"
 data "Rarity" "Legendary"
-data "Boosts" "UnlockSpell(Target_UNI_MistyStep_NightWalkers)"
+data "Boosts" "UnlockSpell(SMR_Target_MistyStep_Unlimited)"
 data "PassivesOnEquip" "MAG_Thunder_ReverberationOnStatusApply_Boots_Passive;FOR_NightWalkers_WebImmunity"
-data "Unique" "1"
 ```
 
 ---
@@ -77,6 +76,7 @@ Ideal for:
 
 ## Notes
 
-- Uses vanilla Nightwalker Misty Step spell (no custom spell needed)
+- Uses SMR_Target_MistyStep_Unlimited (same as Ring of Spectral Power's Spectral Step)
+- Misty Step is unlimited and costs no action (not even a bonus action)
 - All passives are from vanilla game items
 - No dependencies on other mods

@@ -145,6 +145,20 @@
 				<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855912" />
 				<children>
 					<node id="GameMaster" />
+					<node id="StatusList">
+						<children>
+							<node id="Status">
+								<attribute id="Object" type="FixedString" value="MAG_RADIANT_STRONG_RADIANCE_WEAPON" />
+							</node>
+						</children>
+					</node>
+					<node id="Tags">
+						<children>
+							<node id="Tag">
+								<attribute id="Object" type="guid" value="983087c8-c9d3-4a87-bc69-65f9329666c8" />
+							</node>
+						</children>
+					</node>
 				</children>
 			</node>
 			<node id="GameObjects"> Shield of Tyr
@@ -211,6 +225,48 @@
 				<attribute id="Name" type="LSString" value="SMR_Armor_Tyr" />
 				<attribute id="ParentTemplateId" type="FixedString" value="42e6357a-4c05-4eda-9415-6b6b4c7d44c5" />
 				<attribute id="Stats" type="FixedString" value="SMR_Armor_Tyr" />
+				<attribute id="Type" type="FixedString" value="item" />
+				<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855912" />
+				<children>
+					<node id="GameMaster" />
+				</children>
+			</node>
+			<node id="GameObjects"> Selune's Moonmace
+				<attribute id="Description" type="TranslatedString" handle="h8d9e0f1ag2b3cg4d5eg6f7ag8b9c0d1e2f3a4" version="1" />
+				<attribute id="DisplayName" type="TranslatedString" handle="h7c8d9e0fg1a2bg3c4dg5e6fg7a8b9c0d1e2f3" version="1" />
+				<attribute id="LevelName" type="FixedString" value="" />
+				<attribute id="MapKey" type="FixedString" value="a5b6c7d8-e9f0-4a1b-2c3d-4e5f6a7b8c9d" />
+				<attribute id="Name" type="LSString" value="SMR_Mace_Selune_Moon" />
+				<attribute id="ParentTemplateId" type="FixedString" value="f8578a13-a857-4043-91e4-8101c9e7c004" />
+				<attribute id="Stats" type="FixedString" value="SMR_Mace_Selune_Moon" />
+				<attribute id="Type" type="FixedString" value="item" />
+				<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855912" />
+				<children>
+					<node id="GameMaster" />
+				</children>
+			</node>
+			<node id="GameObjects"> Sword of Orpheus
+				<attribute id="Description" type="TranslatedString" handle="ha9b0c1d2eg3f4ag5b6cg7d8eg9f0a1b2c3d4" version="1" />
+				<attribute id="DisplayName" type="TranslatedString" handle="h0a1b2c3dg4e5fg6a7bg8c9dg0e1f2a3b4c5" version="1" />
+				<attribute id="LevelName" type="FixedString" value="" />
+				<attribute id="MapKey" type="FixedString" value="e5f6a7b8-c9d0-4e1f-2a3b-4c5d6e7f8a9b" />
+				<attribute id="Name" type="LSString" value="SMR_Sword_Orpheus" />
+				<attribute id="ParentTemplateId" type="FixedString" value="f01c3f5d-c542-420f-86c5-bdddf7819e29" />
+				<attribute id="Stats" type="FixedString" value="SMR_Sword_Orpheus" />
+				<attribute id="Type" type="FixedString" value="item" />
+				<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855912" />
+				<children>
+					<node id="GameMaster" />
+				</children>
+			</node>
+			<node id="GameObjects"> Divine Maul
+				<attribute id="Description" type="TranslatedString" handle="hb0c1d2e3fg4a5bg6c7dg8e9fg0a1b2c3d4e5" version="1" />
+				<attribute id="DisplayName" type="TranslatedString" handle="h1b2c3d4eg5f6ag7b8cg9d0eg1f2a3b4c5d6" version="1" />
+				<attribute id="LevelName" type="FixedString" value="" />
+				<attribute id="MapKey" type="FixedString" value="f6a7b8c9-d0e1-4f2a-3b4c-5d6e7f8a9b0c" />
+				<attribute id="Name" type="LSString" value="SMR_Maul_Divine" />
+				<attribute id="ParentTemplateId" type="FixedString" value="7e8ef269-0e7b-4352-8828-89c5fced943c" />
+				<attribute id="Stats" type="FixedString" value="SMR_Maul_Divine" />
 				<attribute id="Type" type="FixedString" value="item" />
 				<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855912" />
 				<children>

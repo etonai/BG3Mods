@@ -12,7 +12,7 @@ A Legendary circlet granting powerful divination, protection, and utility abilit
 | Base Type | _Head_Magic_Circlet |
 | RootTemplate | a2b3c4d5-e6f7-4a8b-9c0d-1e2f3a4b5c6d |
 | Rarity | Legendary |
-| Unique | Yes |
+| Unique | No |
 
 ### Powers
 
@@ -45,7 +45,6 @@ data "RootTemplate" "a2b3c4d5-e6f7-4a8b-9c0d-1e2f3a4b5c6d"
 data "Rarity" "Legendary"
 data "Boosts" "UnlockSpell(WW_Target_SpeakWithDead);UnlockSpell(WW_Shout_SpeakWithAnimals);UnlockSpell(SMR_Shout_SeeInvisibility_Unlimited);UnlockSpell(SMR_Target_ProtectionFromEvilAndGood_Unlimited);UnlockSpell(SMR_Target_FaerieFire_ShortRest)"
 data "PassivesOnEquip" "MAG_LC_Cyric_FearImmunity_Amulet_Passive;MAG_Shadow_BlindImmunity_Ring_Passive;UND_SocietyOfBrilliance_DarkvisionRing_Passive"
-data "Unique" "1"
 ```
 
 ### Custom Spells
