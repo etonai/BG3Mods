@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="7" revision="1" build="3" lslib_meta="v1,bswap_guids,lsf_keys_adjacency" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="b506bac2-06c3-4610-88d1-40de8707a3b3" />
+					<attribute id="Name" type="LSString" value="CL_Camp_ShirtA_Camp" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="ParentTemplateId" type="FixedString" value="45de24bb-0486-4705-ba04-d0d7946a7694" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hccef5261gf1ecg8575g49cdg17b6c8a23c55" version="2" />
+					<attribute id="Stats" type="FixedString" value="CL_Camp_ShirtA_Camp" />
+					<children>
+						<node id="InventoryList">
+							<children>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="CL_Camp_Bag_Camp_TT" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

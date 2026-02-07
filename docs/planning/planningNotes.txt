@@ -114,3 +114,40 @@ Has the powers of the Luminous Gloves:  	<MapKey>e8a72355-b81f-484e-bc7d-945ec81
 
 Also add the ability to cast Thunderwave as a bonus action once per short rest.
 
+**
+Phase 22
+Moonwarden
+Moonguard
+
+New mod: CL_InconstantMoon_ClericGear
+
+Selunite Cloak - I like the look
+Tempest Domain Selunite Plate - But not the One sleeve version
+
+Nightsong Helmet
+	<MapKey>197c32e4-6693-4d0e-846e-c5e1dc085010</MapKey>
+	<Name>ARM_Helmet_Nightsong</Name>
+
+Moon Shield
+
+
+The sword needs the moonlight
+The armor should add regeneration
+
+
+Ring of Regeneration has Combat Regeneration
+	<MapKey>d6ee2594-7373-4fed-a167-f9d95cb4ecfd</MapKey>
+	<Name>MAG_PHB_OfRegeneration_Ring</Name>
+
+Make the sword look like Voss's Silver Sword
+
+
+Phase 23+
+
+Cloak powers:
+
+Invisibility
+Disguise
+
+
+

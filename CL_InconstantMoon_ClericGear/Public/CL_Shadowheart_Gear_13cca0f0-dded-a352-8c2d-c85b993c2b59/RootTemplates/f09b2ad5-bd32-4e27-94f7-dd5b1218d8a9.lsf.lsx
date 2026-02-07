@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="7" revision="1" build="3" lslib_meta="v1,bswap_guids,lsf_keys_adjacency" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="f09b2ad5-bd32-4e27-94f7-dd5b1218d8a9" />
+					<attribute id="Name" type="LSString" value="CL_LightSelune_Shirt_Crop" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="ParentTemplateId" type="FixedString" value="1c26fb73-9934-42d4-ab8c-bb4fa06e2d7c" />
+					<attribute id="DisplayName" type="TranslatedString" handle="he5ca6021gdda1ge71agb321gc2cc97ac9b0f" version="1" />
+					<attribute id="Stats" type="FixedString" value="CL_LightSelune_Shirt_Crop" />
+					<children>
+						<node id="InventoryList">
+							<children>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="CL_Sel_LightBag_TT" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

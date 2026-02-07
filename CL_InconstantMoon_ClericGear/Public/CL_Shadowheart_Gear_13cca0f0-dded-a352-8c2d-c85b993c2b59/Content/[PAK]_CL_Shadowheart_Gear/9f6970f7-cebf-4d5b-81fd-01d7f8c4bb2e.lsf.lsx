@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="8" revision="0" build="400" lslib_meta="v1,bswap_guids,lsf_keys_adjacency" />
+	<region id="VisualBank">
+		<node id="VisualBank">
+			<children>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="9f6970f7-cebf-4d5b-81fd-01d7f8c4bb2e" />
+					<attribute id="Name" type="LSString" value="GTY_M_ARM_Leather_Old_A_1_Body_IC" />
+					<attribute id="SourceFile" type="LSString" value="Generated/Public/CL_Shadowheart_Gear_13cca0f0-dded-a352-8c2d-c85b993c2b59/GTY_M_ARM_Leather_Old_A_1_Body_IC.GR2" />
+					<attribute id="Slot" type="FixedString" value="Body" />
+					<attribute id="RemapperSlotId" type="FixedString" value="" />
+					<attribute id="AttachmentSkeletonResource" type="FixedString" value="" />
+					<attribute id="AttachBone" type="FixedString" value="" />
+					<attribute id="Template" type="FixedString" value="Generated/Public/CL_Shadowheart_Gear_13cca0f0-dded-a352-8c2d-c85b993c2b59/GTY_M_ARM_Leather_Old_A_1_Body_IC.Dummy_Root.0" />
+					<attribute id="SupportsVertexColorMask" type="bool" value="True" />
+					<attribute id="NeedsSkeletonRemap" type="bool" value="False" />
+					<attribute id="SkeletonResource" type="FixedString" value="" />
+					<attribute id="SoftbodyResourceID" type="FixedString" value="" />
+					<attribute id="HairPresetResourceId" type="FixedString" value="" />
+					<attribute id="ScalpMaterialId" type="FixedString" value="" />
+					<attribute id="SkeletonSlot" type="FixedString" value="" />
+					<attribute id="BlueprintInstanceResourceID" type="FixedString" value="" />
+					<attribute id="MaterialType" type="uint8" value="0" />
+					<attribute id="HairType" type="uint8" value="0" />
+					<attribute id="BoundsMin" type="fvec3" value="0 0 0" />
+					<attribute id="BoundsMax" type="fvec3" value="0 0 0" />
+					<attribute id="ClothColliderResourceID" type="FixedString" value="" />
+					<children>
+						<node id="VertexColorMaskSlots">
+							<attribute id="Object" type="FixedString" value="Torso" />
+						</node>
+						<node id="VertexColorMaskSlots">
+							<attribute id="Object" type="FixedString" value="upperarm" />
+						</node>
+						<node id="VertexColorMaskSlots">
+							<attribute id="Object" type="FixedString" value="decolletage_01" />
+						</node>
+						<node id="VertexColorMaskSlots">
+							<attribute id="Object" type="FixedString" value="decolletage_02" />
+						</node>
+						<node id="VertexColorMaskSlots">
+							<attribute id="Object" type="FixedString" value="Shoulders" />
+						</node>
+						<node id="VertexColorMaskSlots">
+							<attribute id="Object" type="FixedString" value="Sleeves" />
+						</node>
+						<node id="VertexColorMaskSlots">
+							<attribute id="Object" type="FixedString" value="Underwear_Bra" />
+						</node>
+						<node id="VertexColorMaskSlots">
+							<attribute id="Object" type="FixedString" value="Nipple Covers" />
+						</node>
+						<node id="Objects">
+							<attribute id="ObjectID" type="FixedString" value="GTY_M_ARM_Leather_Old_A_1_Body_IC.GTY_M_ARM_Leather_Old_A_1_Body1_Mesh.0" />
+							<attribute id="MaterialID" type="FixedString" value="8bc2832b-c876-354b-8a1b-522ebc23e938" />
+							<attribute id="LOD" type="uint8" value="0" />
+						</node>
+						<node id="Objects">
+							<attribute id="ObjectID" type="FixedString" value="GTY_M_ARM_Leather_Old_A_1_Body_IC.GTY_M_ARM_Leather_Old_A_1_Body2_Mesh.1" />
+							<attribute id="MaterialID" type="FixedString" value="6386165f-bffb-1d11-251f-f8c1739c0bdf" />
+							<attribute id="LOD" type="uint8" value="0" />
+						</node>
+						<node id="Objects">
+							<attribute id="ObjectID" type="FixedString" value="GTY_M_ARM_Leather_Old_A_1_Body_IC.GTY_M_ARM_Leather_Old_A_1_Body1_Mesh_LOD1.2" />
+							<attribute id="MaterialID" type="FixedString" value="8bc2832b-c876-354b-8a1b-522ebc23e938" />
+							<attribute id="LOD" type="uint8" value="1" />
+						</node>
+						<node id="Objects">
+							<attribute id="ObjectID" type="FixedString" value="GTY_M_ARM_Leather_Old_A_1_Body_IC.GTY_M_ARM_Leather_Old_A_1_Body2_Mesh_LOD1.3" />
+							<attribute id="MaterialID" type="FixedString" value="6386165f-bffb-1d11-251f-f8c1739c0bdf" />
+							<attribute id="LOD" type="uint8" value="1" />
+						</node>
+						<node id="Objects">
+							<attribute id="ObjectID" type="FixedString" value="GTY_M_ARM_Leather_Old_A_1_Body_IC.GTY_M_ARM_Leather_Old_A_1_Body1_Mesh_LOD2.4" />
+							<attribute id="MaterialID" type="FixedString" value="8bc2832b-c876-354b-8a1b-522ebc23e938" />
+							<attribute id="LOD" type="uint8" value="2" />
+						</node>
+						<node id="Objects">
+							<attribute id="ObjectID" type="FixedString" value="GTY_M_ARM_Leather_Old_A_1_Body_IC.GTY_M_ARM_Leather_Old_A_1_Body2_Mesh_LOD2.5" />
+							<attribute id="MaterialID" type="FixedString" value="6386165f-bffb-1d11-251f-f8c1739c0bdf" />
+							<attribute id="LOD" type="uint8" value="2" />
+						</node>
+						<node id="Objects">
+							<attribute id="ObjectID" type="FixedString" value="GTY_M_ARM_Leather_Old_A_1_Body_IC.GTY_M_ARM_Leather_Old_A_1_Body1_Mesh_LOD3.6" />
+							<attribute id="MaterialID" type="FixedString" value="8bc2832b-c876-354b-8a1b-522ebc23e938" />
+							<attribute id="LOD" type="uint8" value="3" />
+						</node>
+						<node id="Objects">
+							<attribute id="ObjectID" type="FixedString" value="GTY_M_ARM_Leather_Old_A_1_Body_IC.GTY_M_ARM_Leather_Old_A_1_Body2_Mesh_LOD3.7" />
+							<attribute id="MaterialID" type="FixedString" value="6386165f-bffb-1d11-251f-f8c1739c0bdf" />
+							<attribute id="LOD" type="uint8" value="3" />
+						</node>
+						<node id="AnimationWaterfall">
+							<attribute id="Object" type="FixedString" value="" />
+						</node>
+						<node id="ClothProxyMapping" />
+						<node id="Base" />
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

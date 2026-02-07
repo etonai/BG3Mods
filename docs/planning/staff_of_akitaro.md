@@ -52,6 +52,28 @@ A Legendary quarterstaff combining the arcane charge abilities of the Spellspark
 | **Akitaro's Barrage** | Magic Missile level 3 (bonus action, once per short rest) | SMR_Projectile_AkitarosBarrage_ShortRest |
 | **Akitaro's Shield** | Globe of Invulnerability (bonus action, once per short rest) | SMR_Target_AkitarosShield_ShortRest |
 
+### Phase 21 Powers (Defensive/Utility)
+
+| Power | Description | Source |
+|-------|-------------|--------|
+| **Absorb Elements** | Reaction: gain resistance to elemental damage, add 1d6 to next melee attack | Absorb_Elements_Passive |
+| **Magical Durability** | +2 to saving throws vs spells | MAG_MagicalDurability_Passive |
+
+### Phase 21 Powers (Offensive Synergies)
+
+| Power | Description | Source |
+|-------|-------------|--------|
+| **Radiating Orb** | Apply Radiating Orb on spell damage (-1 attack per stack, illuminates target) | MAG_Radiant_RadiatingOrb_Ring_Passive |
+| **Reverberation** | Apply Reverberation on Thunder/Lightning/Radiant damage (-1 STR/DEX/CON saves per stack) | MAG_Thunder_Reverberation_Gloves_Passive |
+| **Arcane Acuity** | Gain Arcane Acuity on weapon attacks (+1 spell DC/attack per stack) | MAG_Gish_ArcaneAcuity_Gloves_Passive |
+
+### Phase 21 Powers (Light/Radiant Theme)
+
+| Power | Description | Source |
+|-------|-------------|--------|
+| **Callous Glow** | +2 radiant damage vs illuminated targets | MAG_Radiant_DamageBonusOnIlluminatedTarget_Ring_Passive |
+| **Lathander's Light** | Toggled 6m aura that blinds Fiends/Undead (CON 14 save) | CRE_LathandersLight_Passive |
+
 ---
 
 ## Implementation Files
@@ -64,7 +86,8 @@ using "WPN_Quarterstaff_1"
 data "RootTemplate" "f1a2b3c4-d5e6-4f7a-8b9c-0d1e2f3a4b5c"
 data "Rarity" "Legendary"
 data "Boosts" "UnlockSpell(SMR_Target_Light_Unlimited);UnlockInterrupt(SMR_Interrupt_Counterspell_Unlimited);UnlockSpell(SMR_Shout_CelestialHaste_Unlimited);UnlockSpell(Shout_MAG_TheChromatic_ChromaticAttunement);UnlockSpell(Shout_MAG_SpellSlotRestoration);UnlockSpell(Shout_MAG_SpellSlotRestoration_PearlOfPower);UnlockInterrupt(SMR_Interrupt_Shield_Unlimited);UnlockSpell(SMR_Projectile_AkitarosBlast_ShortRest);UnlockSpell(SMR_Target_AkitarosTeleport_ShortRest);UnlockSpell(SMR_Projectile_AkitarosBarrage_ShortRest);UnlockSpell(SMR_Target_AkitarosShield_ShortRest)"
-data "PassivesOnEquip" "MAG_CQCaster_GainArcaneChargeOnDamage_Quarterstaff_Passive;MAG_ArcaneEnchantment_Lesser_Passive;MAG_Legendary_Chromatic_Spellslot_Passive;WW_Mystra_SpellAttkBonus_Passive;WW_Mystra_Passive;WW_Netherese_Staff_Passive"
+data "PassivesOnEquip" "MAG_CQCaster_GainArcaneChargeOnDamage_Quarterstaff_Passive;MAG_ArcaneEnchantment_Lesser_Passive;MAG_Legendary_Chromatic_Spellslot_Passive;WW_Mystra_SpellAttkBonus_Passive;WW_Mystra_Passive;WW_Netherese_Staff_Passive;Absorb_Elements_Passive;MAG_MagicalDurability_Passive;MAG_Radiant_RadiatingOrb_Ring_Passive;MAG_Thunder_Reverberation_Gloves_Passive;MAG_Gish_ArcaneAcuity_Gloves_Passive;MAG_Radiant_DamageBonusOnIlluminatedTarget_Ring_Passive;CRE_LathandersLight_Passive"
+data "StatusOnEquip" "MAG_LATHANDERS_LIGHT_TECHNICAL"
 data "Unique" "1"
 ```
 

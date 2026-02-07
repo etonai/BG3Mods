@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="7" revision="1" build="3" lslib_meta="v1,bswap_guids,lsf_keys_adjacency" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="d24f704e-98ba-4c93-bb3e-feb43dd20aa0" />
+					<attribute id="Name" type="LSString" value="CL_WarSharran_Shirt_B_onearm" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="ParentTemplateId" type="FixedString" value="51b2aff3-3082-4849-a07d-d359d32a0872" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h73cdd0d2g78a5g5840g2e9fg3d872fb30bdd" version="2" />
+					<attribute id="Stats" type="FixedString" value="CL_WarSharran_Shirt_B_onearm" />
+					<children>
+						<node id="InventoryList">
+							<children>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="CL_Shar_WarBag_TT" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

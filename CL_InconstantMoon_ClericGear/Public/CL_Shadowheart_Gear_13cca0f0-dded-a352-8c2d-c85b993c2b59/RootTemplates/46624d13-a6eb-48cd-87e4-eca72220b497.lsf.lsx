@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="7" revision="1" build="3" lslib_meta="v1,bswap_guids,lsf_keys_adjacency" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="46624d13-a6eb-48cd-87e4-eca72220b497" />
+					<attribute id="Name" type="LSString" value="Cl_DeathSharran_Shirt_A" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="ParentTemplateId" type="FixedString" value="f74c6eb5-aea0-4643-aba3-3e8602bda754" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hd305d039geca0g9bf5ge11cg36b54a8e4435" version="3" />
+					<attribute id="Stats" type="FixedString" value="Cl_DeathSharran_Shirt_A" />
+					<attribute id="Description" type="TranslatedString" handle="hd5cc7727g29aagd1abg27f3g7304d9d003ce" version="3" />
+					<children>
+						<node id="InventoryList">
+							<children>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="CL_Shar_DeathBag_TT" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

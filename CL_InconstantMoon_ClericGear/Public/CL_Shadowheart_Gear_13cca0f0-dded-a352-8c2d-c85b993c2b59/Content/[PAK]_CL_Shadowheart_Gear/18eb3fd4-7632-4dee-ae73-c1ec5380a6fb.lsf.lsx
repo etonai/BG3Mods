@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="8" revision="0" build="400" lslib_meta="v1,bswap_guids,lsf_keys_adjacency" />
+	<region id="VisualBank">
+		<node id="VisualBank">
+			<children>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="18eb3fd4-7632-4dee-ae73-c1ec5380a6fb" />
+					<attribute id="Name" type="LSString" value="HUM_F_CLT_Collar_Courtesan_A_IC" />
+					<attribute id="SourceFile" type="LSString" value="Generated/Public/CL_Shadowheart_Gear_13cca0f0-dded-a352-8c2d-c85b993c2b59/HUM_F_CLT_Collar_Courtesan_A_IC.GR2" />
+					<attribute id="Slot" type="FixedString" value="Cloak" />
+					<attribute id="RemapperSlotId" type="FixedString" value="" />
+					<attribute id="AttachmentSkeletonResource" type="FixedString" value="" />
+					<attribute id="AttachBone" type="FixedString" value="" />
+					<attribute id="Template" type="FixedString" value="Generated/Public/CL_Shadowheart_Gear_13cca0f0-dded-a352-8c2d-c85b993c2b59/HUM_F_CLT_Collar_Courtesan_A_IC.Dummy_Root.0" />
+					<attribute id="SupportsVertexColorMask" type="bool" value="False" />
+					<attribute id="NeedsSkeletonRemap" type="bool" value="False" />
+					<attribute id="SkeletonResource" type="FixedString" value="" />
+					<attribute id="SoftbodyResourceID" type="FixedString" value="" />
+					<attribute id="HairPresetResourceId" type="FixedString" value="" />
+					<attribute id="ScalpMaterialId" type="FixedString" value="" />
+					<attribute id="SkeletonSlot" type="FixedString" value="" />
+					<attribute id="BlueprintInstanceResourceID" type="FixedString" value="" />
+					<attribute id="MaterialType" type="uint8" value="0" />
+					<attribute id="HairType" type="uint8" value="0" />
+					<attribute id="BoundsMin" type="fvec3" value="0 0 0" />
+					<attribute id="BoundsMax" type="fvec3" value="0 0 0" />
+					<attribute id="ClothColliderResourceID" type="FixedString" value="" />
+					<children>
+						<node id="Objects">
+							<attribute id="ObjectID" type="FixedString" value="HUM_F_CLT_Collar_Courtesan_A_IC.HUM_F_CLT_Collar_Courtesan_A_Mesh.0" />
+							<attribute id="MaterialID" type="FixedString" value="5fe6de59-b755-2206-6bc5-12a2a8ee073c" />
+							<attribute id="LOD" type="uint8" value="0" />
+						</node>
+						<node id="Objects">
+							<attribute id="ObjectID" type="FixedString" value="HUM_F_CLT_Collar_Courtesan_A_IC.HUM_F_CLT_Collar_Courtesan_A_Mesh_LOD1.1" />
+							<attribute id="MaterialID" type="FixedString" value="5fe6de59-b755-2206-6bc5-12a2a8ee073c" />
+							<attribute id="LOD" type="uint8" value="1" />
+						</node>
+						<node id="AnimationWaterfall">
+							<attribute id="Object" type="FixedString" value="" />
+						</node>
+						<node id="ClothProxyMapping" />
+						<node id="Base" />
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

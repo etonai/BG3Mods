@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="7" revision="1" build="3" lslib_meta="v1,bswap_guids,lsf_keys_adjacency" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="a666813c-77d4-4853-80d6-3cbfde982d8f" />
+					<attribute id="Name" type="LSString" value="CL_Camp_SharBootsDJ_Camp" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="ParentTemplateId" type="FixedString" value="866d3683-bc1e-4378-a46a-0bd79689c375" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h789c392dg2819g52f7ga8e2g05b584f53c6f" version="2" />
+					<attribute id="Stats" type="FixedString" value="CL_Camp_SharBootsDJ_Camp" />
+					<children>
+						<node id="InventoryList">
+							<children>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="CL_Camp_Bag_Camp_TT" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

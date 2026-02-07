@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="7" revision="1" build="3" lslib_meta="v1,bswap_guids,lsf_keys_adjacency" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="9fa08fe1-58bc-4b9f-8c2f-b349400730e1" />
+					<attribute id="Name" type="LSString" value="CL_WarSelune_Shirt_A_onearm" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="ParentTemplateId" type="FixedString" value="42158b94-7005-4e3d-b0db-9d96f45a3084" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h348fc4f4g0fffg7a92g8700g251918b6982a" version="2" />
+					<attribute id="Stats" type="FixedString" value="CL_WarSelune_Shirt_A_onearm" />
+					<children>
+						<node id="InventoryList">
+							<children>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="CL_Sel_WarBag_TT" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

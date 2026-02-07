@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="7" revision="1" build="3" lslib_meta="v1,bswap_guids,lsf_keys_adjacency" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="43899e23-dba0-491f-9622-735095757c7e" />
+					<attribute id="Name" type="LSString" value="CL_LightSel_Shirt_Plate" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="ParentTemplateId" type="FixedString" value="29244ded-031c-4426-870f-b42408eed11f" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h03e52ac0g4ce5g6b00g3f8cgbe1bee02fee2" version="2" />
+					<attribute id="Stats" type="FixedString" value="CL_LightSel_Shirt_Plate" />
+					<attribute id="Description" type="TranslatedString" handle="h2016ecbfg51ffg880fg8b60gdca37eac1e27" version="2" />
+					<children>
+						<node id="InventoryList">
+							<children>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="CL_Sel_LightBag_TT" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

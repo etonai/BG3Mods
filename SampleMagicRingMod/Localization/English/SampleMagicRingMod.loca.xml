@@ -104,4 +104,28 @@
 	<content contentuid="ha9b0c1d2eg3f4ag5b6cg7d8eg9f0a1b2c3d4" version="1">A legendary greatsword once wielded by Orpheus, Prince of the Comet. Infused with psionic power, it grants psychic damage and resistance to psionic attacks, along with Pommel Strike, Slash, Cleave, and Mindcrush weapon actions.</content>
 	<content contentuid="h1b2c3d4eg5f6ag7b8cg9d0eg1f2a3b4c5d6" version="1">Divine Maul</content>
 	<content contentuid="hb0c1d2e3fg4a5bg6c7dg8e9fg0a1b2c3d4e5" version="1">A massive maul infused with divine radiance. Its strikes are blessed with holy power, dealing additional radiant damage to all foes.</content>
+	<content contentuid="h1a2b3c4dge5f6g7a8bg9c0dg1e2f3a4b5c6e7" version="1">Rogueblade</content>
+	<content contentuid="h2b3c4d5egf6a7g8b9cgd0e1gf2a3b4c5d6e7f8" version="1">A legendary longsword forged for those who strike from the shadows. Grants advantage on attacks in darkness, critical hits on 19-20, and rerolls low damage dice.</content>
+	<content contentuid="h3c4d5e6fga7b8g9c0dgd1e2gf3a4b5c6d7e8f9" version="1">Armor of the Rogue</content>
+	<content contentuid="h4d5e6f7agb8c9gd0e1ge2f3ga4b5c6d7e8f9a0" version="1">Legendary studded leather armor that bends light around the wearer. Attackers have disadvantage against you until you take damage, refreshing each turn.</content>
+	<content contentuid="h5e6f7a8bgc9d0g1e2fg3a4bg5c6d7e8f9a0b1c2" version="1">Cloak of the Rogue</content>
+	<content contentuid="h6f7a8b9cgd0e1g2f3ag4b5cg6d7e8f9a0b1c2d3" version="1">A shimmering cloak that allows the wearer to vanish at will. Cast Invisibility as a bonus action, unlimited times.</content>
+	<content contentuid="h7f8a9b0cg1d2eg3f4ag5b6cg7d8e9f0a1b2c3d4" version="1">Shadow Veil</content>
+	<content contentuid="h8a9b0c1dg2e3fg4a5bg6c7dg8e9f0a1b2c3d4e5" version="1">Unlimited Invisibility as a bonus action.</content>
+	<content contentuid="h2b3c4d5eg6f7ag8b9cg0d1eg3f4a5b6c7d8e9" version="1">Moonguard Blade</content>
+	<content contentuid="h1a2b3c4dg5e6fg7a8bg9c0dg2e3f4a5b6c7d8" version="1">A longsword blessed by Selûne, the Moonmaiden. Grants Wrathful Smite, Blinding Smite (unlimited), Light (unlimited), Shield of Faith, Celestial Haste (unlimited), Plane Shifter Slayer, Radiant Weapon (+1d4), and Critical Bonus (crit on 19-20, reroll damage ≤2).</content>
+	<content contentuid="h4d5e6f7ag8b9cg0d1eg2f3ag5b6c7d8e9f0a1" version="1">Moonguard Splint</content>
+	<content contentuid="h3c4d5e6fg7a8bg9c0dg1e2fg4a5b6c7d8e9f0" version="1">Splint armor blessed by Selûne, the Moonmaiden. Grants +2 to all saving throws, allows full Dexterity bonus to AC, unlimited Celestial Haste, unlimited Misty Step, and Spirit Guardians.</content>
+	<content contentuid="h6f7a8b9cg0d1eg2f3ag4b5cg7d8e9f0a1b2c3" version="1">Moonguard Helm</content>
+	<content contentuid="h5e6f7a8bg9c0dg1e2fg3a4bg6c7d8e9f0a1b2" version="1">A helmet blessed by Selûne, the Moonmaiden. Grants Balduran's Vitality, Balduran's Protection, Stun/Fear/Blind Immunity, Critical Hit Immunity, HP Regeneration, Darkvision, Smite the Graceless, and the spells Speak with Dead, Speak with Animals, See Invisibility, Protection From Evil And Good, and Faerie Fire.</content>
+	<content contentuid="h8b9c0d1eg2f3ag4b5cg6d7eg9f0a1b2c3d4e5" version="1">Moonguard Circlet</content>
+	<content contentuid="h7a8b9c0dg1e2fg3a4bg5c6dg8e9f0a1b2c3d4" version="1">A circlet blessed by Selûne, the Moonmaiden. Grants Balduran's Vitality, Balduran's Protection, Stun/Fear/Blind Immunity, Critical Hit Immunity, HP Regeneration, Darkvision, and the spells Speak with Dead, Speak with Animals, See Invisibility, Protection From Evil And Good, and Faerie Fire.</content>
+	<content contentuid="h0d1e2f3ag4b5cg6d7eg8f9ag1b2c3d4e5f6a7" version="1">Moonguard Gloves</content>
+	<content contentuid="h9c0d1e2fg3a4bg5c6dg7e8fg0a1b2c3d4e5f6" version="1">Gloves blessed by Selûne, the Moonmaiden. Inflicts Radiating Orb when dealing Radiant damage and grants Moonguard Thunder (Thunderwave).</content>
+	<content contentuid="h2f3a4b5cg6d7eg8f9ag0b1cg3d4e5f6a7b8c9" version="1">Moonguard Cloak</content>
+	<content contentuid="h1e2f3a4bg5c6dg7e8fg9a0bg2c3d4e5f6a7b8" version="1">A cloak blessed by Selûne, the Moonmaiden. Grants unlimited Crusader's Mantle and divine physical prowess (Strength 29, Constitution 23, Dexterity 23).</content>
+	<content contentuid="h4b5c6d7eg8f9ag0b1cg2d3eg5f6a7b8c9d0e1" version="1">Moonguard Shield</content>
+	<content contentuid="h3a4b5c6dg7e8fg9a0bg1c2dg4e5f6a7b8c9d0" version="1">A shield blessed by Selûne, the Moonmaiden. Grants Reflective Shell, Warding Bond, Shield Riposte, Spellguard, and unlimited Shield spell.</content>
+	<content contentuid="h5f6a7b8cg9d0eg1f2ag3b4cg5d6e7f8a9b0c1d" version="1">Circlet of Willpower</content>
+	<content contentuid="h2b3c4d5eg6f7ag8b9cg0d1eg2f3a4b5c6d7e8" version="1">A circlet that fortifies the mind and body. Grants Critical Hit Immunity, Stun/Fear/Blind Immunity, HP Regeneration, Darkvision, and the spells See Invisibility, Protection From Evil And Good, and Faerie Fire.</content>
 </contentList>

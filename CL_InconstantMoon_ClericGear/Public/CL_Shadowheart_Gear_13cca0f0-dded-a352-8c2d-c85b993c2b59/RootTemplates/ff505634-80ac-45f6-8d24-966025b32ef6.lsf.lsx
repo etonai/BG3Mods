@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="7" revision="1" build="3" lslib_meta="v1,bswap_guids,lsf_keys_adjacency" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="ff505634-80ac-45f6-8d24-966025b32ef6" />
+					<attribute id="Name" type="LSString" value="CL_DeathSel_Shirt_Corset_onearm" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="ParentTemplateId" type="FixedString" value="fe67982a-2db7-4613-a205-107a157e76d7" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h523c13b5g1cc3geeb6g95a5gcecedb12e327" version="2" />
+					<attribute id="Stats" type="FixedString" value="CL_DeathSel_Shirt_Corset_onearm" />
+					<attribute id="Description" type="TranslatedString" handle="h8f715397ga851gab92gd9c8g5bbac4a7a0e2" version="2" />
+					<children>
+						<node id="InventoryList">
+							<children>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="CL_Sel_DeathBag_TT" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

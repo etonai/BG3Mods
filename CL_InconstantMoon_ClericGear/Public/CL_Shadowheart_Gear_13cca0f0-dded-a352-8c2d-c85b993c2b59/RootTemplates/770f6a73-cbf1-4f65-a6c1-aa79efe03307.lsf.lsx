@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="7" revision="1" build="3" lslib_meta="v1,bswap_guids,lsf_keys_adjacency" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="770f6a73-cbf1-4f65-a6c1-aa79efe03307" />
+					<attribute id="Name" type="LSString" value="CL_ClerShield_Selune" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="ParentTemplateId" type="FixedString" value="22dd91be-6433-4569-a7b3-ce3d6ea59b5b" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h33bf525dga84ag2df0ge71aga4b9fa41d789" version="2" />
+					<attribute id="Icon" type="FixedString" value="Item_WPN_HUM_Shield_A_1" />
+					<attribute id="Stats" type="FixedString" value="CL_ClerShield_Selune" />
+					<attribute id="Description" type="TranslatedString" handle="h60fd8a92g6f21g907fg7a4ag5b083498e645" version="2" />
+					<children>
+						<node id="InventoryList">
+							<children>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="CL_chest_Sel_TT" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

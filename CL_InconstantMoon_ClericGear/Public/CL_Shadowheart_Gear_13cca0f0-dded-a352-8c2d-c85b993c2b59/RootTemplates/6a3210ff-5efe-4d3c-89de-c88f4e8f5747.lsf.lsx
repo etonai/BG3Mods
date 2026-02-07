@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="7" revision="1" build="3" lslib_meta="v1,bswap_guids,lsf_keys_adjacency" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="6a3210ff-5efe-4d3c-89de-c88f4e8f5747" />
+					<attribute id="Name" type="LSString" value="CL_TempSelune_Shirt_A" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="ParentTemplateId" type="FixedString" value="6048970a-9bae-4aff-907f-c17dd916ba2c" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h9a0d3295ge16ag35dfg47ffgc6c91d092609" version="1" />
+					<attribute id="Stats" type="FixedString" value="CL_TempSelune_Shirt_A" />
+					<children>
+						<node id="InventoryList">
+							<children>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="CL_Sel_TempBag_TT" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

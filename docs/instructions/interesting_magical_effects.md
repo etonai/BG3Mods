@@ -34,6 +34,7 @@ Spells that existing items grant - can use simple `using` technique.
 | Wrathful Smite | Voss's Silver Sword (MAG_Primeval_Silver_Longsword, MapKey: 20c66f8d-f455-42fc-8e48-543512247e75) | Melee attack deals extra psychic damage, may Frighten target | Needs research |
 | Searing Smite | Skybreaker (UNI_UND_DuergarBlacksmithHammer, MapKey: 733a70a1-2e0f-46f4-aca1-037c0335dc72) | Melee attack deals extra fire damage, target may take burning damage | Needs research |
 | Thunderwave | Ring of Thunderous Force (UNI_UND_KC_RingOfAbsolute, MapKey: c7a58f48-f24f-4139-b0f0-8b12e1bf074e) | AOE thunder damage, pushes enemies back | Needs research |
+| Haste (Self) | Gontr Mael / Victory Longbow (GOB_DrowCommander_Longbow, MapKey: 9acff693-81d5-43f3-8bec-78370c51e5ab) | Cast Haste on self, once per long rest | Shout_MAG_Victory_Longbow_Haste |
 
 ---
 
@@ -95,6 +96,12 @@ Notes on effects that need further investigation.
 | Coruscation Ring (MAG_Radiant_RadiatingOrb_Ring, MapKey: 3bd041cf-bff5-4464-9002-5c17b957b3c7) | Applies Radiating Orb status on spell damage | Complete - see detailed notes below |
 | Gloves of Belligerent Skies (MAG_Thunder_Reverberation_Gloves, MapKey: c987b6e4-adcb-47d6-8dfd-6d4d2f15a381) | Applies Reverberation on Thunder/Lightning/Radiant damage | Complete - see detailed notes below |
 | Gloves of Battlemage's Power (MAG_Gish_ArcaneAcuity_Gloves, MapKey: 15381544-e616-46e6-a881-0af793971863) | Applies Arcane Acuity on weapon/unarmed attacks | Complete - see detailed notes below |
+| King's Knife (MAG_Duergar_Sword_KingsKnife, MapKey: 025e162a-45ec-4f4c-89da-04d8e8dfe606) | Critical hit bonus (crit on 19-20), reroll low damage, Shadow Blade (advantage in darkness) | Complete - see detailed notes below |
+| Cloak of Displacement (MAG_PHB_CloakOfDisplacement_Cloak, MapKey: 257aed3e-370d-40b3-b464-de10257dd82b) | Displacement - attackers have disadvantage, removed when hit, refreshes each turn | Complete - see detailed notes below |
+| Shifting Corpus Ring (MAG_FlamingFist_ScoutRing, MapKey: 959e9aa6-b12b-4b71-83b4-0debdf647e9c) | Invisibility and Blur spells (once per long rest each) | Complete - see detailed notes below |
+| Stalker Gloves (MAG_Stalker_Gloves, MapKey: dd99248c-fe42-4d07-9861-853e9291ea51) | Seldom Caught Unawares (+1 initiative), Skullduggery Attack (+1d4 Force on Sneak Attack) | Complete - see detailed notes below |
+| Radiating Helmet (MAG_Radiant_Radiating_Helmet, MapKey: 5b3c40c5-b0c0-44b5-9b75-e642069fd2cc) | Smite the Graceless - when enemies miss you, they take 1d4 radiant (DEX 14 save) and get Radiating Orb | Complete - see detailed notes below |
+| Ring of Regeneration (MAG_PHB_OfRegeneration_Ring, MapKey: d6ee2594-7373-4fed-a167-f9d95cb4ecfd) | Combat Regeneration - regain 1d4 HP at start of each turn while in combat | Complete - see detailed notes below |
 
 ---
 
@@ -730,6 +737,466 @@ This is a key item for "Gish" builds (melee spellcasters) as it rewards:
 - Attacking with weapons to build spell power
 - Following up with powerful spells at increased DC/attack
 - Works especially well with Eldritch Knight, Bladesinger, War Cleric, or Swords Bard
+
+---
+
+## Detailed Research: Shifting Corpus Ring (Invisibility + Blur)
+
+The Shifting Corpus Ring (MAG_FlamingFist_ScoutRing) is a Rare ring that grants both Invisibility and Blur spells.
+
+### Item Definition (Armor.txt - GustavDev)
+```
+new entry "MAG_FlamingFist_ScoutRing"
+type "Armor"
+using "_Ring_Magic"
+data "RootTemplate" "959e9aa6-b12b-4b71-83b4-0debdf647e9c"
+data "ValueUUID" "94356ef2-bb14-4595-88cf-86f544ef12eb"
+data "Rarity" "Rare"
+data "Boosts" "IF(Tagged('PLAYABLE',context.Source)):UnlockSpell(Target_MAG_FlamingFist_ScoutRing_Invisibility);IF(Tagged('PLAYABLE',context.Source)):UnlockSpell(Shout_MAG_FlamingFist_ScoutRing_Blur)"
+data "Unique" "1"
+```
+
+### Invisibility Spell (Spell_Target.txt - GustavDev)
+```
+new entry "Target_MAG_FlamingFist_ScoutRing_Invisibility"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_Invisibility"
+data "Cooldown" "OncePerRestPerItem"
+data "UseCosts" "ActionPoint:1"
+data "Sheathing" "Sheathed"
+```
+
+### Blur Spell (Spell_Shout.txt - GustavDev)
+```
+new entry "Shout_MAG_FlamingFist_ScoutRing_Blur"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_Blur"
+data "Cooldown" "OncePerRestPerItem"
+data "UseCosts" "ActionPoint:1"
+data "Sheathing" "Sheathed"
+```
+
+### Key Techniques Demonstrated
+
+1. **Conditional Spell Unlock**: Use `IF(Tagged('PLAYABLE',context.Source)):UnlockSpell(...)` to only grant spells to playable characters (not companions/summons)
+2. **Item-Specific Spells**: Create custom spell entries using the base spell to set custom cooldowns and costs
+3. **Once Per Long Rest**: Use `Cooldown "OncePerRestPerItem"` for long rest cooldowns
+4. **Sheathing**: Use `Sheathing "Sheathed"` to allow casting while weapons are sheathed
+
+### Using These Spells in Custom Items
+
+**To add Invisibility (once per long rest):**
+```
+data "Boosts" "UnlockSpell(Target_MAG_FlamingFist_ScoutRing_Invisibility)"
+```
+
+**To add Blur (once per long rest):**
+```
+data "Boosts" "UnlockSpell(Shout_MAG_FlamingFist_ScoutRing_Blur)"
+```
+
+**To create an unlimited bonus action version:**
+```
+new entry "SMR_Target_Invisibility_Unlimited"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_Invisibility"
+data "UseCosts" "BonusActionPoint:1"
+```
+
+---
+
+## Detailed Research: Cloak of Displacement
+
+The Cloak of Displacement (MAG_PHB_CloakOfDisplacement_Cloak) is a Rare cloak that grants the Displacement effect - attackers have disadvantage against you until you take damage, then it refreshes at the start of your next turn.
+
+### Item Definition (Armor.txt - GustavDev)
+```
+new entry "MAG_PHB_CloakOfDisplacement_Cloak"
+type "Armor"
+using "_Back_Magic"
+data "RootTemplate" "257aed3e-370d-40b3-b464-de10257dd82b"
+data "ValueUUID" "a229f048-70b0-4b0c-88cb-29b5c6bdb2d0"
+data "Rarity" "Rare"
+data "PassivesOnEquip" "MAG_PHB_Displacement_Cloak_Passive"
+data "StatusOnEquip" "MAG_PHB_CLOAK_OF_DISPLACEMENT_TECHNICAL"
+data "Unique" "1"
+```
+
+### Displacement Passive (Passive.txt - GustavDev)
+The passive is UI-only (shows the power in item tooltip). The actual effect comes from the status.
+```
+new entry "MAG_PHB_Displacement_Cloak_Passive"
+type "PassiveData"
+data "DisplayName" "h30dfd004g2e7dg49feg8e91gb062ecaf2520;2"
+data "Description" "h22f785a3g6a73g4939gaa55gcd54c9f49a43;3"
+```
+
+### Technical Status (Status_BOOST.txt - GustavDev)
+Applies the Displacement status at the start of each turn in combat.
+```
+new entry "MAG_PHB_CLOAK_OF_DISPLACEMENT_TECHNICAL"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h83f77d95ga2a7g405bgb335gb410d56891ad;1"
+data "Description" "h03006389g343cg4dc3gab0fgff9de272e46f;1"
+data "StackId" "MAG_PHB_CLOAK_OF_DISPLACEMENT_TECHNICAL"
+data "TickType" "StartTurn"
+data "TickFunctors" "IF(Combat() and not Dead()):ApplyStatus(MAG_PHB_CLOAK_OF_DISPLACEMENT, 100, 2)"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting;ApplyToDead"
+data "OnRemoveFunctors" "RemoveStatus(MAG_PHB_CLOAK_OF_DISPLACEMENT)"
+```
+
+### Displacement Status (Status_BOOST.txt - GustavDev)
+The actual Displacement effect - based on BLUR (disadvantage to attackers), removed when hit.
+```
+new entry "MAG_PHB_CLOAK_OF_DISPLACEMENT"
+type "StatusData"
+data "StatusType" "BOOST"
+using "BLUR"
+data "DisplayName" "hf0a2cd38gb975g40ffg9787g99ae6ae1ce58;2"
+data "Description" "h957e994cgb2bdg4e97gbe82gad62540534fc;5"
+data "SoundStart" "MAG_Status_CloakOfDisplacement_Start"
+data "SoundLoop" "MAG_Status_CloakOfDisplacement_MO"
+data "SoundStop" "MAG_Status_CloakOfDisplacement_End"
+data "StackId" "MAG_PHB_CLOAK_OF_DISPLACEMENT"
+data "RemoveConditions" "(IsStatusEvent(StatusEvent.OnAttacked) and IsHit() and not IsCriticalMiss() and TotalAttackDamageDoneGreaterThan(0)) or IsStatusEvent(StatusEvent.OnCombatEnded)"
+data "RemoveEvents" "OnCombatEnded;OnAttacked"
+data "StatusPropertyFlags" "DisableOverhead"
+data "StatusGroups" ""
+```
+
+### Key Techniques Demonstrated
+
+1. **Technical Status for Turn-Based Effects**: Use `StatusOnEquip` with a technical status that has `TickType "StartTurn"` and `TickFunctors` to apply effects at start of each turn
+2. **Using BLUR as Base**: The `using "BLUR"` gives attackers disadvantage without needing custom boosts
+3. **Conditional Removal**: Use `RemoveConditions` with `IsStatusEvent(StatusEvent.OnAttacked) and IsHit() and TotalAttackDamageDoneGreaterThan(0)` to remove when taking damage
+4. **Remove Events**: `RemoveEvents "OnCombatEnded;OnAttacked"` specifies when to check RemoveConditions
+5. **UI-Only Passive**: Passive with just DisplayName/Description shows in tooltip but actual logic is in status
+
+### Using Displacement in Custom Items
+
+**To use the full Displacement system:**
+```
+data "PassivesOnEquip" "MAG_PHB_Displacement_Cloak_Passive"
+data "StatusOnEquip" "MAG_PHB_CLOAK_OF_DISPLACEMENT_TECHNICAL"
+```
+
+**Note:** Both the passive (for UI) and the technical status (for effect) are required.
+
+### Synergy Notes
+
+Displacement synergizes well with:
+- **High AC builds** - Fewer attacks hit, Displacement stays active longer
+- **Defensive fighting** - Dodge action + Displacement = very hard to hit
+- **Shadow Blade** - Advantage in darkness + disadvantage for enemies = strong combo
+- **Mirror Image** - Multiple defensive layers
+
+---
+
+## Detailed Research: King's Knife (Shadow Blade + Critical Bonus)
+
+The King's Knife (MAG_Duergar_Sword_KingsKnife) is a VeryRare shortsword with powerful critical hit bonuses and advantage in darkness.
+
+### Item Definition (Weapon.txt - GustavDev)
+```
+new entry "MAG_Duergar_Sword_KingsKnife"
+type "Weapon"
+using "WPN_Shortsword_2"
+data "RootTemplate" "025e162a-45ec-4f4c-89da-04d8e8dfe606"
+data "ValueUUID" "81764c3c-c7a9-49a7-b145-d31ffd5aebe1"
+data "Rarity" "VeryRare"
+data "PassivesOnEquip" "MAG_TheClover_Rearrangement_Passive;ShadowBlade_Passive"
+data "Unique" "1"
+```
+
+### Shadow Blade Passive (Passive.txt - GustavDev)
+Grants advantage on melee weapon attacks when not in bright light (darkness or dim light).
+```
+new entry "ShadowBlade_Passive"
+type "PassiveData"
+data "DisplayName" "h0160e9efg8974g43d6gb3fcg8d4e9d200a3c;4"
+data "Description" "ha672fd65g0fe4g4596g9529gce372c013ca1;6"
+data "Boosts" "IF(not HasObscuredState(ObscuredState.Clear) and IsMeleeAttack() and IsWeaponAttack()):Advantage(AttackRoll);"
+```
+
+### The Clover Rearrangement Passive (Passive.txt - GustavDev)
+Reduces critical hit threshold by 1 (crit on 19-20) and rerolls damage dice of 2 or lower.
+```
+new entry "MAG_TheClover_Rearrangement_Passive"
+type "PassiveData"
+data "DisplayName" "h15c46cc7g164fg41ffga02ege59329268c58;2"
+data "Description" "h6984b8aagbb23g46b3g8c29g1a65974e4bcb;4"
+data "DescriptionParams" "2;19;18"
+data "Boosts" "ReduceCriticalAttackThreshold(1);IF(AttackingWithMeleeWeapon(context.Source)):Reroll(Damage,2,true)"
+```
+
+### Key Techniques Demonstrated
+
+1. **Reduce Critical Threshold**: Use `ReduceCriticalAttackThreshold(X)` to lower the number needed for a critical hit (1 = crit on 19-20, 2 = crit on 18-20)
+2. **Damage Reroll**: Use `Reroll(Damage,X,true)` to reroll damage dice that are X or lower (the `true` keeps the new roll even if lower)
+3. **Conditional Advantage Based on Light**: Use `IF(not HasObscuredState(ObscuredState.Clear)):Advantage(AttackRoll)` for advantage when not in bright light
+4. **ObscuredState Check**: `HasObscuredState(ObscuredState.Clear)` returns true when in bright light; negating it gives advantage in dim/dark conditions
+
+### Using These Effects in Custom Items
+
+**To add Shadow Blade:**
+```
+data "PassivesOnEquip" "ShadowBlade_Passive"
+```
+
+**To add Critical Hit Bonus + Damage Reroll:**
+```
+data "PassivesOnEquip" "MAG_TheClover_Rearrangement_Passive"
+```
+
+**To create a custom critical threshold passive:**
+```
+new entry "MY_CritBonus_Passive"
+type "PassiveData"
+data "DisplayName" "handle;1"
+data "Description" "handle;1"
+data "Boosts" "ReduceCriticalAttackThreshold(2)"
+```
+
+### Synergy Notes
+
+Shadow Blade synergizes well with:
+- **Darkness spell** - Creates darkness for advantage
+- **Devil's Sight** - See in magical darkness while getting advantage
+- **Skulker feat** - Better stealth in dim light
+- **Gloom Stalker Ranger** - Bonuses in darkness
+
+The critical hit bonus synergizes with:
+- **Champion Fighter** - Improved Critical stacks (crit on 18-20 becomes 17-20)
+- **Savage Attacker** - Reroll all damage dice once per turn
+- **Great Weapon Master** - Bonus action attack on crit
+- **Assassin Rogue** - Auto-crit on surprised targets
+
+---
+
+## Detailed Research: Stalker Gloves (Initiative + Sneak Attack Bonus)
+
+The Stalker Gloves (MAG_Stalker_Gloves) are Rare gloves that grant an initiative bonus and extra Force damage on Sneak Attacks.
+
+### Item Definition (Armor.txt - GustavDev)
+```
+new entry "MAG_Stalker_Gloves"
+type "Armor"
+using "ARM_Gloves_Leather"
+data "RootTemplate" "dd99248c-fe42-4d07-9861-853e9291ea51"
+data "ValueUUID" "a229f048-70b0-4b0c-88cb-29b5c6bdb2d0"
+data "Rarity" "Rare"
+data "PassivesOnEquip" "MAG_InitiativeBonus_1_Passive;MAG_ForcefulSneakAttack_Passive"
+data "Unique" "1"
+```
+
+### Seldom Caught Unawares Passive (Passive.txt - GustavDev)
+Grants a +1 bonus to initiative rolls.
+```
+new entry "MAG_InitiativeBonus_1_Passive"
+type "PassiveData"
+data "DisplayName" "h72f85fe9g3f50g4cafg9e54g7f9c8542cd7b;1"
+data "Description" "hd96c976bg61c0g4804g8000g839a4826b923;1"
+data "DescriptionParams" "1"
+data "Boosts" "Initiative(1)"
+```
+
+There's also a +2 version:
+```
+new entry "MAG_InitiativeBonus_2_Passive"
+type "PassiveData"
+using "MAG_InitiativeBonus_1_Passive"
+data "DescriptionParams" "2"
+data "Boosts" "Initiative(2)"
+```
+
+### Skullduggery Attack Passive (Passive.txt - GustavDev)
+Adds 1d4 Force damage when dealing Sneak Attack damage.
+```
+new entry "MAG_ForcefulSneakAttack_Passive"
+type "PassiveData"
+data "DisplayName" "h5593a398g9a3bg4272gaf2cga94278f772cd;1"
+data "Description" "hfa1c8818g9301g48afgba5ege06d5bd04fbf;1"
+data "DescriptionParams" "DealDamage(1d4, Force)"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "SpellId('Target_SneakAttack') or SpellId('Projectile_SneakAttack') or SpellId('Interrupt_SneakAttack')"
+data "StatsFunctors" "DealDamage(1d4, Force,Magical)"
+```
+
+### Key Techniques Demonstrated
+
+1. **Initiative Bonus**: Use `Initiative(X)` boost to add to initiative rolls
+2. **Conditional Damage on Specific Spells**: Use `SpellId('SpellName')` in Conditions to trigger only on specific abilities
+3. **OnDamage Context**: Use `StatsFunctorContext "OnDamage"` to trigger when dealing damage
+4. **Multiple Spell Conditions**: Chain spell checks with `or` to trigger on any matching spell (Target, Projectile, or Interrupt versions of Sneak Attack)
+
+### Using These Effects in Custom Items
+
+**To add Initiative Bonus:**
+```
+data "PassivesOnEquip" "MAG_InitiativeBonus_1_Passive"  // +1
+data "PassivesOnEquip" "MAG_InitiativeBonus_2_Passive"  // +2
+```
+
+**To add Sneak Attack Force Damage:**
+```
+data "PassivesOnEquip" "MAG_ForcefulSneakAttack_Passive"
+```
+
+### Synergy Notes
+
+These effects synergize well with:
+- **Rogue builds** - Sneak Attack is core to Rogue
+- **Assassin Rogue** - Going first in combat ensures surprised targets for auto-crits
+- **Alert feat** - Stacks with initiative bonus
+- **Gloom Stalker Ranger** - Dread Ambusher adds initiative bonus from Wisdom
+
+---
+
+## Detailed Research: Radiating Helmet (Smite the Graceless)
+
+The Radiating Helmet (MAG_Radiant_Radiating_Helmet) is an Uncommon helmet that punishes enemies who miss their attacks against you.
+
+### Item Definition (Armor.txt - GustavDev)
+```
+new entry "MAG_Radiant_Radiating_Helmet"
+type "Armor"
+using "_Head_Magic_Metal"
+data "RootTemplate" "5b3c40c5-b0c0-44b5-9b75-e642069fd2cc"
+data "Rarity" "Uncommon"
+data "PassivesOnEquip" "MAG_Radiant_Radiating_Helmet_Passive"
+data "Unique" "1"
+```
+
+### Smite the Graceless Passive (Passive.txt - GustavDev)
+Triggers when an enemy misses you, applying a damaging status to them.
+```
+new entry "MAG_Radiant_Radiating_Helmet_Passive"
+type "PassiveData"
+data "DisplayName" "h283a1588g015fg46cag9579g559f2a99c6b6;2"
+data "Description" "h875596dcg27d8g4878gae8cgafe9cbd4dc57;5"
+data "DescriptionParams" "DealDamage(1d4, Radiant)"
+data "StatsFunctorContext" "OnAttacked"
+data "Conditions" "IsMiss() or IsCriticalMiss()"
+data "StatsFunctors" "ApplyStatus(SWAP, MAG_SMITE_THE_GRACELSS_DAMAGE, 100, 0)"
+```
+
+### Smite the Graceless Status (Status_BOOST.txt - GustavDev)
+The status applied to the attacker - forces a DEX save or take radiant damage and Radiating Orb.
+```
+new entry "MAG_SMITE_THE_GRACELSS_DAMAGE"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h08c593e4gef4ag490cgb755gb0cd54c856c0;2"
+data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog"
+data "OnApplyRoll" "not SavingThrow(Ability.Dexterity, 14)"
+data "OnApplySuccess" "DealDamage(1d4, Radiant,Magical);ApplyStatus(MAG_RADIANT_RADIANT_BLAST_TECHNICAL, 100, 0)"
+```
+
+### Key Techniques Demonstrated
+
+1. **OnAttacked Context**: Use `StatsFunctorContext "OnAttacked"` to trigger when being attacked
+2. **Miss Detection**: Use `IsMiss() or IsCriticalMiss()` in Conditions to trigger only on missed attacks
+3. **SWAP Target**: Use `ApplyStatus(SWAP, ...)` to apply status to the attacker instead of self
+4. **OnApplyRoll Save**: Use `OnApplyRoll "not SavingThrow(Ability.Dexterity, DC)"` to require a save before effect
+5. **OnApplySuccess**: Use `OnApplySuccess` to define what happens when the target fails the save
+
+### Using Smite the Graceless in Custom Items
+
+**To use the vanilla passive:**
+```
+data "PassivesOnEquip" "MAG_Radiant_Radiating_Helmet_Passive"
+```
+
+### Synergy Notes
+
+This passive synergizes well with:
+- **High AC builds** - More misses = more procs
+- **Radiating Orb items** - Stacks with other sources of Radiating Orb
+- **Callous Glow Ring** - Enemies with Radiating Orb are illuminated, triggering bonus radiant damage
+- **Shield spell** - Emergency AC boost causes more misses
+
+---
+
+## Detailed Research: Ring of Regeneration (Combat Regeneration)
+
+The Ring of Regeneration (MAG_PHB_OfRegeneration_Ring) is a Rare ring that grants 1d4 HP regeneration at the start of each turn while in combat.
+
+### Item Definition (Armor.txt - GustavDev)
+```
+new entry "MAG_PHB_OfRegeneration_Ring"
+type "Armor"
+using "ARM_Ring_B_Gold_A"
+data "RootTemplate" "d6ee2594-7373-4fed-a167-f9d95cb4ecfd"
+data "Rarity" "Rare"
+data "PassivesOnEquip" "MAG_PHB_OfRegeneration_Ring_Passive"
+data "StatusOnEquip" "MAG_PHB_RING_OF_REGENERATION_TECHNICAL"
+data "Unique" "1"
+```
+
+### Combat Regeneration Passive (Passive.txt - GustavDev)
+The passive is UI-only (shows the power in item tooltip). The actual healing comes from the status.
+```
+new entry "MAG_PHB_OfRegeneration_Ring_Passive"
+type "PassiveData"
+data "DisplayName" "hf38111b1ge9afg4034ga7cbg86406451dfa1;2"
+data "Description" "hdfdc93dfg4eabg4da2ga445g7eb95fb47125;2"
+data "DescriptionParams" "RegainHitPoints(1d4)"
+```
+
+### Technical Status (Status_BOOST.txt - GustavDev)
+Heals 1d4 HP at the start of each turn in combat.
+```
+new entry "MAG_PHB_RING_OF_REGENERATION_TECHNICAL"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h20ce355fg294dg449bg9642g668c54aad2b1;1"
+data "StackId" "MAG_PHB_RING_OF_REGENERATION_TECHNICAL"
+data "TickType" "StartTurn"
+data "TickFunctors" "IF(not HasStatus('DOWNED') and not Dead() and Combat()):RegainHitPoints(1d4)"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting;ApplyToDead"
+```
+
+### Key Techniques Demonstrated
+
+1. **StartTurn Healing**: Use `TickType "StartTurn"` with `TickFunctors` to heal at the start of each turn
+2. **Combat-Only Effect**: Use `Combat()` condition to only heal during combat
+3. **Safety Checks**: Use `not HasStatus('DOWNED') and not Dead()` to prevent healing when downed or dead
+4. **UI-Only Passive**: Passive with just DisplayName/Description/DescriptionParams shows in tooltip but actual logic is in status
+5. **Hidden Status**: Use `StatusPropertyFlags "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"` to hide status from UI
+
+### Using Combat Regeneration in Custom Items
+
+**To add Combat Regeneration (1d4/turn):**
+```
+data "PassivesOnEquip" "MAG_PHB_OfRegeneration_Ring_Passive"
+data "StatusOnEquip" "MAG_PHB_RING_OF_REGENERATION_TECHNICAL"
+```
+
+**Note:** Both the passive (for UI) and the technical status (for effect) are required.
+
+### Related Status: Helm of Balduran Regeneration
+
+The Helm of Balduran uses a similar system but heals 2 HP (flat) instead of 1d4:
+```
+new entry "MAG_HELM_OF_BALDURAN_REGENERATION"
+type "StatusData"
+using "MAG_PHB_RING_OF_REGENERATION_TECHNICAL"
+data "DisplayName" "h06ccd815gad40g4e35gac8bg209888989b3c;1"
+data "StackId" "MAG_HELM_OF_BALDURAN_REGENERATION"
+data "TickFunctors" "IF(not HasStatus('DOWNED') and not Dead() and Combat()):RegainHitPoints(2)"
+```
+
+### Synergy Notes
+
+Combat Regeneration synergizes well with:
+- **High HP pools** - Small healing adds up over long fights
+- **Defensive builds** - Taking less damage makes healing more impactful
+- **Amulet of Greater Health** - More HP to regenerate
+- **Heavy Armor Master** - Reduce incoming damage, regeneration keeps you topped off
 
 ---
 

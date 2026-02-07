@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="7" revision="1" build="3" lslib_meta="v1,bswap_guids,lsf_keys_adjacency" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="2b563302-19d0-4cd2-a054-25d2ce127a93" />
+					<attribute id="Name" type="LSString" value="CL_DeathSel_Shirt_Plate_arm" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="ParentTemplateId" type="FixedString" value="1e2b24e9-b98b-4820-b7f2-9b0df77f1acc" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h6927872cg47bagef55gf167g6aed06e89bde" version="2" />
+					<attribute id="Stats" type="FixedString" value="CL_DeathSel_Shirt_Plate_arm" />
+					<attribute id="Description" type="TranslatedString" handle="hd2537247g7687g6feag286cg61b22e3b0662" version="2" />
+					<children>
+						<node id="InventoryList">
+							<children>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="CL_Sel_DeathBag_TT" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

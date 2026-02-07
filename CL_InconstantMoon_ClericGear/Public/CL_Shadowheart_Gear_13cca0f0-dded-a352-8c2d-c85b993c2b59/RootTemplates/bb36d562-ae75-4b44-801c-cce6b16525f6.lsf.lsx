@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="7" revision="1" build="3" lslib_meta="v1,bswap_guids,lsf_keys_adjacency" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="bb36d562-ae75-4b44-801c-cce6b16525f6" />
+					<attribute id="Name" type="LSString" value="CL_LightSelune_Shirt_Nightsong" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="ParentTemplateId" type="FixedString" value="2fedc331-e929-4b40-92f6-24615d6c4a3a" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hd362abb7g3c03g2f41g5b90g8d30e3d7b32c" version="2" />
+					<attribute id="Stats" type="FixedString" value="CL_LightSelune_Shirt_Nightsong" />
+					<children>
+						<node id="InventoryList">
+							<children>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="CL_Sel_LightBag_TT" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

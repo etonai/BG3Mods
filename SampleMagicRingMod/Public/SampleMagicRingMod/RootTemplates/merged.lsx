@@ -107,7 +107,7 @@
 				<attribute id="DisplayName" type="TranslatedString" handle="h5a6b7c8dge9f0g1a2bg3c4dg5e6f7a8b9c0d" version="1" />
 				<attribute id="ExamineRotation" type="fvec3" value="75 180 0" />
 				<attribute id="LevelName" type="FixedString" value="" />
-				<attribute id="MapKey" type="FixedString" value="f1a2b3c4-d5e6-4f7a-8b9c-0d1e2f3a4b5c" />
+				<attribute id="MapKey" type="FixedString" value="535f3b19-38d5-4898-a68d-687a73d85ed4" />
 				<attribute id="Name" type="LSString" value="SMR_Staff_Akitaro" />
 				<attribute id="ParentTemplateId" type="FixedString" value="e1e112b2-5465-4e37-acdc-372666ec1521" />
 				<attribute id="Stats" type="FixedString" value="SMR_Staff_Akitaro" />
@@ -267,6 +267,160 @@
 				<attribute id="Name" type="LSString" value="SMR_Maul_Divine" />
 				<attribute id="ParentTemplateId" type="FixedString" value="7e8ef269-0e7b-4352-8828-89c5fced943c" />
 				<attribute id="Stats" type="FixedString" value="SMR_Maul_Divine" />
+				<attribute id="Type" type="FixedString" value="item" />
+				<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855912" />
+				<children>
+					<node id="GameMaster" />
+				</children>
+			</node>
+			<node id="GameObjects"> Rogueblade
+				<attribute id="Description" type="TranslatedString" handle="h2b3c4d5egf6a7g8b9cgd0e1gf2a3b4c5d6e7f8" version="1" />
+				<attribute id="DisplayName" type="TranslatedString" handle="h1a2b3c4dge5f6g7a8bg9c0dg1e2f3a4b5c6e7" version="1" />
+				<attribute id="LevelName" type="FixedString" value="" />
+				<attribute id="MapKey" type="FixedString" value="a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5e" />
+				<attribute id="Name" type="LSString" value="SMR_Rogueblade" />
+				<attribute id="ParentTemplateId" type="FixedString" value="d116f35c-4399-408c-ba90-b455a5d29a1f" />
+				<attribute id="Stats" type="FixedString" value="SMR_Rogueblade" />
+				<attribute id="Type" type="FixedString" value="item" />
+				<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855912" />
+				<children>
+					<node id="GameMaster" />
+				</children>
+			</node>
+			<node id="GameObjects"> Armor of the Rogue
+				<attribute id="Description" type="TranslatedString" handle="h4d5e6f7agb8c9gd0e1ge2f3ga4b5c6d7e8f9a0" version="1" />
+				<attribute id="DisplayName" type="TranslatedString" handle="h3c4d5e6fga7b8g9c0dgd1e2gf3a4b5c6d7e8f9" version="1" />
+				<attribute id="LevelName" type="FixedString" value="" />
+				<attribute id="MapKey" type="FixedString" value="b2c3d4e5-f6a7-4b8c-9d0e-1f2a3b4c5d6f" />
+				<attribute id="Name" type="LSString" value="SMR_Armor_Rogue" />
+				<attribute id="ParentTemplateId" type="FixedString" value="cab3455f-59fe-42be-8dcd-7cd61149389a" />
+				<attribute id="Stats" type="FixedString" value="SMR_Armor_Rogue" />
+				<attribute id="Type" type="FixedString" value="item" />
+				<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855912" />
+				<children>
+					<node id="GameMaster" />
+				</children>
+			</node>
+			<node id="GameObjects"> Cloak of the Rogue
+				<attribute id="Description" type="TranslatedString" handle="h6f7a8b9cgd0e1g2f3ag4b5cg6d7e8f9a0b1c2d3" version="1" />
+				<attribute id="DisplayName" type="TranslatedString" handle="h5e6f7a8bgc9d0g1e2fg3a4bg5c6d7e8f9a0b1c2" version="1" />
+				<attribute id="LevelName" type="FixedString" value="" />
+				<attribute id="MapKey" type="FixedString" value="c3d4e5f6-a7b8-4c9d-0e1f-2a3b4c5d6e70" />
+				<attribute id="Name" type="LSString" value="SMR_Cloak_Rogue" />
+				<attribute id="ParentTemplateId" type="FixedString" value="257aed3e-370d-40b3-b464-de10257dd82b" />
+				<attribute id="Stats" type="FixedString" value="SMR_Cloak_Rogue" />
+				<attribute id="Type" type="FixedString" value="item" />
+				<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855912" />
+				<children>
+					<node id="GameMaster" />
+				</children>
+			</node>
+			<node id="GameObjects">
+				<attribute id="Description" type="TranslatedString" handle="h1a2b3c4dg5e6fg7a8bg9c0dg2e3f4a5b6c7d8" version="1" />
+				<attribute id="DisplayName" type="TranslatedString" handle="h2b3c4d5eg6f7ag8b9cg0d1eg3f4a5b6c7d8e9" version="1" />
+				<attribute id="LevelName" type="FixedString" value="" />
+				<attribute id="MapKey" type="FixedString" value="a1b2c3d4-e5f6-4a7b-8c9d-1e2f3a4b5c6d" />
+				<attribute id="Name" type="LSString" value="SMR_Blade_Moonguard" />
+				<attribute id="ParentTemplateId" type="FixedString" value="20c66f8d-f455-42fc-8e48-543512247e75" />
+				<attribute id="Stats" type="FixedString" value="SMR_Blade_Moonguard" />
+				<attribute id="Type" type="FixedString" value="item" />
+				<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855912" />
+				<children>
+					<node id="GameMaster" />
+				</children>
+			</node>
+			<node id="GameObjects">
+				<attribute id="Description" type="TranslatedString" handle="h3c4d5e6fg7a8bg9c0dg1e2fg4a5b6c7d8e9f0" version="1" />
+				<attribute id="DisplayName" type="TranslatedString" handle="h4d5e6f7ag8b9cg0d1eg2f3ag5b6c7d8e9f0a1" version="1" />
+				<attribute id="LevelName" type="FixedString" value="" />
+				<attribute id="MapKey" type="FixedString" value="b2c3d4e5-f6a7-4b8c-9d0e-2f3a4b5c6d7e" />
+				<attribute id="Name" type="LSString" value="SMR_Armor_Moonguard" />
+				<attribute id="ParentTemplateId" type="FixedString" value="42e6357a-4c05-4eda-9415-6b6b4c7d44c5" />
+				<attribute id="Stats" type="FixedString" value="SMR_Armor_Moonguard" />
+				<attribute id="Type" type="FixedString" value="item" />
+				<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855912" />
+				<children>
+					<node id="GameMaster" />
+				</children>
+			</node>
+			<node id="GameObjects">
+				<attribute id="Description" type="TranslatedString" handle="h5e6f7a8bg9c0dg1e2fg3a4bg6c7d8e9f0a1b2" version="1" />
+				<attribute id="DisplayName" type="TranslatedString" handle="h6f7a8b9cg0d1eg2f3ag4b5cg7d8e9f0a1b2c3" version="1" />
+				<attribute id="LevelName" type="FixedString" value="" />
+				<attribute id="MapKey" type="FixedString" value="c3d4e5f6-a7b8-4c9d-0e1f-3a4b5c6d7e8f" />
+				<attribute id="Name" type="LSString" value="SMR_Helmet_Moonguard" />
+				<attribute id="ParentTemplateId" type="FixedString" value="197c32e4-6693-4d0e-846e-c5e1dc085010" />
+				<attribute id="Stats" type="FixedString" value="SMR_Helmet_Moonguard" />
+				<attribute id="Type" type="FixedString" value="item" />
+				<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855912" />
+				<children>
+					<node id="GameMaster" />
+				</children>
+			</node>
+			<node id="GameObjects">
+				<attribute id="Description" type="TranslatedString" handle="h7a8b9c0dg1e2fg3a4bg5c6dg8e9f0a1b2c3d4" version="1" />
+				<attribute id="DisplayName" type="TranslatedString" handle="h8b9c0d1eg2f3ag4b5cg6d7eg9f0a1b2c3d4e5" version="1" />
+				<attribute id="LevelName" type="FixedString" value="" />
+				<attribute id="MapKey" type="FixedString" value="d4e5f6a7-b8c9-4d0e-1a2b-4c5d6e7f8a9b" />
+				<attribute id="Name" type="LSString" value="SMR_Circlet_Moonguard" />
+				<attribute id="ParentTemplateId" type="FixedString" value="e4f5a6b7-c8d9-4e0f-1a2b-3c4d5e6f7a8b" />
+				<attribute id="Stats" type="FixedString" value="SMR_Circlet_Moonguard" />
+				<attribute id="Type" type="FixedString" value="item" />
+				<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855912" />
+				<children>
+					<node id="GameMaster" />
+				</children>
+			</node>
+			<node id="GameObjects">
+				<attribute id="Description" type="TranslatedString" handle="h9c0d1e2fg3a4bg5c6dg7e8fg0a1b2c3d4e5f6" version="1" />
+				<attribute id="DisplayName" type="TranslatedString" handle="h0d1e2f3ag4b5cg6d7eg8f9ag1b2c3d4e5f6a7" version="1" />
+				<attribute id="LevelName" type="FixedString" value="" />
+				<attribute id="MapKey" type="FixedString" value="e5f6a7b8-c9d0-4e1f-2b3c-5d6e7f8a9b0c" />
+				<attribute id="Name" type="LSString" value="SMR_Gloves_Moonguard" />
+				<attribute id="ParentTemplateId" type="FixedString" value="d5e6f7a8-b9c0-4d1e-2f3a-4b5c6d7e8f9a" />
+				<attribute id="Stats" type="FixedString" value="SMR_Gloves_Moonguard" />
+				<attribute id="Type" type="FixedString" value="item" />
+				<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855912" />
+				<children>
+					<node id="GameMaster" />
+				</children>
+			</node>
+			<node id="GameObjects">
+				<attribute id="Description" type="TranslatedString" handle="h1e2f3a4bg5c6dg7e8fg9a0bg2c3d4e5f6a7b8" version="1" />
+				<attribute id="DisplayName" type="TranslatedString" handle="h2f3a4b5cg6d7eg8f9ag0b1cg3d4e5f6a7b8c9" version="1" />
+				<attribute id="LevelName" type="FixedString" value="" />
+				<attribute id="MapKey" type="FixedString" value="f6a7b8c9-d0e1-4f2a-3c4d-6e7f8a9b0c1d" />
+				<attribute id="Name" type="LSString" value="SMR_Cloak_Moonguard" />
+				<attribute id="ParentTemplateId" type="FixedString" value="b1c2d3e4-f5a6-4b7c-8d9e-0f1a2b3c4d5e" />
+				<attribute id="Stats" type="FixedString" value="SMR_Cloak_Moonguard" />
+				<attribute id="Type" type="FixedString" value="item" />
+				<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855912" />
+				<children>
+					<node id="GameMaster" />
+				</children>
+			</node>
+			<node id="GameObjects">
+				<attribute id="Description" type="TranslatedString" handle="h3a4b5c6dg7e8fg9a0bg1c2dg4e5f6a7b8c9d0" version="1" />
+				<attribute id="DisplayName" type="TranslatedString" handle="h4b5c6d7eg8f9ag0b1cg2d3eg5f6a7b8c9d0e1" version="1" />
+				<attribute id="LevelName" type="FixedString" value="" />
+				<attribute id="MapKey" type="FixedString" value="a7b8c9d0-e1f2-4a3b-4d5e-7f8a9b0c1d2e" />
+				<attribute id="Name" type="LSString" value="SMR_Shield_Moonguard" />
+				<attribute id="ParentTemplateId" type="FixedString" value="4f313dde-14bb-43a2-abdd-07b2eb38b33a" />
+				<attribute id="Stats" type="FixedString" value="SMR_Shield_Moonguard" />
+				<attribute id="Type" type="FixedString" value="item" />
+				<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855912" />
+				<children>
+					<node id="GameMaster" />
+				</children>
+			</node>
+			<node id="GameObjects"> Circlet of Willpower
+				<attribute id="Description" type="TranslatedString" handle="h2b3c4d5eg6f7ag8b9cg0d1eg2f3a4b5c6d7e8" version="1" />
+				<attribute id="DisplayName" type="TranslatedString" handle="h5f6a7b8cg9d0eg1f2ag3b4cg5d6e7f8a9b0c1d" version="1" />
+				<attribute id="LevelName" type="FixedString" value="" />
+				<attribute id="MapKey" type="FixedString" value="d1e2f3a4-b5c6-4d7e-8f9a-0b1c2d3e4f5a" />
+				<attribute id="Name" type="LSString" value="SMR_Circlet_Willpower" />
+				<attribute id="ParentTemplateId" type="FixedString" value="48920bf4-85b0-44a1-9f6a-0ad8b493fa47" />
+				<attribute id="Stats" type="FixedString" value="SMR_Circlet_Willpower" />
 				<attribute id="Type" type="FixedString" value="item" />
 				<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855912" />
 				<children>

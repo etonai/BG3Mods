@@ -1,0 +1,9 @@
+new entry "Projectile_CL_Cleric_DeathHeal_proj"
+type "SpellData"
+data "SpellType" "Projectile"
+using "Projectile_CRE_LathandersBlessing_HealingExplosion"
+data "SpellProperties" "IF(Character() and not Self() and not Dead() and Party(context.Target)):ApplyStatus(MAG_REGAIN_HP_4, 100, 0)"
+data "DisplayName" "h54ee725dg3733g62fegec10g01dd50cb9bc4;1"
+data "Description" "h9846095cgf260gf175g8f60gb47e1a4d8c4b;1"
+data "DescriptionParams" "Distance(9);RegainHitPoints(1d6)"
+

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="7" revision="1" build="3" lslib_meta="v1,bswap_guids,lsf_keys_adjacency" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="2a89da5f-3f94-4144-a6f5-a321dc722925" />
+					<attribute id="Name" type="LSString" value="CL_Idol_Shar" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="ParentTemplateId" type="FixedString" value="f48ab49f-943b-4702-aabe-e6c17867ec86" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hf590d765gdd89gaeb0g0e2eg9641ce376c5f" version="1" />
+					<attribute id="Stats" type="FixedString" value="CL_Idol_Shar" />
+					<attribute id="Description" type="TranslatedString" handle="h3e980ff3gdef7gf14bged27g0f5c27a480ac" version="1" />
+					<children>
+						<node id="InventoryList">
+							<children>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="CL_chest_Shar_TT" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

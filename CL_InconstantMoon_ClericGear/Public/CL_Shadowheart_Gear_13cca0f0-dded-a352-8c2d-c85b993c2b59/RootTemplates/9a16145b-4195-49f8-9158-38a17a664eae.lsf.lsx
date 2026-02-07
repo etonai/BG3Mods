@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="7" revision="1" build="3" lslib_meta="v1,bswap_guids,lsf_keys_adjacency" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="9a16145b-4195-49f8-9158-38a17a664eae" />
+					<attribute id="Name" type="LSString" value="CL_TempSharran_Shirt_HalfPlate" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="ParentTemplateId" type="FixedString" value="b5acad55-90a9-437d-b139-c81835a39d5b" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h4be78ceag9b1cg7e0bgd33bgf0824c2de61f" version="1" />
+					<attribute id="Stats" type="FixedString" value="CL_TempSharran_Shirt_HalfPlate" />
+					<children>
+						<node id="InventoryList">
+							<children>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="CL_Shar_TempBag_TT" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

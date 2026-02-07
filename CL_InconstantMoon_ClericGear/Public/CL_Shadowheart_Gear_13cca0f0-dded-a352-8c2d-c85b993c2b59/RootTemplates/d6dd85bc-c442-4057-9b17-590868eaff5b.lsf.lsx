@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="7" revision="1" build="3" lslib_meta="v1,bswap_guids,lsf_keys_adjacency" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="d6dd85bc-c442-4057-9b17-590868eaff5b" />
+					<attribute id="Name" type="LSString" value="CL_Shar_LifeBag" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="ParentTemplateId" type="FixedString" value="5c53c59a-37e7-4a9d-b157-1c84c71e3c0d" />
+					<attribute id="DisplayName" type="TranslatedString" handle="ha5e33009g6250gf4fdge94egcfaa2fcbbe01" version="3" />
+					<attribute id="Stats" type="FixedString" value="CL_Shar_LifeBag" />
+					<attribute id="Description" type="TranslatedString" handle="ha868b3b7g3974g1769g1cc7g78eafccbb19b" version="3" />
+					<children>
+						<node id="InventoryList">
+							<children>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="CL_Shar_LifeBag_TT" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

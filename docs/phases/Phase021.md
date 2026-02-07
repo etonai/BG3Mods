@@ -1,9 +1,10 @@
 # Phase 021 - Staff of Akitaro Power Expansion
 
-**Status:** PENDING
+**Status:** COMPLETE
 
 ## Goal
 - Add additional powers to the Staff of Akitaro to make it the ultimate arcane staff
+- Add Haste (Self) power (unlimited, bonus action) to select magic items
 
 ---
 
@@ -59,6 +60,74 @@
 
 ---
 
+## Haste (Self) Power for Multiple Items
+
+### Overview
+
+Add the Haste (Self) power as an unlimited bonus action spell to select magic items. This is based on the Victory Longbow's `Shout_MAG_Victory_Longbow_Haste` spell, modified to be unlimited and cost a bonus action (like the existing `SMR_Shout_CelestialHaste_Unlimited` on Staff of Akitaro).
+
+### Source Spell Reference
+
+| Aspect | Value |
+|--------|-------|
+| Source Item | Gontr Mael / Victory Longbow |
+| Source Spell | Shout_MAG_Victory_Longbow_Haste |
+| Custom Spell | SMR_Shout_CelestialHaste_Unlimited |
+| Cost | Bonus Action (unlimited) |
+| Effect | Cast Haste on self |
+
+### Items to Receive Haste (Self)
+
+| Item | Internal ID | Current Boosts Line |
+|------|-------------|---------------------|
+| Sword of Tyr | SMR_Sword_Tyr | `Boosts` |
+| Divine Maul | SMR_Maul_Divine | None (add new `Boosts` line) |
+| Sword of Orpheus | SMR_Sword_Orpheus | `BoostsOnEquipMainHand` |
+
+### Spell Definition (Spell_Shout.txt)
+
+Already exists from Staff of Akitaro implementation:
+```
+new entry "SMR_Shout_CelestialHaste_Unlimited"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_MAG_Victory_Longbow_Haste"
+data "UseCosts" "BonusActionPoint:1"
+```
+
+### Adding to Items
+
+Add `UnlockSpell(SMR_Shout_CelestialHaste_Unlimited)` to each item's Boosts line.
+
+#### Sword of Tyr (SMR_Sword_Tyr)
+Current:
+```
+data "Boosts" "UnlockSpell(Target_MAG_Smite_Wrathful);UnlockSpell(SMR_Target_BlindingSmite_Unlimited);UnlockSpell(SMR_Target_Light_Unlimited);UnlockSpell(Target_PLA_ShieldOfFaith_SwordOfJustice)"
+```
+Updated:
+```
+data "Boosts" "UnlockSpell(Target_MAG_Smite_Wrathful);UnlockSpell(SMR_Target_BlindingSmite_Unlimited);UnlockSpell(SMR_Target_Light_Unlimited);UnlockSpell(Target_PLA_ShieldOfFaith_SwordOfJustice);UnlockSpell(SMR_Shout_CelestialHaste_Unlimited)"
+```
+
+#### Divine Maul (SMR_Maul_Divine)
+Current: No Boosts line
+Add:
+```
+data "Boosts" "UnlockSpell(SMR_Shout_CelestialHaste_Unlimited)"
+```
+
+#### Sword of Orpheus (SMR_Sword_Orpheus)
+Current:
+```
+data "BoostsOnEquipMainHand" "UnlockSpell(Target_PommelStrike);UnlockSpell(Target_Slash_New);UnlockSpell(Zone_Cleave);UnlockSpell(Target_MAG_WeaponAction_Mindcrush)"
+```
+Updated:
+```
+data "BoostsOnEquipMainHand" "UnlockSpell(Target_PommelStrike);UnlockSpell(Target_Slash_New);UnlockSpell(Zone_Cleave);UnlockSpell(Target_MAG_WeaponAction_Mindcrush);UnlockSpell(SMR_Shout_CelestialHaste_Unlimited)"
+```
+
+---
+
 ## Implementation
 
 ### Updated Weapon Definition (Weapon.txt)
@@ -92,9 +161,15 @@ data "Unique" "1"
 
 ## Implementation Checklist
 
-- [ ] Update SMR_Staff_Akitaro in Weapon.txt with new passives
-- [ ] Add StatusOnEquip for Lathander's Light technical status
-- [ ] Update staff_of_akitaro.md planning document
+### Staff of Akitaro
+- [x] Update SMR_Staff_Akitaro in Weapon.txt with new passives
+- [x] Add StatusOnEquip for Lathander's Light technical status
+- [x] Update staff_of_akitaro.md planning document
+
+### Haste (Self) on Other Items
+- [x] Add Celestial Haste to SMR_Sword_Tyr (Boosts line)
+- [x] Add Celestial Haste to SMR_Maul_Divine (new Boosts line)
+- [x] Add Celestial Haste to SMR_Sword_Orpheus (BoostsOnEquipMainHand line)
 
 ### Final
 - [ ] Build and test mod
@@ -117,6 +192,11 @@ data "Unique" "1"
 - [ ] Test Radiating Orb + Callous Glow synergy (orb illuminates, glow adds damage)
 - [ ] Test Arcane Acuity + spell casting (build stacks with staff attacks, cast powerful spell)
 - [ ] Test Reverberation stacking to 5 for thunder blast
+
+### Haste (Self) on Other Items
+- [ ] Sword of Tyr: Verify Celestial Haste appears and works (bonus action, unlimited)
+- [ ] Divine Maul: Verify Celestial Haste appears and works (bonus action, unlimited)
+- [ ] Sword of Orpheus: Verify Celestial Haste appears and works (bonus action, unlimited)
 
 ---
 

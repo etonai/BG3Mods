@@ -1,6 +1,10 @@
 # BG3 Modding Lessons Learned
 
-This document summarizes key lessons learned while developing the Ring of Spectral Power mod for Baldur's Gate 3.
+This document summarizes key lessons learned while developing mods for Baldur's Gate 3.
+
+## Active Mod
+
+All custom items are developed in **SampleMagicRingMod**. Other mods in this project (e.g., gustav, Shared, WhimsicalWares) are reference examples for researching vanilla game objects and existing mod patterns.
 
 ---
 
