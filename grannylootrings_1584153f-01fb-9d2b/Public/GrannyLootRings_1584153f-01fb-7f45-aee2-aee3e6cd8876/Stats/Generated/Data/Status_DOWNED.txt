@@ -1,9 +1,0 @@
-new entry "GR_LATHANDERS_BLESSING_DOWNED"
-type "StatusData"
-data "StatusType" "DOWNED"
-using "GLO_NIGHTSONGRESURRECTION_DOWNED"
-data "DisplayName" "h14a801a9gc641g2ba7g7e9egb5852e903b03;1"
-data "Description" "h13145555gd8d8ge915gd9b9g5a19b94ea8d9;1"
-data "TickFunctors" "RegainHitPoints(2d6)"
-data "OnApplyFunctors" "Stabilize();RemoveStatus(MOO_NIGHTSONG_MOONBEAM);ApplyStatus(GR_LATHANDERSBLESSING_COOLDOWN,100,-1);"
-

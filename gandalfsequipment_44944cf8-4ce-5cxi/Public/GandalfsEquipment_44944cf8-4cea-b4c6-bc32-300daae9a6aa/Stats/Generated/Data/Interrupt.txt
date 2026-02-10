@@ -1,7 +1,0 @@
-new entry "Ink850_Gandalf_Shield_Interrupt"
-type "InterruptData"
-using "Interrupt_Shield_Wizard"
-data "DisplayName" "h026a9546g2dd9g735fg5428g3cd3e4c0cb12;2"
-data "Cost" "ReactionActionPoint:1; Ink850_Interrupt_AnorShield:1"
-data "Cooldown" "OncePerRestPerItem"
-

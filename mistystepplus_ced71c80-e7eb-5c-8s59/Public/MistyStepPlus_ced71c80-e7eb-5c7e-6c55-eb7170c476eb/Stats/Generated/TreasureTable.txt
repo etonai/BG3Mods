@@ -1,9 +1,0 @@
-treasure itemtypes "Common","Uncommon","Rare","Epic","Legendary","Divine","Unique"
-new treasuretable "TUT_Chest_Potions"
-CanMerge 1
-new subtable "1,1"
-object category "I_CHARY_CHEST_MISTYSTEP",1,0,0,0,0,0,0,0
-new treasuretable "CHARY_CHEST_MISTYSTEP_TT"
-CanMerge 1
-new subtable "12,1"
-object category "I_CHARY_UNDERWEAR_MISTYSTEPPLUS",1,0,0,0,0,0,0,0

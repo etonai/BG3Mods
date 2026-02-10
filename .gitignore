@@ -1,10 +1,14 @@
 # Extracted game files
 Gustav/
 Shared/
-ww_wizard_equipment_d66abcbf-b-0w9m/
+
+# Example and vanilla reference files (not actively developed)
+ExampleMods/
+VanillaBG3/
 
 # Mod tools and extracted mods
 *.pak
 *.zip
 
+# Artifacts
 nul

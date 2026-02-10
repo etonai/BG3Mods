@@ -1,7 +1,0 @@
-new entry "Ink850_CheatersBackpack"
-type "Object"
-using "_Container"
-data "RootTemplate" "8e6a7803-31e9-4419-8386-9339ac1869e9"
-data "Level" "1"
-data "ValueOverride" "1"
-

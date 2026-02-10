@@ -1,8 +1,0 @@
-new entry "Wall_GR_Silvanus_WallOfStone_6"
-type "SpellData"
-data "SpellType" "Wall"
-using "Wall_WallOfStone_6"
-data "Cooldown" "OncePerRest"
-data "UseCosts" "ActionPoint:1;"
-data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;IsSpell"
-
