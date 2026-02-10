@@ -63,6 +63,7 @@ Technical reference documentation for BG3 modding.
 
 | File | Description |
 |------|-------------|
+| uuid_workflow.md | **READ BEFORE Level13Gear work** - UUID pool, naming conventions (L13 prefix, ed13 UUID prefix) |
 | adding_spells_without_item_source.md | Container spell technique for spells no item grants |
 | interesting_magical_effects.md | Collection of effects/passives for future items |
 | BG3_Modding_Lessons_Learned.md | Key lessons: handle format, file structure, debugging |
