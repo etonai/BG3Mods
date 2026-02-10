@@ -150,4 +150,24 @@ Invisibility
 Disguise
 
 
+** Plase 25+ February 10+
+
+Magical Armor with Celestial Haste
+Githyanki Half
+Drow studded leather (or Minthara's special version)
+Barbarian Armor for Karlach, even if she is a fighter
+
+Weapons and Armor for Jaheira and Minsc?  Maybe not.
+Maybe just weapons and more boots.
+
+Could we make better items for magic missile?
+Can Claude do a better job of researching Psychic Spark?
+	<MapKey>4a9f0479-954f-486c-9534-d7d72c11f919</MapKey>
+	<Name>UNI_UND_SocietyOfBrilliance_MagicMissileNecklace</Name>
+
+	to get he psychic missiles power?
+
+
+
+
 

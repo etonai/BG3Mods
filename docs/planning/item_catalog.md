@@ -21,7 +21,7 @@ A complete list of all magic items created for the mod.
 
 | Category | Details |
 |----------|---------|
-| Spells | Light (unlimited), Counterspell (unlimited), Celestial Haste (unlimited), Chromatic Attunement, Spell Slot Restoration (2 versions), Shield (unlimited), Akitaro's Blast (short rest), Akitaro's Teleport (short rest), Akitaro's Barrage (short rest), Akitaro's Shield (short rest) |
+| Spells | Light (unlimited), Counterspell (unlimited), Celestial Haste (unlimited), Chromatic Attunement, Spell Slot Restoration (2 versions), Shield (unlimited), Akitaro's Blast (short rest), Akitaro's Teleport (short rest), Akitaro's Barrage (unlimited), Akitaro's Shield (short rest) |
 | Passives | CQ Caster (Arcane Charge on damage), Arcane Enchantment (+1), Chromatic Spellslot, Mystra's Blessing, Netherese Staff, Absorb Elements, Magical Durability (+2 vs spells), Radiating Orb on spell damage, Reverberation on Thunder/Lightning/Radiant, Arcane Acuity on weapon attacks, +2 radiant vs illuminated, Lathander's Light aura |
 | Status | Lathander's Light Technical |
 
@@ -87,7 +87,7 @@ A complete list of all magic items created for the mod.
 | Category | Details |
 |----------|---------|
 | Enchantment | +5, Magical |
-| Spells | Wrathful Smite, Blinding Smite (unlimited), Light (unlimited), Shield of Faith, Celestial Haste (unlimited) |
+| Spells | Wrathful Smite, Blinding Smite (unlimited), Light (unlimited), Shield of Faith, Celestial Haste (free action), Spirit Guardians (free action) |
 | Passives | Plane Shifter Slayer, Radiant Weapon (+1d4 radiant), Rearrangement (crit on 19-20, reroll damage ≤2), Light of Lathander (toggled aura blinds Fiends/Undead), Moonshield Aura (Shadow Curse protection) |
 | Status | Lathander's Light Technical |
 
@@ -126,6 +126,30 @@ A complete list of all magic items created for the mod.
 | Spells | Celestial Haste (unlimited), Misty Step (unlimited), Spirit Guardians (container spell) |
 | Passives | Exotic Material (no Stealth disadvantage), Combat Regeneration (1d4 HP/turn in combat) |
 | Status | Exotic Material Technical, Ring of Regeneration Technical |
+
+---
+
+### SMR_Armor_Voss (Armor of Voss)
+**Type:** Chain Shirt +5 (Elven Chain appearance) | **Rarity:** Legendary
+
+| Category | Details |
+|----------|---------|
+| AC | +5 total |
+| Boosts | +2 Saving Throws, no Dex cap |
+| Spells | Celestial Haste (unlimited), Misty Step (unlimited), Spirit Guardians (container spell) |
+| Passives | Exotic Material (no Stealth disadvantage), Combat Regeneration (1d4 HP/turn in combat) |
+| Status | Exotic Material Technical, Ring of Regeneration Technical |
+
+---
+
+### SMR_Armor_Orpheus (Armor of Orpheus)
+**Type:** Half Plate (Githyanki) | **Rarity:** Legendary
+
+| Category | Details |
+|----------|---------|
+| Boosts | +2 Saving Throws, no Dex cap |
+| Spells | Celestial Haste (unlimited), Misty Step (unlimited), Spirit Guardians (container spell) |
+| Passives | Exotic Material (no Stealth disadvantage) |
 
 ---
 
@@ -226,7 +250,7 @@ A complete list of all magic items created for the mod.
 ## Back
 
 ### SMR_Cloak_Tyr (Cloak of Tyr)
-**Type:** Long Cloak | **Rarity:** Legendary
+**Type:** Long Cloak | **Rarity:** Legendary | **Non-Unique** (3 in chest)
 
 | Category | Details |
 |----------|---------|
@@ -341,11 +365,11 @@ A complete list of all magic items created for the mod.
 | Category | Count |
 |----------|-------|
 | Weapons | 8 |
-| Armor (Body) | 3 |
+| Armor (Body) | 5 |
 | Head | 5 |
 | Hands | 2 |
 | Feet | 1 |
 | Back | 3 |
 | Shield | 2 |
 | Rings | 6 |
-| **Total** | **30** |
+| **Total** | **32** |

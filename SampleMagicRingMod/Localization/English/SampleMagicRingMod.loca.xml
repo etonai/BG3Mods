@@ -128,4 +128,8 @@
 	<content contentuid="h3a4b5c6dg7e8fg9a0bg1c2dg4e5f6a7b8c9d0" version="1">A shield blessed by Selûne, the Moonmaiden. Grants Reflective Shell, Warding Bond, Shield Riposte, Spellguard, and unlimited Shield spell.</content>
 	<content contentuid="h5f6a7b8cg9d0eg1f2ag3b4cg5d6e7f8a9b0c1d" version="1">Circlet of Willpower</content>
 	<content contentuid="h2b3c4d5eg6f7ag8b9cg0d1eg2f3a4b5c6d7e8" version="1">A circlet that fortifies the mind and body. Grants Critical Hit Immunity, Stun/Fear/Blind Immunity, HP Regeneration, Darkvision, and the spells See Invisibility, Protection From Evil And Good, and Faerie Fire.</content>
+	<content contentuid="h26a1b2c3g4d5eg6f7ag8b9cg0d1e2f3a4b5c7" version="1">Armor of Gith</content>
+	<content contentuid="h26b2c3d4g5e6fg7a8bg9c0dg1e2f3a4b5c6d8" version="1">Legendary armor crafted in the style of the Githyanki. Provides exceptional protection.</content>
+	<content contentuid="h9e0f1a2bg3c4dg5e6fg7a8bg0c1d2e3f4a5b6" version="1">Armor of Voss</content>
+	<content contentuid="h8d9e0f1ag2b3cg4d5eg6f7ag9b0c1d2e3f4a5" version="1">This exquisite elven chain was forged for Kith'rak Voss, a legendary Githyanki warrior. The armor flows like liquid silver, providing exceptional protection while allowing complete freedom of movement. Grants +2 to all saving throws, full Dexterity bonus to AC, unlimited Celestial Haste, unlimited Misty Step, Spirit Guardians, and regenerates 1d4 HP per turn in combat.</content>
 </contentList>
