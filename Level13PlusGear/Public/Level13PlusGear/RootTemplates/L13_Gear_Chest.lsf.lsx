@@ -17,7 +17,7 @@
 					<attribute id="Icon" type="FixedString" value="Item_CONT_GEN_Chest_Rich_A" />
 					<attribute id="Stats" type="FixedString" value="L13_Gear_Chest" />
 					<attribute id="CanBeImprovisedWeapon" type="bool" value="True" />
-					<attribute id="Description" type="TranslatedString" handle="h324e8d15ga83ag84b5ge87eg9fab3gd0a604" version="1" />
+					<attribute id="Description" type="TranslatedString" handle="hed136020gd37fg4fc7ga174g47f0bf91dace" version="1" />
 					<children>
 						<node id="InventoryList">
 							<children>
