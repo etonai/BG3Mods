@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="6" build="5" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="hed137e45g45dbgbf40g46ffga5c2g3fcb9aa21700" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hed13c5e1gd6b5gd2d6g44f0ga9a7g0f70b0285471" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="ed13bcca-bb98-4c26-861c-65c23961de31" />
+					<attribute id="Name" type="LSString" value="L13_Boots_Stormwalker" />
+					<attribute id="ParentTemplateId" type="FixedString" value="ac9145d1-31d0-4aa3-8755-62cc85dad22b" />
+					<attribute id="Stats" type="FixedString" value="L13_Boots_Stormwalker" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855912" />
+					<children>
+						<node id="GameMaster" />
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

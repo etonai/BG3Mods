@@ -4,8 +4,6 @@ new treasuretable "TUT_Chest_Potions"
 CanMerge 1
 new subtable "1,1"
 object category "I_L13_Gear_Chest",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_L13_Ring_Testing",1,0,0,0,0,0,0,0
 
 new treasuretable "L13_Gear_Chest_TT"
 CanMerge 1
@@ -13,3 +11,9 @@ new subtable "1,1"
 object category "I_L13_Staff_Archmage",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_L13_Ring_Testing",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_L13_Sword_Tyr",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_L13_Boots_Stormwalker",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_L13_Blade_Moonguard",1,0,0,0,0,0,0,0
