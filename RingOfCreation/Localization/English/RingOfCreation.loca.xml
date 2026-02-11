@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<contentList>
+	<content contentuid="hroc7624bgb5dag47d9gab02g456236332c1e" version="1">Ring of Creation</content>
+	<content contentuid="hroc8099g3c13g42adg8b31g50724eafee5a" version="1">A legendary ring imbued with the power to summon items from across the realms. Grants the ability to summon the Level 13 Plus Gear Chest and Boots of the Stormwalker.</content>
+	<content contentuid="hroc1c8gf42ag4d19gb8e2ga1b4c7d8e9f0a" version="1">Summon Level 13 Gear Chest</content>
+	<content contentuid="hroc6020gd37fg4fc7ga174g47f0bf91dace" version="1">Summon the Level 13 Plus Gear Chest at the target location. The chest contains powerful equipment for level 13+ characters.</content>
+	<content contentuid="hroc0ccag8bc9g4a79gab95g36259cbf2165" version="1">Summon Boots of Stormwalker</content>
+	<content contentuid="hroc3d8ag477bg4051gaeecg5cb59a916ca2" version="1">Summon the Boots of the Stormwalker at the target location. These magical boots grant enhanced mobility and lightning resistance.</content>
+	<content contentuid="hroc9876gab12g4cd3gef45g012345678901" version="1">Test Ring (Simple)</content>
+	<content contentuid="hroc8765ga21bg3dc4ge54fg109876543210" version="1">A simple test ring with no special properties. Used to verify the mod delivery system is working correctly.</content>
+</contentList>

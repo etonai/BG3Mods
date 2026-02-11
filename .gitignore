@@ -6,6 +6,9 @@ Shared/
 ExampleMods/
 VanillaBG3/
 
+# Item spawning tool (utility, not a mod)
+SpawnAnyItem/
+
 # Mod tools and extracted mods
 *.pak
 *.zip

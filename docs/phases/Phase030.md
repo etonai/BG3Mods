@@ -382,6 +382,136 @@ Add the 4 handles to `Level13PlusGear.loca.xml` with appropriate text:
 
 ---
 
+## Critical Discovery: Container Delivery Limitation
+
+### Issue Discovered During Testing
+
+**Date:** February 10, 2026
+
+**Observation:**
+- In **existing saved games** where tutorial chest was already opened: Level 13 Plus Gear Chest does NOT appear
+- Old "Level 13 Gear Chest" is gone (due to rename in Phase 030)
+- In **new saves** (before opening tutorial chest): Level 13 Plus Gear Chest appears correctly
+
+### Root Cause Analysis
+
+**How BG3 Treasure Tables Work:**
+
+When a container (like TUT_Chest_Potions) is first generated/opened in a save file:
+1. Game evaluates all treasure tables that merge into that container
+2. Generates loot based on current mods loaded
+3. **Saves the generated loot to the save file**
+4. Future loads use the **saved loot**, not re-evaluating treasure tables
+
+**What This Means:**
+
+```
+Timeline:
+1. Player opens tutorial chest → Game generates loot from treasure tables → Saves to save file
+2. Player later installs/updates mod → Chest loot already "locked in" save file
+3. New items in treasure table → NOT added to already-opened chests
+```
+
+**Why Phase 030 Rename Broke Existing Saves:**
+
+The rename changed the mod identity, so BG3 treats it as a different mod:
+- Old mod: "Level13Gear" with chest "Level 13 Gear Chest"
+- New mod: "Level13PlusGear" with chest "Level 13 Plus Gear Chest"
+- Existing save: Has "Level 13 Gear Chest" from old mod → No longer provided by new mod → Chest disappears
+
+### Impact on Future Development
+
+**The Problem:**
+Adding new items to Level13PlusGear via Tutorial Chest will NOT make them available in existing playthroughs where the chest was already opened.
+
+**Example Scenario:**
+1. Player starts new game with Level13PlusGear (has Staff of Archmage)
+2. Player opens tutorial chest, gets staff, continues playing
+3. Modder adds "Ring of Power" to Level13PlusGear chest
+4. Player loads save → Ring does NOT appear (chest already opened)
+
+### Delivery System Comparison
+
+| Method | New Games | Existing Saves (Unopened Chest) | Existing Saves (Opened Chest) | Notes |
+|--------|-----------|--------------------------------|------------------------------|-------|
+| **Container (Current)** | ✅ Works | ✅ Works | ❌ Fails | Loot locked after first open |
+| **OneTimeRewards** | ✅ Works | ⚠️ Maybe | ⚠️ Maybe | Delivers to Traveler's Chest - similar limitations |
+| **Console Commands** | ✅ Works | ✅ Works | ✅ Works | Requires player manual action |
+| **Script Extender** | ✅ Works | ✅ Works | ✅ Works | Advanced, requires SE installed |
+
+### Potential Solutions
+
+**Option 1: Accept Current Limitation**
+- Document clearly that Level13PlusGear is "new game friendly"
+- Recommend players start new games when updating mod
+- Pro: Simple, no changes needed
+- Con: Poor user experience for existing saves
+
+**Option 2: Console Command Documentation**
+- Provide console commands for each item
+- Players manually spawn items in existing saves
+- Example: `tz add_item L13_Staff_Archmage`
+- Pro: Works for all saves
+- Con: Requires player action, less immersive
+
+**Option 3: Multiple Delivery Methods**
+- Use different containers for different items
+- Some in Tutorial Chest, some in Act 1 camps, some in Act 2, etc.
+- Spread items across unopened containers
+- Pro: Better chance of working in existing saves
+- Con: Complex to manage
+
+**Option 4: Hybrid Approach**
+- Core items: Tutorial Chest (for new games)
+- New additions: Different containers or console commands
+- Document which items work in existing saves
+- Pro: Best of both worlds
+- Con: More complex implementation
+
+**Option 5: OneTimeRewards with Traveler's Chest**
+- Revert to OneTimeRewards.lsx delivery (Phase 029 approach)
+- Items appear in Traveler's Chest (camps, etc.)
+- Check if this handles updates better than tutorial chest
+- Pro: May be more update-friendly
+- Con: Need to research if this actually solves the problem
+
+### Recommended Approach for Level13PlusGear
+
+**Short Term:**
+1. Document this limitation in README/documentation
+2. Advise players to start new games when mod updates with new items
+3. Provide console commands for all items as a workaround
+
+**Long Term Research Needed:**
+1. Test OneTimeRewards behavior with mod updates
+2. Investigate if Traveler's Chest re-evaluates on save load
+3. Research Script Extender options for dynamic item delivery
+4. Consider container rotation strategy (Act 1, 2, 3 containers)
+
+### Documentation for Users
+
+**Should Include:**
+- "This mod is designed for new games"
+- "Updating the mod mid-playthrough may not add new items to existing saves"
+- "Use console commands to add items to existing characters"
+- Provide clear console command list for each item
+
+### Action Items for Future Phases
+
+- [ ] Research OneTimeRewards vs Container delivery for updates
+- [ ] Test Traveler's Chest behavior with mod updates
+- [ ] Create console command reference for all items
+- [ ] Consider delivery system redesign for better update support
+- [ ] Document container behavior in CLAUDE.md for future reference
+
+### Key Takeaway
+
+**Container-based delivery has a fundamental limitation:** Once a container is opened, its loot is locked in the save file. This is a **BG3 engine behavior**, not a bug in our implementation.
+
+This is an important consideration for **any mod** that uses container delivery and plans to add items over time.
+
+---
+
 ## Test Plan
 
 ### Rename Testing:

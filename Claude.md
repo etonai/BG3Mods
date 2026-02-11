@@ -7,7 +7,8 @@ The following mods are actively being developed. All other mods in this project 
 | Mod | Description |
 |-----|-------------|
 | SampleMagicRingMod | Custom magic items mod with weapons, armor, and rings |
-| Level13Gear | Custom magic items mod with weapons, armor, and rings |
+| Level13PlusGear | Custom magic items mod with weapons, armor, and rings (for level 13+ characters) |
+| RingOfCreation | Utility mod with a ring that summons items by ID (depends on Level13PlusGear and SampleMagicRingMod) |
 
 ---
 
@@ -27,6 +28,7 @@ Phases are NOT complete until the user has tested them. Only mark a phase as COM
 | VanillaBG3/ | Vanilla BG3 game files for reference |
 | VanillaBG3/gustav/ | Vanilla BG3 items, stats, and templates |
 | VanillaBG3/shared/ | Shared vanilla BG3 resources |
+| SpawnAnyItem/ | Item spawning tool (not a mod - utility for console commands) |
 
 ## Phase Implementation Conventions
 
@@ -36,10 +38,28 @@ When creating or implementing a new phase, always follow these conventions:
 |------------|---------|
 | Target mod | SampleMagicRingMod |
 | Reference items location | VanillaBG3/gustav directory |
-| Item delivery | Traveler's Chest (via OneTimeRewards.lsx) |
+| Item delivery (SampleMagicRingMod) | Traveler's Chest (via OneTimeRewards.lsx) |
+| Item delivery (Level13PlusGear) | Tutorial Chest (via TreasureTable injection) |
 | Post-implementation | Update docs/planning/item_catalog.md with new items |
 
 These defaults apply unless the user explicitly specifies otherwise.
+
+## Critical: Container Delivery Limitation
+
+**IMPORTANT:** Container-based item delivery (Tutorial Chest, Traveler's Chest) has a significant limitation:
+
+- **Once a container is opened** in a save file, its loot is "locked in" to that save
+- **Adding new items** to the mod will NOT retroactively appear in already-opened containers
+- **This affects existing saves** when updating mods with new items
+
+**Implications:**
+- Level13PlusGear is designed for **new games**
+- Updating the mod mid-playthrough may not add new items to existing saves
+- Players need to start new games or use console commands to get new items
+
+**Documented in:** Phase030.md - "Critical Discovery: Container Delivery Limitation"
+
+**Future Consideration:** Research alternative delivery methods (Script Extender, multiple containers, OneTimeRewards behavior) for better mid-playthrough update support.
 
 ## Documentation Structure
 
