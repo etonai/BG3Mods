@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="7" revision="1" build="3" lslib_meta="v1,bswap_guids,lsf_keys_adjacency" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="MapKey" type="FixedString" value="ed134bf4-d2cc-462b-81cd-ab61536c7375" />
+					<attribute id="Name" type="LSString" value="L13_Gear_Chest" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="ParentTemplateId" type="FixedString" value="d91b10a4-b196-415d-963c-f8e90fc4eb47" />
+					<attribute id="VisualTemplate" type="FixedString" value="221ddde0-7e34-43a7-bc84-8ae3dfd09bb9" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="92211506-18c3-18c2-6791-dd8c48fb94af" />
+					<attribute id="RecieveDecal" type="bool" value="False" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hed1371c8gf42ag4d19gb8e2ga1b4c7d8e9f0a" version="1" />
+					<attribute id="Icon" type="FixedString" value="Item_CONT_GEN_Chest_Rich_A" />
+					<attribute id="Stats" type="FixedString" value="L13_Gear_Chest" />
+					<attribute id="CanBeImprovisedWeapon" type="bool" value="True" />
+					<attribute id="Description" type="TranslatedString" handle="h324e8d15ga83ag84b5ge87eg9fab3gd0a604" version="1" />
+					<children>
+						<node id="InventoryList">
+							<children>
+								<node id="InventoryItem">
+									<attribute id="Object" type="FixedString" value="L13_Gear_Chest_TT" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

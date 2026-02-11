@@ -1,0 +1,8 @@
+new entry "L13_Gear_Chest"
+type "Object"
+using "OBJ_Chest"
+data "RootTemplate" "ed134bf4-d2cc-462b-81cd-ab61536c7375"
+data "ValueOverride" "1000"
+data "Rarity" "Legendary"
+data "Unique" "1"
+data "MinLevel" "1"

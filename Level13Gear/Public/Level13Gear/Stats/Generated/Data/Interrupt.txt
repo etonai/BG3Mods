@@ -1,0 +1,13 @@
+new entry "L13_Interrupt_Shield_Unlimited"
+type "InterruptData"
+using "Interrupt_Shield_Wizard"
+data "DisplayName" "hf6a7b8c9gd0e1g2f3ag4b5cga0b1c2d3e4f5a6;1"
+data "Description" "h6f7a8b9cg0d1eg3f2ag5b4cg1a0b2c3d4e5f6a7;1"
+data "Cost" "BonusActionPoint:1"
+
+new entry "L13_Interrupt_Counterspell_Unlimited"
+type "InterruptData"
+using "Interrupt_Counterspell"
+data "DisplayName" "h4b5c6d7eg8f9ag0b1cg2d3eg5f6a7b8c9d0e1f2;1"
+data "Description" "hb5c6d7e8g9f0ag1b2cg3d4eg6f7a8b9c0d1e2f3;1"
+data "Cost" "BonusActionPoint:1"

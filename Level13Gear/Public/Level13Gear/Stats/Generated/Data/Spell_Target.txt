@@ -1,0 +1,5 @@
+new entry "L13_Target_Light_Unlimited"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_Light"
+data "UseCosts" "BonusActionPoint:1"
