@@ -23,7 +23,7 @@
           </children>
         </node>
         <node id="ModuleInfo">
-          <attribute id="Author" type="LSString" value="EdwardBG3" />
+          <attribute id="Author" type="LSString" value="PseudonymousEd" />
           <attribute id="CharacterCreationLevelName" type="FixedString" value="" />
           <attribute id="Description" type="LSString" value="A magical ring that can summon items by their ID. Includes the ability to summon items from other mods." />
           <attribute id="Folder" type="LSString" value="RingOfCreation" />

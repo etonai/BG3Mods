@@ -8,8 +8,6 @@
 	<content contentuid="hed135661ga7e0g412ag8232gff0073e5fb64" version="1">Cast Shield as a bonus action without expending spell slots.</content>
 	<content contentuid="hed130ccag8bc9g4a79gab95g36259cbf2165" version="1">Counterspell (Unlimited)</content>
 	<content contentuid="hed133d8ag477bg4051gaeecg5cb59a916ca2" version="1">Cast Counterspell as a bonus action without expending spell slots.</content>
-	<content contentuid="hed13f123g4567g89abgcdefg0123456789ab" version="1">Ring of Testing</content>
-	<content contentuid="hed13e456g7890g12cdgef34g5678901234cd" version="1">A simple test ring to verify that the Level 13 Plus Gear mod delivery system is working correctly.</content>
 	<content contentuid="hed13fcd9gca2eg9c68g4012gb265g7801a6f95211" version="1">Longsword of Tyr</content>
 	<content contentuid="hed13d0bcgc374g2d7bg48e7g8622g8d9c06085de5" version="1">A silver longsword blessed by Tyr, the God of Justice. Grants Wrathful Smite, Soulbreaker, and unlimited Blinding Smite.</content>
 	<content contentuid="hed13bfaegcc93g90c1g45d0gb17dg306ef3119412" version="1">Tyr's Blinding Smite</content>
@@ -18,13 +16,16 @@
 	<content contentuid="hed1379d9g5cfeg8121g4329g85d3g8040d33ee1cd" version="1">This weapon is infused with divine radiance, dealing extra radiant damage on melee attacks.</content>
 	<content contentuid="hed13c5e1gd6b5gd2d6g44f0ga9a7g0f70b0285471" version="1">Boots of Stormwalker</content>
 	<content contentuid="hed137e45g45dbgbf40g46ffga5c2g3fcb9aa21700" version="1">Legendary boots that combine the power of storms with shadowstep magic. Grants Misty Step, applies Reverberation when inflicting conditions, and provides immunity to web and terrain effects.</content>
-	<content contentuid="hed132453g1127g59a7g45c1g81bfg0ccb71f9d61d" version="1">Spectral Step</content>
+	<content contentuid="hed132453g1127g59a7g45c1g81bfg0ccb71f9d61d" version="1">Storm Walk</content>
 	<content contentuid="hed13d7fcgf0fagf088g4d61g8170g699bd4bcdc97" version="1">Unlimited casting of Misty Step.</content>
 	<content contentuid="hed13060fg32a6g612dg445bg83d4g6764c51aae13" version="1">Moonguard Blade</content>
 	<content contentuid="hed1352a6g1b21gafb2g45ecgaa7cg520ec78164ab" version="1">A longsword blessed by Selûne, the Moonmaiden. Grants Wrathful Smite, Blinding Smite (unlimited), Light (unlimited), Shield of Faith, Celestial Haste (free action), Spirit Guardians (free action), Plane Shifter Slayer, Radiant Weapon (+1d4 radiant), Critical Bonus (crit on 19-20, reroll damage ≤2), Lathander's Light aura, and Moonshield Aura (Shadow Curse protection).</content>
-	<content contentuid="hed13c583ge4a8gd909g4514g9d96gdf3498d374c8" version="1">Moonguard Spirit Guardians</content>
+	<content contentuid="hed13c583ge4a8gd909g4514g9d96gdf3498d374c8" version="1">Selûne's Spirit Guardians</content>
 	<content contentuid="hed13cdbeg3b43g6959g4b54g85b7g2865fd8a0c00" version="1">Call forth spirits to protect you. Nearby enemies take 3d8 Radiant or Necrotic damage. Free action casting.</content>
 	<content contentuid="hed13dddag33dbg2816g463ag863egd30498a79f65" version="1">Radiant spirits surround you. Free action casting.</content>
 	<content contentuid="hed13822ege5d4g8648g4beeg875egf4d709af40b8" version="1">Necrotic spirits surround you. Free action casting.</content>
 	<content contentuid="hed13ab6eg97b6g4155g4ebeg8cb6g634b9ffc1b02" version="1">Moonshield Aura</content>
+	<content contentuid="hed132b99g003fgb312g446ega869gdf1a99711655" version="1">Emanates a protective aura that shields allies from the Shadow Curse.</content>
+	<content contentuid="hed138183gd689g33b1g40c6g9e8dgda543deb74d9" version="1">Selûne's Blinding Smite</content>
+	<content contentuid="hed13f88dg7b6fgaba8g4bfcgb535g7dbfc723e6e4" version="1">Channel Selûne's radiance to blind your foes. Unlimited uses.</content>
 </contentList>

@@ -1,10 +1,3 @@
-new entry "L13_Ring_Testing"
-type "Armor"
-using "ARM_Ring"
-data "RootTemplate" "ed13c2e6-0627-412c-8067-5e46d299105b"
-data "Rarity" "Uncommon"
-data "Unique" "0"
-
 new entry "L13_Boots_Stormwalker"
 type "Armor"
 using "_Foot_Magic"

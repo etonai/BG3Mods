@@ -75,8 +75,12 @@ Item planning documents with design decisions, powers, and implementation detail
 |------|-------------|
 | item_catalog.md | Complete list of all magic items in SampleMagicRingMod with stats and powers |
 
-### docs/level13gear/
-Planning documents specifically for the Level13Gear mod.
+### docs/level13plusgear/
+Planning and catalog documents specifically for the Level13PlusGear mod.
+
+| File | Description |
+|------|-------------|
+| item_catalog.md | Complete list of all magic items in Level13PlusGear with stats and powers |
 
 ### docs/instructions/
 Technical reference documentation for BG3 modding.
