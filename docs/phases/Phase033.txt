@@ -1,8 +1,0 @@
-Phase 33
-
-Using the lessons we've learned in Phase 32 and Phase 31, we should also use the information in copying_items_between_mods.md
-
-We will copy the Boots of the Stormwalker AND the Moonguard Blade from the SampleMagicRingMod to the Level13PlusGear mod.
-
-Again, the Level13PlusGear mod should have no dependencies on the SampleMagicRingMod - this is very important because I am not testing whether or not there is a dependency.
-

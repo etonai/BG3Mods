@@ -1,9 +1,0 @@
-Phase 32.
-
-We are going to test out the copying_items_between_mods.md document in docs/instructions/ and copy the Longsword of Tyr from the SampleMagicRingMod to the Level13PlusGear mod.
-
-Near the top of the Phase032.md document, please make a bulleted list of important things to change between the two items.
-
-We do not want the Level13PlusGear mod to have a dependency on the SampleMagicRingMod.
-
-I understand that this may require copying over some spells as well.
