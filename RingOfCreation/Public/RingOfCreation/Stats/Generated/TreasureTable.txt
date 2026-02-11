@@ -4,4 +4,3 @@ new treasuretable "TUT_Chest_Potions"
 CanMerge 1
 new subtable "1,1"
 object category "I_ROC_Ring_Creation",1,0,0,0,0,0,0,0
-object category "I_ROC_Test_Ring_Simple",1,0,0,0,0,0,0,0
