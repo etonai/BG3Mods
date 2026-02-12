@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="6" build="5" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="hed130864-6884-4eb9-baf8-1f3c0787e49e" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hed13760b-c93b-47aa-ad1f-c26447b2ac52" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="ed13e8fb-4a42-4979-abc4-c35510ebd9ce" />
+					<attribute id="Name" type="LSString" value="L13_Cloak_Rogue" />
+					<attribute id="ParentTemplateId" type="FixedString" value="257aed3e-370d-40b3-b464-de10257dd82b" />
+					<attribute id="Stats" type="FixedString" value="L13_Cloak_Rogue" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855912" />
+					<children>
+						<node id="GameMaster" />
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

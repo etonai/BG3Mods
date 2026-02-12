@@ -62,4 +62,34 @@
 	<content contentuid="hed130e0a6-f556-4980-8707-b6877f0fd474" version="1">Call forth spirits to protect you. Nearby enemies take 3d8 Radiant or Necrotic damage.</content>
 	<content contentuid="hed1321b69-3275-4a4d-9914-eecdcceecf8a" version="1">Radiant spirits surround you.</content>
 	<content contentuid="hed136a4dg91d9g4af7g8c32g8a9d1ad50c9c" version="1">Necrotic spirits surround you.</content>
+	<content contentuid="hed1377bc-0b7f-40e7-bc13-c6955bf44b6a" version="1">Helmet of Tyr</content>
+	<content contentuid="hed13380a-f898-4f4c-9e06-0684c66027f5" version="1">A helmet blessed by Tyr, the God of Justice. Grants Balduran's Vitality, Balduran's Protection, Stun/Fear/Blind Immunity, Critical Hit Immunity, HP Regeneration, Darkvision, and the spells Speak with Dead, Speak with Animals, See Invisibility, Protection From Evil And Good, and Faerie Fire.</content>
+	<content contentuid="hed131825-bf8f-4b13-a3b7-02b20cb1f8e0" version="1">Circlet of Tyr</content>
+	<content contentuid="hed134694-2d67-456d-b3f0-bab2d10d8d9f" version="1">A circlet blessed by Tyr, the God of Justice. Grants Balduran's Vitality, Balduran's Protection, Stun/Fear/Blind Immunity, Critical Hit Immunity, HP Regeneration, Darkvision, and the spells Speak with Dead, Speak with Animals, See Invisibility, Protection From Evil And Good, and Faerie Fire.</content>
+	<content contentuid="hed13a5d6-24a9-4cb8-89aa-7eea9ae439a0" version="1">Magus Circlet</content>
+	<content contentuid="hed13d719-ccda-4d2d-998e-5e4d2ef7f070" version="1">A circlet worn by archmages of old. Grants Fear/Blind Immunity, Darkvision, Reverberation when dealing Thunder damage, and the spells Speak with Dead, Speak with Animals, See Invisibility, Protection From Evil And Good, and Faerie Fire.</content>
+	<content contentuid="hed13cee5-00a7-4974-8a75-17a9f8188ba2" version="1">Moonguard Helm</content>
+	<content contentuid="hed1330da-e487-4a0e-a375-fda6f41d4834" version="1">A helmet blessed by Selûne, the Moonmaiden. Grants Balduran's Vitality, Balduran's Protection, Stun/Fear/Blind Immunity, Critical Hit Immunity, HP Regeneration, Darkvision, Smite the Graceless, and the spells Speak with Dead, Speak with Animals, See Invisibility, Protection From Evil And Good, and Faerie Fire.</content>
+	<content contentuid="hed13f157-623f-4d3d-b18e-9dbf719ad3dc" version="1">Moonguard Circlet</content>
+	<content contentuid="hed130d25-63d7-45cc-931f-08c74b4e693c" version="1">A circlet blessed by Selûne, the Moonmaiden. Grants Balduran's Vitality, Balduran's Protection, Stun/Fear/Blind Immunity, Critical Hit Immunity, HP Regeneration, Darkvision, and the spells Speak with Dead, Speak with Animals, See Invisibility, Protection From Evil And Good, and Faerie Fire.</content>
+	<content contentuid="hed136e1a-3c9f-4a0c-9cfe-418b16f81844" version="1">Gloves of Tyr</content>
+	<content contentuid="hed1361db-2a2f-49f3-a035-a9eb4e5d3012" version="1">Gloves blessed by Tyr, the God of Justice. Inflicts Radiating Orb when dealing Radiant damage and grants Tyr's Thunder (Thunderwave).</content>
+	<content contentuid="hed13a08c-d9c7-4118-b950-dcb36bbbf2e4" version="1">Moonguard Gloves</content>
+	<content contentuid="hed1315ae-4b0c-476f-b011-9d8c014df7b4" version="1">Gloves blessed by Selûne, the Moonmaiden. Inflicts Radiating Orb when dealing Radiant damage and grants Moonguard Thunder (Thunderwave).</content>
+	<content contentuid="hed13556e-7751-4ef1-9dee-8b9680a7b35d" version="1">Thunderwave</content>
+	<content contentuid="hed137076-06c0-4716-ad18-3edffbbf0029" version="1">Release a wave of thunderous force. Recharges on short rest.</content>
+	<content contentuid="hed134681-b42b-4429-b0bb-c3c34a17c9ea" version="1">Cloak of Tyr</content>
+	<content contentuid="hed1312e3-7e01-4862-b776-bf664bf3a300" version="1">A cloak blessed by Tyr, the God of Justice. Grants Crusader's Mantle and sets Strength to 29, Constitution to 23, and Dexterity to 23.</content>
+	<content contentuid="hed13760b-c93b-47aa-ad1f-c26447b2ac52" version="1">Shadowcloak</content>
+	<content contentuid="hed130864-6884-4eb9-baf8-1f3c0787e49e" version="1">A cloak woven from shadows. Grants unlimited Invisibility.</content>
+	<content contentuid="hed13f816-3287-487b-b511-e7598f51b861" version="1">Moonguard Cloak</content>
+	<content contentuid="hed131d8f-ea80-4106-b7f3-b881bacff4b0" version="1">A cloak blessed by Selûne, the Moonmaiden. Grants Crusader's Mantle and sets Strength to 29, Constitution to 23, and Dexterity to 23.</content>
+	<content contentuid="hed13e833-9490-482d-af58-283c76e30124" version="1">Shield of Tyr</content>
+	<content contentuid="hed1378f3-5491-49ec-8d57-0e6a392c9353" version="1">A shield blessed by Tyr, the God of Justice. Grants Reflective Shell, Warding Bond, unlimited Shield reaction, Shield Bash Riposte, and Spellguard (advantage on spell saves and resistance to spell damage).</content>
+	<content contentuid="hed13b063-e93a-49ab-9834-328cd7bdfd06" version="1">Moonguard Shield</content>
+	<content contentuid="hed13eba0-56b3-479e-b187-98bd45d21236" version="1">A shield blessed by Selûne, the Moonmaiden. Grants +5 AC, Reflective Shell, Warding Bond, unlimited Shield reaction, Shield Bash Riposte, and Spellguard (advantage on spell saves and resistance to spell damage).</content>
+	<content contentuid="hed13bc273-02be-4df4-b62f-f4529245c75a" version="1">Crusader's Mantle</content>
+	<content contentuid="hed136ad4ae5-06f0-492b-b634-5333b216a3c7" version="1">Unlimited Crusader's Mantle. Costs 1 action point.</content>
+	<content contentuid="hed138def078-3b10-439c-a9e0-4ec5a519680b" version="1">Invisibility</content>
+	<content contentuid="hed13025e48d-a32f-4d1c-a79a-54c8ce86ec0f" version="1">Unlimited Invisibility. Costs 1 bonus action.</content>
 </contentList>

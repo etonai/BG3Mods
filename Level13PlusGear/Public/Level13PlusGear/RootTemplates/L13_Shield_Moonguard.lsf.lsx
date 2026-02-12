@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="6" build="5" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="hed13eba0-56b3-479e-b187-98bd45d21236" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hed13b063-e93a-49ab-9834-328cd7bdfd06" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="ed13835c-3125-4467-af68-3dd70bb3b84e" />
+					<attribute id="Name" type="LSString" value="L13_Shield_Moonguard" />
+					<attribute id="ParentTemplateId" type="FixedString" value="4f313dde-14bb-43a2-abdd-07b2eb38b33a" />
+					<attribute id="Stats" type="FixedString" value="L13_Shield_Moonguard" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855912" />
+					<children>
+						<node id="GameMaster" />
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

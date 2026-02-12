@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="6" build="5" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="hed1361db-2a2f-49f3-a035-a9eb4e5d3012" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hed136e1a-3c9f-4a0c-9cfe-418b16f81844" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="ed13e328-82c2-4550-a82d-343adbff5764" />
+					<attribute id="Name" type="LSString" value="L13_Gloves_Tyr" />
+					<attribute id="ParentTemplateId" type="FixedString" value="e8a72355-b81f-484e-bc7d-945ec81c04a3" />
+					<attribute id="Stats" type="FixedString" value="L13_Gloves_Tyr" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855912" />
+					<children>
+						<node id="GameMaster" />
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

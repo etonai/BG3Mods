@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="6" build="5" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="hed13380a-f898-4f4c-9e06-0684c66027f5" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hed1377bc-0b7f-40e7-bc13-c6955bf44b6a" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="ed131d9b-5083-4e55-b47d-db2648154e25" />
+					<attribute id="Name" type="LSString" value="L13_Helmet_Tyr" />
+					<attribute id="ParentTemplateId" type="FixedString" value="0a64283a-1fc4-45cd-9e5e-f463f6b762ea" />
+					<attribute id="Stats" type="FixedString" value="L13_Helmet_Tyr" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855912" />
+					<children>
+						<node id="GameMaster" />
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

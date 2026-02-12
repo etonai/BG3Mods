@@ -184,6 +184,149 @@ A complete list of all magic items in the Level13PlusGear mod.
 
 ---
 
+### L13_Helmet_Tyr (Helmet of Tyr)
+**Type:** Metal Helmet | **Rarity:** Legendary
+
+| Category | Details |
+|----------|---------|
+| Spells | Speak with Dead (vanilla), Speak with Animals (vanilla), See Invisibility (unlimited), Protection from Evil and Good (unlimited), Faerie Fire (short rest) |
+| Passives | Balduran's Vitality (+2 max HP), Balduran's Protection (+1 AC, +1 saves), Stun Immunity, Fear Immunity, Blind Immunity, Darkvision |
+| Status | Helm of Balduran Regeneration (2 HP/turn) |
+| Immunities | Critical Hit Immunity, Stun, Fear, Blind |
+| Description | A helmet blessed by Tyr, the God of Justice. Grants Balduran's Vitality, Balduran's Protection, Stun/Fear/Blind Immunity, Critical Hit Immunity, HP Regeneration, Darkvision, and the spells Speak with Dead, Speak with Animals, See Invisibility, Protection From Evil And Good, and Faerie Fire. |
+
+---
+
+### L13_Circlet_Tyr (Circlet of Tyr)
+**Type:** Circlet | **Rarity:** Legendary
+
+| Category | Details |
+|----------|---------|
+| Spells | Speak with Dead (vanilla), Speak with Animals (vanilla), See Invisibility (unlimited), Protection from Evil and Good (unlimited), Faerie Fire (short rest) |
+| Passives | Balduran's Vitality (+2 max HP), Balduran's Protection (+1 AC, +1 saves), Stun Immunity, Fear Immunity, Blind Immunity, Darkvision |
+| Status | Helm of Balduran Regeneration (2 HP/turn) |
+| Immunities | Critical Hit Immunity, Stun, Fear, Blind |
+| Description | A circlet blessed by Tyr, the God of Justice. Grants Balduran's Vitality, Balduran's Protection, Stun/Fear/Blind Immunity, Critical Hit Immunity, HP Regeneration, Darkvision, and the spells Speak with Dead, Speak with Animals, See Invisibility, Protection From Evil And Good, and Faerie Fire. |
+
+---
+
+### L13_Circlet_Magus (Magus Circlet)
+**Type:** Circlet | **Rarity:** Legendary
+
+| Category | Details |
+|----------|---------|
+| Spells | Speak with Dead (vanilla), Speak with Animals (vanilla), See Invisibility (unlimited), Protection from Evil and Good (unlimited), Faerie Fire (short rest) |
+| Passives | Fear Immunity, Blind Immunity, Darkvision, Thunder Reverberation (apply Reverberation when dealing Thunder damage) |
+| Immunities | Fear, Blind |
+| Description | A circlet worn by archmages of old. Grants Fear/Blind Immunity, Darkvision, Reverberation when dealing Thunder damage, and the spells Speak with Dead, Speak with Animals, See Invisibility, Protection From Evil And Good, and Faerie Fire. |
+
+---
+
+### L13_Helmet_Moonguard (Moonguard Helm)
+**Type:** Metal Helmet | **Rarity:** Legendary
+
+| Category | Details |
+|----------|---------|
+| Spells | Speak with Dead (vanilla), Speak with Animals (vanilla), See Invisibility (unlimited), Protection from Evil and Good (unlimited), Faerie Fire (short rest) |
+| Passives | Balduran's Vitality (+2 max HP), Balduran's Protection (+1 AC, +1 saves), Stun Immunity, Fear Immunity, Blind Immunity, Darkvision, Smite the Graceless (Radiating Orb on enemy miss) |
+| Status | Helm of Balduran Regeneration (2 HP/turn) |
+| Immunities | Critical Hit Immunity, Stun, Fear, Blind |
+| Description | A helmet blessed by Selûne, the Moonmaiden. Grants Balduran's Vitality, Balduran's Protection, Stun/Fear/Blind Immunity, Critical Hit Immunity, HP Regeneration, Darkvision, Smite the Graceless, and the spells Speak with Dead, Speak with Animals, See Invisibility, Protection From Evil And Good, and Faerie Fire. |
+
+---
+
+### L13_Circlet_Moonguard (Moonguard Circlet)
+**Type:** Circlet | **Rarity:** Legendary
+
+| Category | Details |
+|----------|---------|
+| Spells | Speak with Dead (vanilla), Speak with Animals (vanilla), See Invisibility (unlimited), Protection from Evil and Good (unlimited), Faerie Fire (short rest) |
+| Passives | Balduran's Vitality (+2 max HP), Balduran's Protection (+1 AC, +1 saves), Stun Immunity, Fear Immunity, Blind Immunity, Darkvision |
+| Status | Helm of Balduran Regeneration (2 HP/turn) |
+| Immunities | Critical Hit Immunity, Stun, Fear, Blind |
+| Description | A circlet blessed by Selûne, the Moonmaiden. Grants Balduran's Vitality, Balduran's Protection, Stun/Fear/Blind Immunity, Critical Hit Immunity, HP Regeneration, Darkvision, and the spells Speak with Dead, Speak with Animals, See Invisibility, Protection From Evil And Good, and Faerie Fire. |
+
+---
+
+### L13_Gloves_Tyr (Gloves of Tyr)
+**Type:** Gloves | **Rarity:** Legendary
+
+| Category | Details |
+|----------|---------|
+| Spells | Thunderwave (short rest) |
+| Passives | Radiating Orb (apply Radiating Orb on Radiant damage) |
+| Description | Gloves blessed by Tyr, the God of Justice. Inflicts Radiating Orb when dealing Radiant damage and grants Tyr's Thunder (Thunderwave). |
+
+---
+
+### L13_Gloves_Moonguard (Moonguard Gloves)
+**Type:** Gloves | **Rarity:** Legendary
+
+| Category | Details |
+|----------|---------|
+| Spells | Thunderwave (short rest) |
+| Passives | Radiating Orb (apply Radiating Orb on Radiant damage) |
+| Description | Gloves blessed by Selûne, the Moonmaiden. Inflicts Radiating Orb when dealing Radiant damage and grants Moonguard Thunder (Thunderwave). |
+
+---
+
+### L13_Cloak_Tyr (Cloak of Tyr)
+**Type:** Cloak | **Rarity:** Legendary
+
+| Category | Details |
+|----------|---------|
+| Spells | Crusader's Mantle (unlimited) |
+| Bonuses | Strength 29, Constitution 23, Dexterity 23 |
+| Description | A cloak blessed by Tyr, the God of Justice. Grants Crusader's Mantle and sets Strength to 29, Constitution to 23, and Dexterity to 23. |
+
+---
+
+### L13_Cloak_Rogue (Shadowcloak)
+**Type:** Cloak | **Rarity:** Legendary
+
+| Category | Details |
+|----------|---------|
+| Spells | Invisibility (unlimited) |
+| Description | A cloak woven from shadows. Grants unlimited Invisibility. |
+
+---
+
+### L13_Cloak_Moonguard (Moonguard Cloak)
+**Type:** Cloak | **Rarity:** Legendary
+
+| Category | Details |
+|----------|---------|
+| Spells | Crusader's Mantle (unlimited) |
+| Bonuses | Strength 29, Constitution 23, Dexterity 23 |
+| Description | A cloak blessed by Selûne, the Moonmaiden. Grants Crusader's Mantle and sets Strength to 29, Constitution to 23, and Dexterity to 23. |
+
+---
+
+### L13_Shield_Tyr (Shield of Tyr)
+**Type:** Shield | **Rarity:** Legendary
+
+| Category | Details |
+|----------|---------|
+| Spells | Reflective Shell, Warding Bond |
+| Interrupts | Shield (unlimited) |
+| Passives | Shield Bash Riposte, Spellguard (advantage on spell saves + resistance to spell damage) |
+| Description | A shield blessed by Tyr, the God of Justice. Grants Reflective Shell, Warding Bond, unlimited Shield reaction, Shield Bash Riposte, and Spellguard. |
+
+---
+
+### L13_Shield_Moonguard (Moonguard Shield)
+**Type:** Shield | **Rarity:** Legendary
+
+| Category | Details |
+|----------|---------|
+| AC Bonus | +5 |
+| Spells | Reflective Shell, Warding Bond |
+| Interrupts | Shield (unlimited) |
+| Passives | Shield Bash Riposte, Spellguard (advantage on spell saves + resistance to spell damage) |
+| Description | A shield blessed by Selûne, the Moonmaiden. Grants +5 AC, Reflective Shell, Warding Bond, unlimited Shield reaction, Shield Bash Riposte, and Spellguard. |
+
+---
+
 ## Custom Spells
 
 ### L13_Target_Light_Unlimited
@@ -337,6 +480,57 @@ Based on Haste (Victory Longbow version). Free action casting with no cooldown.
 
 **Used by:** Ring of Spectral Power
 
+### L13_Shout_SeeInvisibility_Unlimited
+**Type:** Shout Spell | **Cost:** Bonus Action, Unlimited
+
+Based on vanilla See Invisibility. Unlimited casting as a bonus action.
+
+**Used by:** Helmet of Tyr, Circlet of Tyr, Magus Circlet, Moonguard Helm, Moonguard Circlet
+
+### L13_Target_ProtectionFromEvilAndGood_Unlimited
+**Type:** Target Spell | **Cost:** Bonus Action, Unlimited
+
+Based on vanilla Protection From Evil And Good. Unlimited casting as a bonus action.
+
+**Used by:** Helmet of Tyr, Circlet of Tyr, Magus Circlet, Moonguard Helm, Moonguard Circlet
+
+### L13_Target_FaerieFire_ShortRest
+**Type:** Target Spell | **Cost:** Bonus Action, Once per Short Rest
+
+Based on vanilla Faerie Fire. Recharges on short rest, cast as a bonus action.
+
+**Used by:** Helmet of Tyr, Circlet of Tyr, Magus Circlet, Moonguard Helm, Moonguard Circlet
+
+### L13_Zone_Thunderwave_ShortRest
+**Type:** Zone Spell | **Cost:** Bonus Action, Once per Short Rest
+
+**Name:** Thunderwave
+**Description:** Release a wave of thunderous force. Recharges on short rest.
+
+Based on vanilla Thunderwave. Recharges on short rest, cast as a bonus action.
+
+**Used by:** Gloves of Tyr, Moonguard Gloves
+
+### L13_Shout_CrusadersMantle_Unlimited
+**Type:** Shout Spell | **Cost:** Action, Unlimited
+
+**Name:** Crusader's Mantle
+**Description:** Unlimited Crusader's Mantle. Costs 1 action point.
+
+Based on vanilla Crusader's Mantle (Shout_MAG_CrusadersMantle). Unlimited casting.
+
+**Used by:** Cloak of Tyr, Moonguard Cloak
+
+### L13_Target_Invisibility_Unlimited
+**Type:** Target Spell | **Cost:** Bonus Action, Unlimited
+
+**Name:** Invisibility
+**Description:** Unlimited Invisibility. Costs 1 bonus action.
+
+Based on vanilla Invisibility (Target_Invisibility). Unlimited casting as a bonus action.
+
+**Used by:** Shadowcloak
+
 ---
 
 ## Custom Passives
@@ -396,6 +590,18 @@ All items are delivered via the **L13_Gear_Chest** container, which appears in t
 | Moonguard Splint | SampleMagicRingMod | Phase 038 |
 | Armor of Voss | SampleMagicRingMod | Phase 038 |
 | Armor of Orpheus | SampleMagicRingMod | Phase 038 |
+| Helmet of Tyr | SampleMagicRingMod | Phase 039 |
+| Circlet of Tyr | SampleMagicRingMod | Phase 039 |
+| Magus Circlet | SampleMagicRingMod | Phase 039 |
+| Moonguard Helm | SampleMagicRingMod | Phase 039 |
+| Moonguard Circlet | SampleMagicRingMod | Phase 039 |
+| Gloves of Tyr | SampleMagicRingMod | Phase 039 |
+| Moonguard Gloves | SampleMagicRingMod | Phase 039 |
+| Cloak of Tyr | SampleMagicRingMod | Phase 040 |
+| Shadowcloak | SampleMagicRingMod | Phase 040 |
+| Moonguard Cloak | SampleMagicRingMod | Phase 040 |
+| Shield of Tyr | SampleMagicRingMod | Phase 040 |
+| Moonguard Shield | SampleMagicRingMod | Phase 040 |
 
 All items have been made independent from SampleMagicRingMod with custom L13_ prefixes and unique UUIDs.
 
@@ -408,11 +614,15 @@ All items have been made independent from SampleMagicRingMod with custom L13_ pr
 | Weapons | 7 |
 | Armor (Feet) | 1 |
 | Armor (Body) | 5 |
+| Armor (Head) | 5 |
+| Armor (Hands) | 2 |
+| Armor (Back) | 3 |
+| Armor (Shield) | 2 |
 | Armor (Ring) | 1 |
-| Custom Spells | 17 |
+| Custom Spells | 23 |
 | Custom Passives | 2 |
 | Custom Interrupts | 2 |
-| **Total Items** | **14** |
+| **Total Items** | **26** |
 
 ---
 
@@ -428,6 +638,24 @@ All items have been made independent from SampleMagicRingMod with custom L13_ pr
 ---
 
 ## Version History
+
+- **2026-02-11**: Phase 040 - Copied cloaks and shields from SampleMagicRingMod
+  - Added 3 cloak items: Cloak of Tyr, Shadowcloak, Moonguard Cloak
+  - Added 2 shield items: Shield of Tyr, Moonguard Shield
+  - Added 2 custom spells: Crusader's Mantle (unlimited), Invisibility (unlimited)
+  - All items fully independent from SampleMagicRingMod with custom L13 prefixes
+  - Total item count: 26 items (7 weapons, 6 body armor, 5 headgear, 2 gloves, 3 cloaks, 2 shields, 1 ring)
+  - Total custom spell count: 23 spells
+  - Used 19 UUIDs (5 RootTemplates + 2 spell handles + 12 localization handles)
+
+- **2026-02-11**: Phase 039 - Copied headgear and gloves from SampleMagicRingMod
+  - Added 5 headgear items: Helmet of Tyr, Circlet of Tyr, Magus Circlet, Moonguard Helm, Moonguard Circlet
+  - Added 2 glove items: Gloves of Tyr, Moonguard Gloves
+  - Added 4 custom spells: See Invisibility (unlimited), Protection From Evil And Good (unlimited), Faerie Fire (short rest), Thunderwave (short rest)
+  - All items fully independent from SampleMagicRingMod with custom L13 prefixes
+  - Total item count: 21 items (7 weapons, 6 body armor, 5 headgear, 2 gloves, 1 ring)
+  - Total custom spell count: 21 spells
+  - Used 23 UUIDs (7 RootTemplates + 2 spell handles + 14 localization handles)
 
 - **2026-02-11**: Phase 038 - Copied weapons and body armor from SampleMagicRingMod
   - Added 4 weapons: Sword of Orpheus (Greatsword +5), Divine Maul (Maul +5), Selune's Moonmace (Mace +5), Rogueblade (Longsword +5)
