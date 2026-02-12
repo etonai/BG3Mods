@@ -6,8 +6,6 @@ new subtable "1,1"
 object category "I_L13_Gear_Chest",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_L13_Armor_Tyr",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_L13_Armor_Moonguard",1,0,0,0,0,0,0,0
 
 new treasuretable "L13_Gear_Chest_TT"
 CanMerge 1

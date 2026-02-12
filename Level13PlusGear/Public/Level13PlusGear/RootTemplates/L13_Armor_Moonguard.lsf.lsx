@@ -5,10 +5,10 @@
 		<node id="Templates">
 			<children>
 				<node id="GameObjects">
-					<attribute id="Description" type="TranslatedString" handle="hed13c7695-3333-411e-bc3d-5388719f4ee1" version="1" />
-					<attribute id="DisplayName" type="TranslatedString" handle="hed13fcc88-f673-417b-b78b-0616686c43ce" version="1" />
+					<attribute id="Description" type="TranslatedString" handle="hed135c7a-e95b-4367-b05f-d7c2ef4a3acb" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hed132603-f519-49fa-b57b-9168c3a8c0a0" version="1" />
 					<attribute id="LevelName" type="FixedString" value="" />
-					<attribute id="MapKey" type="FixedString" value="ed13502f-b130-491f-ac5d-53a72f1262b7" />
+					<attribute id="MapKey" type="FixedString" value="ed1310a5-4fb8-4b8c-a043-6393a5e74ab5" />
 					<attribute id="Name" type="LSString" value="L13_Armor_Moonguard" />
 					<attribute id="ParentTemplateId" type="FixedString" value="42e6357a-4c05-4eda-9415-6b6b4c7d44c5" />
 					<attribute id="Stats" type="FixedString" value="L13_Armor_Moonguard" />
