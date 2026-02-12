@@ -4,6 +4,10 @@ new treasuretable "TUT_Chest_Potions"
 CanMerge 1
 new subtable "1,1"
 object category "I_L13_Gear_Chest",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_L13_Armor_Tyr",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_L13_Armor_Moonguard",1,0,0,0,0,0,0,0
 
 new treasuretable "L13_Gear_Chest_TT"
 CanMerge 1
@@ -17,3 +21,17 @@ new subtable "1,1"
 object category "I_L13_Blade_Moonguard",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_L13_Ring_Spectral_Power",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_L13_Sword_Orpheus",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_L13_Maul_Divine",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_L13_Mace_Selune_Moon",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_L13_Rogueblade",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_L13_Armor_Tyr",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_L13_Armor_Rogue",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_L13_Armor_Moonguard",1,0,0,0,0,0,0,0

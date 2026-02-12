@@ -42,6 +42,55 @@ A complete list of all magic items in the Level13PlusGear mod.
 
 ---
 
+### L13_Sword_Orpheus (Sword of Orpheus)
+**Type:** Greatsword +5 | **Rarity:** Legendary
+
+| Category | Details |
+|----------|---------|
+| Enchantment | +5, Magical |
+| Weapon Actions | Pommel Strike, Slash, Cleave, Mindcrush |
+| Spells | Celestial Haste (unlimited) |
+| Passives | Psionic Weapon, Psionic Resistance |
+| Description | A legendary greatsword once wielded by Orpheus, Prince of the Comet. Infused with psionic power, it grants psychic damage and resistance to psionic attacks. |
+
+---
+
+### L13_Maul_Divine (Divine Maul)
+**Type:** Maul +5 | **Rarity:** Legendary
+
+| Category | Details |
+|----------|---------|
+| Enchantment | +5, Magical |
+| Spells | Celestial Haste (unlimited) |
+| Passives | Radiant Weapon (+1d8 radiant) |
+| Description | A massive maul infused with divine radiance. Its strikes are blessed with holy power, dealing additional radiant damage to all foes. |
+
+---
+
+### L13_Mace_Selune_Moon (Selune's Moonmace)
+**Type:** Mace +5 | **Rarity:** Legendary
+
+| Category | Details |
+|----------|---------|
+| Enchantment | +5, Magical |
+| Weapon Actions | Concussive Smash, Posture Breaker |
+| Spells | Healing Incense Aura |
+| Passives | Lathander's Light (toggled aura blinds Fiends/Undead), Moonshield Aura (Shadow Curse protection) |
+| Description | A legendary mace blessed by Selune, goddess of the moon. Grants Healing Incense Aura, Lathander's Light, and Moonshield Aura. The weapon emits a soft, protective glow. |
+
+---
+
+### L13_Rogueblade (Rogueblade)
+**Type:** Longsword +5 | **Rarity:** Legendary
+
+| Category | Details |
+|----------|---------|
+| Enchantment | +5, Magical |
+| Passives | Shadow Blade (advantage on attacks in darkness), Rearrangement (crit on 19-20, reroll damage ≤2) |
+| Description | A legendary longsword forged for those who strike from the shadows. Grants advantage on attacks in darkness, critical hits on 19-20, and rerolls low damage dice. |
+
+---
+
 ## Armor
 
 ### L13_Boots_Stormwalker (Boots of Stormwalker)
@@ -64,6 +113,74 @@ A complete list of all magic items in the Level13PlusGear mod.
 | Interrupts | Shield (unlimited) |
 | Passives | Forceweaver (+1d4 Force on spell attack) |
 | Description | A ring crackling with arcane force. Grants powerful spectral magic including 5-missile Magic Missile, defensive Globe of Invulnerability, control spells (Hold Person), utility spells (Knock, Invisibility), teleportation (Misty Step, Arcane Gate), and manipulation (Telekinesis). |
+
+---
+
+### L13_Armor_Tyr (Armor of Tyr)
+**Type:** Half Plate +2 | **Rarity:** Legendary
+
+| Category | Details |
+|----------|---------|
+| AC Bonus | Allows full Dexterity bonus to AC |
+| Bonuses | +2 to all saving throws |
+| Spells | Celestial Haste (unlimited), Misty Step (unlimited), Spirit Guardians (Tyr variant) |
+| Passives | Exotic Material (Medium Armor) |
+| Status | Exotic Material Armor Technical |
+| Description | Half plate armor blessed by Tyr, the God of Justice. Grants +2 to all saving throws, allows full Dexterity bonus to AC, unlimited Celestial Haste, unlimited Misty Step, and Spirit Guardians. |
+
+---
+
+### L13_Armor_Rogue (Armor of the Rogue)
+**Type:** Studded Leather +5 | **Rarity:** Legendary
+
+| Category | Details |
+|----------|---------|
+| AC Bonus | +5 |
+| Passives | Displacement (attackers have disadvantage until you take damage) |
+| Status | Cloak of Displacement Technical |
+| Description | Legendary studded leather armor that bends light around the wearer. Attackers have disadvantage against you until you take damage, refreshing each turn. |
+
+---
+
+### L13_Armor_Moonguard (Moonguard Splint)
+**Type:** Splint Armor +5 | **Rarity:** Legendary
+
+| Category | Details |
+|----------|---------|
+| AC Bonus | +5, allows full Dexterity bonus to AC |
+| Bonuses | +2 to all saving throws |
+| Spells | Celestial Haste (unlimited), Misty Step (unlimited), Spirit Guardians (Tyr variant) |
+| Passives | Exotic Material (Medium Armor), Ring of Regeneration (1d4 HP per turn) |
+| Status | Exotic Material Armor Technical, Ring of Regeneration Technical |
+| Description | Splint armor blessed by Selûne, the Moonmaiden. Grants +5 AC, +2 to all saving throws, allows full Dexterity bonus to AC, unlimited Celestial Haste, unlimited Misty Step, Spirit Guardians, and regenerates 1d4 HP per turn in combat. |
+
+---
+
+### L13_Armor_Voss (Armor of Voss)
+**Type:** Chain Shirt +5 | **Rarity:** Legendary
+
+| Category | Details |
+|----------|---------|
+| AC Bonus | +5, allows full Dexterity bonus to AC |
+| Bonuses | +2 to all saving throws |
+| Spells | Celestial Haste (unlimited), Misty Step (unlimited), Spirit Guardians (Tyr variant) |
+| Passives | Exotic Material (Medium Armor), Ring of Regeneration (1d4 HP per turn) |
+| Status | Exotic Material Armor Technical, Ring of Regeneration Technical |
+| Description | This exquisite elven chain was forged for Kith'rak Voss, a legendary Githyanki warrior. The armor flows like liquid silver, providing exceptional protection while allowing complete freedom of movement. |
+
+---
+
+### L13_Armor_Orpheus (Armor of Orpheus)
+**Type:** Githyanki Half Plate +5 | **Rarity:** Legendary
+
+| Category | Details |
+|----------|---------|
+| AC Bonus | +5, allows full Dexterity bonus to AC |
+| Bonuses | +2 to all saving throws |
+| Spells | Celestial Haste (unlimited), Misty Step (unlimited), Spirit Guardians (Tyr variant) |
+| Passives | Exotic Material (Medium Armor), Ring of Regeneration (1d4 HP per turn) |
+| Status | Exotic Material Armor Technical, Ring of Regeneration Technical |
+| Description | Githyanki-forged half plate armor once worn by Orpheus, Prince of the Comet. This legendary armor provides exceptional protection while allowing complete freedom of movement. |
 
 ---
 
@@ -113,6 +230,18 @@ Based on Haste (Victory Longbow version). Free action casting with no cooldown.
 **Contains:**
 - **Radiant Variant:** Radiant spirits surround you. Applies SPIRIT_GUARDIANS_RADIANT_AURA.
 - **Necrotic Variant:** Necrotic spirits surround you. Applies SPIRIT_GUARDIANS_NECROTIC_AURA.
+
+### L13_Shout_SpiritGuardians_Tyr
+**Type:** Container Spell | **Cost:** Action | **Level:** 3
+
+**Name:** Tyr's Spirit Guardians
+**Description:** Call forth spirits to protect you. Nearby enemies take 3d8 Radiant or Necrotic damage. Action casting.
+
+**Contains:**
+- **Radiant Variant:** Radiant spirits surround you. Applies SPIRIT_GUARDIANS_RADIANT_AURA.
+- **Necrotic Variant:** Necrotic spirits surround you. Applies SPIRIT_GUARDIANS_NECROTIC_AURA.
+
+**Used by:** Armor of Tyr, Moonguard Splint, Armor of Voss, Armor of Orpheus
 
 ### L13_Projectile_ChromaticOrb_Unlimited
 **Type:** Projectile Spell | **Cost:** Action, Unlimited | **Level:** 1
@@ -257,6 +386,16 @@ All items are delivered via the **L13_Gear_Chest** container, which appears in t
 | Longsword of Tyr | SampleMagicRingMod | Phase 032 |
 | Boots of Stormwalker | SampleMagicRingMod | Phase 033 |
 | Moonguard Blade | SampleMagicRingMod | Phase 033 |
+| Ring of Spectral Power | SampleMagicRingMod | Phase 037 |
+| Sword of Orpheus | SampleMagicRingMod | Phase 038 |
+| Divine Maul | SampleMagicRingMod | Phase 038 |
+| Selune's Moonmace | SampleMagicRingMod | Phase 038 |
+| Rogueblade | SampleMagicRingMod | Phase 038 |
+| Armor of Tyr | SampleMagicRingMod | Phase 038 |
+| Armor of the Rogue | SampleMagicRingMod | Phase 038 |
+| Moonguard Splint | SampleMagicRingMod | Phase 038 |
+| Armor of Voss | SampleMagicRingMod | Phase 038 |
+| Armor of Orpheus | SampleMagicRingMod | Phase 038 |
 
 All items have been made independent from SampleMagicRingMod with custom L13_ prefixes and unique UUIDs.
 
@@ -266,13 +405,14 @@ All items have been made independent from SampleMagicRingMod with custom L13_ pr
 
 | Category | Count |
 |----------|-------|
-| Weapons | 3 |
+| Weapons | 7 |
 | Armor (Feet) | 1 |
+| Armor (Body) | 5 |
 | Armor (Ring) | 1 |
-| Custom Spells | 16 |
+| Custom Spells | 17 |
 | Custom Passives | 2 |
 | Custom Interrupts | 2 |
-| **Total Items** | **5** |
+| **Total Items** | **14** |
 
 ---
 
@@ -288,6 +428,15 @@ All items have been made independent from SampleMagicRingMod with custom L13_ pr
 ---
 
 ## Version History
+
+- **2026-02-11**: Phase 038 - Copied weapons and body armor from SampleMagicRingMod
+  - Added 4 weapons: Sword of Orpheus (Greatsword +5), Divine Maul (Maul +5), Selune's Moonmace (Mace +5), Rogueblade (Longsword +5)
+  - Added 5 body armor pieces: Armor of Tyr (Half Plate +2), Armor of the Rogue (Studded Leather +5), Moonguard Splint (Splint +5), Armor of Voss (Chain Shirt +5), Armor of Orpheus (Githyanki Half Plate +5)
+  - Added Spirit Guardians Tyr variant (container spell + Radiant/Necrotic variants)
+  - All items fully independent from SampleMagicRingMod with custom L13 prefixes
+  - Total item count: 14 items (7 weapons, 6 armor pieces, 1 ring)
+  - Total custom spell count: 17 spells
+  - Used 32 UUIDs (9 RootTemplates + 3 spell handles + 20 localization handles)
 
 - **2026-02-11**: Phase 037 - Added spells to Staff and copied Ring of Spectral Power
   - Added Chromatic Orb (unlimited, level 1) to Staff of the Archmage

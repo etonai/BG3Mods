@@ -43,70 +43,6 @@ All items in Level13Gear should use the `L13` prefix for handles and names.
 The following UUIDs are available for Level13Gear mod use. **Delete the UUID from this list when you use it.**
 
 ```
-a8392513-d5a4-49dd-8346-2f5df0ba2e77
-
-3d0af80d-b40e-4534-a8dc-45a9db336374
-
-61827095-93bb-47e8-9734-f0a85b99a2d8
-
-4569dc14-cd05-4045-b2fc-846210c43d94
-7d2fac3a-47aa-4263-8147-34b583e18870
-
-8d366dac-370d-44d3-b96f-af7f76628b6e
-
-723e502f-b130-491f-ac5d-53a72f1262b7
-
-dc7ddc81-3bb4-47ad-be60-8ab165b4358d
-
-7c97e7d6-4435-4861-b83a-2905202a42c1
-
-b038292f-ef33-4e7f-9a6a-d95f5777eb7c
-
-0e0a6ba0-f556-4980-8707-b6877f0fd474
-
-21b69d84-3275-4a4d-9914-eecdcceecf8a
-
-a9f330e3-3d48-4a28-969e-7bedef18b4ee
-
-b7617bd8-c42c-4fc8-8800-c15fd1a215f8
-
-3a14f84e-2d62-4ba2-a451-30e417cd37c0
-
-8799e7f3-ac2b-4c2c-b7d1-8d7f41c97fe3
-
-1b22e8f6-9392-4d97-b663-beb55b33a40a
-
-2b68a052-88ab-4488-89d2-98d22323eafa
-
-ada70422-6001-4222-9f2a-310605a75ac2
-
-a959614c-4e0c-40f8-aafa-d476d9f64e19
-
-7666d584-0464-45d4-8079-b4133342cda9
-
-4acfcf9b-d761-4410-a089-d1479eae8beb
-
-90e51f2f-c50f-41e2-96c3-b185b1c00824
-
-804852fd-8b5f-498a-9510-fc5504149ffc
-c7695efb-3333-411e-bc3d-5388719f4ee1
-
-fcc8814d-f673-417b-b78b-0616686c43ce
-
-92e035ca-61dd-46e5-aeec-0822e79c0e2a
-
-1074d6a7-9355-4cfd-b93d-7b0a109a3a2d
-
-878d3e54-82e5-470e-a94f-4aa11c844697
-
-966b9934-b298-4be1-a1ca-a51ca021d2c4
-
-768b6a4d-91d9-4af7-8c32-8a9d1ad50c9c
-
-f46a876b-5312-491f-8494-f3c93ab61eba
-
-f68285a2-6d49-4080-923c-9e3aa1f0e44c
-
 3fc6556e-7751-4ef1-9dee-8b9680a7b35d
 
 7ec97076-06c0-4716-ad18-3edffbbf0029
@@ -291,6 +227,7 @@ b514d87a-f785-4f45-8c93-4827fb5d7f3f
 ```
 
 **Note:** Phase 037 used 17 UUIDs (1 RootTemplate + 16 handles) for Ring of Spectral Power and its custom spells.
+**Note:** Phase 038 used 32 UUIDs (9 RootTemplates + 3 spell handles + 20 localization handles) for 4 weapons, 5 body armor pieces, and Spirit Guardians Tyr spell variant.
 
 ### When Running Low
 

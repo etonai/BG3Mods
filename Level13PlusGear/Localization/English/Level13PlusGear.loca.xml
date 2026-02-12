@@ -44,4 +44,22 @@
 	<content contentuid="hed135b0b73e402a6484c80eb69b8ae745ed8" version="1">Globe of Invulnerability. Recharges on short rest.</content>
 	<content contentuid="hed13fd32288432644120b15bfebefc16b6cb" version="1">Spectral Gate</content>
 	<content contentuid="hed1381aa4717dfb847f998a59ed2fc841e50" version="1">Arcane Gate. Recharges on short rest.</content>
+	<content contentuid="hed13b761bd-c42c-4fc8-8800-c15fd1a215f8" version="1">Sword of Orpheus</content>
+	<content contentuid="hed13a9f33-3d48-4a28-969e-7bedef18b4ee" version="1">A legendary greatsword once wielded by Orpheus, Prince of the Comet. Infused with psionic power, it grants psychic damage and resistance to psionic attacks, along with Pommel Strike, Slash, Cleave, and Mindcrush weapon actions.</content>
+	<content contentuid="hed138799e-ac2b-4c2c-b7d1-8d7f41c97fe3" version="1">Divine Maul</content>
+	<content contentuid="hed133a14f-2d62-4ba2-a451-30e417cd37c0" version="1">A massive maul infused with divine radiance. Its strikes are blessed with holy power, dealing additional radiant damage to all foes.</content>
+	<content contentuid="hed132b68a-88ab-4488-89d2-98d22323eafa" version="1">Selune's Moonmace</content>
+	<content contentuid="hed131b22e-9392-4d97-b663-beb55b33a40a" version="1">A legendary mace blessed by Selune, goddess of the moon. Grants Healing Incense Aura, Lathander's Light (blinds Fiends and Undead), and Moonshield Aura (protects allies from the Shadow Curse). The weapon emits a soft, protective glow.</content>
+	<content contentuid="hed13a9596-4e0c-40f8-aafa-d476d9f64e19" version="1">Rogueblade</content>
+	<content contentuid="hed13ada70-6001-4222-9f2a-310605a75ac2" version="1">A legendary longsword forged for those who strike from the shadows. Grants advantage on attacks in darkness, critical hits on 19-20, and rerolls low damage dice.</content>
+	<content contentuid="hed134acfc-d761-4410-a089-d1479eae8beb" version="1">Armor of Tyr</content>
+	<content contentuid="hed137666d-0464-45d4-8079-b4133342cda9" version="1">Half plate armor blessed by Tyr, the God of Justice. Grants +2 to all saving throws, allows full Dexterity bonus to AC, unlimited Celestial Haste, unlimited Misty Step, and Spirit Guardians.</content>
+	<content contentuid="hed1380485-8b5f-498a-9510-fc5504149ffc" version="1">Armor of the Rogue</content>
+	<content contentuid="hed1390e51-c50f-41e2-96c3-b185b1c00824" version="1">Legendary studded leather armor that bends light around the wearer. Attackers have disadvantage against you until you take damage, refreshing each turn.</content>
+	<content contentuid="hed13fcc88-f673-417b-b78b-0616686c43ce" version="1">Moonguard Splint</content>
+	<content contentuid="hed13c7695-3333-411e-bc3d-5388719f4ee1" version="1">Splint armor blessed by Selûne, the Moonmaiden. Grants +5 AC, +2 to all saving throws, allows full Dexterity bonus to AC, unlimited Celestial Haste, unlimited Misty Step, Spirit Guardians, and regenerates 1d4 HP per turn in combat.</content>
+	<content contentuid="hed13b0382-ef33-4e7f-9a6a-d95f5777eb7c" version="1">Tyr's Spirit Guardians</content>
+	<content contentuid="hed130e0a6-f556-4980-8707-b6877f0fd474" version="1">Call forth spirits to protect you. Nearby enemies take 3d8 Radiant or Necrotic damage.</content>
+	<content contentuid="hed1321b69-3275-4a4d-9914-eecdcceecf8a" version="1">Radiant spirits surround you.</content>
+	<content contentuid="hed136a4dg91d9g4af7g8c32g8a9d1ad50c9c" version="1">Necrotic spirits surround you.</content>
 </contentList>

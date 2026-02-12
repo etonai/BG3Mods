@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="6" build="5" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="hed13ada70-6001-4222-9f2a-310605a75ac2" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hed13a9596-4e0c-40f8-aafa-d476d9f64e19" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="ed13dc14-cd05-4045-b2fc-846210c43d94" />
+					<attribute id="Name" type="LSString" value="L13_Rogueblade" />
+					<attribute id="ParentTemplateId" type="FixedString" value="d116f35c-4399-408c-ba90-b455a5d29a1f" />
+					<attribute id="Stats" type="FixedString" value="L13_Rogueblade" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855912" />
+					<children>
+						<node id="GameMaster" />
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>
