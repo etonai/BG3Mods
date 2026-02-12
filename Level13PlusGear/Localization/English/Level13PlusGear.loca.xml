@@ -92,4 +92,24 @@
 	<content contentuid="hed136ad4ae5-06f0-492b-b634-5333b216a3c7" version="1">Unlimited Crusader's Mantle. Costs 1 action point.</content>
 	<content contentuid="hed138def078-3b10-439c-a9e0-4ec5a519680b" version="1">Invisibility</content>
 	<content contentuid="hed13025e48d-a32f-4d1c-a79a-54c8ce86ec0f" version="1">Unlimited Invisibility. Costs 1 bonus action.</content>
+	<content contentuid="hed133d23-95c5-4cee-bd20-ff56ef64191d" version="1">Ring of the Guardian</content>
+	<content contentuid="hed13ea8a-af97-4bda-be31-a3b382208002" version="1">A legendary ring blessed with divine healing magic. Grants Superior Healing Word (2d20 healing), unlimited Bless and Create Water, Lesser Restoration and Freedom of Movement (short rest), Greater Restoration, Heroes' Feast, Remove Curse, and Revivify (long rest), unlimited Mass Healing Word, and Counterspell (short rest).</content>
+	<content contentuid="hed133cab-4e90-43f5-b4b2-6401a76f74ea" version="1">Superior Healing Word</content>
+	<content contentuid="hed1306e69f-da0f-4a2c-a24d-4b296a734733" version="1">Superior healing word that restores 2d20 + spellcasting modifier HP. Costs 1 bonus action.</content>
+	<content contentuid="hed13d9c21-80a4-4ccd-8698-e64b1a85e5d5" version="1">Bless</content>
+	<content contentuid="hed13a740a-2257-44e7-8ad6-d3ba00724f5b" version="1">Unlimited Bless. Bless up to 3 creatures, granting them a bonus to attack rolls and saving throws.</content>
+	<content contentuid="hed1326dba-8b77-44f4-8cee-667ff92c7aec" version="1">Create Water</content>
+	<content contentuid="hed139b51-ff08-4da3-90a2-59986e141213" version="1">Unlimited Create Water. Create a water surface. Costs 1 bonus action.</content>
+	<content contentuid="hed138434-0ccb-4864-85bd-a87b6b613d5b" version="1">Lesser Restoration</content>
+	<content contentuid="hed13a261c-7fe6-4ea8-adc1-f040bcb283b0" version="1">Cure a creature from disease and poison and remove Paralysis and Blindness. Recharges on short rest.</content>
+	<content contentuid="hed132dcb-f221-45f1-a5b0-9faf588a97e0" version="1">Greater Restoration</content>
+	<content contentuid="hed138b9e-d015-4d39-ae0f-86cf922522b6" version="1">Remove charm, petrification, and curses. Cure Poisoned and Diseased. Recharges on long rest.</content>
+	<content contentuid="hed13a679-405b-4bfe-ada9-2787ee0bcd52" version="1">Freedom of Movement</content>
+	<content contentuid="hed132d05-5761-484c-b8af-3ab627925de0" version="1">Touch a creature to grant it the ability to move freely, ignoring difficult terrain and preventing paralysis. Recharges on short rest.</content>
+	<content contentuid="hed1320a8-a283-4eef-aa57-ea3b91da6a8a" version="1">Heroes' Feast</content>
+	<content contentuid="hed13dc42-8f75-451f-a9a3-0bb6d69b0e7a" version="1">Conjure a feast to cure all diseases and poison, grant immunity to poison and being Frightened, and boost maximum HP. Recharges on long rest.</content>
+	<content contentuid="hed13af63-d7a5-4516-b6db-92c9ae4ab9e3" version="1">Mass Healing Word</content>
+	<content contentuid="hed13ed4b-635a-4432-adf9-795251fa2428" version="1">Unlimited Mass Healing Word. Heal up to 6 allies. Costs 1 bonus action.</content>
+	<content contentuid="hed131fc1-5c77-46fc-87e8-6ec9bc38715e" version="1">Counterspell</content>
+	<content contentuid="hed139ce9-dd0d-4c99-a24d-d304911a6367" version="1">Nullify another creature's spell as a reaction. Recharges on short rest.</content>
 </contentList>

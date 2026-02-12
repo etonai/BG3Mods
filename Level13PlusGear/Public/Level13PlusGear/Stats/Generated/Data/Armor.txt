@@ -18,6 +18,16 @@ data "Boosts" "UnlockSpell(L13_Projectile_MagicMissile_Unlimited_Lvl3);UnlockSpe
 data "PassivesOnEquip" "WW_Forceweaver_Passive"
 data "Unique" "0"
 
+new entry "L13_Ring_Guardian"
+type "Armor"
+using "_Ring"
+data "RootTemplate" "ed1348b7-827b-43b8-9d6c-b3cbd88f5ad7"
+data "ObjectCategory" "Jewelry"
+data "ValueOverride" "750"
+data "Rarity" "Legendary"
+data "Boosts" "UnlockSpell(L13_Target_HealingWord_Superior);UnlockSpell(L13_Target_Bless_Unlimited);UnlockSpell(L13_Target_CreateWater_Unlimited);UnlockSpell(L13_Target_LesserRestoration_ShortRest);UnlockSpell(L13_Target_GreaterRestoration_LongRest);UnlockSpell(L13_Target_FreedomOfMovement_ShortRest);UnlockInterrupt(L13_Interrupt_Counterspell_ShortRest);UnlockSpell(L13_Shout_HeroesFeast_LongRest);UnlockSpell(L13_Target_RemoveCurse_LongRest);UnlockSpell(L13_Teleportation_Revivify_LongRest);UnlockSpell(L13_Shout_MassHealingWord_Unlimited)"
+data "Unique" "0"
+
 new entry "L13_Armor_Tyr"
 type "Armor"
 using "ARM_HalfPlate_Body_2"

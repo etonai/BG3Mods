@@ -59,3 +59,5 @@ new subtable "1,1"
 object category "I_L13_Shield_Tyr",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_L13_Shield_Moonguard",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_L13_Ring_Guardian",1,0,0,0,0,0,0,0

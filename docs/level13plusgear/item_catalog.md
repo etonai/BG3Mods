@@ -116,6 +116,17 @@ A complete list of all magic items in the Level13PlusGear mod.
 
 ---
 
+### L13_Ring_Guardian (Ring of the Guardian)
+**Type:** Ring | **Rarity:** Legendary
+
+| Category | Details |
+|----------|---------|
+| Spells | Superior Healing Word (2d20+mod healing, bonus action), Bless (unlimited), Create Water (unlimited), Lesser Restoration (short rest), Greater Restoration (long rest), Freedom of Movement (short rest), Heroes' Feast (long rest), Remove Curse (long rest), Revivify (long rest), Mass Healing Word (unlimited) |
+| Interrupts | Counterspell (short rest) |
+| Description | A legendary ring blessed with divine healing magic. Grants powerful healing and support spells including Superior Healing Word (2d20 healing), unlimited Bless and Mass Healing Word, condition removal (Lesser/Greater Restoration, Remove Curse), buffs (Freedom of Movement, Heroes' Feast), resurrection (Revivify), and defensive Counterspell. |
+
+---
+
 ### L13_Armor_Tyr (Armor of Tyr)
 **Type:** Half Plate +2 | **Rarity:** Legendary
 
@@ -531,6 +542,116 @@ Based on vanilla Invisibility (Target_Invisibility). Unlimited casting as a bonu
 
 **Used by:** Shadowcloak
 
+### L13_Target_HealingWord_Superior
+**Type:** Target Spell | **Cost:** Bonus Action, Unlimited
+
+**Name:** Superior Healing Word
+**Description:** Superior healing word that restores 2d20 + spellcasting modifier HP. Costs 1 bonus action.
+
+Based on vanilla Healing Word (Target_HealingWord) with enhanced healing (2d20 instead of 1d4). Unlimited casting.
+
+**Used by:** Ring of the Guardian
+
+### L13_Target_Bless_Unlimited
+**Type:** Target Spell | **Cost:** Unlimited
+
+**Name:** Bless
+**Description:** Unlimited Bless. Bless up to 3 creatures, granting them a bonus to attack rolls and saving throws.
+
+Based on vanilla Bless (Target_Bless). Unlimited casting.
+
+**Used by:** Ring of the Guardian
+
+### L13_Target_CreateWater_Unlimited
+**Type:** Target Spell | **Cost:** Bonus Action, Unlimited
+
+**Name:** Create Water
+**Description:** Unlimited Create Water. Create a water surface. Costs 1 bonus action.
+
+Based on vanilla Create Water (Target_CreateWater). Unlimited casting.
+
+**Used by:** Ring of the Guardian
+
+### L13_Target_LesserRestoration_ShortRest
+**Type:** Target Spell | **Cost:** Once per Short Rest
+
+**Name:** Lesser Restoration
+**Description:** Cure a creature from disease and poison and remove Paralysis and Blindness. Recharges on short rest.
+
+Based on vanilla Lesser Restoration (Target_LesserRestoration). Recharges on short rest.
+
+**Used by:** Ring of the Guardian
+
+### L13_Target_GreaterRestoration_LongRest
+**Type:** Target Spell | **Cost:** Once per Long Rest
+
+**Name:** Greater Restoration
+**Description:** Remove charm, petrification, and curses. Cure Poisoned and Diseased. Recharges on long rest.
+
+Based on vanilla Greater Restoration (Target_GreaterRestoration). Recharges on long rest.
+
+**Used by:** Ring of the Guardian
+
+### L13_Target_FreedomOfMovement_ShortRest
+**Type:** Target Spell | **Cost:** Once per Short Rest
+
+**Name:** Freedom of Movement
+**Description:** Touch a creature to grant it the ability to move freely, ignoring difficult terrain and preventing paralysis. Recharges on short rest.
+
+Based on vanilla Freedom of Movement (Target_FreedomOfMovement). Recharges on short rest.
+
+**Used by:** Ring of the Guardian
+
+### L13_Target_RemoveCurse_LongRest
+**Type:** Target Spell | **Cost:** Action, Once per Long Rest
+
+**Name:** Remove Curse
+**Description:** Remove all curses from a creature or object. Recharges on long rest.
+
+Based on vanilla Remove Curse (Target_RemoveCurse). Recharges on long rest.
+
+**Used by:** Ring of the Guardian
+
+### L13_Shout_HeroesFeast_LongRest
+**Type:** Shout Spell | **Cost:** Once per Long Rest
+
+**Name:** Heroes' Feast
+**Description:** Conjure a feast to cure all diseases and poison, grant immunity to poison and being Frightened, and boost maximum HP. Recharges on long rest.
+
+Based on vanilla Heroes' Feast (Shout_HeroesFeast). Recharges on long rest.
+
+**Used by:** Ring of the Guardian
+
+### L13_Shout_MassHealingWord_Unlimited
+**Type:** Shout Spell | **Cost:** Bonus Action, Unlimited
+
+**Name:** Mass Healing Word
+**Description:** Unlimited Mass Healing Word. Heal up to 6 allies. Costs 1 bonus action.
+
+Based on vanilla Mass Healing Word (Shout_HealingWord_Mass). Unlimited casting.
+
+**Used by:** Ring of the Guardian
+
+### L13_Teleportation_Revivify_LongRest
+**Type:** Teleportation Spell | **Cost:** Bonus Action, Once per Long Rest
+
+**Name:** Revivify
+**Description:** Resurrect a fallen ally. Recharges on long rest. Costs 1 bonus action.
+
+Based on vanilla Revivify (Teleportation_Revivify). Recharges on long rest.
+
+**Used by:** Ring of the Guardian
+
+### L13_Interrupt_Counterspell_ShortRest
+**Type:** Interrupt | **Cost:** Reaction, Once per Short Rest
+
+**Name:** Counterspell
+**Description:** Nullify another creature's spell as a reaction. Recharges on short rest.
+
+Based on vanilla Counterspell (Interrupt_Counterspell). Recharges on short rest.
+
+**Used by:** Ring of the Guardian
+
 ---
 
 ## Custom Passives
@@ -602,6 +723,7 @@ All items are delivered via the **L13_Gear_Chest** container, which appears in t
 | Moonguard Cloak | SampleMagicRingMod | Phase 040 |
 | Shield of Tyr | SampleMagicRingMod | Phase 040 |
 | Moonguard Shield | SampleMagicRingMod | Phase 040 |
+| Ring of the Guardian | SampleMagicRingMod | Phase 041 |
 
 All items have been made independent from SampleMagicRingMod with custom L13_ prefixes and unique UUIDs.
 
@@ -618,11 +740,11 @@ All items have been made independent from SampleMagicRingMod with custom L13_ pr
 | Armor (Hands) | 2 |
 | Armor (Back) | 3 |
 | Armor (Shield) | 2 |
-| Armor (Ring) | 1 |
-| Custom Spells | 23 |
+| Armor (Ring) | 2 |
+| Custom Spells | 34 |
 | Custom Passives | 2 |
-| Custom Interrupts | 2 |
-| **Total Items** | **26** |
+| Custom Interrupts | 3 |
+| **Total Items** | **27** |
 
 ---
 
@@ -638,6 +760,14 @@ All items have been made independent from SampleMagicRingMod with custom L13_ pr
 ---
 
 ## Version History
+
+- **2026-02-11**: Phase 041 - Copied Ring of the Guardian from SampleMagicRingMod
+  - Added 1 legendary healing/support ring: Ring of the Guardian
+  - Added 11 custom spells: Superior Healing Word (2d20 healing), Bless (unlimited), Create Water (unlimited), Lesser Restoration (short rest), Greater Restoration (long rest), Freedom of Movement (short rest), Remove Curse (long rest), Heroes' Feast (long rest), Mass Healing Word (unlimited), Revivify (long rest), Counterspell (short rest interrupt)
+  - Ring fully independent from SampleMagicRingMod with custom L13 prefixes
+  - Total item count: 27 items (7 weapons, 6 body armor, 5 headgear, 2 gloves, 3 cloaks, 2 shields, 2 rings)
+  - Total custom spell count: 34 spells, 3 interrupts
+  - Used 21 UUIDs (1 RootTemplate + 16 spell handles + 2 interrupt handles + 2 ring localization handles)
 
 - **2026-02-11**: Phase 040 - Copied cloaks and shields from SampleMagicRingMod
   - Added 3 cloak items: Cloak of Tyr, Shadowcloak, Moonguard Cloak
