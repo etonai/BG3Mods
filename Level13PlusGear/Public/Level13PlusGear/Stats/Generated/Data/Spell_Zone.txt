@@ -1,0 +1,8 @@
+new entry "L13_Target_GlobeOfInvulnerability_ShortRest"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_GlobeOfInvulnerability"
+data "DisplayName" "hed13de9049ba152045e886f3eb124533e33a;1"
+data "ExtraDescription" "hed135b0b73e402a6484c80eb69b8ae745ed8;1"
+data "UseCosts" "BonusActionPoint:1"
+data "Cooldown" "OncePerShortRest"

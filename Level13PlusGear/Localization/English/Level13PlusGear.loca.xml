@@ -28,4 +28,20 @@
 	<content contentuid="hed132b99g003fgb312g446ega869gdf1a99711655" version="1">Emanates a protective aura that shields allies from the Shadow Curse.</content>
 	<content contentuid="hed138183gd689g33b1g40c6g9e8dgda543deb74d9" version="1">Selûne's Blinding Smite</content>
 	<content contentuid="hed13f88dg7b6fgaba8g4bfcgb535g7dbfc723e6e4" version="1">Channel Selûne's radiance to blind your foes. Unlimited uses.</content>
+	<content contentuid="hed13a97e5b37c15a406e9faef9c01e088d4b" version="1">Ring of Spectral Power</content>
+	<content contentuid="hed13979aade808944a8da1a843c82c135636" version="1">A ring crackling with arcane force. Grants powerful spectral magic including Misty Step, Magic Missile, Shield, Hold Person, Knock, Globe of Invulnerability, Artistry of War, Invisibility, Arcane Gate, and Telekinesis.</content>
+	<content contentuid="hed130f477ec99c1f417c879b87cc582dd87b" version="1">Spectral Barrage</content>
+	<content contentuid="hed13c9de23f1da914f28b249fb602de523c3" version="1">Unlimited Level 3 Magic Missile as a bonus action.</content>
+	<content contentuid="hed13193f51dff7ca4ec99c028d276688f61d" version="1">Spectral Artistry</content>
+	<content contentuid="hed1397c3989dc40f408ea4c5e5a739766f71" version="1">Artistry of War. Once per short rest.</content>
+	<content contentuid="hed13df161560588349f69f77ba85e1313d75" version="1">Spectral Hold</content>
+	<content contentuid="hed13980c1526fbf84d9c8d2c1a24302caa4e" version="1">Unlimited Hold Person as a bonus action.</content>
+	<content contentuid="hed13feb69a1fda9543d2915b86d9f7b82c5b" version="1">Spectral Veil</content>
+	<content contentuid="hed137d1ab663541e43beb79ad4dcb0353dc0" version="1">Invisibility. Recharges on short rest.</content>
+	<content contentuid="hed131b7e50fbecd840d7b11b769e4dbea462" version="1">Spectral Knock</content>
+	<content contentuid="hed1384e7cb4916194aa5812177502416e759" version="1">Unlimited Knock as a bonus action.</content>
+	<content contentuid="hed13de9049ba152045e886f3eb124533e33a" version="1">Spectral Barrier</content>
+	<content contentuid="hed135b0b73e402a6484c80eb69b8ae745ed8" version="1">Globe of Invulnerability. Recharges on short rest.</content>
+	<content contentuid="hed13fd32288432644120b15bfebefc16b6cb" version="1">Spectral Gate</content>
+	<content contentuid="hed1381aa4717dfb847f998a59ed2fc841e50" version="1">Arcane Gate. Recharges on short rest.</content>
 </contentList>

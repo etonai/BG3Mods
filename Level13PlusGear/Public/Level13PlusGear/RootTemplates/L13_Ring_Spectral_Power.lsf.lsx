@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="6" build="5" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="hed13979aade808944a8da1a843c82c135636" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hed13a97e5b37c15a406e9faef9c01e088d4b" version="1" />
+					<attribute id="Icon" type="FixedString" value="Item_LOOT_GEN_Ring_D_Silver_A" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="ed1389eb-b94d-4729-9f1c-dbb076b89dc2" />
+					<attribute id="Name" type="LSString" value="L13_Ring_Spectral_Power" />
+					<attribute id="ParentTemplateId" type="FixedString" value="a9f741f6-a758-47ea-bb21-9a37d3ddfe42" />
+					<attribute id="Stats" type="FixedString" value="L13_Ring_Spectral_Power" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855912" />
+					<children>
+						<node id="GameMaster" />
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

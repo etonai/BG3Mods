@@ -15,3 +15,5 @@ new subtable "1,1"
 object category "I_L13_Boots_Stormwalker",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_L13_Blade_Moonguard",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_L13_Ring_Spectral_Power",1,0,0,0,0,0,0,0

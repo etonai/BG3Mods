@@ -11,9 +11,9 @@ A complete list of all magic items in the Level13PlusGear mod.
 
 | Category | Details |
 |----------|---------|
-| Spells | Chromatic Attunement, Spell Slot Restoration (2 versions), Light (unlimited), Shield (unlimited), Counterspell (unlimited) |
+| Spells | Chromatic Orb (unlimited), Magic Missile (unlimited), Chromatic Attunement, Spell Slot Restoration (2 versions), Light (unlimited), Shield (unlimited), Counterspell (unlimited) |
 | Passives | Arcane Enchantment (+1 spell DC/attack), Chromatic Spellslot, Mystra's Blessing (spell attack bonus), Netherese Staff |
-| Description | A legendary staff imbued with the essence of the Weave itself. Grants Chromatic Attunement, Arcane Enchantment, Arcane Battery, Spell Slot Restoration, Pearlescent Restoration, Mystra's Grace, Weave's Reclamation, Echoes of Netheril, and unlimited Shield and Counterspell reactions. |
+| Description | A legendary staff imbued with the essence of the Weave itself. Grants unlimited Chromatic Orb and Magic Missile, Chromatic Attunement, Arcane Enchantment, Arcane Battery, Spell Slot Restoration, Pearlescent Restoration, Mystra's Grace, Weave's Reclamation, Echoes of Netheril, and unlimited Shield and Counterspell reactions. |
 
 ---
 
@@ -52,6 +52,18 @@ A complete list of all magic items in the Level13PlusGear mod.
 | Spells | Misty Step (unlimited) |
 | Passives | Reverberation on status apply, Web Immunity |
 | Description | Legendary boots that combine the power of storms with shadowstep magic. Grants Misty Step, applies Reverberation when inflicting conditions, and provides immunity to web and terrain effects. |
+
+---
+
+### L13_Ring_Spectral_Power (Ring of Spectral Power)
+**Type:** Ring | **Rarity:** Legendary
+
+| Category | Details |
+|----------|---------|
+| Spells | Magic Missile Lvl3 (unlimited, bonus action), Globe of Invulnerability (short rest), Misty Step (unlimited), Hold Person (unlimited), Artistry of War (short rest), Invisibility (short rest), Knock (unlimited), Arcane Gate (short rest), Telekinesis (short rest) |
+| Interrupts | Shield (unlimited) |
+| Passives | Forceweaver (+1d4 Force on spell attack) |
+| Description | A ring crackling with arcane force. Grants powerful spectral magic including 5-missile Magic Missile, defensive Globe of Invulnerability, control spells (Hold Person), utility spells (Knock, Invisibility), teleportation (Misty Step, Arcane Gate), and manipulation (Telekinesis). |
 
 ---
 
@@ -101,6 +113,100 @@ Based on Haste (Victory Longbow version). Free action casting with no cooldown.
 **Contains:**
 - **Radiant Variant:** Radiant spirits surround you. Applies SPIRIT_GUARDIANS_RADIANT_AURA.
 - **Necrotic Variant:** Necrotic spirits surround you. Applies SPIRIT_GUARDIANS_NECROTIC_AURA.
+
+### L13_Projectile_ChromaticOrb_Unlimited
+**Type:** Projectile Spell | **Cost:** Action, Unlimited | **Level:** 1
+
+**Name:** Chromatic Orb
+**Description:** Hurl a sphere of energy that deals 3d8 damage. Choose from Acid, Cold, Fire, Lightning, Poison, or Thunder damage. Unlimited uses.
+
+**Damage Types (choose one):**
+- Acid: 3d8 Acid damage, creates acid surface
+- Cold: 3d8 Cold damage
+- Fire: 3d8 Fire damage
+- Lightning: 3d8 Lightning damage
+- Poison: 3d8 Poison damage
+- Thunder: 3d8 Thunder damage
+
+**Used by:** Staff of the Archmage
+
+### L13_Projectile_MagicMissile_Unlimited
+**Type:** Projectile Spell | **Cost:** Action, Unlimited | **Level:** 1
+
+**Name:** Magic Missile
+**Description:** Create three darts of magical force that automatically hit their target. Each dart deals 1d4+1 Force damage (3d4+3 total). Can target up to 3 different creatures. Unlimited uses.
+
+**Damage:** 3d4+3 Force (7-15 guaranteed damage, no attack roll)
+**Missiles:** 3 missiles (can split between targets)
+
+**Used by:** Staff of the Archmage
+
+### L13_Projectile_MagicMissile_Unlimited_Lvl3
+**Type:** Projectile Spell | **Cost:** Bonus Action, Unlimited | **Level:** 3
+
+**Name:** Spectral Barrage
+**Description:** Create five darts of magical force that automatically hit their target. Each dart deals 1d4+1 Force damage (5d4+5 total). Can target up to 3 different creatures. Unlimited uses.
+
+**Damage:** 5d4+5 Force (10-25 guaranteed damage, no attack roll)
+**Missiles:** 5 missiles (can split between targets)
+
+**Used by:** Ring of Spectral Power
+
+### L13_Projectile_ArtistryOfWar_ShortRest
+**Type:** Projectile Spell | **Cost:** Once per Short Rest
+
+**Name:** Spectral Artistry
+**Description:** Artistry of War. Once per short rest.
+
+**Used by:** Ring of Spectral Power
+
+### L13_Target_HoldPerson_Unlimited
+**Type:** Target Spell | **Cost:** Bonus Action, Unlimited
+
+**Name:** Spectral Hold
+**Description:** Unlimited Hold Person as a bonus action. Paralyzes a humanoid target.
+
+**Used by:** Ring of Spectral Power
+
+### L13_Target_Invisibility_ShortRest
+**Type:** Target Spell | **Cost:** Once per Short Rest
+
+**Name:** Spectral Veil
+**Description:** Invisibility. Recharges on short rest.
+
+**Used by:** Ring of Spectral Power
+
+### L13_Target_Knock_Unlimited
+**Type:** Target Spell | **Cost:** Bonus Action, Unlimited
+
+**Name:** Spectral Knock
+**Description:** Unlimited Knock as a bonus action. Unlocks doors and containers.
+
+**Used by:** Ring of Spectral Power
+
+### L13_Target_GlobeOfInvulnerability_ShortRest
+**Type:** Zone Spell | **Cost:** Bonus Action, Once per Short Rest
+
+**Name:** Spectral Barrier
+**Description:** Globe of Invulnerability. Recharges on short rest. Creates a protective barrier against spells.
+
+**Used by:** Ring of Spectral Power
+
+### L13_Teleportation_ArcaneGate_ShortRest
+**Type:** Teleportation Spell | **Cost:** Once per Short Rest
+
+**Name:** Spectral Gate
+**Description:** Arcane Gate. Recharges on short rest. Creates two linked portals for teleportation.
+
+**Used by:** Ring of Spectral Power
+
+### L13_Throw_Telekinesis_ShortRest
+**Type:** Throw Spell | **Cost:** Action, Once per Short Rest
+
+**Name:** Telekinesis
+**Description:** Telekinesis. Recharges on short rest. Manipulate objects and creatures with your mind.
+
+**Used by:** Ring of Spectral Power
 
 ---
 
@@ -162,10 +268,11 @@ All items have been made independent from SampleMagicRingMod with custom L13_ pr
 |----------|-------|
 | Weapons | 3 |
 | Armor (Feet) | 1 |
-| Custom Spells | 7 |
+| Armor (Ring) | 1 |
+| Custom Spells | 16 |
 | Custom Passives | 2 |
 | Custom Interrupts | 2 |
-| **Total Items** | **4** |
+| **Total Items** | **5** |
 
 ---
 
@@ -181,6 +288,16 @@ All items have been made independent from SampleMagicRingMod with custom L13_ pr
 ---
 
 ## Version History
+
+- **2026-02-11**: Phase 037 - Added spells to Staff and copied Ring of Spectral Power
+  - Added Chromatic Orb (unlimited, level 1) to Staff of the Archmage
+  - Added Magic Missile (unlimited, level 1) to Staff of the Archmage
+  - Copied Ring of Spectral Power from SampleMagicRingMod to Level13PlusGear
+  - Ring includes 9 custom spells: Magic Missile Lvl3, Globe of Invulnerability, Hold Person, Artistry of War, Invisibility, Knock, Arcane Gate, Telekinesis
+  - Created 3 new spell file types: Spell_Zone.txt, Spell_Teleportation.txt, Spell_Throw.txt
+  - Ring fully independent from SampleMagicRingMod with custom L13 prefixes
+  - Total item count: 5 items (3 weapons, 1 boots, 1 ring)
+  - Total custom spell count: 16 spells
 
 - **2026-02-10**: Phase 035 - Fixed item names and descriptions
   - Added description to Moonshield Aura passive

@@ -1,0 +1,8 @@
+new entry "L13_Teleportation_ArcaneGate_ShortRest"
+type "SpellData"
+data "SpellType" "Teleportation"
+using "Teleportation_ArcaneGate"
+data "DisplayName" "hed13fd32288432644120b15bfebefc16b6cb;1"
+data "ExtraDescription" "hed1381aa4717dfb847f998a59ed2fc841e50;1"
+data "UseCosts" ""
+data "Cooldown" "OncePerShortRest"
