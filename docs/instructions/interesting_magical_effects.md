@@ -61,6 +61,7 @@ Spells that existing items grant - can use simple `using` technique.
 | Item | Effect | Internal Name |
 |------|--------|---------------|
 | Warped Headband of Intellect (UNI_FOR_OgresForHire_HeadbandOfIntellect, MapKey: 8f4876f1-44d9-4bb8-802e-907c6b0a0dba) | Sets Intelligence to 17 | Uses AbilityOverrideMinimum boost |
+| Drunk Goblin's Ring (Quest_GOB_DrunkGoblin_Ring, MapKey: 3023d5a5-14f0-4549-8ff2-1f34336c243c) | Additional movement speed | Uses ActionResource(Movement,...) boost |
 
 ---
 
@@ -102,6 +103,7 @@ Notes on effects that need further investigation.
 | Stalker Gloves (MAG_Stalker_Gloves, MapKey: dd99248c-fe42-4d07-9861-853e9291ea51) | Seldom Caught Unawares (+1 initiative), Skullduggery Attack (+1d4 Force on Sneak Attack) | Complete - see detailed notes below |
 | Radiating Helmet (MAG_Radiant_Radiating_Helmet, MapKey: 5b3c40c5-b0c0-44b5-9b75-e642069fd2cc) | Smite the Graceless - when enemies miss you, they take 1d4 radiant (DEX 14 save) and get Radiating Orb | Complete - see detailed notes below |
 | Ring of Regeneration (MAG_PHB_OfRegeneration_Ring, MapKey: d6ee2594-7373-4fed-a167-f9d95cb4ecfd) | Combat Regeneration - regain 1d4 HP at start of each turn while in combat | Complete - see detailed notes below |
+| Drunk Goblin's Ring (Quest_GOB_DrunkGoblin_Ring, MapKey: 3023d5a5-14f0-4549-8ff2-1f34336c243c) | Movement speed bonus via ActionResource(Movement,...) boost | Pending - need to research exact boost values |
 
 ---
 

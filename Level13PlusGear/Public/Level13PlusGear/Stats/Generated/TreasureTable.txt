@@ -59,3 +59,9 @@ new subtable "1,1"
 object category "I_L13_Shield_Moonguard",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_L13_Ring_Guardian",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_L13_Plate_Moonguard",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_L13_Armor_Dragonrider",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_L13_Circlet_Willpower",1,0,0,0,0,0,0,0

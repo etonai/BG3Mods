@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <contentList>
 	<content contentuid="hroc7624bgb5dag47d9gab02g456236332c1e" version="1">Ring of Creation</content>
-	<content contentuid="hroc8099g3c13g42adg8b31g50724eafee5a" version="1">A legendary ring imbued with the power to summon items from across the realms. Grants the ability to summon the Level 13 Plus Gear Chest and Boots of the Stormwalker.</content>
+	<content contentuid="hroc8099g3c13g42adg8b31g50724eafee5a" version="1">A legendary ring imbued with the power to summon items from across the realms. Grants the ability to summon the Level 13 Plus Gear Chest, Boots of the Stormwalker, Moonguard Plate, Armor of Tyr, Moonguard Splint, Armor of the Dragonrider, Circlet of Willpower, and Armor of Testing.</content>
 	<content contentuid="hroc1c8gf42ag4d19gb8e2ga1b4c7d8e9f0a" version="1">Summon Level 13 Gear Chest</content>
 	<content contentuid="hroc6020gd37fg4fc7ga174g47f0bf91dace" version="1">Summon the Level 13 Plus Gear Chest at the target location. The chest contains powerful equipment for level 13+ characters.</content>
 	<content contentuid="hroc0ccag8bc9g4a79gab95g36259cbf2165" version="1">Summon Boots of Stormwalker</content>
 	<content contentuid="hroc3d8ag477bg4051gaeecg5cb59a916ca2" version="1">Summon the Boots of the Stormwalker at the target location. These magical boots grant enhanced mobility and lightning resistance.</content>
 	<content contentuid="hroc9876gab12g4cd3gef45g012345678901" version="1">Test Ring (Simple)</content>
 	<content contentuid="hroc8765ga21bg3dc4ge54fg109876543210" version="1">A simple test ring with no special properties. Used to verify the mod delivery system is working correctly.</content>
+	<content contentuid="hrocaa11gbb22gcc33gdd44geeff112233445566" version="1">Summon Moonguard Plate</content>
+	<content contentuid="hrocff99gee88gdd77gcc66gbbaa998877665544" version="1">Summon the Moonguard Plate at the target location. This legendary plate armor is blessed by Selûne and provides exceptional protection.</content>
+	<content contentuid="hroc1111g2222g3333g4444g555566667777" version="1">Summon Armor of Tyr</content>
+	<content contentuid="hroc8888g9999gaaaagbbbbgccccddddeee" version="1">Summon the Armor of Tyr at the target location. This legendary half plate is blessed by Tyr, the God of Justice.</content>
+	<content contentuid="hrocfffegeeedgddddgccccgbbbbaaaaa999" version="1">Summon Moonguard Splint</content>
+	<content contentuid="hroc8887g7776g6665g5554g444333222111" version="1">Summon the Moonguard Splint at the target location. This legendary splint armor is blessed by Selûne, the Moonmaiden.</content>
+	<content contentuid="hroc5d72g8f4ag4b19g9a2cge8f7d6c5b4a3" version="1">Summon Armor of Dragonrider</content>
+	<content contentuid="hrocf4a3g9a2cg4b19g8f4ag5d728f4ab19a" version="1">Summon the Armor of the Dragonrider at the target location. This legendary Githyanki half plate combines psionic barriers with divine haste magic.</content>
+	<content contentuid="hroc4355g1fafg4ba1ga3acgf277e11c9401" version="1">Summon Circlet of Willpower</content>
+	<content contentuid="hroc573cg6a54g4454gb262g1d0361fc96ef" version="1">Summon the Circlet of Willpower at the target location. This legendary circlet strengthens mental fortitude and grants powerful immunities.</content>
+	<content contentuid="hed13ae90g36c3g764dg0989g89a11ab86292" version="1">Armor of Testing</content>
+	<content contentuid="hed139567gd962g45e5gaf5cg23c757806e4a" version="1">A test copy of the Armor of Tyr, created to investigate chest delivery issues. This half plate armor grants +2 to saving throws, Celestial Haste, Misty Step, and Spirit Guardians.</content>
+	<content contentuid="hroc881dgc015g4c3fga6efg258dd1f49911" version="1">Summon Armor of Testing</content>
+	<content contentuid="hroc2057gca89g44fbg983dgbf9e6e420743" version="1">Summon the Armor of Testing at the target location. This test armor is a copy of the Armor of Tyr for chest delivery investigation.</content>
 </contentList>

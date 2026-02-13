@@ -1,0 +1,26 @@
+Future Phases
+
+
+Psionic Ward armor is good for Githyanki:
+
+	<!-- MAG_Githborn_MagicEating_HalfPlate -->
+	<MapKey>f601bac2-16a7-4da0-854a-ae4132ca448f</MapKey>
+	<Name>MAG_Githborn_MagicEating_HalfPlate</Name>
+
+Plus we can add powers like Celestial Haste to it.
+
+
+
+Make sure the L13 chest appears in the tutorial chest and the traveler's chest. It already appears in the tutorial chest.
+
+Ring of Preparation???
+Magic Item that simulates multiple effects that a camp hireling spellcaster can do:
+Longstrider
+Aid L5
+Heroes Feast
+Darkvision
+Mage Armor
+Speak with Animals
+Detect Thoughts
+Freedom of Movement
+

@@ -98,9 +98,10 @@ A complete list of all magic items in the Level13PlusGear mod.
 
 | Category | Details |
 |----------|---------|
+| Movement | +3 movement speed |
 | Spells | Misty Step (unlimited) |
 | Passives | Reverberation on status apply, Web Immunity |
-| Description | Legendary boots that combine the power of storms with shadowstep magic. Grants Misty Step, applies Reverberation when inflicting conditions, and provides immunity to web and terrain effects. |
+| Description | Legendary boots that combine the power of storms with shadowstep magic. Grants +3 movement speed, unlimited Misty Step, applies Reverberation when inflicting conditions, and provides immunity to web and terrain effects. |
 
 ---
 
@@ -167,31 +168,28 @@ A complete list of all magic items in the Level13PlusGear mod.
 
 ---
 
-### L13_Armor_Voss (Armor of Voss)
-**Type:** Chain Shirt +5 | **Rarity:** Legendary
+### L13_Plate_Moonguard (Moonguard Plate)
+**Type:** Plate Armor +5 | **Rarity:** Legendary
 
 | Category | Details |
 |----------|---------|
-| AC Bonus | +5, allows full Dexterity bonus to AC |
-| Bonuses | +2 to all saving throws |
-| Spells | Celestial Haste (unlimited), Misty Step (unlimited), Spirit Guardians (Tyr variant) |
-| Passives | Exotic Material (Medium Armor), Ring of Regeneration (1d4 HP per turn) |
-| Status | Exotic Material Armor Technical, Ring of Regeneration Technical |
-| Description | This exquisite elven chain was forged for Kith'rak Voss, a legendary Githyanki warrior. The armor flows like liquid silver, providing exceptional protection while allowing complete freedom of movement. |
+| AC Bonus | +7 total (+5 explicit + 2 from Magical Plate passive) |
+| Final AC | 25 (18 base plate + 7 bonus) |
+| Passives | Magical Plate +2 (ARM_MagicalPlate_2_Passive), End Game Plate Armor Passive |
+| Status | Blade Ward (resistance to physical weapon damage), End Game Resistance (general damage resistance) |
+| Description | Plate armor blessed by Selûne, the Moonmaiden. Part of the legendary Moonguard set. Provides exceptional protection with Blade Ward and magical resistance. |
 
 ---
 
-### L13_Armor_Orpheus (Armor of Orpheus)
-**Type:** Githyanki Half Plate +5 | **Rarity:** Legendary
+### L13_Armor_Dragonrider (Armor of the Dragonrider)
+**Type:** Half Plate +3 | **Rarity:** Legendary
 
 | Category | Details |
 |----------|---------|
-| AC Bonus | +5, allows full Dexterity bonus to AC |
-| Bonuses | +2 to all saving throws |
-| Spells | Celestial Haste (unlimited), Misty Step (unlimited), Spirit Guardians (Tyr variant) |
-| Passives | Exotic Material (Medium Armor), Ring of Regeneration (1d4 HP per turn) |
-| Status | Exotic Material Armor Technical, Ring of Regeneration Technical |
-| Description | Githyanki-forged half plate armor once worn by Orpheus, Prince of the Comet. This legendary armor provides exceptional protection while allowing complete freedom of movement. |
+| AC Bonus | +3 |
+| Spells | Celestial Haste (unlimited) |
+| Passives | MAG_Githborn_MagicEating_HalfPlate_Passive (psionic barrier/magic-eating) |
+| Description | Legendary half plate armor once worn by elite Githyanki dragonriders. Enhanced with divine haste magic while retaining its psionic capabilities. Grants +3 AC and unlimited Celestial Haste. |
 
 ---
 
@@ -256,6 +254,19 @@ A complete list of all magic items in the Level13PlusGear mod.
 | Status | Helm of Balduran Regeneration (2 HP/turn) |
 | Immunities | Critical Hit Immunity, Stun, Fear, Blind |
 | Description | A circlet blessed by Selûne, the Moonmaiden. Grants Balduran's Vitality, Balduran's Protection, Stun/Fear/Blind Immunity, Critical Hit Immunity, HP Regeneration, Darkvision, and the spells Speak with Dead, Speak with Animals, See Invisibility, Protection From Evil And Good, and Faerie Fire. |
+
+---
+
+### L13_Circlet_Willpower (Circlet of Willpower)
+**Type:** Circlet | **Rarity:** Legendary
+
+| Category | Details |
+|----------|---------|
+| Spells | See Invisibility (unlimited), Protection from Evil and Good (unlimited), Faerie Fire (short rest) |
+| Passives | Balduran's Vitality (+2 max HP), Balduran's Protection (+1 AC, +1 saves), Stun Immunity, Fear Immunity, Blind Immunity, Darkvision |
+| Status | Helm of Balduran Regeneration (2 HP/turn) |
+| Immunities | Critical Hit Immunity, Stun, Fear, Blind |
+| Description | A legendary circlet that strengthens the wearer's mental fortitude. Grants immunity to critical hits, stun, fear, and blindness. Provides +2 max HP, +1 AC, +1 to all saves, darkvision, HP regeneration, and the spells See Invisibility, Protection from Evil and Good, and Faerie Fire. |
 
 ---
 
@@ -395,7 +406,7 @@ Based on Haste (Victory Longbow version). Free action casting with no cooldown.
 - **Radiant Variant:** Radiant spirits surround you. Applies SPIRIT_GUARDIANS_RADIANT_AURA.
 - **Necrotic Variant:** Necrotic spirits surround you. Applies SPIRIT_GUARDIANS_NECROTIC_AURA.
 
-**Used by:** Armor of Tyr, Moonguard Splint, Armor of Voss, Armor of Orpheus
+**Used by:** Armor of Tyr, Moonguard Splint
 
 ### L13_Projectile_ChromaticOrb_Unlimited
 **Type:** Projectile Spell | **Cost:** Action, Unlimited | **Level:** 1
@@ -709,8 +720,6 @@ All items are delivered via the **L13_Gear_Chest** container, which appears in t
 | Armor of Tyr | SampleMagicRingMod | Phase 038 |
 | Armor of the Rogue | SampleMagicRingMod | Phase 038 |
 | Moonguard Splint | SampleMagicRingMod | Phase 038 |
-| Armor of Voss | SampleMagicRingMod | Phase 038 |
-| Armor of Orpheus | SampleMagicRingMod | Phase 038 |
 | Helmet of Tyr | SampleMagicRingMod | Phase 039 |
 | Circlet of Tyr | SampleMagicRingMod | Phase 039 |
 | Magus Circlet | SampleMagicRingMod | Phase 039 |
@@ -724,6 +733,9 @@ All items are delivered via the **L13_Gear_Chest** container, which appears in t
 | Shield of Tyr | SampleMagicRingMod | Phase 040 |
 | Moonguard Shield | SampleMagicRingMod | Phase 040 |
 | Ring of the Guardian | SampleMagicRingMod | Phase 041 |
+| Moonguard Plate | Vanilla BG3 (MAG_EndGame_Plate_Armor) | Phase 043 |
+| Armor of the Dragonrider | Vanilla BG3 (MAG_Githborn_MagicEating_HalfPlate) | Phase 045 |
+| Circlet of Willpower | SampleMagicRingMod | Phase 046 |
 
 All items have been made independent from SampleMagicRingMod with custom L13_ prefixes and unique UUIDs.
 
@@ -736,7 +748,7 @@ All items have been made independent from SampleMagicRingMod with custom L13_ pr
 | Weapons | 7 |
 | Armor (Feet) | 1 |
 | Armor (Body) | 5 |
-| Armor (Head) | 5 |
+| Armor (Head) | 6 |
 | Armor (Hands) | 2 |
 | Armor (Back) | 3 |
 | Armor (Shield) | 2 |
@@ -744,7 +756,7 @@ All items have been made independent from SampleMagicRingMod with custom L13_ pr
 | Custom Spells | 34 |
 | Custom Passives | 2 |
 | Custom Interrupts | 3 |
-| **Total Items** | **27** |
+| **Total Items** | **28** |
 
 ---
 
@@ -761,11 +773,38 @@ All items have been made independent from SampleMagicRingMod with custom L13_ pr
 
 ## Version History
 
+- **2026-02-12**: Phase 046 - Added Circlet of Willpower and enhanced Boots of the Stormwalker
+  - Added 1 legendary circlet: Circlet of Willpower (copied from SampleMagicRingMod)
+  - Circlet provides: Critical Hit Immunity, Stun/Fear/Blind Immunity, Balduran's Vitality (+2 max HP), Balduran's Protection (+1 AC, +1 saves), Darkvision, HP regeneration (2 HP/turn)
+  - Circlet spells: See Invisibility (unlimited), Protection from Evil and Good (unlimited), Faerie Fire (short rest)
+  - Enhanced Boots of the Stormwalker with +3 movement speed (9 feet)
+  - Added Ring of Creation summon spell for Circlet of Willpower
+  - Total item count: 28 items (7 weapons, 5 body armor, 6 headgear, 2 gloves, 3 cloaks, 2 shields, 2 rings, 1 boots)
+  - Used 5 UUIDs (1 RootTemplate + 2 L13 localization handles + 2 Ring of Creation handles)
+
+- **2026-02-12**: Phase 045 - Created Armor of the Dragonrider based on vanilla MAG_Githborn_MagicEating_HalfPlate
+  - Added 1 legendary half plate armor: Armor of the Dragonrider
+  - Based on vanilla Githborn Psionic Barrier armor with +3 AC and Celestial Haste
+  - Powers: Psionic barrier/magic-eating (vanilla), Celestial Haste (unlimited)
+  - Armor fully independent with custom L13 prefix
+  - Also added Ring of Creation summon spell for access
+  - Total item count: 27 items (7 weapons, 5 body armor, 5 headgear, 2 gloves, 3 cloaks, 2 shields, 2 rings, 1 boots)
+  - Used 5 UUIDs (1 RootTemplate + 2 L13 localization handles + 2 Ring of Creation handles)
+
+- **2026-02-12**: Phase 043 - Created Moonguard Plate based on vanilla MAG_EndGame_Plate_Armor
+  - Added 1 legendary plate armor: Moonguard Plate
+  - Based on vanilla MAG_EndGame_Plate_Armor with +5 AC boost
+  - Powers: Blade Ward (physical weapon damage resistance), End Game Resistance, Magical Plate +2
+  - Total AC: 25 (18 base + 5 explicit + 2 from passive)
+  - Armor fully independent with custom L13 prefix
+  - Total item count: 26 items (7 weapons, 4 body armor, 5 headgear, 2 gloves, 3 cloaks, 2 shields, 2 rings, 1 boots)
+  - Used 3 UUIDs (1 RootTemplate + 2 localization handles)
+
 - **2026-02-11**: Phase 041 - Copied Ring of the Guardian from SampleMagicRingMod
   - Added 1 legendary healing/support ring: Ring of the Guardian
   - Added 11 custom spells: Superior Healing Word (2d20 healing), Bless (unlimited), Create Water (unlimited), Lesser Restoration (short rest), Greater Restoration (long rest), Freedom of Movement (short rest), Remove Curse (long rest), Heroes' Feast (long rest), Mass Healing Word (unlimited), Revivify (long rest), Counterspell (short rest interrupt)
   - Ring fully independent from SampleMagicRingMod with custom L13 prefixes
-  - Total item count: 27 items (7 weapons, 6 body armor, 5 headgear, 2 gloves, 3 cloaks, 2 shields, 2 rings)
+  - Total item count: 25 items (7 weapons, 3 body armor, 5 headgear, 2 gloves, 3 cloaks, 2 shields, 2 rings, 1 boots)
   - Total custom spell count: 34 spells, 3 interrupts
   - Used 21 UUIDs (1 RootTemplate + 16 spell handles + 2 interrupt handles + 2 ring localization handles)
 
@@ -774,7 +813,7 @@ All items have been made independent from SampleMagicRingMod with custom L13_ pr
   - Added 2 shield items: Shield of Tyr, Moonguard Shield
   - Added 2 custom spells: Crusader's Mantle (unlimited), Invisibility (unlimited)
   - All items fully independent from SampleMagicRingMod with custom L13 prefixes
-  - Total item count: 26 items (7 weapons, 6 body armor, 5 headgear, 2 gloves, 3 cloaks, 2 shields, 1 ring)
+  - Total item count: 24 items (7 weapons, 3 body armor, 5 headgear, 2 gloves, 3 cloaks, 2 shields, 1 ring, 1 boots)
   - Total custom spell count: 23 spells
   - Used 19 UUIDs (5 RootTemplates + 2 spell handles + 12 localization handles)
 
@@ -783,18 +822,19 @@ All items have been made independent from SampleMagicRingMod with custom L13_ pr
   - Added 2 glove items: Gloves of Tyr, Moonguard Gloves
   - Added 4 custom spells: See Invisibility (unlimited), Protection From Evil And Good (unlimited), Faerie Fire (short rest), Thunderwave (short rest)
   - All items fully independent from SampleMagicRingMod with custom L13 prefixes
-  - Total item count: 21 items (7 weapons, 6 body armor, 5 headgear, 2 gloves, 1 ring)
+  - Total item count: 19 items (7 weapons, 3 body armor, 5 headgear, 2 gloves, 1 ring, 1 boots)
   - Total custom spell count: 21 spells
   - Used 23 UUIDs (7 RootTemplates + 2 spell handles + 14 localization handles)
 
 - **2026-02-11**: Phase 038 - Copied weapons and body armor from SampleMagicRingMod
   - Added 4 weapons: Sword of Orpheus (Greatsword +5), Divine Maul (Maul +5), Selune's Moonmace (Mace +5), Rogueblade (Longsword +5)
-  - Added 5 body armor pieces: Armor of Tyr (Half Plate +2), Armor of the Rogue (Studded Leather +5), Moonguard Splint (Splint +5), Armor of Voss (Chain Shirt +5), Armor of Orpheus (Githyanki Half Plate +5)
+  - Added 3 body armor pieces: Armor of Tyr (Half Plate +2), Armor of the Rogue (Studded Leather +5), Moonguard Splint (Splint +5)
   - Added Spirit Guardians Tyr variant (container spell + Radiant/Necrotic variants)
   - All items fully independent from SampleMagicRingMod with custom L13 prefixes
-  - Total item count: 14 items (7 weapons, 6 armor pieces, 1 ring)
+  - NOTE: Armor of Voss and Armor of Orpheus were documented in this phase but never actually created
+  - Total item count: 12 items (7 weapons, 3 body armor, 1 ring, 1 boots)
   - Total custom spell count: 17 spells
-  - Used 32 UUIDs (9 RootTemplates + 3 spell handles + 20 localization handles)
+  - Used 25 UUIDs (7 RootTemplates + 3 spell handles + 15 localization handles)
 
 - **2026-02-11**: Phase 037 - Added spells to Staff and copied Ring of Spectral Power
   - Added Chromatic Orb (unlimited, level 1) to Staff of the Archmage
