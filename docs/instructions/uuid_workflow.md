@@ -43,16 +43,6 @@ All items in Level13Gear should use the `L13` prefix for handles and names.
 The following UUIDs are available for Level13Gear mod use. **Delete the UUID from this list when you use it.**
 
 ```
-aac53a09-b0f6-43a9-b47c-21100a829d57
-
-6f79941c-7297-4588-8253-3e7465c028af
-
-7b1a173a-0ea5-4512-a9ee-7bd3a3f92aec
-
-fa771682-f152-407a-bb1d-238f33a2f44e
-
-79e995ee-71d4-40e0-9b6d-6162644c6f01
-
 306c7fbf-d3b2-4e20-8a7b-e5dc624e8320
 
 a3312d41-5d26-47de-bb55-61d4af60550b

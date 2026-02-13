@@ -171,6 +171,119 @@ data "Boosts" "UnlockSpell(SMR_Projectile_MagicMissile_Unlimited_Lvl3);UnlockSpe
 
 ---
 
+## CRITICAL: Armor Base Templates for Container Delivery
+
+### The `_2` Suffix Problem
+
+**Phase 047-048 Discovery:** Medium and heavy armor using base templates with the `_2` suffix **CANNOT be delivered via container inventories** (TreasureTable or OneTimeRewards).
+
+### The Issue
+
+When creating armor that will be delivered through chests or containers:
+
+**❌ BROKEN - Will NOT appear in containers:**
+```
+new entry "MyArmor"
+type "Armor"
+using "ARM_HalfPlate_Body_2"        ← Has _2 suffix - WILL FAIL!
+using "ARM_Splint_Body_2"           ← Has _2 suffix - WILL FAIL!
+using "ARM_Plate_Body_2"            ← Has _2 suffix - WILL FAIL!
+```
+
+**✅ WORKING - Will appear in containers:**
+```
+new entry "MyArmor"
+type "Armor"
+using "ARM_ScaleMail_Body"          ← No _2 suffix - WORKS!
+using "ARM_StuddedLeather_Body_2"   ← Light armor - Exception, works with _2
+```
+
+### The Solution
+
+**For ALL medium/heavy armor that needs container delivery:**
+```
+using "ARM_ScaleMail_Body"
+```
+
+This base template works for:
+- Half Plate armor
+- Splint armor
+- Plate armor
+- Any medium/heavy armor
+
+### Pattern Observed
+
+| Armor Type | Template with `_2` | Template without `_2` | Container Delivery |
+|------------|-------------------|----------------------|-------------------|
+| Light armor | `ARM_StuddedLeather_Body_2` | N/A | ✅ Works with `_2` |
+| Medium/Heavy | `ARM_HalfPlate_Body_2` | `ARM_ScaleMail_Body` | ❌ Fails with `_2` |
+| Medium/Heavy | `ARM_Splint_Body_2` | `ARM_ScaleMail_Body` | ❌ Fails with `_2` |
+| Medium/Heavy | `ARM_Plate_Body_2` | `ARM_ScaleMail_Body` | ❌ Fails with `_2` |
+
+### Symptoms
+
+If your medium/heavy armor:
+- ✅ Works when summoned via spells or direct spawn
+- ✅ Has correct RootTemplate and Stats entries
+- ✅ Displays correctly when equipped
+- ❌ Does NOT appear in chests/containers
+
+**Root Cause:** You're using a base template with `_2` suffix. Change to `ARM_ScaleMail_Body`.
+
+### Example: CL_InconstantMoon_ClericGear Reference
+
+The working example mod uses `ARM_ScaleMail_Body` for all medium armor:
+
+```
+new entry "CL_TempSel_Shirt_HalfPlate"
+type "Armor"
+using "ARM_ScaleMail_Body"          ← Works!
+data "ArmorClass" "12"
+data "Rarity" "VeryRare"
+data "Boosts" "Resistance(Lightning, Resistant)"
+data "PassivesOnEquip" "MAG_ExoticMaterial_MediumArmor_Passive;..."
+data "Unique" "0"
+```
+
+Even items named "Plate" use `ARM_ScaleMail_Body`:
+```
+new entry "CL_TempSel_Shirt_Plate"
+type "Armor"
+using "ARM_ScaleMail_Body"          ← Works for "plate" too!
+```
+
+### Checklist for Container-Delivered Armor
+
+Before adding armor to TreasureTable or container inventories:
+
+- [ ] Armor uses `ARM_ScaleMail_Body` (or light armor variant)
+- [ ] NOT using `ARM_HalfPlate_Body_2`
+- [ ] NOT using `ARM_Splint_Body_2`
+- [ ] NOT using `ARM_Plate_Body_2`
+- [ ] NOT using `ARM_HalfPlate_Body_Githyanki` or other `_2` variants
+- [ ] Unique flag set to "0" if multiple copies needed
+
+### Why This Happens
+
+**Unknown.** This appears to be a BG3 engine limitation. The `_2` suffix variants work fine for:
+- Direct spawning (console commands)
+- Spell summons
+- Direct inventory addition
+
+But they **fail silently** when delivered via:
+- TreasureTable container inventory population
+- OneTimeRewards chest delivery
+
+**Workaround:** Always use `ARM_ScaleMail_Body` for medium/heavy armor in containers.
+
+### Related Issues
+
+- **Phase 047:** Research phase investigating why L13_Armor_Tyr failed to appear in chests
+- **Phase 048:** Created L13_Armor_Chest, discovered `_2` suffix issue via CL_InconstantMoon_ClericGear example
+- **Revision 2:** Changing all medium/heavy armor from `_2` variants to `ARM_ScaleMail_Body` fixed the issue
+
+---
+
 ## TreasureTable.txt (Tutorial Chest Injection)
 
 ### Adding Items to Tutorial Chest

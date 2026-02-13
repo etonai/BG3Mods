@@ -22,4 +22,6 @@
 	<content contentuid="hed139567gd962g45e5gaf5cg23c757806e4a" version="1">A test copy of the Armor of Tyr, created to investigate chest delivery issues. This half plate armor grants +2 to saving throws, Celestial Haste, Misty Step, and Spirit Guardians.</content>
 	<content contentuid="hroc881dgc015g4c3fga6efg258dd1f49911" version="1">Summon Armor of Testing</content>
 	<content contentuid="hroc2057gca89g44fbg983dgbf9e6e420743" version="1">Summon the Armor of Testing at the target location. This test armor is a copy of the Armor of Tyr for chest delivery investigation.</content>
+	<content contentuid="hrocf771682gf152g407agbb1dg238f33a2f44e" version="1">Summon Level 13 Armor Chest</content>
+	<content contentuid="hroce995eeg71d4g40e0g9b6dg6162644c6f01" version="1">Summon the Level 13 Plus Armor Chest at the target location. This chest contains all legendary armor pieces from the Level 13 Plus Gear mod.</content>
 </contentList>

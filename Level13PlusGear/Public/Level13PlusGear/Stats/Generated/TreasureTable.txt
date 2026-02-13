@@ -5,6 +5,8 @@ CanMerge 1
 new subtable "1,1"
 object category "I_L13_Gear_Chest",1,0,0,0,0,0,0,0
 new subtable "1,1"
+object category "I_L13_Armor_Chest",1,0,0,0,0,0,0,0
+new subtable "1,1"
 object category "I_L13_Armor_Tyr",1,0,0,0,0,0,0,0
 
 new treasuretable "L13_Gear_Chest_TT"
@@ -27,12 +29,6 @@ new subtable "1,1"
 object category "I_L13_Mace_Selune_Moon",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_L13_Rogueblade",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_L13_Armor_Tyr",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_L13_Armor_Rogue",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_L13_Armor_Moonguard",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_L13_Helmet_Tyr",1,0,0,0,0,0,0,0
 new subtable "1,1"
@@ -60,8 +56,17 @@ object category "I_L13_Shield_Moonguard",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_L13_Ring_Guardian",1,0,0,0,0,0,0,0
 new subtable "1,1"
+object category "I_L13_Circlet_Willpower",1,0,0,0,0,0,0,0
+
+new treasuretable "L13_Armor_Chest_TT"
+CanMerge 1
+new subtable "1,1"
+object category "I_L13_Armor_Tyr",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_L13_Armor_Rogue",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_L13_Armor_Moonguard",1,0,0,0,0,0,0,0
+new subtable "1,1"
 object category "I_L13_Plate_Moonguard",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_L13_Armor_Dragonrider",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_L13_Circlet_Willpower",1,0,0,0,0,0,0,0

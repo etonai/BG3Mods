@@ -89,6 +89,7 @@ Technical reference documentation for BG3 modding.
 |------|-------------|
 | PhaseDocumentTemplate.md | **Template for creating new phase documents** - Comprehensive structure with all sections, guidelines, and best practices |
 | uuid_workflow.md | **READ BEFORE Level13Gear work** - UUID pool, naming conventions (L13 prefix, ed13 UUID prefix) |
+| armor_workflow.md | **READ BEFORE creating armor** - Base template selection, container delivery compatibility, armor creation checklist |
 | copying_items_between_mods.md | Step-by-step guide for copying items from one mod to another |
 | adding_spells_without_item_source.md | Container spell technique for spells no item grants |
 | interesting_magical_effects.md | Collection of effects/passives for future items |
