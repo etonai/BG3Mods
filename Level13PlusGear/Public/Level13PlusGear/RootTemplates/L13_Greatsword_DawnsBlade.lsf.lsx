@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="6" build="5" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="hed130875gb3f0g4bcag8b6egea29e5f9a696" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hed132d41g5d26g47degbb55g61d4af60550b" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="ed137fbf-d3b2-4e20-8a7b-e5dc624e8320" />
+					<attribute id="Name" type="LSString" value="L13_Greatsword_DawnsBlade" />
+					<attribute id="ParentTemplateId" type="FixedString" value="26ac9758-19f4-4867-9d5d-57437d6b9794" />
+					<attribute id="Stats" type="FixedString" value="L13_Greatsword_DawnsBlade" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855912" />
+					<children>
+						<node id="GameMaster" />
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

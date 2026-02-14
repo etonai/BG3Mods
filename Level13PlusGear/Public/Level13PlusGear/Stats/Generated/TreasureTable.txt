@@ -30,6 +30,8 @@ object category "I_L13_Mace_Selune_Moon",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_L13_Rogueblade",1,0,0,0,0,0,0,0
 new subtable "1,1"
+object category "I_L13_Greatsword_DawnsBlade",1,0,0,0,0,0,0,0
+new subtable "1,1"
 object category "I_L13_Helmet_Tyr",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_L13_Circlet_Tyr",1,0,0,0,0,0,0,0

@@ -91,6 +91,20 @@ A complete list of all magic items in the Level13PlusGear mod.
 
 ---
 
+### L13_Greatsword_DawnsBlade (Dawn's Blade)
+**Type:** Greatsword +5 | **Rarity:** Legendary | **Appearance:** MAG_Colossal_Greatsword
+
+| Category | Details |
+|----------|---------|
+| Enchantment | +5, Magical |
+| Weapon Actions | Pommel Strike, Lacerate, Cleave |
+| Spells | Celestial Haste (unlimited) |
+| Passives | Plane Shifter Slayer, Radiant Weapon (+1d4 radiant), Lathander's Light (toggled aura blinds Fiends/Undead) |
+| Status | Lathander's Light Technical |
+| Description | A legendary greatsword blessed by Lathander, the Morninglord. This radiant blade channels the power of dawn, overwhelming enemies with celestial speed and the burning light of a new day. The sword's divine light drives back aberrations and otherworldly horrors. |
+
+---
+
 ## Armor
 
 ### L13_Boots_Stormwalker (Boots of Stormwalker)
@@ -325,27 +339,28 @@ A complete list of all magic items in the Level13PlusGear mod.
 ---
 
 ### L13_Shield_Tyr (Shield of Tyr)
-**Type:** Shield | **Rarity:** Legendary
+**Type:** Shield | **Rarity:** Legendary | **Appearance:** MAG_OB_Paladin_DeathKnight_Shield (Death Knight Shield)
 
 | Category | Details |
 |----------|---------|
+| AC Bonus | +3 (total +5 with base shield AC) |
 | Spells | Reflective Shell, Warding Bond |
-| Interrupts | Shield (unlimited) |
+| Interrupts | Shield (once per short rest) |
 | Passives | Shield Bash Riposte, Spellguard (advantage on spell saves + resistance to spell damage) |
-| Description | A shield blessed by Tyr, the God of Justice. Grants Reflective Shell, Warding Bond, unlimited Shield reaction, Shield Bash Riposte, and Spellguard. |
+| Description | A shield blessed by Tyr, the God of Justice. Grants +3 AC, Reflective Shell, Warding Bond, Shield reaction (short rest), Shield Bash Riposte, and Spellguard. |
 
 ---
 
 ### L13_Shield_Moonguard (Moonguard Shield)
-**Type:** Shield | **Rarity:** Legendary
+**Type:** Shield | **Rarity:** Legendary | **Appearance:** MAG_BG_OfDevotion_Shield (Shield of Devotion)
 
 | Category | Details |
 |----------|---------|
-| AC Bonus | +5 |
+| AC Bonus | +5 (total +7 with base shield AC) |
 | Spells | Reflective Shell, Warding Bond |
-| Interrupts | Shield (unlimited) |
+| Interrupts | Shield (once per short rest) |
 | Passives | Shield Bash Riposte, Spellguard (advantage on spell saves + resistance to spell damage) |
-| Description | A shield blessed by Selûne, the Moonmaiden. Grants +5 AC, Reflective Shell, Warding Bond, unlimited Shield reaction, Shield Bash Riposte, and Spellguard. |
+| Description | A shield blessed by Selûne, the Moonmaiden. Grants +5 AC, Reflective Shell, Warding Bond, Shield reaction (short rest), Shield Bash Riposte, and Spellguard. |
 
 ---
 
@@ -685,10 +700,17 @@ Based on vanilla Counterspell (Interrupt_Counterspell). Recharges on short rest.
 ### L13_Interrupt_Shield_Unlimited
 **Name:** Shield (Unlimited)
 **Description:** Cast Shield as a bonus action without expending spell slots.
+**Used by:** Staff of the Archmage, Ring of Spectral Power
+
+### L13_Interrupt_Shield_ShortRest
+**Name:** Shield
+**Description:** Cast Shield as a bonus action. Recharges on short rest.
+**Used by:** Shield of Tyr, Moonguard Shield
 
 ### L13_Interrupt_Counterspell_Unlimited
 **Name:** Counterspell (Unlimited)
 **Description:** Cast Counterspell as a bonus action without expending spell slots.
+**Used by:** Staff of the Archmage
 
 ---
 
@@ -736,6 +758,7 @@ All items are delivered via the **L13_Gear_Chest** container, which appears in t
 | Moonguard Plate | Vanilla BG3 (MAG_EndGame_Plate_Armor) | Phase 043 |
 | Armor of the Dragonrider | Vanilla BG3 (MAG_Githborn_MagicEating_HalfPlate) | Phase 045 |
 | Circlet of Willpower | SampleMagicRingMod | Phase 046 |
+| Dawn's Blade | Vanilla BG3 (MAG_Colossal_Greatsword appearance) | Phase 049 |
 
 All items have been made independent from SampleMagicRingMod with custom L13_ prefixes and unique UUIDs.
 
@@ -745,7 +768,7 @@ All items have been made independent from SampleMagicRingMod with custom L13_ pr
 
 | Category | Count |
 |----------|-------|
-| Weapons | 7 |
+| Weapons | 8 |
 | Armor (Feet) | 1 |
 | Armor (Body) | 5 |
 | Armor (Head) | 6 |
@@ -755,8 +778,8 @@ All items have been made independent from SampleMagicRingMod with custom L13_ pr
 | Armor (Ring) | 2 |
 | Custom Spells | 34 |
 | Custom Passives | 2 |
-| Custom Interrupts | 3 |
-| **Total Items** | **28** |
+| Custom Interrupts | 4 |
+| **Total Items** | **29** |
 
 ---
 
@@ -772,6 +795,26 @@ All items have been made independent from SampleMagicRingMod with custom L13_ pr
 ---
 
 ## Version History
+
+- **2026-02-12**: Phase 050 - Updated Shield Visuals and Balance
+  - Modified Shield of Tyr:
+    - Visual changed to MAG_OB_Paladin_DeathKnight_Shield (Death Knight shield appearance)
+    - Added +3 AC bonus (total +5 with base shield AC)
+    - Shield spell changed from unlimited to once per short rest
+  - Modified Moonguard Shield:
+    - Visual changed to MAG_BG_OfDevotion_Shield (Shield of Devotion appearance)
+    - Shield spell changed from unlimited to once per short rest
+    - AC bonus remains +5 (total +7 with base shield AC)
+  - Created L13_Interrupt_Shield_ShortRest (new interrupt spell)
+  - No UUIDs used (reused existing Shield spell localization)
+
+- **2026-02-12**: Phase 049 - Created Dawn's Blade
+  - Added 1 legendary greatsword: Dawn's Blade (Lathander-themed)
+  - Visual appearance: MAG_Colossal_Greatsword
+  - Powers: Celestial Haste (unlimited), Plane Shifter Slayer, Radiant Weapon, Lathander's Light
+  - Weapon Actions: Pommel Strike, Lacerate, Cleave
+  - Total item count: 29 items (8 weapons, 5 body armor, 6 headgear, 2 gloves, 3 cloaks, 2 shields, 2 rings, 1 boots)
+  - Used 3 UUIDs (1 RootTemplate + 2 localization handles)
 
 - **2026-02-12**: Phase 046 - Added Circlet of Willpower and enhanced Boots of the Stormwalker
   - Added 1 legendary circlet: Circlet of Willpower (copied from SampleMagicRingMod)
