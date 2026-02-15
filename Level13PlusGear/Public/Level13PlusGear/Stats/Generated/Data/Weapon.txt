@@ -28,6 +28,17 @@ data "PassivesOnEquip" "MAG_PlaneShifterSlayer_Passive;L13_RadiantWeapon_Passive
 data "StatusOnEquip" "MAG_LATHANDERS_LIGHT_TECHNICAL"
 data "Unique" "0"
 
+new entry "L13_Sword_Silverlight"
+type "Weapon"
+using "WPN_Longsword_2"
+data "RootTemplate" "ed137558-6b60-4193-97d1-c7d26f8a858b"
+data "Rarity" "Legendary"
+data "DefaultBoosts" "WeaponEnchantment(5);WeaponProperty(Magical)"
+data "Boosts" "UnlockSpell(Target_MAG_Smite_Wrathful);UnlockSpell(L13_Target_BlindingSmite_Moonguard);UnlockSpell(L13_Target_Light_Unlimited);UnlockSpell(Target_PLA_ShieldOfFaith_SwordOfJustice);UnlockSpell(L13_Shout_CelestialHaste_Free);UnlockSpell(L13_Shout_SpiritGuardians_Moonguard,AddChildren,,,SpellCastingAbility);UnlockSpell(L13_Target_SilveredBulwark)"
+data "PassivesOnEquip" "MAG_PlaneShifterSlayer_Passive;L13_RadiantWeapon_Passive;MAG_TheClover_Rearrangement_Passive;CRE_LathandersLight_Passive;L13_Moonshield_Passive"
+data "StatusOnEquip" "MAG_LATHANDERS_LIGHT_TECHNICAL;LOW_RAMAZITHSTOWER_DEVA_BLESSING"
+data "Unique" "0"
+
 new entry "L13_Sword_Orpheus"
 type "Weapon"
 using "WPN_Greatsword_2"

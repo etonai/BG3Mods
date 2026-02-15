@@ -35,6 +35,7 @@ Spells that existing items grant - can use simple `using` technique.
 | Searing Smite | Skybreaker (UNI_UND_DuergarBlacksmithHammer, MapKey: 733a70a1-2e0f-46f4-aca1-037c0335dc72) | Melee attack deals extra fire damage, target may take burning damage | Needs research |
 | Thunderwave | Ring of Thunderous Force (UNI_UND_KC_RingOfAbsolute, MapKey: c7a58f48-f24f-4139-b0f0-8b12e1bf074e) | AOE thunder damage, pushes enemies back | Needs research |
 | Haste (Self) | Gontr Mael / Victory Longbow (GOB_DrowCommander_Longbow, MapKey: 9acff693-81d5-43f3-8bec-78370c51e5ab) | Cast Haste on self, once per long rest | Shout_MAG_Victory_Longbow_Haste |
+| Silvered Bulwark | Nightsong/Ramazith's Tower (Quest/Story-granted) | Bonus action concentration spell, grants Invulnerability + Advantage on all saves + unlocks special spells | Target_LOW_RamazithsTower_Nightsong_Globe_1 |
 
 ---
 
@@ -47,6 +48,7 @@ Spells that existing items grant - can use simple `using` technique.
 | Moonshield Aura | 13m aura that grants Shadow Curse immunity, emits gameplay light | SCL_MOONSHIELD_AURA |
 | Moonshield | Protection from Shadow Curse (grants ACT2_SHADOW_CURSE_IMMUNE tag) | SCL_MOONSHIELD |
 | Pixie's Blessing | Same as Moonshield, applied when Pixie is freed | GLO_PIXIESHIELD |
+| Deva's Blessing (Brand of Silverlight) | Weapon attacks deal additional 5d8 radiant damage | LOW_RAMAZITHSTOWER_DEVA_BLESSING |
 
 ---
 
@@ -1199,6 +1201,305 @@ Combat Regeneration synergizes well with:
 - **Defensive builds** - Taking less damage makes healing more impactful
 - **Amulet of Greater Health** - More HP to regenerate
 - **Heavy Armor Master** - Reduce incoming damage, regeneration keeps you topped off
+
+---
+
+## Detailed Research: Silvered Bulwark (Nightsong's Globe of Invulnerability)
+
+The Silvered Bulwark is a powerful variant of Globe of Invulnerability associated with Nightsong/Dame Aylin from Ramazith's Tower. It grants complete invulnerability and unlocks special abilities.
+
+### Spell Definition (Spell_Target.txt - GustavDev)
+```
+new entry "Target_LOW_RamazithsTower_Nightsong_Globe_1"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_GlobeOfInvulnerability"
+data "Level" "6"
+data "SpellSchool" "Abjuration"
+data "SpellProperties" "AI_ONLY:ApplyStatus(SELF,AI_HELPER_BUFF_LARGE,100,30);AI_IGNORE:ApplyStatus(LOW_RAMAZITHSTOWER_NIGHTSONG_GLOBE_1,100,-1)"
+data "TargetRadius" "18"
+data "AreaRadius" ""
+data "TargetConditions" "not HasStatus('LOW_RAMAZITHSTOWER_NIGHTSONG_GLOBE_1') and HasStatus('LOW_RAMAZITHSTOWER_NIGHTSONG_BLESSING')"
+data "Icon" "Spell_Abjuration_GlobeOfInvulnerability"
+data "DisplayName" "h32ef2f4dg95cbg4f2fg8560g5da2545aa3a5;2"
+data "Description" "h72965760gcf5fg4df4g8636g4e2697d5e15e;2"
+data "TooltipStatusApply" "ApplyStatus(LOW_RAMAZITHSTOWER_NIGHTSONG_GLOBE_FUNCTIONAL_AURA,100,-1)"
+data "CastSound" "Spell_Cast_Control_GlobeOfInvulnerability_L6to8"
+data "TargetSound" "Spell_Impact_Control_GlobeOfInvulnerability_L6to8"
+data "PreviewCursor" "Cast"
+data "CastTextEvent" "Cast"
+data "UseCosts" "BonusActionPoint:1"
+data "SpellAnimation" "554a18f7-952e-494a-b301-7702a85d4bc9,,;,,;ab7b6aac-b3c9-4918-8f17-f777a94dcb5e,,;57211a11-ed0b-46d7-9369-81df25a85df6,,;22dfbbf4-f417-4c84-b39e-2039315961e6,,;,,;5bfbe9f9-4fc3-4f26-b112-43d404db6a89,,;,,;,,"
+data "VerbalIntent" "Buff"
+data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;IsConcentration;IsSpell"
+data "HitAnimationType" "MagicalNonDamage"
+data "SpellAnimationIntentType" "Aggressive"
+data "Sheathing" "DontChange"
+```
+
+### Functional Aura Status (Status_BOOST.txt - GustavDev)
+The main effect status that grants invulnerability and special abilities.
+```
+new entry "LOW_RAMAZITHSTOWER_NIGHTSONG_GLOBE_FUNCTIONAL_AURA"
+type "StatusData"
+data "StatusType" "BOOST"
+using "GLOBE_OF_INVULNERABILITY_AURA"
+data "DisplayName" "ha99b477bgd6b5g4bd9g9ac0g20efca56c6a8;2"
+data "Description" "h53b46118gc71bg4c92g83a9g0234d9d32f95;2"
+data "StackId" "INVULNERABLE"
+data "StackPriority" "1"
+data "StackType" "Ignore"
+data "AuraStatuses" "IF(not Tagged('INVISIBLE_HELPER') and Character()):ApplyStatus(LOW_RAMAZITHSTOWER_NIGHTSONG_GLOBE_FUNCTIONAL_STATUS)"
+data "Boosts" "Invulnerable();Advantage(AllSavingThrows);AiArchetypeOverride(mage_smart,1);Tag(AI_UNPREFERRED_TARGET);Tag(AI_BLOCKWEAPONACTIONS);UnlockSpell(Target_LOW_RamazithsTower_Nightsong_Flame);UnlockSpell(Projectile_LOW_RamazithsTower_Nightsong_Bolt);Tag(AI_BLOCKWEAPONACTIONS)"
+data "RemoveConditions" "not HasStatus('LOW_RAMAZITHSTOWER_NIGHTSONG_GLOBE_1') and not HasStatus('LOW_RAMAZITHSTOWER_NIGHTSONG_GLOBE_2') and not HasStatus('LOW_RAMAZITHSTOWER_NIGHTSONG_GLOBE_3')"
+data "RemoveEvents" "OnStatusRemoved"
+data "StatusPropertyFlags" "IsInvulnerable;IsInvulnerableVisible"
+```
+
+### Key Techniques Demonstrated
+
+1. **Invulnerability Boost**: Use `Invulnerable()` to grant complete immunity to all damage
+2. **All Saves Advantage**: Use `Advantage(AllSavingThrows)` to grant advantage on all saving throws
+3. **Spell Unlocking via Status**: Use `UnlockSpell()` in a status's Boosts to grant spells while status is active
+4. **AI Behavior Tags**: Use `Tag(AI_UNPREFERRED_TARGET)` and `Tag(AI_BLOCKWEAPONACTIONS)` to modify AI behavior
+5. **Bonus Action Cost**: Use `UseCosts "BonusActionPoint:1"` for bonus action casting
+6. **Concentration Spell**: `IsConcentration` flag in SpellFlags makes it a concentration spell
+7. **Using Base Spell**: Uses `using "Target_GlobeOfInvulnerability"` to inherit base Globe of Invulnerability properties
+8. **Aura Application**: Creates an aura that applies functional status to nearby characters
+
+### Effects Summary
+
+**When Active:**
+- **Complete Invulnerability** - Immune to all damage
+- **Advantage on All Saves** - All saving throws have advantage
+- **Unlocks Special Spells:**
+  - Target_LOW_RamazithsTower_Nightsong_Flame (Nightsong's Flame attack)
+  - Projectile_LOW_RamazithsTower_Nightsong_Bolt (Nightsong's Bolt attack)
+- **AI Changes** - Modifies AI behavior (becomes unpreferred target, blocks weapon actions)
+
+**Casting:**
+- **Cost**: Bonus Action
+- **Concentration**: Yes (requires concentration to maintain)
+- **Level**: 6th level Abjuration spell
+- **Target Radius**: 18m
+
+### Using Silvered Bulwark in Custom Items
+
+⚠️ **CRITICAL: Vanilla spell has targeting restrictions that make it unusable for players. See "Implementation Challenges" section below for solution.**
+
+**To grant the vanilla spell (NOT RECOMMENDED - has targeting bug):**
+```
+data "Boosts" "UnlockSpell(Target_LOW_RamazithsTower_Nightsong_Globe_1)"
+```
+
+**To grant a working custom version (RECOMMENDED):**
+See "Creating a Custom Silvered Bulwark Spell" section below for full implementation.
+
+**To create a simplified version without the special spells:**
+```
+new entry "MY_Invulnerability_Status"
+type "StatusData"
+data "StatusType" "BOOST"
+using "GLOBE_OF_INVULNERABILITY_AURA"
+data "DisplayName" "handle;1"
+data "Description" "handle;1"
+data "StackId" "MY_INVULNERABLE"
+data "Boosts" "Invulnerable();Advantage(AllSavingThrows)"
+data "StatusPropertyFlags" "IsInvulnerable;IsInvulnerableVisible"
+```
+
+**To create a toggled invulnerability passive (use with extreme caution):**
+```
+new entry "MY_Invulnerability_Toggle_Passive"
+type "PassiveData"
+data "DisplayName" "handle;1"
+data "Description" "handle;1"
+data "Properties" "ToggledDefaultOff;ToggledDefaultAddToHotbar;IsToggled"
+data "ToggleOnFunctors" "ApplyStatus(LOW_RAMAZITHSTOWER_NIGHTSONG_GLOBE_FUNCTIONAL_AURA, 100, -1)"
+data "ToggleOffFunctors" "RemoveStatus(LOW_RAMAZITHSTOWER_NIGHTSONG_GLOBE_FUNCTIONAL_AURA)"
+```
+
+### Implementation Challenges (Phase 052 Findings)
+
+**CRITICAL ISSUE: Vanilla Spell Has Restrictive Targeting**
+
+When implementing `Target_LOW_RamazithsTower_Nightsong_Globe_1` in custom items, the spell appears in the spell list but shows ALL targets as invalid, making it impossible to cast.
+
+**Root Cause:**
+The vanilla spell has this TargetConditions:
+```
+data "TargetConditions" "not HasStatus('LOW_RAMAZITHSTOWER_NIGHTSONG_GLOBE_1') and HasStatus('LOW_RAMAZITHSTOWER_NIGHTSONG_BLESSING')"
+```
+
+The requirement `HasStatus('LOW_RAMAZITHSTOWER_NIGHTSONG_BLESSING')` is the problem - only Nightsong/Dame Aylin has this status in vanilla BG3, making all player targets invalid.
+
+**Solution: Create Custom Spell Variant**
+
+To make Silvered Bulwark usable, create a custom spell that removes the blessing requirement:
+
+```
+new entry "L13_Target_SilveredBulwark"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_GlobeOfInvulnerability"
+data "Level" "6"
+data "SpellSchool" "Abjuration"
+data "SpellProperties" "AI_ONLY:ApplyStatus(SELF,AI_HELPER_BUFF_LARGE,100,30);AI_IGNORE:ApplyStatus(LOW_RAMAZITHSTOWER_NIGHTSONG_GLOBE_1,100,-1)"
+data "TargetRadius" "18"
+data "AreaRadius" ""
+data "TargetConditions" "not HasStatus('LOW_RAMAZITHSTOWER_NIGHTSONG_GLOBE_1')"
+data "Icon" "Spell_Abjuration_GlobeOfInvulnerability"
+data "DisplayName" "handle;1"
+data "Description" "handle;1"
+data "TooltipStatusApply" "ApplyStatus(LOW_RAMAZITHSTOWER_NIGHTSONG_GLOBE_FUNCTIONAL_AURA,100,-1)"
+data "CastSound" "Spell_Cast_Control_GlobeOfInvulnerability_L6to8"
+data "TargetSound" "Spell_Impact_Control_GlobeOfInvulnerability_L6to8"
+data "PreviewCursor" "Cast"
+data "CastTextEvent" "Cast"
+data "UseCosts" "BonusActionPoint:1"
+data "SpellAnimation" "554a18f7-952e-494a-b301-7702a85d4bc9,,;,,;ab7b6aac-b3c9-4918-8f17-f777a94dcb5e,,;57211a11-ed0b-46d7-9369-81df25a85df6,,;22dfbbf4-f417-4c84-b39e-2039315961e6,,;,,;5bfbe9f9-4fc3-4f26-b112-43d404db6a89,,;,,;,,"
+data "VerbalIntent" "Buff"
+data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;IsConcentration;IsSpell"
+data "HitAnimationType" "MagicalNonDamage"
+data "SpellAnimationIntentType" "Aggressive"
+data "Sheathing" "DontChange"
+data "Cooldown" "OncePerLongRest"
+```
+
+**Key Changes from Vanilla:**
+- Modified `TargetConditions` to ONLY check `not HasStatus('LOW_RAMAZITHSTOWER_NIGHTSONG_GLOBE_1')` (prevents stacking on already protected targets)
+- Removed the `HasStatus('LOW_RAMAZITHSTOWER_NIGHTSONG_BLESSING')` requirement
+- Added `Cooldown "OncePerLongRest"` for balance
+- All other properties remain identical to vanilla
+
+**GAMEPLAY LIMITATION:**
+
+⚠️ **Silvered Bulwark has limited melee combat utility** - The invulnerability bubble protects everything within its area of effect, including enemies. When a protected character moves into melee range to attack an opponent, that opponent is often within the bubble and also becomes invulnerable. This makes the spell primarily useful for:
+- Protecting ranged characters
+- Protecting characters moving through hazards
+- Emergency protection during retreat
+- Protecting characters performing non-combat actions
+
+**Not ideal for:**
+- Melee combatants (enemies become invulnerable when you engage them)
+- Aggressive frontline use
+
+### Important Notes
+
+- **Extremely Powerful**: Invulnerability makes you immune to ALL damage - use sparingly for balance
+- **Concentration Required**: Spell requires concentration, so it can be broken
+- **Story Context**: This spell is specifically designed for Nightsong/Dame Aylin's story abilities
+- **Requirement Conditions**: Vanilla spell requires `HasStatus('LOW_RAMAZITHSTOWER_NIGHTSONG_BLESSING')` - remove this for custom use (see Implementation Challenges)
+- **Three Variants**: There are three versions (Globe_1, Globe_2, Globe_3) - likely for different story stages
+- **Bubble Mechanic**: Unlike Globe of Invulnerability (stationary), Silvered Bulwark follows the target BUT also protects nearby creatures including enemies
+
+### Balance Considerations
+
+**If using for custom items, consider:**
+- Making it once per long rest with `Cooldown "OncePerRestPerItem"`
+- Limiting duration with ApplyStatus duration parameter
+- Using a weaker version (high damage resistance instead of invulnerability)
+- Requiring heavy resource cost (multiple spell slots, action surge, etc.)
+
+**Weaker Alternative - High Resistance Instead:**
+```
+new entry "MY_High_Resistance_Status"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "handle;1"
+data "Description" "handle;1"
+data "Boosts" "Resistance(Fire,Resistant);Resistance(Cold,Resistant);Resistance(Lightning,Resistant);Resistance(Acid,Resistant);Resistance(Thunder,Resistant);Resistance(Poison,Resistant);Resistance(Force,Resistant);Resistance(Necrotic,Resistant);Resistance(Radiant,Resistant);Resistance(Psychic,Resistant);Advantage(AllSavingThrows)"
+```
+
+---
+
+## Detailed Research: Deva's Blessing (Brand of Silverlight)
+
+The Deva's Blessing (LOW_RAMAZITHSTOWER_DEVA_BLESSING) is a powerful status from Ramazith's Tower that adds 5d8 radiant damage to weapon attacks. This represents a "blessing" from a Deva (celestial being).
+
+### Status Definition (Status_BOOST.txt)
+```
+new entry "LOW_RAMAZITHSTOWER_DEVA_BLESSING"
+type "StatusData"
+data "StatusType" "BOOST"
+using "MAG_SHA_SELUNE_BLESSING_MOONMOTE_ALLY"
+// Brand of the Silverlight
+data "DisplayName" "h72096936g9594g4bb4g8df9g33feb6122bea;2"
+// This creature's weapon attacks deal an additional [1].
+data "Description" "hd29963edgc415g4051gae98ged21cc0d1eb4;2"
+data "DescriptionParams" "DealDamage(5d8, Radiant)"
+data "StackPriority" "1"
+data "StackType" "Ignore"
+data "Boosts" "CharacterWeaponDamage(5d8, Radiant);"
+data "StatusPropertyFlags" "ExcludeFromPortraitRendering"
+```
+
+### Key Techniques Demonstrated
+
+1. **Character Weapon Damage Bonus**: Use `CharacterWeaponDamage(XdY, DamageType)` to add damage to all weapon attacks
+2. **Using Existing Status**: Uses `using "MAG_SHA_SELUNE_BLESSING_MOONMOTE_ALLY"` to inherit from Selûne's blessing
+3. **DescriptionParams**: Shows the damage amount in the description using `DealDamage(5d8, Radiant)` parameter
+4. **ExcludeFromPortraitRendering**: Uses `StatusPropertyFlags "ExcludeFromPortraitRendering"` to hide from portrait UI
+
+### Using Deva's Blessing in Custom Items
+
+**To apply this status via passive:**
+```
+new entry "MY_DevaBlessing_Passive"
+type "PassiveData"
+data "DisplayName" "handle;1"
+data "Description" "handle;1"
+data "Properties" "Highlighted"
+data "Boosts" "CharacterWeaponDamage(5d8, Radiant)"
+```
+
+**To apply as a toggled passive:**
+```
+new entry "MY_DevaBlessing_Toggle_Passive"
+type "PassiveData"
+data "DisplayName" "handle;1"
+data "Description" "handle;1"
+data "Properties" "ToggledDefaultOn;ToggledDefaultAddToHotbar;IsToggled"
+data "ToggleOnFunctors" "ApplyStatus(LOW_RAMAZITHSTOWER_DEVA_BLESSING, 100, -1)"
+data "ToggleOffFunctors" "RemoveStatus(LOW_RAMAZITHSTOWER_DEVA_BLESSING)"
+```
+
+**To apply as a StatusOnEquip:**
+```
+data "StatusOnEquip" "LOW_RAMAZITHSTOWER_DEVA_BLESSING"
+```
+
+### Custom Status with Different Damage
+
+**To create a custom version with different damage:**
+```
+new entry "MY_WEAPON_RADIANT_DAMAGE"
+type "StatusData"
+data "StatusType" "BOOST"
+using "LOW_RAMAZITHSTOWER_DEVA_BLESSING"
+data "DisplayName" "handle;1"
+data "Description" "handle;1"
+data "DescriptionParams" "DealDamage(3d6, Radiant)"
+data "Boosts" "CharacterWeaponDamage(3d6, Radiant);"
+```
+
+### Synergy Notes
+
+Deva's Blessing synergizes well with:
+- **Extra Attack** - More attacks = more radiant damage
+- **Action Surge** - Double attacks for massive radiant burst
+- **Great Weapon Master** - Bonus action attack adds more radiant damage
+- **Haste** - Extra attack per turn
+- **Callous Glow Ring** - Additional +2 radiant damage vs illuminated targets
+- **Radiating Orb items** - Apply debuffs with radiant damage
+- **Vulnerabilities** - Radiant vulnerability doubles the 5d8 damage
+
+### Important Notes
+
+- **CharacterWeaponDamage vs DamageBonus**: `CharacterWeaponDamage(XdY, Type)` adds dice rolls to weapon damage, while `DamageBonus(X, Type)` adds flat damage
+- **All Weapon Attacks**: This affects ALL weapon attacks, including melee and ranged
+- **Stacking**: With `StackType "Ignore"`, multiple applications won't stack
+- **Power Level**: 5d8 radiant damage averages 22.5 damage per attack - extremely powerful for a permanent buff
 
 ---
 

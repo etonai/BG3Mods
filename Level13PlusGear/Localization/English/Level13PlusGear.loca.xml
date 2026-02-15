@@ -122,4 +122,10 @@
 	<content contentuid="hed1379941cg7297g4588g8253g3e7465c028af" version="1">A chest containing legendary armor pieces for level 13+ characters. Contains: Armor of Tyr, Armor of the Rogue, Moonguard Splint, Moonguard Plate, and Armor of the Dragonrider.</content>
 	<content contentuid="hed132d41g5d26g47degbb55g61d4af60550b" version="1">Dawn's Blade</content>
 	<content contentuid="hed130875gb3f0g4bcag8b6egea29e5f9a696" version="1">A legendary greatsword blessed by Lathander, the Morninglord. This radiant blade channels the power of dawn, overwhelming enemies with celestial speed and the burning light of a new day. The sword's divine light drives back aberrations and otherworldly horrors.</content>
+	<content contentuid="hed1335f2ga754g4cb9g851dga16e8c8ebef2" version="1">Silverlight</content>
+	<content contentuid="hed13035f2ga754g4cb9g851dga16e8c8ebef2" version="1">A longsword blessed by both Selûne and celestial Devas. This blade channels divine radiant power to smite evil and protect the righteous.
+
+Grants Wrathful Smite, Selûne's Blinding Smite (unlimited), Light (unlimited), Shield of Faith, Celestial Haste (free action), Spirit Guardians (free action), Silvered Bulwark (invulnerability), Plane Shifter Slayer, Radiant Weapon (+1d8 radiant), Deva's Blessing (+5d8 radiant), Critical Bonus (crit on 19-20, reroll damage ≤2), Lathander's Light aura, and Moonshield Aura.</content>
+	<content contentuid="hed13783035f2ga754g4cb9g851dga16e8c8ebef2" version="1">Silvered Bulwark</content>
+	<content contentuid="hed1352ffb86fga7f7g4de6gad51g1a2c33b9c779" version="1">Encase an ally in a radiant shield of invulnerability. The target becomes completely immune to all damage and gains advantage on all saving throws. The protective aura follows the target as they move. This powerful blessing requires concentration to maintain.</content>
 </contentList>

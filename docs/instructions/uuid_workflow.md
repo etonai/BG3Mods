@@ -43,8 +43,6 @@ All items in Level13Gear should use the `L13` prefix for handles and names.
 The following UUIDs are available for Level13Gear mod use. **Delete the UUID from this list when you use it.**
 
 ```
-185e7558-6b60-4193-97d1-c7d26f8a858b
-
 783035f2-a754-4cb9-851d-a16e8c8ebef2
 
 52ffb86f-a7f7-4de6-ad51-1a2c33b9c779
@@ -158,5 +156,5 @@ Ask Ed to generate more UUIDs when the pool gets below 10. Ed will use an online
 ## Notes
 
 - Delete UUIDs from the Available UUIDs list when you assign them to items
-- Generate more UUIDs when pool gets below 10
+- Ask Ed to generate more UUIDs when pool gets below 10
 - Use clear, descriptive item handles following BG3 conventions (e.g., `L13_Armor_Medium_ArmorOfTyr`)
