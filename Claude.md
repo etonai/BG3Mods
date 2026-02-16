@@ -8,6 +8,7 @@ The following mods are actively being developed. All other mods in this project 
 |-----|-------------|
 | SampleMagicRingMod | Custom magic items mod with weapons, armor, and rings |
 | Level13PlusGear | Custom magic items mod with weapons, armor, and rings (for level 13+ characters) |
+| Level21Gear | Legendary gear mod for level 21+ characters (Tutorial Chest delivery) |
 | RingOfCreation | Utility mod with a ring that summons items by ID (depends on Level13PlusGear and SampleMagicRingMod) |
 
 ---
@@ -40,6 +41,7 @@ When creating or implementing a new phase, always follow these conventions:
 | Reference items location | VanillaBG3/gustav directory |
 | Item delivery (SampleMagicRingMod) | Traveler's Chest (via OneTimeRewards.lsx) |
 | Item delivery (Level13PlusGear) | Tutorial Chest (via TreasureTable injection) |
+| Item delivery (Level21Gear) | Tutorial Chest (via TreasureTable injection) |
 | Post-implementation | Update docs/planning/item_catalog.md with new items |
 
 These defaults apply unless the user explicitly specifies otherwise.

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<contentList>
+	<!-- Staff of Gimeitaro -->
+	<content contentuid="hed21ad1dg1aeag4b70gb63fgeabb5fb10181" version="1">Staff of Gimeitaro</content>
+	<content contentuid="hed214d87agf785g4f45g8c93g4827fb5d7f3f" version="1">A quarterstaff crackling with arcane energy. Grants +10 to all skill checks and ability checks, +7 to initiative, +8 to saving throws, Lightning Charges when casting spells at close range, Chromatic Attunement, Arcane Enchantment, Arcane Battery, Spell Slot Restoration, Pearlescent Restoration, Mystra's Grace, Weave's Reclamation, Echoes of Netheril, unlimited Light, unlimited Shield and Counterspell reactions, Celestial Haste (free action), Spirit Guardians (free action, unlimited), Gimeitaro's Blast, Gimeitaro's Teleport, Gimeitaro's Barrage, and Gimeitaro's Shield (unlimited Silvered Bulwark).</content>
+
+	<!-- Knock Spell -->
+	<content contentuid="hed213f43gc3e3g4811g866dg2c78072bc69a" version="1">Knock (Unlimited)</content>
+	<content contentuid="hed215d59gc758g4b66g96c9gded4998d6a9f" version="1">Unlimited Knock as a bonus action.</content>
+
+	<!-- Gimeitaro's Teleport -->
+	<content contentuid="hed213d5c7g1c7cg4ed2gbc7eged6b4d454460" version="1">Gimeitaro's Teleport</content>
+	<content contentuid="hed215f4a4gc036g4db2g9763g51e01ba28887" version="1">Misty Step. Once per short rest.</content>
+
+	<!-- Gimeitaro's Shield -->
+	<content contentuid="hed211a18g4d37g4935g926cg8ea8169f84f6" version="1">Gimeitaro's Shield</content>
+	<content contentuid="hed21c854fgb997g466fg8a74g59e5d6e6e978" version="1">Silvered Bulwark. Grants invulnerability that follows the target. Unlimited uses as a bonus action.</content>
+
+	<!-- Gimeitaro's Blast -->
+	<content contentuid="hed210ea8g80a2g4a71g8269g3c7d26dd91a5" version="1">Gimeitaro's Blast</content>
+	<content contentuid="hed218fbcgf4a3g440egb169gc938dfde49f5" version="1">Artistry of War. Once per short rest.</content>
+
+	<!-- Gimeitaro's Barrage -->
+	<content contentuid="hed215669g8780g4a36g8e55gf59f22b5ebfa" version="1">Gimeitaro's Barrage</content>
+	<content contentuid="hed210001aga204g4af5g9f9cg2703b9654ec0" version="1">Magic Missile level 3. Unlimited uses as a bonus action.</content>
+
+	<!-- Shield Interrupt -->
+	<content contentuid="hed21c6ebg7b46g4739g96e5g4f896829c10c" version="1">Shield (Unlimited)</content>
+	<content contentuid="hed217657agcc38g445cgb1e8g8c8a93d1f648" version="1">Unlimited Shield as a bonus action.</content>
+
+	<!-- Counterspell Interrupt -->
+	<content contentuid="hed215773g5cdeg4791g9668g7f67f1bb9d1c" version="1">Counterspell (Unlimited)</content>
+	<content contentuid="hed210227g4bcbg4ed6ga3b9ga458a9bf9e31" version="1">Unlimited Counterspell as a reaction.</content>
+
+	<!-- Arcane Gate -->
+	<content contentuid="hed2153c4g351dg47ecgb7ebg32765783d8d3" version="1">Arcane Gate</content>
+	<content contentuid="hed21a0beg96afg4c71ga16dg86741886005e" version="1">Arcane Gate. Recharges on short rest.</content>
+
+	<!-- Spirit Guardians -->
+	<content contentuid="hed21301fgd552g4a72g8d84g126e51811bc4" version="1">Gimeitaro's Spirit Guardians</content>
+	<content contentuid="hed21a14fg00f4g40a0gb0a2g826e58cf044e" version="1">Call forth spirits to protect you. Nearby enemies take 3d8 Radiant or Necrotic damage. Unlimited casting, free action.</content>
+	<content contentuid="hed21d276gb362g40b6ga438g9205fdf6c3af" version="1">Radiant spirits surround you.</content>
+	<content contentuid="hed215b00g394dg4b9cgbbc9g1868de4de69e" version="1">Necrotic spirits surround you.</content>
+</contentList>

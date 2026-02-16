@@ -57,6 +57,137 @@ Spells that existing items grant - can use simple `using` technique.
 | Boost | Effect | Syntax |
 |-------|--------|--------|
 | Ability Override | Sets an ability score to a minimum value | `AbilityOverrideMinimum(Intelligence,17)` |
+| Skill Bonus | Adds a bonus to a specific skill | `Skill(SkillName, BonusAmount)` |
+| All Skills Bonus | Adds a bonus to ALL skill checks | `RollBonus(SkillCheck, Amount)` |
+| Ability Check Bonus | Adds a bonus to raw ability checks (without proficiency) | `RollBonus(RawAbility, Amount, AbilityName)` |
+| Initiative Bonus | Adds a bonus to initiative rolls | `Initiative(BonusAmount)` |
+
+### Bonuses to All Ability Checks
+
+For items that boost ALL ability checks (all skills), use `RollBonus(SkillCheck, X)`. This is different from `Skill(SkillName, X)` which only affects a specific skill.
+
+**Syntax for All Skills:**
+```
+data "Boosts" "RollBonus(SkillCheck, Amount)"
+```
+
+**This affects all D&D 5e skills:**
+- Acrobatics, Animal Handling, Arcana, Athletics, Deception, History, Insight, Intimidation, Investigation, Medicine, Nature, Perception, Performance, Persuasion, Religion, Sleight of Hand, Stealth, Survival
+
+**Vanilla Examples (from Statuses):**
+
+| Status | Boost | Notes |
+|--------|-------|-------|
+| ASTARION_HAPPY | +1 to all rolls | `RollBonus(SavingThrow,1);RollBonus(Attack,1);RollBonus(SkillCheck,1);RollBonus(RawAbility,1)` |
+| ASTARION_WEAK | -1 to saves/attacks/skills | `RollBonus(SavingThrow,0-1);RollBonus(Attack,0-1);RollBonus(SkillCheck,0-1)` |
+| UND_BLISS_SPORES | +1d6 to all rolls | `RollBonus(Attack,1d6);RollBonus(SavingThrow,1d6);RollBonus(SkillCheck,1d6);RollBonus(RawAbility,1d6)` |
+
+**Universal Boost Pattern:**
+For items that should boost everything (like Guidance or Bless), combine these:
+```
+data "Boosts" "RollBonus(SavingThrow,X);RollBonus(Attack,X);RollBonus(SkillCheck,X);RollBonus(RawAbility,X)"
+```
+
+**Using in Custom Items:**
+
+To grant a permanent bonus to all ability checks via a passive:
+```
+new entry "MY_AllSkills_Passive"
+type "PassiveData"
+data "DisplayName" "handle;1"
+data "Description" "handle;1"
+data "Boosts" "RollBonus(SkillCheck, 1)"
+```
+
+Or apply via a status:
+```
+new entry "MY_ALLSKILLS_STATUS"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "handle;1"
+data "Description" "handle;1"
+data "Boosts" "RollBonus(SkillCheck, 1)"
+```
+
+Then in your item:
+```
+data "PassivesOnEquip" "MY_AllSkills_Passive"
+```
+or
+```
+data "StatusOnEquip" "MY_ALLSKILLS_STATUS"
+```
+
+**Dice Rolls:**
+You can use dice expressions like `1d4` or `1d6` instead of flat bonuses:
+```
+data "Boosts" "RollBonus(SkillCheck, 1d4)"
+```
+
+### Skill Bonuses
+
+BG3 supports direct skill bonuses via the `Skill()` boost. This is different from proficiency or expertise - it's a flat bonus to the skill check.
+
+**Syntax:**
+```
+data "Boosts" "Skill(SkillName, Amount)"
+```
+
+**Available Skills:**
+- `Skill(SleightOfHand, X)` - Sleight of Hand
+- `Skill(Stealth, X)` - Stealth
+- `Skill(Perception, X)` - Perception
+- `Skill(Nature, X)` - Nature
+- `Skill(Survival, X)` - Survival
+- `Skill(Arcana, X)` - Arcana
+- `Skill(Religion, X)` - Religion
+- `Skill(Intimidation, X)` - Intimidation
+- Other D&D 5e skills should work: Acrobatics, AnimalHandling, Athletics, Deception, History, Insight, Investigation, Medicine, Performance, Persuasion
+
+**Vanilla Examples:**
+
+| Item | Skill Boost | Internal Name |
+|------|-------------|---------------|
+| Goblin Captain's Gloves | Sleight of Hand +1 | DEN_RaidingParty_GoblinCaptain_Gloves |
+| Smuggler's Ring | Sleight of Hand +2, Stealth +2, Charisma -1 | PLA_SmugglerRing |
+| Hermit Crab Ring | Perception +2 | CRA_HermitCrab_Ring |
+| Druid's Circlet | Nature +1 | UNI_Druid_Helmet_Circlet |
+| Nature & Survival Ring | Nature +1, Survival +1 | (unnamed ring) |
+| Arcana & Religion Ring | Arcana +1, Religion +1 | (unnamed ring) |
+| Intimidation Helmet | Intimidation +1 | (unnamed helmet) |
+
+**Multiple Skill Bonuses:**
+You can grant multiple skill bonuses from a single item by chaining them with semicolons:
+```
+data "Boosts" "Skill(Stealth, 2);Skill(SleightOfHand, 2);Ability(Charisma, -1)"
+```
+
+### Raw Ability Check Bonuses
+
+For bonuses to raw ability checks (checks made without proficiency in a skill), use `RollBonus(RawAbility, Amount, AbilityName)`.
+
+**Syntax:**
+```
+data "Boosts" "RollBonus(RawAbility, Amount, AbilityName)"
+```
+
+**Vanilla Example:**
+
+| Status | Boost | Effect |
+|--------|-------|--------|
+| MAG_CHARGED_LIGHTNING_ABILITY_CHECK_BOOST | STR/DEX ability checks +1 | `RollBonus(RawAbility, 1, Strength);RollBonus(RawAbility, 1, Dexterity)` |
+
+**Use Cases:**
+- Athletics checks (STR)
+- Acrobatics checks (DEX)
+- Initiative checks (DEX)
+- Breaking down doors (STR)
+- Resisting grapples (STR or DEX)
+
+**Difference from Skill Bonuses:**
+- `Skill(Athletics, X)` - Only affects Athletics skill checks
+- `RollBonus(RawAbility, X, Strength)` - Affects all Strength-based checks including Athletics, but also raw Strength checks
+- `RollBonus(SkillCheck, X)` - Affects ALL skill checks regardless of ability
 
 ### Items with Notable Boosts
 
@@ -64,6 +195,8 @@ Spells that existing items grant - can use simple `using` technique.
 |------|--------|---------------|
 | Warped Headband of Intellect (UNI_FOR_OgresForHire_HeadbandOfIntellect, MapKey: 8f4876f1-44d9-4bb8-802e-907c6b0a0dba) | Sets Intelligence to 17 | Uses AbilityOverrideMinimum boost |
 | Drunk Goblin's Ring (Quest_GOB_DrunkGoblin_Ring, MapKey: 3023d5a5-14f0-4549-8ff2-1f34336c243c) | Additional movement speed | Uses ActionResource(Movement,...) boost |
+| Goblin Captain's Gloves (DEN_RaidingParty_GoblinCaptain_Gloves, RootTemplate: d22e2679-aff0-4244-9ed2-7aac981b82cf) | Sleight of Hand +1 + Bane application on branded targets | Uses Skill() boost + passive |
+| Smuggler's Ring (PLA_SmugglerRing, RootTemplate: 1b47637d-fdea-431f-a828-7ff8d9b4341e) | Stealth +2, Sleight of Hand +2, Charisma -1 | Uses multiple Skill() boosts |
 
 ---
 
@@ -1050,6 +1183,42 @@ data "PassivesOnEquip" "MAG_InitiativeBonus_2_Passive"  // +2
 data "PassivesOnEquip" "MAG_ForcefulSneakAttack_Passive"
 ```
 
+### Initiative with Additional Effects
+
+Some vanilla items combine initiative bonuses with other benefits:
+
+**MAG_InitiativeWeapon_Passive (Ambusher Shortsword, Halberd of Vigilance):**
+- Initiative +1
+- Advantage on Perception checks
+```
+new entry "MAG_InitiativeWeapon_Passive"
+type "PassiveData"
+using "MAG_PHB_Sentinel_Shield_Passive"
+data "DisplayName" "handle;1"
+data "DescriptionParams" "1"
+data "Boosts" "Initiative(1);Advantage(Skill, Perception)"
+```
+
+**MAG_PHB_Sentinel_Shield_Passive (Sentinel Shield):**
+- Initiative +3
+- Advantage on Perception checks
+```
+new entry "MAG_PHB_Sentinel_Shield_Passive"
+type "PassiveData"
+data "DisplayName" "handle;1"
+data "Description" "handle;1"
+data "DescriptionParams" "3"
+data "Boosts" "Initiative(3);Advantage(Skill, Perception)"
+```
+
+**Using Advantage on Skills:**
+To grant advantage on a specific skill check:
+```
+data "Boosts" "Advantage(Skill, SkillName)"
+```
+
+Available skills: Perception, Stealth, SleightOfHand, Arcana, Nature, Religion, Investigation, Survival, Insight, AnimalHandling, Medicine, Persuasion, Deception, Intimidation, Performance, Athletics, Acrobatics
+
 ### Synergy Notes
 
 These effects synergize well with:
@@ -1057,6 +1226,122 @@ These effects synergize well with:
 - **Assassin Rogue** - Going first in combat ensures surprised targets for auto-crits
 - **Alert feat** - Stacks with initiative bonus
 - **Gloom Stalker Ranger** - Dread Ambusher adds initiative bonus from Wisdom
+
+---
+
+## Detailed Research: Ambusher Shortsword (First Turn Bonuses)
+
+The Ambusher Shortsword (MAG_Ambusher_Shortsword, MapKey: 7a96f6cc-c6bb-4caf-a1ab-a86af3fa21a5) is a Rare shortsword that rewards striking first in combat with initiative bonuses, perception advantage, and extra damage.
+
+### Weapon Definition (Weapon.txt - GustavDev)
+```
+new entry "MAG_Ambusher_Shortsword"
+type "Weapon"
+using "WPN_Shortsword_1"
+data "RootTemplate" "7a96f6cc-c6bb-4caf-a1ab-a86af3fa21a5"
+data "ValueUUID" "9b6a4ab2-323b-4030-89ab-030252bb6214"
+data "Rarity" "Rare"
+data "PassivesOnEquip" "MAG_InitiativeWeapon_Passive;MAG_Ambushing_Attack_Passive"
+data "Unique" "1"
+```
+
+### Initiative Weapon Passive (Passive.txt - GustavDev)
+Grants initiative bonus and advantage on Perception checks.
+```
+new entry "MAG_InitiativeWeapon_Passive"
+type "PassiveData"
+using "MAG_PHB_Sentinel_Shield_Passive"
+data "DisplayName" "h28f78643g15b3g45d2g991ag567544d05c16;2"
+data "DescriptionParams" "1"
+data "Boosts" "Initiative(1);Advantage(Skill, Perception)"
+```
+
+### Ambushing Attack Passive (Passive.txt - GustavDev)
+Grants advantage on attacks and extra necrotic damage before taking your first turn.
+```
+new entry "MAG_Ambushing_Attack_Passive"
+type "PassiveData"
+using "Assassinate_Initiative"
+data "DisplayName" "h5f0a3ebfg6fb0g44f0g9de9g973568b24da3;2"
+data "Description" "h4878c5c6g7a02g4579g9755g52e5563b5af8;1"
+data "DescriptionParams" "DealDamage(1d6, Necrotic)"
+data "Boosts" "IF(Combat(context.Source) and Combat() and not HadTurnInCombat()):CharacterWeaponDamage(1d6, Necrotic)"
+```
+
+### Assassinate Initiative Base Passive (Passive.txt - Shared)
+The base passive that grants advantage on the first attack in combat.
+```
+new entry "Assassinate_Initiative"
+type "PassiveData"
+data "DisplayName" "hec824d94gf2b9g49d2g9a4bg1d4a4fb62aee;2"
+data "Description" "hf70b2a60gefdfg4a74g8710g7ba7f1926d3f;4"
+data "Icon" "PassiveFeature_Generic_Death"
+data "Properties" "Highlighted"
+data "Boosts" "IF(Combat(context.Source) and Combat() and not HadTurnInCombat()):Advantage(AttackRoll)"
+```
+
+### Key Techniques Demonstrated
+
+1. **Initiative Bonus**: Use `Initiative(X)` to add to initiative rolls
+2. **Advantage on Specific Skills**: Use `Advantage(Skill, SkillName)` for skill advantage
+3. **First Turn Condition**: Use `IF(Combat(context.Source) and Combat() and not HadTurnInCombat())` to trigger effects only before taking your first turn
+4. **Conditional Damage Bonus**: Combine the first turn condition with `CharacterWeaponDamage(XdY, DamageType)` for extra damage on opening attack
+5. **Conditional Advantage**: Apply advantage only on first attack in combat using the same condition
+
+### Effects Summary
+
+**Permanent Effects:**
+- **+1 Initiative** - Go first more often
+- **Advantage on Perception** - Better at spotting ambushes and hidden enemies
+
+**First Turn in Combat (before taking your turn):**
+- **Advantage on Attack Rolls** - Better chance to hit on opening strike
+- **+1d6 Necrotic Damage** - Extra damage on weapon attacks
+
+### Using First Turn Mechanics in Custom Items
+
+**To create a custom first-turn attack bonus:**
+```
+new entry "MY_FirstStrike_Passive"
+type "PassiveData"
+data "DisplayName" "handle;1"
+data "Description" "handle;1"
+data "Boosts" "IF(Combat(context.Source) and Combat() and not HadTurnInCombat()):CharacterWeaponDamage(2d6, Radiant)"
+```
+
+**To grant advantage on first turn:**
+```
+data "PassivesOnEquip" "Assassinate_Initiative"
+```
+
+**To create a custom ambusher weapon:**
+```
+data "PassivesOnEquip" "MAG_InitiativeWeapon_Passive;Assassinate_Initiative"
+```
+
+### Synergy Notes
+
+The Ambusher Shortsword synergizes exceptionally well with:
+- **Assassin Rogue** - Auto-crit on surprised enemies + advantage + extra damage
+- **Alert Feat** - +5 initiative bonus stacks with the weapon's +1
+- **Pass Without Trace** - Better stealth to set up surprise rounds
+- **Gloom Stalker Ranger** - Extra attack on first turn + invisibility in darkness
+- **Advantage on Perception** - Helps you avoid being surprised yourself
+- **High Dexterity builds** - Initiative is DEX-based, maximizes going first
+
+### Other Weapons with Initiative Bonuses
+
+| Weapon | Initiative | Additional Effects | Internal Name |
+|--------|------------|-------------------|---------------|
+| Ambusher Shortsword | +1 | Perception advantage, first turn bonuses | MAG_Ambusher_Shortsword |
+| Halberd of Vigilance | +1 | Perception advantage, reaction attack advantage | MAG_PoR_OfVigilance_Halberd |
+| Bow of Awareness | +1 | None | MAG_OfAwareness_Bow |
+| Githborn Mindcrusher Greatsword | +2 | Mindcrush spell | MAG_Githborn_Mindcrusher_Greatsword |
+
+**Other Items with Initiative:**
+- Stalker Gloves: +1 Initiative, +1d4 Force on Sneak Attack
+- Flaming Fist Armor: +2 Initiative, Fire Shield spell, lesser flaming dispersion
+- Barbarian/Monk Hat: +1 Initiative, +1 Spell Save DC
 
 ---
 

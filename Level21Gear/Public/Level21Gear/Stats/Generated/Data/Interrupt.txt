@@ -1,0 +1,13 @@
+new entry "L21_Interrupt_Shield_Unlimited"
+type "InterruptData"
+using "Interrupt_Shield_Wizard"
+data "DisplayName" "hed21c6ebg7b46g4739g96e5g4f896829c10c;1"
+data "Description" "hed217657agcc38g445cgb1e8g8c8a93d1f648;1"
+data "Cost" "BonusActionPoint:1"
+
+new entry "L21_Interrupt_Counterspell_Unlimited"
+type "InterruptData"
+using "Interrupt_Counterspell"
+data "DisplayName" "hed215773g5cdeg4791g9668g7f67f1bb9d1c;1"
+data "Description" "hed210227g4bcbg4ed6ga3b9ga458a9bf9e31;1"
+data "Cost" "BonusActionPoint:1"

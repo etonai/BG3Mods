@@ -1,0 +1,32 @@
+The Ring of PseudonymousEd
+
+We can call this mod RingOfPseudonymousEd
+
+Create a legendary ring, based on the Ring of Creation in the Ring of Creation mod.
+This ring will be available in the tutorial chest. It will be unique.
+
+Powers:
+Silvered Bulwark as a bonus action, unlimited times
+Unlimited Misty Step as a free action
+Arcane Gate, once per long rest
+Unlimited Shield
+Unlimited Counterspell
+Guidance, unlimited times
+Friends, unlimited times
+Unlimited Chromatic Orb as a bonus action, level 1
+Unlimited Magic Missile as a bonus action, level 5
+Unlimited Invisibility as a bonus action
+Unlimited Knock
+Greater Restoration, once per short rest
+Unlimited Superior Healing word as a bonus action
+
+Moonshield Aura
+
+Fear Immunity
+Blind Immunity
+Darkvision
+Web Immunity
+
+Add bonus of 8 to all skill checks
+Add Initiative bonus of 6 to all initiative rolls
+

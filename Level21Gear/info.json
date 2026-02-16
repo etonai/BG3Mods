@@ -1,0 +1,14 @@
+{
+    "Mods": [
+        {
+            "Author": "YourName",
+            "Name": "Level 21 Gear",
+            "Folder": "Level21Gear",
+            "Version": "1.0.0",
+            "Description": "Legendary gear for level 21+ characters. Starts with the Staff of Akitaro.",
+            "UUID": "ed2135f2-a754-4cb9-851d-a16e8c8ebef2",
+            "Created": "2026-02-15T00:00:00",
+            "Group": "d16c5eb3-5269-40ce-baf0-20aa34b5c87e"
+        }
+    ]
+}

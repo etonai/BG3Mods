@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="6" build="5" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="hed214d87agf785g4f45g8c93g4827fb5d7f3f" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hed21ad1dg1aeag4b70gb63fgeabb5fb10181" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="ed21b86f-a7f7-4de6-ad51-1a2c33b9c779" />
+					<attribute id="Name" type="LSString" value="L21_Staff_Gimeitaro" />
+					<attribute id="ParentTemplateId" type="FixedString" value="e1e112b2-5465-4e37-acdc-372666ec1521" />
+					<attribute id="Stats" type="FixedString" value="L21_Staff_Gimeitaro" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="VisualTemplate" type="FixedString" value="fb8204e8-e265-7af3-86b1-7341c6880ba1" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855912" />
+					<children>
+						<node id="GameMaster" />
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>
