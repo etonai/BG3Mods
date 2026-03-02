@@ -6,12 +6,13 @@ A collection of interesting magical effects, passives, and spells discovered in 
 
 ## Spells Without Item Sources
 
-Spells that no vanilla item grants - would require the container spell technique (see `adding_spells_without_item_source.md`).
+Spells that no vanilla item grants - would require the container spell technique (see `adding_spells_without_item_source.md`) or a custom scroll.
 
 | Spell | Type | Notes |
 |-------|------|-------|
 | Spirit Guardians | Shout | Requires container for Radiant/Necrotic variants |
 | Divine Smite | Target | Paladin melee spell, adds radiant damage to weapon attacks |
+| Hellfire Orb | Projectile | Death Knight / Raphael boss spell. 20d6 fire damage in 4m AoE, DC 18 Dex save (half on save). No spell slot cost, once per combat. No vanilla player item grants this. Good scroll candidate. See **Hellfire Orb** in Spell Scrolls section. |
 
 ---
 
@@ -36,6 +37,153 @@ Spells that existing items grant - can use simple `using` technique.
 | Thunderwave | Ring of Thunderous Force (UNI_UND_KC_RingOfAbsolute, MapKey: c7a58f48-f24f-4139-b0f0-8b12e1bf074e) | AOE thunder damage, pushes enemies back | Needs research |
 | Haste (Self) | Gontr Mael / Victory Longbow (GOB_DrowCommander_Longbow, MapKey: 9acff693-81d5-43f3-8bec-78370c51e5ab) | Cast Haste on self, once per long rest | Shout_MAG_Victory_Longbow_Haste |
 | Silvered Bulwark | Nightsong/Ramazith's Tower (Quest/Story-granted) | Bonus action concentration spell, grants Invulnerability + Advantage on all saves + unlocks special spells | Target_LOW_RamazithsTower_Nightsong_Globe_1 |
+| Razor Gale | Larethian's Wrath (MAG_Finesse_Longsword, MapKey: 56a7539c-7c5c-4c44-b8e0-5ff2e5beb4e9) | Cleave-style weapon action in a 60-degree arc at 4m range; hit deals weapon damage + Proficiency Bonus in weapon's damage type, miss deals half; wind/air visual; good candidate for custom finesse weapons | Zone_Mag_WeaponAction_RazorGale |
+
+---
+
+## Spell Scrolls
+
+Scrolls are single-use consumable items that cast a spell when used (costs 1 action). They are defined as `Object` type stats entries, not weapon/armor entries.
+
+### How Scrolls Work
+
+**Inheritance chain:**
+```
+OBJ_Scroll_[SpellName]
+  → _MagicScroll
+    → OBJ_Scroll_Indestructible
+      → OBJ_Scroll (using _Book)
+```
+
+**`_MagicScroll` base properties:**
+- `Weight 0.02`
+- `InventoryTab Magical`
+- `UseCosts ActionPoint:1` — costs 1 action to use
+- `ItemUseType Scroll`
+- `UseConditions not IsSummon()` — summons cannot use scrolls
+
+**Individual scroll properties:**
+- `RootTemplate` — links to the RootTemplate (MapKey) for visual/name/description
+- `ValueLevel` — affects gold value
+- `Rarity` — Common / Uncommon / Rare / VeryRare
+- `ObjectCategory` — controls which loot tables can roll this scroll (e.g. `MagicScroll_6` = level 6 spell scrolls)
+
+**Naming conventions:**
+- Stats entry name: `OBJ_Scroll_[SpellName]` (defined in SharedDev `Object.txt`)
+- RootTemplate Name attribute: `LOOT_SCROLL_[SpellName]`
+- TreasureTable reference: `object category "I_OBJ_Scroll_[SpellName]"`
+
+### Example: Globe of Invulnerability Scroll
+
+| Field | Value |
+|-------|-------|
+| Stats Entry | `OBJ_Scroll_GlobeOfInvulnerability` |
+| RootTemplate Name | `LOOT_SCROLL_GlobeOfInvulnerability` |
+| RootTemplate MapKey | `8d4c06d1-e504-49b0-a4fa-5179ab717f1e` |
+| Spell | `Zone_GlobeOfInvulnerability` (level 6 Abjuration) |
+| Rarity | VeryRare |
+| ValueLevel | 12 |
+| ObjectCategory | `MagicScroll_6;;MagicScroll_Protection_6` |
+
+**Stats definition:**
+```
+new entry "OBJ_Scroll_GlobeOfInvulnerability"
+type "Object"
+using "_MagicScroll"
+data "RootTemplate" "8d4c06d1-e504-49b0-a4fa-5179ab717f1e"
+data "ValueLevel" "12"
+data "Rarity" "VeryRare"
+data "ObjectCategory" "MagicScroll_6;;MagicScroll_Protection_6"
+data "Priority" "1"
+```
+
+**TreasureTable delivery:**
+```
+object category "I_OBJ_Scroll_GlobeOfInvulnerability",1,0,0,0,0,0,0,0
+```
+
+### Creating a Custom Scroll
+
+To add a vanilla scroll to a mod chest (no custom stats needed — just reference the existing vanilla entry in TreasureTable):
+```
+new subtable "1,1"
+object category "I_OBJ_Scroll_GlobeOfInvulnerability",1,0,0,0,0,0,0,0
+```
+
+To create a custom scroll that casts a modded spell, define a new `Object` entry in your mod's `Object.txt`, using `_MagicScroll` as the base and pointing to a custom RootTemplate. The RootTemplate must explicitly define the spell via `OnUsePeaceActions` — it is NOT inherited from the `ParentTemplateId`.
+
+**Custom scroll RootTemplate structure (verified in Phase 057):**
+- `ParentTemplateId`: `4ffd5c4b-4c56-4f05-a228-a33754bb1806` — generic scroll base (do NOT use a specific vanilla spell scroll as parent, or it will cast that spell instead)
+- Two `Action` children inside `OnUsePeaceActions`:
+  - **ActionType 12** — skill check: `SkillID` = spell name, `ClassId` = `a865965f-501b-46e9-9eaa-7748e8c04d09`, `Conditions` = `""` (or `CanUseSpellScroll("SpellName")` to restrict by class), `Consume` = `True`
+  - **ActionType 33** — cast: `SpellId` = spell name, `Conditions` = `""`, `Consume` = `True`
+
+```xml
+<node id="OnUsePeaceActions">
+    <children>
+        <node id="Action">
+            <attribute id="ActionType" type="int32" value="12" />
+            <children>
+                <node id="Attributes">
+                    <attribute id="Animation" type="FixedString" value="" />
+                    <attribute id="ClassId" type="guid" value="a865965f-501b-46e9-9eaa-7748e8c04d09" />
+                    <attribute id="Conditions" type="LSString" value="" />
+                    <attribute id="Consume" type="bool" value="True" />
+                    <attribute id="SkillID" type="FixedString" value="YOUR_SPELL_NAME" />
+                </node>
+            </children>
+        </node>
+        <node id="Action">
+            <attribute id="ActionType" type="int32" value="33" />
+            <children>
+                <node id="Attributes">
+                    <attribute id="Animation" type="FixedString" value="" />
+                    <attribute id="Conditions" type="LSString" value="" />
+                    <attribute id="Consume" type="bool" value="True" />
+                    <attribute id="SpellId" type="FixedString" value="YOUR_SPELL_NAME" />
+                </node>
+            </children>
+        </node>
+    </children>
+</node>
+```
+
+Working example: `Level21Gear/Public/Level21Gear/RootTemplates/L21_Scroll_SilveredBulwark.lsf.lsx`
+
+### Hellfire Orb Scroll
+
+A powerful Death Knight/Raphael boss spell. There is no vanilla player-accessible item that grants it, and no vanilla scroll Object entry — making it a strong candidate for a custom scroll mod.
+
+**Spell stats (`Projectile_HellfireOrb_DeathKnight`):**
+
+| Field | Value |
+|-------|-------|
+| Stats Entry | `Projectile_HellfireOrb_DeathKnight` |
+| File | `VanillaBG3/Shared/Public/SharedDev/Stats/Generated/Data/Spell_Projectile.txt` |
+| Base | `using "Projectile_Fireball"` |
+| Level | 6 |
+| School | Evocation (inherited from Fireball) |
+| Area Radius | 4m (inherited from Fireball) |
+| Saving Throw | Dexterity DC 18 (hardcoded, not spell DC) |
+| Damage (fail) | `20d6` Fire (Magical) |
+| Damage (success) | `(20d6)/2` Fire (Magical) |
+| Spell Cost | `ActionPoint:1` — no spell slot required |
+| Memory Cost | None |
+| Cooldown | `OncePerCombat` |
+| Spell Flags | HasVerbalComponent; HasSomaticComponent; IsSpell; IsHarmful; CanAreaDamageEvade |
+
+**Key differences from vanilla Fireball:**
+- 20d6 vs 8d6 damage
+- DC 18 fixed vs spell DC scaling
+- No spell slot cost (Action only)
+- Once per combat cooldown
+
+**Raphael's boss variant (`Projectile_LOW_Raphael_HellfireOrb`)** additionally:
+- Creates a 4m Hellfire surface on ground
+- Requires `HasStatus('LOW_RAPHAEL_MONSTER_FORM')`
+- Recharges on 3–6 (not needed for a player scroll)
+
+**To implement as a custom scroll**, use `Projectile_HellfireOrb_DeathKnight` as the spell name in both `OnUsePeaceActions` Action nodes (ActionType 12 SkillID + ActionType 33 SpellId). No custom spell entry needed — reference the vanilla stat directly.
 
 ---
 

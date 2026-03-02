@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<contentList>
+	<!-- Silvered Bulwark Spell -->
+	<content contentuid="hed581091gce8fg4ed5g94f4g2c34676295f2" version="1">Silvered Bulwark</content>
+	<content contentuid="hed58588cg8b6ag477bg80cag8157a7688868" version="1">Encase an ally in a radiant shield of invulnerability. The target becomes completely immune to all damage and gains advantage on all saving throws. The protective aura follows the target as they move.</content>
+
+	<!-- Silvered Bulwark Scroll -->
+	<content contentuid="hed58b27dgbdf8g4a49ga202g90258d1cd5c8" version="1">Scroll of Silvered Bulwark</content>
+	<content contentuid="hed589505g7e4ag4502g89ccg468ad628159c" version="1">A scroll inscribed with the Silvered Bulwark invocation. Encase an ally in a radiant shield of invulnerability. Single use.</content>
+
+	<!-- Hellfire Orb Scroll -->
+	<content contentuid="hed58a6d6g21b9g42e9gb5e2g6bf596e8db73" version="1">Scroll of Hellfire Orb</content>
+	<content contentuid="hed58f9e8g3824g4bf9gbec5g17d2943539be" version="1">A scroll inscribed with the Hellfire Orb incantation. Launches a searing orb that explodes in a 4-metre radius, dealing 20d6 Fire damage. DC 18 Dexterity saving throw for half damage. Single use.</content>
+</contentList>

@@ -1,36 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <save>
-  <version major="4" minor="0" revision="9" build="328" />
+  <version major="4" minor="0" revision="9" build="331" />
   <region id="Config">
     <node id="root">
       <children>
-        <node id="Dependencies">
-          <children>
-            <node id="ModuleShortDesc">
-              <attribute id="Folder" type="LSString" value="Level13PlusGear" />
-              <attribute id="MD5" type="LSString" value="" />
-              <attribute id="Name" type="LSString" value="Level13PlusGear" />
-              <attribute id="UUID" type="FixedString" value="ed133cf1-389c-47f1-9fa7-fe49ee4fe2ce" />
-              <attribute id="Version64" type="int64" value="36028861443473408" />
-            </node>
-          </children>
-        </node>
+        <node id="Dependencies" />
         <node id="ModuleInfo">
           <attribute id="Author" type="LSString" value="PseudonymousEd" />
           <attribute id="CharacterCreationLevelName" type="FixedString" value="" />
-          <attribute id="Description" type="LSString" value="A magical ring that can summon items by their ID. Includes the ability to summon items from other mods." />
-          <attribute id="Folder" type="LSString" value="RingOfCreation" />
+          <attribute id="Description" type="LSString" value="A collection of powerful spell scrolls, including Silvered Bulwark and Hellfire Orb." />
+          <attribute id="Folder" type="LSString" value="SilveredBulwarkScroll" />
           <attribute id="LobbyLevelName" type="FixedString" value="" />
           <attribute id="MD5" type="LSString" value="" />
           <attribute id="MainMenuBackgroundVideo" type="FixedString" value="" />
           <attribute id="MenuLevelName" type="FixedString" value="" />
-          <attribute id="Name" type="FixedString" value="RingOfCreation" />
+          <attribute id="Name" type="LSString" value="Silvered Bulwark Scroll" />
           <attribute id="NumPlayers" type="uint8" value="4" />
           <attribute id="PhotoBoothLevelName" type="FixedString" value="" />
           <attribute id="StartupLevelName" type="FixedString" value="" />
           <attribute id="Tags" type="LSString" value="" />
           <attribute id="Type" type="FixedString" value="Add-on" />
-          <attribute id="UUID" type="FixedString" value="ed3187dc-1bbb-4458-86c6-255e285e9b96" />
+          <attribute id="UUID" type="FixedString" value="ed58126e-8531-43ce-93f2-8b4b49354e12" />
           <attribute id="Version64" type="int64" value="36028921573015552" />
           <children>
             <node id="PublishVersion">

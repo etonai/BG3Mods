@@ -10,6 +10,7 @@ The following mods are actively being developed. All other mods in this project 
 | Level13PlusGear | Custom magic items mod with weapons, armor, and rings (for level 13+ characters) |
 | Level21Gear | Legendary gear mod for level 21+ characters (Tutorial Chest delivery) |
 | RingOfCreation | Utility mod with a ring that summons items by ID (depends on Level13PlusGear and SampleMagicRingMod) |
+| SilveredBulwarkScroll | Standalone scroll mod — delivers powerful spell scrolls (Silvered Bulwark, Hellfire Orb) in the Tutorial Chest (no dependencies) |
 
 ---
 
@@ -83,6 +84,13 @@ Planning and catalog documents specifically for the Level13PlusGear mod.
 | File | Description |
 |------|-------------|
 | item_catalog.md | Complete list of all magic items in Level13PlusGear with stats and powers |
+
+### docs/silveredbulwarkscroll/
+Planning and catalog documents specifically for the SilveredBulwarkScroll mod.
+
+| File | Description |
+|------|-------------|
+| item_catalog.md | Item catalog for the SilveredBulwarkScroll mod |
 
 ### docs/instructions/
 Technical reference documentation for BG3 modding.

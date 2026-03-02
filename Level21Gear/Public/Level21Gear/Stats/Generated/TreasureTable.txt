@@ -1,4 +1,13 @@
 new treasuretable "TUT_Chest_Potions"
-CanMerge 1
+ CanMerge 1
+new subtable "1,1"
+object category "I_L21_Gear_Chest",1,0,0,0,0,0,0,0
+
+new treasuretable "L21_Gear_Chest_TT"
+ CanMerge 1
 new subtable "1,1"
 object category "I_L21_Staff_Gimeitaro",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_L21_Sword_Silverlight",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_OBJ_L21_Scroll_SilveredBulwark",1,0,0,0,0,0,0,0

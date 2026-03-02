@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <contentList>
 	<content contentuid="hroc7624bgb5dag47d9gab02g456236332c1e" version="1">Ring of Creation</content>
-	<content contentuid="hroc8099g3c13g42adg8b31g50724eafee5a" version="1">A legendary ring imbued with the power to summon items from across the realms. Grants the ability to summon the Level 13 Plus Gear Chest, Boots of the Stormwalker, Moonguard Plate, Armor of Tyr, Moonguard Splint, Armor of the Dragonrider, Circlet of Willpower, and Armor of Testing.</content>
+	<content contentuid="hroc8099g3c13g42adg8b31g50724eafee5a" version="1">A legendary ring imbued with the power to summon items from across the realms. Grants the ability to summon the Level 21 Gear Chest, Level 13 Plus Gear Chest, Boots of the Stormwalker, Moonguard Plate, Armor of Tyr, Moonguard Splint, Armor of the Dragonrider, Circlet of Willpower, and Armor of Testing.</content>
+	<content contentuid="hroc1ff21g9ed0g49ddg80f1g381f1c5aded4" version="1">Summon Level 21 Gear Chest</content>
+	<content contentuid="hroc19db7g3d0ag4126gaa82g84526bc09580" version="1">Summon the Level 21 Gear Chest at the target location. The chest contains legendary equipment for level 21+ characters, including the Staff of Gimeitaro and Silverlight.</content>
 	<content contentuid="hroc1c8gf42ag4d19gb8e2ga1b4c7d8e9f0a" version="1">Summon Level 13 Gear Chest</content>
 	<content contentuid="hroc6020gd37fg4fc7ga174g47f0bf91dace" version="1">Summon the Level 13 Plus Gear Chest at the target location. The chest contains powerful equipment for level 13+ characters.</content>
 	<content contentuid="hroc0ccag8bc9g4a79gab95g36259cbf2165" version="1">Summon Boots of Stormwalker</content>

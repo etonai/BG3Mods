@@ -11,11 +11,60 @@ Complete list of all items in the Level 21 Gear mod for BG3.
 
 ## Table of Contents
 - [Weapons](#weapons)
+  - [Swords](#swords)
   - [Staves](#staves)
 
 ---
 
 ## Weapons
+
+### Swords
+
+#### Silverlight Sword
+**Internal Name:** `L21_Sword_Silverlight`
+**Rarity:** Legendary
+**Base Weapon:** WPN_Longsword_2 (+5 enchantment)
+
+**RootTemplate UUID:** `ed21e061-f4d9-49f0-8aa0-e737813db4e4`
+
+**Weapon Properties:**
+- +5 magical longsword
+- Not unique (multiple can exist)
+
+**Passives:**
+- `MAG_PlaneShifterSlayer_Passive` - Bonus damage vs planar creatures
+- `L21_RadiantWeapon_Passive` - Radiant weapon enhancement
+- `MAG_TheClover_Rearrangement_Passive` - Lucky rerolls
+- `CRE_LathandersLight_Passive` - Lathander's Light toggled aura (blinds Fiends/Undead)
+- `L21_Moonshield_Passive` - Shadow Curse immunity aura
+
+**Status on Equip:**
+- `MAG_LATHANDERS_LIGHT_TECHNICAL` - Lathander's Light aura system
+- `LOW_RAMAZITHSTOWER_DEVA_BLESSING` - Deva's Blessing: weapon attacks deal +5d8 radiant damage
+
+**Spells Granted:**
+
+*Weapon Actions:*
+- **Razor Gale** (`Zone_Mag_WeaponAction_RazorGale`) - Cleave-style attack in a 60-degree arc at 4m range; hit deals weapon damage + Proficiency Bonus, miss deals half; wind/air visual (Phase 060)
+
+*Offensive Spells:*
+- Wrathful Smite (`Target_MAG_Smite_Wrathful`) - Extra psychic damage + Frightened on hit
+- Blinding Smite of Silverlight (`L21_Target_BlindingSmite_Silverlight`) - Extra radiant damage + Blind on hit (1 Action)
+
+*Defensive/Buff Spells:*
+- Silvered Bulwark (`L21_Target_SilveredBulwark`) - Bonus action, grants ally full invulnerability + advantage on saves (concentration)
+- Shield of Faith (`Target_PLA_ShieldOfFaith_SwordOfJustice`) - +2 AC buff
+- Celestial Haste (`L21_Shout_CelestialHaste_Unlimited`) - Self-haste, free action, no concentration, unlimited
+
+*Aura Spells:*
+- Spirit Guardians of Silverlight (`L21_Shout_SpiritGuardians_Silverlight`) - 3m radiant/necrotic damage aura, scales with spellcasting ability
+
+*Utility Spells:*
+- Light (`L21_Target_Light_Unlimited`) - Create light, bonus action, unlimited
+
+**Phase:** 057 (created), 060 (Razor Gale added)
+
+---
 
 ### Staves
 
@@ -91,15 +140,16 @@ A legendary staff imbued with immense arcane power, granting its wielder unparal
 
 | Item | Status | Phase | Notes |
 |------|--------|-------|-------|
-| Staff of Gimeitaro | IMPLEMENTED | 054-R2, 055-R1 | Enhanced with Silvered Bulwark, Spirit Guardians, free action Haste, +10 skills/abilities, +7 initiative, +8 saves. NO CONCENTRATION on Haste and Spirit Guardians (can stack). Shield requires concentration. |
+| Silverlight Sword | COMPLETE | 057 (created), 060 (Razor Gale) | Legendary longsword with Razor Gale, Wrathful/Blinding Smite, Silvered Bulwark, Celestial Haste, Spirit Guardians, Deva's Blessing. |
+| Staff of Gimeitaro | COMPLETE | 054-R2, 055-R1 | Enhanced with Silvered Bulwark, Spirit Guardians, free action Haste, +10 skills/abilities, +7 initiative, +8 saves. NO CONCENTRATION on Haste and Spirit Guardians (can stack). Shield requires concentration. |
 
 ---
 
 ## Statistics
 
-- **Total Items:** 1
-- **Weapons:** 1 (1 Staff)
+- **Total Items:** 2
+- **Weapons:** 2 (1 Longsword, 1 Staff)
 - **Armor:** 0
 - **Accessories:** 0
 
-**Last Updated:** 2026-02-15 (Phase 054, Phase 055)
+**Last Updated:** 2026-02-22 (Phase 060)

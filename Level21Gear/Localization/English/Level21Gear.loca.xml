@@ -41,4 +41,38 @@
 	<content contentuid="hed21a14fg00f4g40a0gb0a2g826e58cf044e" version="1">Call forth spirits to protect you. Nearby enemies take 3d8 Radiant or Necrotic damage. Unlimited casting, free action.</content>
 	<content contentuid="hed21d276gb362g40b6ga438g9205fdf6c3af" version="1">Radiant spirits surround you.</content>
 	<content contentuid="hed215b00g394dg4b9cgbbc9g1868de4de69e" version="1">Necrotic spirits surround you.</content>
+
+	<!-- Silverlight Sword -->
+	<content contentuid="hed21b41fg25f6g4b48ga058g98882385ec98" version="1">Silverlight</content>
+	<content contentuid="hed21219cgbdb5g4b2cga6bdg75aa4061f5b9" version="1">A longsword blessed by both Selûne and celestial Devas. Grants Wrathful Smite, Blinding Smite (unlimited), Light (unlimited), Shield of Faith, Celestial Haste (free action), Spirit Guardians (free action), Silvered Bulwark (invulnerability), Plane Shifter Slayer, Radiant Weapon (+1d8 radiant), Deva's Blessing (+5d8 radiant), Critical Bonus (crit on 19-20, reroll ≤2), Lathander's Light aura, and Moonshield Aura (Shadow Curse protection).</content>
+
+	<!-- Blinding Smite (Silverlight) -->
+	<content contentuid="hed2136c4gc084g4bb9gb8cdg4ee2ceed5e44" version="1">Blinding Smite (Unlimited)</content>
+	<content contentuid="hed213c4cg37f4g419bgb7d8g6a99ba882b59" version="1">Unlimited Blinding Smite. Costs 1 action, no spell slot.</content>
+
+	<!-- Spirit Guardians (Silverlight) -->
+	<content contentuid="hed2195ebgc3b4g4c56g84e0g5b9be483da78" version="1">Silverlight's Spirit Guardians</content>
+	<content contentuid="hed21b2deg0467g4c28gb2d3g68d9241d9fbf" version="1">Call forth spirits to protect you. Nearby enemies take 3d8 Radiant or Necrotic damage. Free action casting.</content>
+	<content contentuid="hed21f39dg9a39g4020g8633g8baa0346f142" version="1">Radiant spirits surround you. Free action casting.</content>
+	<content contentuid="hed211779g1e07g4abag94b1g837b1f5bf081" version="1">Necrotic spirits surround you. Free action casting.</content>
+
+	<!-- Radiant Weapon Passive -->
+	<content contentuid="hed211c3bga028g4c40g9974g48a782f2611b" version="1">Radiant Weapon</content>
+	<content contentuid="hed219799g77ffg4983gbbc0g2c7c6a098a0c" version="1">This weapon is infused with divine radiance, dealing extra radiant damage on melee attacks.</content>
+
+	<!-- Moonshield Passive -->
+	<content contentuid="hed2116ddgbdfcg4f8egb30fg7e97d64fb985" version="1">Moonshield Aura</content>
+	<content contentuid="hed218d2eg299cg4166g9d49ga2ef0b6a4f6b" version="1">Toggled aura that grants immunity to the Shadow Curse.</content>
+
+	<!-- Silvered Bulwark Spell -->
+	<content contentuid="hed210df9gfc13g40b3g93f5gf712e0859489" version="1">Silvered Bulwark</content>
+	<content contentuid="hed2174cfg334bg4279g88dega41c002d7a49" version="1">Encase an ally in a radiant shield of invulnerability. The target becomes completely immune to all damage and gains advantage on all saving throws. The protective aura follows the target as they move.</content>
+
+	<!-- Silvered Bulwark Scroll -->
+	<content contentuid="hed21b0d7gcad1g42eag802fg871ed925a317" version="1">Scroll of Silvered Bulwark</content>
+	<content contentuid="hed2106a3g39b6g4408ga2b9gae1418a6ca87" version="1">A scroll inscribed with the Silvered Bulwark invocation. Encase an ally in a radiant shield of invulnerability. Single use.</content>
+
+	<!-- L21_Gear_Chest -->
+	<content contentuid="hed21db34geba9g4c17g8436gc76452fc20d8" version="1">Level 21 Gear Chest</content>
+	<content contentuid="hed212d3fga487g49b8gb76bg3763201a26b7" version="1">A chest containing legendary gear for level 21+ characters. Contains the Staff of Gimeitaro.</content>
 </contentList>

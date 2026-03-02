@@ -43,43 +43,32 @@ All items in Level13Gear should use the `L13` prefix for handles and names.
 The following UUIDs are available for Level13Gear mod use. **Delete the UUID from this list when you use it.**
 
 ```
-aa3e541c-165a-4c18-aad1-175c59940bbb
-
-4797d32e-9395-43f8-b4a6-6469c8b648c3
-
-5d33db34-eba9-4c17-8436-c76452fc20d8
-
-93382d3f-a487-49b8-b76b-3763201a26b7
-
-8512e061-f4d9-49f0-8aa0-e737813db4e4
-
-4c27b41f-25f6-4b48-a058-98882385ec98
-
-6aa8219c-bdb5-4b2c-a6bd-75aa4061f5b9
-
-ff9236c4-c084-4bb9-b8cd-4ee2ceed5e44
-
-e2f43c4c-37f4-419b-b7d8-6a99ba882b59
-
-b0fd95eb-c3b4-4c56-84e0-5b9be483da78
-
-db16b2de-0467-4c28-b2d3-68d9241d9fbf
-
-d5def39d-9a39-4020-8633-8baa0346f142
-
-bd0d1779-1e07-4aba-94b1-837b1f5bf081
-
-f0d41c3b-a028-4c40-9974-48a782f2611b
-
-f3d99799-77ff-4983-bbc0-2c7c6a098a0c
-
-db7516dd-bdfc-4f8e-b30f-7e97d64fb985
-
-84278d2e-299c-4166-9d49-a2ef0b6a4f6b
-
-131d0df9-fc13-40b3-93f5-f712e0859489
-
-b00b74cf-334b-4279-88de-a41c002d7a49
+d4ee2c7b-af67-40c3-812c-3e5c1cbcb644
+3a199b4e-e7de-4ebe-af3c-fa415f54f699
+de7b7f2f-7ef5-41ec-a1bb-e37659b3df8a
+34214625-1c0a-44c7-834c-37776c49cc0b
+9a3134cd-b04c-4273-a1bf-cc37eef43c1e
+df8a9720-94bd-4dfe-ab74-412485ec8cf3
+dc345087-1933-4259-8c0a-ed729dae680e
+d1dc7ae4-012a-4537-87d8-925cf4ad3211
+6ff26e91-f5bf-40b6-8459-14eca7c6389f
+575d872c-0381-4698-a0d9-5ff9975572fe
+85f0d700-fcb6-4df9-8d11-a7d2217c1ccb
+da7b238a-540f-4aec-8232-0cf85183412e
+38227ab6-aaba-4c22-acd2-b785ecd60e6f
+40388269-35e4-4b68-bfd4-a18ad10b0e74
+be1d7abb-2f97-4d03-ba49-9f31cf6b7e72
+5a1b39ec-9fad-424f-8ea9-7a46df066bec
+0cc6b454-caf8-4204-983b-05b99b1c8a92
+42a9166a-157c-467c-b278-7626885635cb
+bfdcdb7f-ff0a-4ba8-9b22-b710f6f46b43
+9c13a380-3669-48f6-9b17-093260e639ad
+1e2e6526-1c14-4115-8419-05b3f2b2cf1d
+36c356a5-aa5c-4b33-b839-6084fc0e9672
+57f2c865-f166-4417-8756-9c36f3e7671b
+7227fac9-17db-44a4-852e-039746ab36bf
+abfe8072-1e8c-4ac2-95e4-07887f202003
+6109f57b-8cc6-4aa0-a835-ab0fb2ddc217
 ****
 
 ```
@@ -88,10 +77,15 @@ b00b74cf-334b-4279-88de-a41c002d7a49
 **Note:** Phase 038 used 32 UUIDs (9 RootTemplates + 3 spell handles + 20 localization handles) for 4 weapons, 5 body armor pieces, and Spirit Guardians Tyr spell variant.
 **Note:** Phase 054 Revision 1 used 18 UUIDs (18 handles) for Staff of Gimeitaro and its custom spells in Level21Gear mod.
 **Note:** Phase 054 Revision 2 used 5 UUIDs (5 handles) for Spirit Guardians Gimeitaro spell variants.
+**Note:** Phase 056 used 4 UUIDs (1 RootTemplate UUID, 1 OneTimeReward UUID, 2 handles) for L21_Gear_Chest.
+**Note:** Phase 057 used 18 UUIDs (2 RootTemplate UUIDs + 16 handles) for L21_Sword_Silverlight, its spells/passives, and the Silvered Bulwark scroll in Level21Gear.
+**Note:** Phase 057 Revision 2 used 2 UUIDs (2 handles, roc1 prefix) for ROC_Summon_L21_Chest spell in RingOfCreation.
+**Note:** Phase 058 used 6 UUIDs (1 mod UUID + 1 RootTemplate UUID + 4 handles, ed58 prefix) for the SilveredBulwarkScroll mod.
+**Note:** Phase 059 used 3 UUIDs (1 RootTemplate UUID + 2 handles, ed58 prefix) for FBS_Scroll_HellfireOrb in the ForbiddenScrolls mod (renamed from SilveredBulwarkScroll).
 
 ### When Running Low
 
-Ask Ed to generate more UUIDs when the pool gets below 10. Ed will use an online UUID v4 generator to create new UUIDs and add them to this list.
+Ask Ed to generate more UUIDs when the pool gets below 20. Ed will use an online UUID v4 generator to create new UUIDs and add them to this list.
 
 ---
 

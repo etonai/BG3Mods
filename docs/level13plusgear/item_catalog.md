@@ -105,6 +105,21 @@ A complete list of all magic items in the Level13PlusGear mod.
 
 ---
 
+### L13_Sword_Silverlight (Silverlight)
+**Type:** Longsword +5 | **Rarity:** Legendary | **Appearance:** Primeval Silver Longsword
+
+| Category | Details |
+|----------|---------|
+| Enchantment | +5, Magical |
+| Spells | Wrathful Smite, Selûne's Blinding Smite (unlimited), Light (unlimited), Shield of Faith, Celestial Haste (free action), Spirit Guardians (free action), Silvered Bulwark |
+| Passives | Plane Shifter Slayer, Radiant Weapon (+1d8 radiant), Rearrangement (crit on 19-20, reroll damage ≤2), Lathander's Light (toggled aura blinds Fiends/Undead), Moonshield Aura (Shadow Curse protection) |
+| Status | Lathander's Light Technical, Deva's Blessing (+5d8 radiant on weapon attacks) |
+| Description | A longsword blessed by both Selûne and celestial Devas. This blade channels divine radiant power to smite evil and protect the righteous. Grants Wrathful Smite, Selûne's Blinding Smite (unlimited), Light (unlimited), Shield of Faith, Celestial Haste (free action), Spirit Guardians (free action), Silvered Bulwark (invulnerability), Plane Shifter Slayer, Radiant Weapon (+1d8 radiant), Deva's Blessing (+5d8 radiant), Critical Bonus (crit on 19-20, reroll damage ≤2), Lathander's Light aura, and Moonshield Aura. |
+
+**Note:** Superset of the Moonguard Blade. Adds Silvered Bulwark (invulnerability aura) and Deva's Blessing (+5d8 radiant on all weapon attacks). This is the most powerful longsword in Level13PlusGear.
+
+---
+
 ## Armor
 
 ### L13_Boots_Stormwalker (Boots of Stormwalker)
@@ -411,6 +426,8 @@ Based on Haste (Victory Longbow version). Free action casting with no cooldown.
 - **Radiant Variant:** Radiant spirits surround you. Applies SPIRIT_GUARDIANS_RADIANT_AURA.
 - **Necrotic Variant:** Necrotic spirits surround you. Applies SPIRIT_GUARDIANS_NECROTIC_AURA.
 
+**Used by:** Moonguard Blade, Silverlight
+
 ### L13_Shout_SpiritGuardians_Tyr
 **Type:** Container Spell | **Cost:** Action | **Level:** 3
 
@@ -678,6 +695,16 @@ Based on vanilla Counterspell (Interrupt_Counterspell). Recharges on short rest.
 
 **Used by:** Ring of the Guardian
 
+### L13_Target_SilveredBulwark
+**Type:** Target Spell | **Cost:** Free Action (no cost) | **Level:** 6 | **School:** Abjuration
+
+**Name:** Silvered Bulwark
+**Description:** Encase an ally in a radiant shield of invulnerability. The target becomes completely immune to all damage and gains advantage on all saving throws. The protective aura follows the target as they move. This powerful blessing requires concentration to maintain.
+
+Based on Globe of Invulnerability. Applies the `LOW_RAMAZITHSTOWER_NIGHTSONG_GLOBE_1` status (same as Nightsong's Silvered Bulwark).
+
+**Used by:** Silverlight
+
 ---
 
 ## Custom Passives
@@ -759,6 +786,7 @@ All items are delivered via the **L13_Gear_Chest** container, which appears in t
 | Armor of the Dragonrider | Vanilla BG3 (MAG_Githborn_MagicEating_HalfPlate) | Phase 045 |
 | Circlet of Willpower | SampleMagicRingMod | Phase 046 |
 | Dawn's Blade | Vanilla BG3 (MAG_Colossal_Greatsword appearance) | Phase 049 |
+| Silverlight | Moonguard Blade (L13_Blade_Moonguard) + Silvered Bulwark + Deva's Blessing | Phase 051-053 (undocumented in catalog) |
 
 All items have been made independent from SampleMagicRingMod with custom L13_ prefixes and unique UUIDs.
 
@@ -768,7 +796,7 @@ All items have been made independent from SampleMagicRingMod with custom L13_ pr
 
 | Category | Count |
 |----------|-------|
-| Weapons | 8 |
+| Weapons | 9 |
 | Armor (Feet) | 1 |
 | Armor (Body) | 5 |
 | Armor (Head) | 6 |
@@ -776,10 +804,10 @@ All items have been made independent from SampleMagicRingMod with custom L13_ pr
 | Armor (Back) | 3 |
 | Armor (Shield) | 2 |
 | Armor (Ring) | 2 |
-| Custom Spells | 34 |
+| Custom Spells | 35 |
 | Custom Passives | 2 |
 | Custom Interrupts | 4 |
-| **Total Items** | **29** |
+| **Total Items** | **30** |
 
 ---
 
@@ -807,6 +835,13 @@ All items have been made independent from SampleMagicRingMod with custom L13_ pr
     - AC bonus remains +5 (total +7 with base shield AC)
   - Created L13_Interrupt_Shield_ShortRest (new interrupt spell)
   - No UUIDs used (reused existing Shield spell localization)
+
+- **2026-02-20**: Catalog updated to document Silverlight (L13_Sword_Silverlight)
+  - Item was already implemented in Phases 051-053 but never added to catalog
+  - Silverlight is a superset of the Moonguard Blade with Silvered Bulwark and Deva's Blessing added
+  - Also documented L13_Target_SilveredBulwark custom spell (previously omitted from catalog)
+  - Total item count: 30 items (9 weapons, 5 body armor, 6 headgear, 2 gloves, 3 cloaks, 2 shields, 2 rings, 1 boots)
+  - Total custom spell count: 35 spells
 
 - **2026-02-12**: Phase 049 - Created Dawn's Blade
   - Added 1 legendary greatsword: Dawn's Blade (Lathander-themed)
