@@ -1,6 +1,0 @@
-new entry "SMR_Throw_Telekinesis_ShortRest"
-type "SpellData"
-data "SpellType" "Throw"
-using "Throw_Telekinesis"
-data "UseCosts" "ActionPoint:1"
-data "Cooldown" "OncePerShortRest"

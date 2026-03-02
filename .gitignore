@@ -6,6 +6,9 @@ Shared/
 ExampleMods/
 VanillaBG3/
 
+# Retired mods (no longer actively developed)
+SampleMagicRingMod/
+
 # Item spawning tool (utility, not a mod)
 SpawnAnyItem/
 
