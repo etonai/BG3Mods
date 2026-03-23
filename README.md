@@ -1,6 +1,6 @@
 # BG3 Magic Items Mods
 
-A collection of Baldur's Gate 3 mods adding legendary gear, spell scrolls, and utility items. Developed by **PseudonymousEd**.
+A collection of Baldur's Gate 3 mods adding legendary gear, spell scrolls, and utility items. Developed by **PseudonymousEd** with extensive use of [Claude Code](https://claude.ai/claude-code).
 
 ---
 
@@ -106,6 +106,12 @@ Two directories exist in the local development environment but are not tracked i
 
 - **`ExampleMods/`** — A place to drop existing BG3 mods for easy reference while developing. Useful for studying how other mods implement features.
 - **`VanillaBG3/`** — A local copy of BG3 game data files (`Gustav/` and `Shared/` subdirectories), extracted directly from the game. Used as a reference for vanilla item templates, stats, and other game content when creating new items.
+
+---
+
+## Development Tools
+
+These mods were developed with extensive use of [Claude Code](https://claude.ai/claude-code), Anthropic's AI coding assistant. Claude Code assisted with item design, file authoring, cross-referencing vanilla game data, and tracking implementation across development phases.
 
 ---
 
