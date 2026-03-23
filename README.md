@@ -1,6 +1,6 @@
 # BG3 Magic Items Mods
 
-A collection of Baldur's Gate 3 mods adding legendary gear, spell scrolls, and utility items. Developed by **PseudonymousEd** with extensive use of [Claude Code](https://claude.ai/claude-code).
+A collection of Baldur's Gate 3 mods adding legendary gear, spell scrolls, and utility items. Authored in XML-based `.lsx` mod files and packed with [BG3 Modders Multitool](https://github.com/ShinyHobo/BG3-Modders-Multitool). Developed by **PseudonymousEd** with extensive use of [Claude Code](https://claude.ai/claude-code).
 
 ---
 
@@ -47,6 +47,19 @@ Includes:
 A utility ring that grants spells to summon items by their template ID. Useful for testing and item delivery.
 
 **Dependencies:** Level13PlusGear, SampleMagicRingMod
+
+---
+
+## Tech Stack
+
+BG3 mods are authored as XML-based `.lsx` files (compiled to binary `.lsf` at pack time). Key file types include:
+
+- `.lsx` — item templates, stats, treasure tables, localization handles
+- `.pak` — the packed mod format consumed by the game
+
+Tooling used:
+- [BG3 Modders Multitool](https://github.com/ShinyHobo/BG3-Modders-Multitool) — packing `.pak` files and unpacking vanilla game data
+- [Claude Code](https://claude.ai/claude-code) — AI-assisted item design, file authoring, and cross-referencing game data
 
 ---
 
