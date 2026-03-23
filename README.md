@@ -17,6 +17,9 @@ Includes:
 
 **Note:** Tutorial Chest loot is locked in the moment you open it. Adding new items to the mod will not retroactively update an already-opened chest — start a new game to receive new items.
 
+<img src="images/MoonguardSplint.png" width="400"/>
+<img src="images/SwordOrpheus.png" width="400"/>
+
 ---
 
 ### Level21Gear
@@ -27,6 +30,8 @@ Includes:
 - Staff of Gimeitaro (extremely powerful caster weapon)
 - Silverlight sword
 - Silvered Bulwark scroll
+
+<img src="images/Silverlight.png" width="400"/>
 
 ---
 
@@ -39,6 +44,9 @@ Both spells exist in the base game but are not normally available to players. Th
 Includes:
 - **Scroll of Silvered Bulwark** — Encase an ally in a moveable radiant shield of invulnerability that lasts until dismissed or the next long rest (Level 6 Abjuration)
 - **Scroll of Hellfire Orb** — Launch a searing orb that explodes in a 4-metre radius for 20d6 Fire damage (DC 18 Dex save for half)
+
+<img src="images/SilveredBulwark.png" width="400"/>
+<img src="images/HellfireOrb.png" width="400"/>
 
 ---
 
